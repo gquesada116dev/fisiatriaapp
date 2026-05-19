@@ -12,6 +12,7 @@ export function TopBar() {
           <Link href="/review" className="text-ink-600 hover:text-teal-700">Repaso</Link>
           <Link href="/examen" className="text-ink-600 hover:text-teal-700">Examen</Link>
           <Link href="/car-mode" className="text-ink-600 hover:text-teal-700">Modo Carro</Link>
+          <Link href="/mentor" className="text-ink-600 hover:text-teal-700 font-medium">Mentor IA</Link>
         </nav>
       </div>
     </header>

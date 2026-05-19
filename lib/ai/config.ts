@@ -21,6 +21,7 @@ export const AI_MODELS = {
   flashcards: "claude-haiku-4-5-20251001",
   podcastScript: "claude-sonnet-4-6",
   examTutor: "claude-sonnet-4-6",
+  mentor: "claude-sonnet-4-6",
 } as const;
 
 /** Bumping these invalidates the cached output for that feature on next request. */
@@ -39,4 +40,5 @@ export const MAX_TOKENS = {
   examQuestions: 8000,
   flashcards: 3000,
   podcastScript: 6000,
+  mentor: 4096,
 } as const;
