@@ -53,7 +53,7 @@ function getOpenAI() {
 const WITH_PODCASTS = process.argv.includes("--podcasts");
 const CATEGORY_FILTER = process.argv.find((a) => a.startsWith("--category="))?.split("=")[1];
 const CARDS_PER_TOPIC = 25;
-const QUESTIONS_PER_TOPIC = 10;
+const QUESTIONS_PER_TOPIC = 7;
 const EXAM_QUESTIONS_PER_TOPIC = 5;
 
 // ── Helpers ──────────────────────────────────────────────────────────────────

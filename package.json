@@ -11,6 +11,7 @@
     "generate:all": "tsx scripts/generate-all.ts",
     "generate:all:podcasts": "tsx scripts/generate-all.ts --podcasts",
     "generate:fundamentos": "tsx scripts/generate-all.ts --category=Fundamentos",
+    "generate:fundamentos:podcasts": "tsx scripts/generate-all.ts --category=Fundamentos --podcasts",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
