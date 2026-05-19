@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 42 38% 96%;            /* bone-50 */
+    --foreground: 0 0% 10%;              /* ink-900 */
+    --border: 42 25% 84%;                /* bone-200 */
+    --muted: 42 30% 90%;                 /* between bone-100/200 */
+    --accent: 174 49% 28%;               /* teal-500 */
+    --radius: 0.75rem;
+  }
+
+  html { -webkit-font-smoothing: antialiased; }
+
+  body {
+    @apply bg-bone-50 text-ink-900 font-sans;
+    background-image:
+      radial-gradient(at 15% 0%, rgba(58,138,130,0.05) 0px, transparent 50%),
+      radial-gradient(at 100% 100%, rgba(184,92,58,0.04) 0px, transparent 50%);
+    background-attachment: fixed;
+  }
+
+  h1, h2, h3 { @apply font-display tracking-tight; }
+
+  /* Subtle paper grain texture overlay */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.025;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  /* Markdown body for AI-generated summaries */
+  .prose-fp {
+    @apply text-ink-800 leading-relaxed;
+  }
+  .prose-fp h2 {
+    @apply font-display text-2xl text-teal-700 mt-8 mb-3 border-b border-bone-200 pb-2;
+  }
+  .prose-fp h3 {
+    @apply font-display text-xl text-ink-900 mt-6 mb-2;
+  }
+  .prose-fp p { @apply mb-4; }
+  .prose-fp ul { @apply list-disc pl-6 mb-4 space-y-1; }
+  .prose-fp ol { @apply list-decimal pl-6 mb-4 space-y-1; }
+  .prose-fp strong { @apply text-ink-900 font-semibold; }
+  .prose-fp code { @apply bg-bone-100 px-1.5 py-0.5 rounded text-sm font-mono; }
+}
