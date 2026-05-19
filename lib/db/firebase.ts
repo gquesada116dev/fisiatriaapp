@@ -2,12 +2,23 @@ import { initializeApp, getApps, cert } from "firebase-admin/app";
 import { getFirestore, Timestamp, FieldValue } from "firebase-admin/firestore";
 import { getStorage } from "firebase-admin/storage";
 
+function parseServiceAccount() {
+  let json = process.env.FIREBASE_SERVICE_ACCOUNT_JSON;
+  if (!json) throw new Error("FIREBASE_SERVICE_ACCOUNT_JSON env var is required");
+  // Strip surrounding quotes if accidentally included when pasting into Vercel.
+  json = json.trim().replace(/^['"]|['"]$/g, "");
+  const parsed = JSON.parse(json);
+  // Vercel sometimes escapes \n as \\n in env vars — fix the private key.
+  if (parsed.private_key) {
+    parsed.private_key = parsed.private_key.replace(/\\n/g, "\n");
+  }
+  return parsed;
+}
+
 function initAdmin() {
   if (getApps().length > 0) return;
-  const json = process.env.FIREBASE_SERVICE_ACCOUNT_JSON;
-  if (!json) throw new Error("FIREBASE_SERVICE_ACCOUNT_JSON env var is required");
   initializeApp({
-    credential: cert(JSON.parse(json)),
+    credential: cert(parseServiceAccount()),
     storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
   });
 }
