@@ -44,6 +44,7 @@ const db = getFirestore();
 const ai = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY! });
 
 const WITH_PODCASTS = process.argv.includes("--podcasts");
+const CATEGORY_FILTER = process.argv.find((a) => a.startsWith("--category="))?.split("=")[1];
 const CARDS_PER_TOPIC = 25;
 const QUESTIONS_PER_TOPIC = 20;
 const EXAM_QUESTIONS_PER_TOPIC = 10;
@@ -212,8 +213,11 @@ async function generatePodcast(topic: any) {
 
 async function main() {
   const topicsSnap = await db.collection("topics").orderBy("sortOrder").get();
-  const topics = topicsSnap.docs.map((d) => ({ slug: d.id, ...d.data() }));
-  console.log(`\nGenerando contenido para ${topics.length} temas...\n`);
+  let topics = topicsSnap.docs.map((d) => ({ slug: d.id, ...d.data() })) as any[];
+  if (CATEGORY_FILTER) {
+    topics = topics.filter((t) => t.category === CATEGORY_FILTER);
+  }
+  console.log(`\nGenerando contenido para ${topics.length} temas${CATEGORY_FILTER ? ` (${CATEGORY_FILTER})` : ""}...\n`);
   if (WITH_PODCASTS) console.log("⚠️  Modo podcasts activado — esto puede tardar bastante.\n");
 
   for (let i = 0; i < topics.length; i++) {
