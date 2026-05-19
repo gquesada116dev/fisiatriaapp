@@ -60,7 +60,7 @@ export type GeneratedQuestion = {
   stem: string;
   options: { letter: "A" | "B" | "C" | "D" | "E"; text: string }[];
   correct: "A" | "B" | "C" | "D" | "E";
-  explanation: string;
+  explanations: Record<string, string>;
   difficulty: 1 | 2 | 3 | 4 | 5;
 };
 
@@ -73,7 +73,7 @@ Requisitos por pregunta:
 - Estilo viñeta clínica cuando sea posible (un caso breve, no solo "cuál es...").
 - 5 opciones (A-E). Una sola correcta.
 - Distractores plausibles (errores conceptuales comunes), no opciones absurdas.
-- Explicación de 3-6 oraciones que justifique la correcta y, brevemente, por qué las otras son incorrectas.
+- Para CADA opción una explicación de 2-3 oraciones: por qué es correcta o por qué es incorrecta.
 - Dificultad 1-5 (1 trivial, 5 reto de especialista).
 - Variedad: mezcla preguntas de definición, manejo, complicaciones y evaluación.
 
@@ -90,7 +90,13 @@ Devuelve JSON con este esquema exacto:
         {"letter": "E", "text": "..."}
       ],
       "correct": "C",
-      "explanation": "...",
+      "explanations": {
+        "A": "Incorrecto. ...",
+        "B": "Incorrecto. ...",
+        "C": "Correcto. ...",
+        "D": "Incorrecto. ...",
+        "E": "Incorrecto. ..."
+      },
       "difficulty": 3
     }
   ]

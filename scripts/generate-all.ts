@@ -138,10 +138,17 @@ async function generateFlashcards(topic: any) {
 }
 
 async function generateQuestions(topic: any) {
-  const countSnap = await db.collection("questions").where("topicSlug", "==", topic.slug).count().get();
-  if (countSnap.data().count >= QUESTIONS_PER_TOPIC) { log(topic.name, "questions", "skip"); return; }
+  const existing = await db.collection("questions").where("topicSlug", "==", topic.slug).where("promptV", "==", PROMPT_VERSIONS.questions).count().get();
+  if (existing.data().count >= QUESTIONS_PER_TOPIC) { log(topic.name, "questions", "skip"); return; }
+  // Delete old version questions before regenerating
+  const old = await db.collection("questions").where("topicSlug", "==", topic.slug).get();
+  if (!old.empty) {
+    const delBatch = db.batch();
+    old.docs.forEach((d) => delBatch.delete(d.ref));
+    await delBatch.commit();
+  }
+  const needed = QUESTIONS_PER_TOPIC;
 
-  const needed = QUESTIONS_PER_TOPIC - countSnap.data().count;
   const { questions } = await generateJson<{ questions: GeneratedQuestion[] }>({
     model: AI_MODELS.questions,
     system: questionsPrompt(topic, needed).system,
@@ -153,7 +160,7 @@ async function generateQuestions(topic: any) {
   for (const q of questions) {
     batch.set(db.collection("questions").doc(), {
       topicSlug: topic.slug, stem: q.stem, options: q.options, correct: q.correct,
-      explanation: q.explanation, difficulty: q.difficulty,
+      explanations: q.explanations, difficulty: q.difficulty,
       model: AI_MODELS.questions, promptV: PROMPT_VERSIONS.questions, createdAt: Timestamp.now(),
     });
   }

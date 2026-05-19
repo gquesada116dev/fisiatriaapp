@@ -26,7 +26,7 @@ export const AI_MODELS = {
 /** Bumping these invalidates the cached output for that feature on next request. */
 export const PROMPT_VERSIONS = {
   summary: 2,
-  questions: 1,
+  questions: 2,
   examQuestions: 1,
   flashcards: 1,
   podcastScript: 1,
