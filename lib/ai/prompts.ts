@@ -14,29 +14,43 @@ const COMMON_HEADER = `Eres un médico fisiatra docente en Costa Rica, con exper
 export function summaryPrompt(topic: { name: string; category: string; description: string }) {
   return {
     system: COMMON_HEADER,
-    user: `Genera un resumen de estudio estructurado sobre el siguiente tema de fisiatría:
+    user: `Genera un resumen de estudio exhaustivo sobre el siguiente tema de fisiatría, al nivel de un capítulo de texto especializado para preparación de residencia:
 
 TEMA: ${topic.name}
 CATEGORÍA: ${topic.category}
 CONTEXTO: ${topic.description}
 
-Estructura el resumen en formato Markdown con las siguientes secciones (omite alguna solo si genuinamente no aplica):
+Estructura el resumen en formato Markdown con TODAS las secciones que apliquen (omite solo si genuinamente irrelevante para el tema):
 
 ## Definición y conceptos clave
-## Anatomía / fisiopatología relevante
-## Evaluación clínica
-## Clasificación o escalas (si aplica)
-## Manejo / tratamiento
+## Epidemiología y relevancia clínica
+## Anatomía y fisiopatología
+## Presentación clínica
+## Evaluación y diagnóstico
+## Escalas y clasificaciones validadas
+## Objetivos de rehabilitación
+## Intervenciones en fisiatría
+## Manejo farmacológico adyuvante
+## Abordaje interdisciplinario
+## Complicaciones y banderas rojas
+## Contexto costarricense (CENARE / CCSS)
 ## Puntos de alto rendimiento para el examen
-## Errores frecuentes / banderas rojas
 
-Requisitos:
-- Profundidad de residente, no de estudiante de pregrado.
-- Incluye datos concretos (escalas con sus puntos de corte, dosis cuando aplique, criterios diagnósticos exactos).
-- Cuando exista práctica costarricense específica (p.ej. referencias al CENARE, protocolos CCSS), menciónala.
-- Máximo ~1200 palabras. Densidad sobre extensión.
+Requisitos de profundidad:
+- Nivel de residente de segundo año, no de estudiante de pregrado.
+- Cada sección debe tener al menos 3-6 párrafos o ítems con datos concretos.
+- Escalas: incluye nombre completo, ítems que evalúa, puntos de corte exactos, y qué decisión clínica determina cada punto de corte.
+- Dosis farmacológicas cuando apliquen (rango, frecuencia, vía, consideraciones especiales).
+- Criterios diagnósticos exactos con sus valores de sensibilidad/especificidad si son relevantes para examen.
+- Ortesis y equipos: indica nivel de lesión o indicación, materiales, precauciones.
+- Menciona protocolos CCSS o guías nacionales cuando existan.
+- Apunta a ~2500 palabras. Prefiere profundidad clínica sobre listas superficiales.
 - Devuelve solo el markdown, sin preámbulo.`,
   };
+}
+
+export function topicImageDallePrompt(topic: { name: string; category: string; description: string }): string {
+  return `Professional physiatry and physical medicine textbook illustration: "${topic.name}" — ${topic.description}. Clean, detailed anatomical or clinical diagram. Educational style, white background, no text labels, high-quality medical illustration suitable for a rehabilitation medicine study guide. Precise anatomical detail, clear structures.`;
 }
 
 // ---------------------------------------------------------------

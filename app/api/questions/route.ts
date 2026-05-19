@@ -1,13 +1,8 @@
 import { NextResponse } from "next/server";
 import { db, FieldValue, Timestamp, refreshMastery } from "@/lib/db/firebase";
-import { generateJson } from "@/lib/ai/client";
-import { questionsPrompt, type GeneratedQuestion } from "@/lib/ai/prompts";
-import { AI_MODELS, MAX_TOKENS, PROMPT_VERSIONS } from "@/lib/ai/config";
 
 export const runtime = "nodejs";
 export const maxDuration = 60;
-
-const POOL_TARGET = 20;
 
 export async function GET(req: Request) {
   const url = new URL(req.url);
@@ -17,55 +12,22 @@ export async function GET(req: Request) {
 
   const firestore = db();
 
-  const topicSnap = await firestore.collection("topics").doc(slug).get();
-  if (!topicSnap.exists) return NextResponse.json({ error: "Topic not found" }, { status: 404 });
-  const topic = { slug, ...topicSnap.data() } as any;
-
-  const countSnap = await firestore
-    .collection("questions")
-    .where("topicSlug", "==", slug)
-    .count()
-    .get();
-  const count = countSnap.data().count;
-
-  if (count < POOL_TARGET) {
-    const needed = POOL_TARGET - count;
-    const { questions } = await generateJson<{ questions: GeneratedQuestion[] }>({
-      model: AI_MODELS.questions,
-      system: questionsPrompt(topic, needed).system,
-      prompt: questionsPrompt(topic, needed).user,
-      maxTokens: MAX_TOKENS.questions,
-    });
-    const batch = firestore.batch();
-    for (const q of questions) {
-      const ref = firestore.collection("questions").doc();
-      batch.set(ref, {
-        topicSlug: slug,
-        stem: q.stem,
-        options: q.options,
-        correct: q.correct,
-        explanation: q.explanation,
-        difficulty: q.difficulty,
-        model: AI_MODELS.questions,
-        promptV: PROMPT_VERSIONS.questions,
-        createdAt: Timestamp.now(),
-      });
-    }
-    await batch.commit();
-  }
-
   const poolSnap = await firestore
     .collection("questions")
     .where("topicSlug", "==", slug)
     .limit(n * 3)
     .get();
 
+  if (poolSnap.empty) {
+    return NextResponse.json({ questions: [], ready: false });
+  }
+
   const shuffled = poolSnap.docs
     .map((d) => ({ id: d.id, ...d.data() }))
     .sort(() => Math.random() - 0.5)
     .slice(0, n);
 
-  return NextResponse.json({ questions: shuffled });
+  return NextResponse.json({ questions: shuffled, ready: true });
 }
 
 export async function POST(req: Request) {

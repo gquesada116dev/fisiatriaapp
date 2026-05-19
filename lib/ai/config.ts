@@ -25,7 +25,7 @@ export const AI_MODELS = {
 
 /** Bumping these invalidates the cached output for that feature on next request. */
 export const PROMPT_VERSIONS = {
-  summary: 1,
+  summary: 2,
   questions: 1,
   examQuestions: 1,
   flashcards: 1,
@@ -34,7 +34,7 @@ export const PROMPT_VERSIONS = {
 
 /** Default max_tokens per feature — tuned to avoid runaway costs. */
 export const MAX_TOKENS = {
-  summary: 4000,
+  summary: 8000,
   questions: 4000,
   examQuestions: 6000,
   flashcards: 3000,

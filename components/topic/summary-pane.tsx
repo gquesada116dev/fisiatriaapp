@@ -66,6 +66,7 @@ function renderMd(md: string): React.ReactNode[] {
 
 export function SummaryPane({ slug }: { slug: string }) {
   const [content, setContent] = useState<string | null>(null);
+  const [imageUrl, setImageUrl] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -87,6 +88,7 @@ export function SummaryPane({ slug }: { slug: string }) {
       }
       const data = await res.json();
       setContent(data.content_md);
+      setImageUrl(data.imageUrl ?? null);
       setLoading(false);
     })();
     return () => {
@@ -106,5 +108,19 @@ export function SummaryPane({ slug }: { slug: string }) {
     );
   }
   if (error) return <p className="text-rust-600">{error}</p>;
-  return <article className="prose-fp max-w-none">{content && renderMd(content)}</article>;
+  return (
+    <article className="prose-fp max-w-none">
+      {imageUrl && (
+        <div className="mb-6 rounded-xl overflow-hidden border border-bone-200 bg-bone-50">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={imageUrl}
+            alt={`Ilustración médica — ${slug}`}
+            className="w-full object-cover max-h-72"
+          />
+        </div>
+      )}
+      {content && renderMd(content)}
+    </article>
+  );
 }

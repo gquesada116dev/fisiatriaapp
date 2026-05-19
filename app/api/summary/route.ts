@@ -20,7 +20,7 @@ export async function POST(req: Request) {
     if (summarySnap.exists) {
       const cached = summarySnap.data()!;
       if (cached.promptV === PROMPT_VERSIONS.summary) {
-        return NextResponse.json({ cached: true, content_md: cached.contentMd, model: cached.model });
+        return NextResponse.json({ cached: true, content_md: cached.contentMd, model: cached.model, imageUrl: topic.imageUrl ?? null });
       }
     }
   }
@@ -42,5 +42,5 @@ export async function POST(req: Request) {
     createdAt: new Date().toISOString(),
   });
 
-  return NextResponse.json({ cached: false, content_md, model: AI_MODELS.summary });
+  return NextResponse.json({ cached: false, content_md, model: AI_MODELS.summary, imageUrl: topic.imageUrl ?? null });
 }

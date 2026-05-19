@@ -14,12 +14,14 @@ dotenv.config({ path: ".env.local" });
 import { initializeApp, cert, getApps } from "firebase-admin/app";
 import { getFirestore, Timestamp } from "firebase-admin/firestore";
 import Anthropic from "@anthropic-ai/sdk";
+import OpenAI from "openai";
 import {
   summaryPrompt,
   flashcardsPrompt,
   questionsPrompt,
   examQuestionsPrompt,
   podcastPrompt,
+  topicImageDallePrompt,
   type GeneratedFlashcard,
   type GeneratedQuestion,
   type GeneratedExamQuestion,
@@ -42,6 +44,11 @@ if (!getApps().length) {
 
 const db = getFirestore();
 const ai = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY! });
+
+function getOpenAI() {
+  if (!process.env.OPENAI_API_KEY) throw new Error("OPENAI_API_KEY not set — add it to .env.local to generate images");
+  return new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+}
 
 const WITH_PODCASTS = process.argv.includes("--podcasts");
 const CATEGORY_FILTER = process.argv.find((a) => a.startsWith("--category="))?.split("=")[1];
@@ -66,6 +73,9 @@ async function generateJson<T>(args: { model: string; system: string; prompt: st
     .replace(/^```json\s*/i, "")
     .replace(/^```\s*/, "")
     .replace(/```\s*$/, "");
+  if (!text.startsWith("{") && !text.startsWith("[")) {
+    throw new Error(`API did not return JSON. Response: ${text.slice(0, 300)}`);
+  }
   return JSON.parse(text) as T;
 }
 
@@ -176,6 +186,37 @@ async function generateExamQuestions(topic: any) {
   log(topic.name, "exam-questions", "ok", `${questions.length} preguntas`);
 }
 
+async function generateImage(topic: any) {
+  const topicSnap = await db.collection("topics").doc(topic.slug).get();
+  if (topicSnap.data()?.imageUrl) { log(topic.name, "image", "skip"); return; }
+
+  const prompt = topicImageDallePrompt(topic);
+  const response = await getOpenAI().images.generate({
+    model: "dall-e-3",
+    prompt,
+    n: 1,
+    size: "1024x1024",
+    quality: "standard",
+  });
+
+  const tempUrl = response.data![0].url!;
+  const imgResp = await fetch(tempUrl);
+  const buffer = Buffer.from(await imgResp.arrayBuffer());
+
+  const { getStorage } = await import("firebase-admin/storage");
+  const imagePath = `topic-images/${topic.slug}.png`;
+  const downloadToken = crypto.randomUUID();
+  const bucket = getStorage().bucket(process.env.FIREBASE_STORAGE_BUCKET!);
+  await bucket.file(imagePath).save(buffer, {
+    metadata: { contentType: "image/png", metadata: { firebaseStorageDownloadTokens: downloadToken } },
+  });
+
+  const { storageDownloadUrl } = await import("../lib/db/firebase");
+  const firebaseUrl = storageDownloadUrl(bucket.name, imagePath, downloadToken);
+  await db.collection("topics").doc(topic.slug).update({ imageUrl: firebaseUrl });
+  log(topic.name, "image", "ok");
+}
+
 async function generatePodcast(topic: any) {
   const snap = await db.collection("podcasts").doc(topic.slug).get();
   if (snap.exists) { log(topic.name, "podcast", "skip"); return; }
@@ -223,6 +264,7 @@ async function main() {
   for (let i = 0; i < topics.length; i++) {
     const topic = topics[i] as any;
     console.log(`[${i + 1}/${topics.length}] ${topic.name}`);
+    try { await generateImage(topic); } catch (e: any) { log(topic.name, "image", "err", e.message); }
     try { await generateSummary(topic); } catch (e: any) { log(topic.name, "summary", "err", e.message); }
     try { await generateFlashcards(topic); } catch (e: any) { log(topic.name, "flashcards", "err", e.message); }
     try { await generateQuestions(topic); } catch (e: any) { log(topic.name, "questions", "err", e.message); }

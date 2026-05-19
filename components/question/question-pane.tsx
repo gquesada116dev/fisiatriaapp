@@ -22,9 +22,14 @@ export function QuestionPane({ slug }: { slug: string }) {
   useEffect(() => {
     (async () => {
       setLoading(true);
-      const res = await fetch(`/api/questions?slug=${slug}&n=5`);
-      const data = await res.json();
-      setQuestions(data.questions ?? []);
+      try {
+        const res = await fetch(`/api/questions?slug=${slug}&n=5`);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = await res.json();
+        setQuestions(data.questions ?? []);
+      } catch {
+        setQuestions([]);
+      }
       setStartTime(Date.now());
       setLoading(false);
     })();
@@ -62,7 +67,7 @@ export function QuestionPane({ slug }: { slug: string }) {
       // Refetch a fresh batch.
       setLoading(true);
       fetch(`/api/questions?slug=${slug}&n=5`).then(async (r) => {
-        const data = await r.json();
+        const data = r.ok ? await r.json() : { questions: [] };
         setQuestions(data.questions ?? []);
         setLoading(false);
       });
