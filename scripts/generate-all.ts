@@ -53,8 +53,8 @@ function getOpenAI() {
 const WITH_PODCASTS = process.argv.includes("--podcasts");
 const CATEGORY_FILTER = process.argv.find((a) => a.startsWith("--category="))?.split("=")[1];
 const CARDS_PER_TOPIC = 25;
-const QUESTIONS_PER_TOPIC = 20;
-const EXAM_QUESTIONS_PER_TOPIC = 10;
+const QUESTIONS_PER_TOPIC = 10;
+const EXAM_QUESTIONS_PER_TOPIC = 5;
 
 // ── Helpers ──────────────────────────────────────────────────────────────────
 
@@ -192,11 +192,10 @@ async function generateImage(topic: any) {
 
   const prompt = topicImageDallePrompt(topic);
   const response = await getOpenAI().images.generate({
-    model: "dall-e-3",
+    model: "dall-e-2",
     prompt,
     n: 1,
     size: "1024x1024",
-    quality: "standard",
   });
 
   const tempUrl = response.data![0].url!;

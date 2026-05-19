@@ -35,8 +35,8 @@ export const PROMPT_VERSIONS = {
 /** Default max_tokens per feature — tuned to avoid runaway costs. */
 export const MAX_TOKENS = {
   summary: 8000,
-  questions: 4000,
-  examQuestions: 6000,
+  questions: 8000,
+  examQuestions: 8000,
   flashcards: 3000,
   podcastScript: 6000,
 } as const;

@@ -49,8 +49,8 @@ Requisitos de profundidad:
   };
 }
 
-export function topicImageDallePrompt(topic: { name: string; category: string; description: string }): string {
-  return `Professional physiatry and physical medicine textbook illustration: "${topic.name}" — ${topic.description}. Clean, detailed anatomical or clinical diagram. Educational style, white background, no text labels, high-quality medical illustration suitable for a rehabilitation medicine study guide. Precise anatomical detail, clear structures.`;
+export function topicImageDallePrompt(topic: { name: string; category: string }): string {
+  return `Medical textbook illustration: ${topic.name}, physical medicine and rehabilitation. Clean anatomical diagram, educational style, white background, no text, professional quality.`;
 }
 
 // ---------------------------------------------------------------
