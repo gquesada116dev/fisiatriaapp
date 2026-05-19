@@ -8,6 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "seed": "tsx scripts/seed-topics.ts",
+    "generate:all": "tsx scripts/generate-all.ts",
+    "generate:all:podcasts": "tsx scripts/generate-all.ts --podcasts",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
