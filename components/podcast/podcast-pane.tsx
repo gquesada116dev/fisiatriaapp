@@ -28,6 +28,39 @@ const TYPE_LABEL: Record<PodcastType, string> = {
   post: "Post-lectura",
 };
 
+function CopyButton({ script }: { script: Line[] }) {
+  const [copied, setCopied] = useState(false);
+  function handleCopy() {
+    const text = script.map((l) => l.text).join("\n\n");
+    navigator.clipboard.writeText(text).then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    });
+  }
+  return (
+    <button
+      onClick={handleCopy}
+      className="flex items-center gap-1.5 text-xs text-ink-400 hover:text-ink-700 transition-colors px-2 py-1 rounded-md hover:bg-bone-100"
+    >
+      {copied ? (
+        <>
+          <svg className="w-3.5 h-3.5 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+          </svg>
+          <span className="text-teal-600">Copiado</span>
+        </>
+      ) : (
+        <>
+          <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+          </svg>
+          Copiar texto
+        </>
+      )}
+    </button>
+  );
+}
+
 export function PodcastPane({ slug, topicName }: { slug: string; topicName: string }) {
   const [podType, setPodType] = useState<PodcastType>("pre");
   const [data, setData] = useState<PodcastData | null>(null);
@@ -141,7 +174,10 @@ export function PodcastPane({ slug, topicName }: { slug: string; topicName: stri
 
           {data.script && (
             <div className="rounded-xl border border-bone-200 bg-white/40 p-5 space-y-2">
-              <p className="text-xs uppercase tracking-widest text-ink-400 mb-3">Transcripción</p>
+              <div className="flex items-center justify-between mb-3">
+                <p className="text-xs uppercase tracking-widest text-ink-400">Transcripción</p>
+                <CopyButton script={data.script} />
+              </div>
               {data.script.map((line, i) => {
                 const isActive = i === activeIdx;
                 const clickable = hasTiming && line.startS != null;
