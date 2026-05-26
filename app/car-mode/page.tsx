@@ -17,12 +17,14 @@ export default async function CarModePage() {
       const pod = d.data();
       const topicSnap = await firestore.collection("topics").doc(pod.topicSlug).get();
       const topic = topicSnap.data();
+      const isPre = d.id.endsWith("--pre");
       return {
         slug: pod.topicSlug as string,
         name: topic?.name as string,
         category: topic?.category as string,
         url: pod.audioUrl as string,
         script: (pod.script ?? []) as { speaker: string; text: string; startS?: number; endS?: number }[],
+        podType: isPre ? "pre" : "post",
       };
     }),
   );
