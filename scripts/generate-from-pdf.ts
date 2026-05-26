@@ -445,15 +445,16 @@ Personajes:
 
 Estilo y formato:
 - Conversación natural costarricense, fluida. Pueden usar "uno", "vea", "fíjese", "exactamente".
-- Sin saludos largos — entran directo al tema.
-- 30-40 intervenciones, alternando A/B. Cada intervención: 3-6 oraciones. Apunten a ~15 minutos de audio.
-- Cubren el capítulo COMPLETO en orden lógico: definición/clasificación, epidemiología, evaluación del muñón, prescripción de prótesis, rehabilitación funcional, complicaciones, manejo del dolor.
-- Los números y porcentajes van cuando ayudan a entender ("el gasto energético sube un 25 a 40 por ciento adicional en pacientes vasculares"), no como lista de datos.
-- El tono es para escuchar en el carro: claro, con transiciones naturales entre temas, sin tecnicismos abruptos sin contexto.
-- Cierran con 2-3 puntos clave que un residente debe recordar el día del examen.
+- INTRO (primeras 2 intervenciones, A/B): Dr. Marín presenta el tema del día y Dra. Vargas lo contextualiza brevemente.
+- DESARROLLO: 26-36 intervenciones alternando A/B cubriendo el capítulo COMPLETO en orden lógico.
+- OUTRO (últimas 2 intervenciones, A/B): Cierran con 2-3 puntos clave que un residente debe recordar el día del examen.
+- Cada intervención: 3-6 oraciones. Total apunta a ~15 minutos de audio.
+- Los números y porcentajes van cuando ayudan a entender, no como lista de datos.
+- Usa la terminología exacta del capítulo (ej. "extremidad residual", no términos desactualizados). Si el capítulo actualiza un término, menciónalo como punto de enseñanza.
+- El tono es para escuchar en el carro: claro, con transiciones naturales entre temas.
 - NUNCA mencionen ser una IA.
 
-JSON exacto:
+JSON exacto (speaker solo "A" o "B" por ahora):
 {
   "script": [
     { "speaker": "A", "text": "..." },
@@ -470,31 +471,15 @@ JSON exacto:
     jsonMode: true,
   });
 
-  const { script } = JSON.parse(raw) as { script: { speaker: "A" | "B"; text: string }[] };
-  console.log(`  … [podcast] guion listo (${script.length} intervenciones) — sintetizando audio...`);
+  const { script } = JSON.parse(raw) as { script: { speaker: "A" | "B" | "C"; text: string }[] };
 
-  const { synthesizePodcast } = await import("../lib/audio/elevenlabs");
-  const { storageDownloadUrl } = await import("../lib/db/firebase");
-  const { getStorage } = await import("firebase-admin/storage");
-
-  const voiceA = process.env.ELEVENLABS_VOICE_HOST_A!;
-  const voiceB = process.env.ELEVENLABS_VOICE_HOST_B!;
-  const mp3 = await synthesizePodcast(script, { a: voiceA, b: voiceB });
-
-  const audioPath = `${SLUG}/${Date.now()}.mp3`;
-  const downloadToken = crypto.randomUUID();
-  const bucket = getStorage().bucket(process.env.FIREBASE_STORAGE_BUCKET!);
-  await bucket.file(audioPath).save(mp3, {
-    metadata: { contentType: "audio/mpeg", metadata: { firebaseStorageDownloadTokens: downloadToken } },
-  });
-  const audioUrl = storageDownloadUrl(bucket.name, audioPath, downloadToken);
-
+  // Save script only — audio is generated manually in ElevenLabs and uploaded via upload-podcast.ts
   await db.collection("podcasts").doc(SLUG!).set({
-    topicSlug: SLUG, script, audioPath, audioUrl,
-    voiceA, voiceB, model: SONNET,
-    promptV: "pdf-v1", createdAt: Timestamp.now(),
+    topicSlug: SLUG, script, audioUrl: null,
+    model: SONNET, promptV: "pdf-v2", createdAt: Timestamp.now(),
   });
-  console.log("  ✓ [podcast]");
+  console.log(`  ✓ [podcast] guion guardado (${script.length} intervenciones)`);
+  console.log(`    → Sube el audio con: npm run upload:podcast -- --slug=${SLUG} --file=/ruta/audio.mp3`);
 }
 
 // ── Main ─────────────────────────────────────────────────────────────────────
