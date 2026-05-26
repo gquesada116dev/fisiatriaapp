@@ -17,7 +17,7 @@ export type SeedTopic = {
 export const SEED_TOPICS: SeedTopic[] = [
   // 1. Grandes Síndromes en Rehabilitación
   { category: "Grandes Síndromes en Rehabilitación", name: "Amputaciones de la extremidad inferior", slug: "amputaciones-extremidad-inferior", description: "Niveles de amputación, cuidado del muñón, prescripción protésica y rehabilitación de la marcha. (Frontera cap 120)", priority: 5 },
-  { category: "Grandes Síndromes en Rehabilitación", name: "Rehabilitación cardiaca", slug: "rehabilitacion-cardiaca", description: "Fases del programa de rehabilitación cardiaca, estratificación de riesgo y prescripción del ejercicio. (Frontera cap 123)", priority: 4 },
+  { category: "Grandes Síndromes en Rehabilitación", name: "Rehabilitación cardiaca", slug: "rehabilitacion-cardiaca", description: "Fases del programa de rehabilitación cardiaca, estratificación de riesgo y prescripción del ejercicio. (Braddom's cap 27)", priority: 4 },
   { category: "Grandes Síndromes en Rehabilitación", name: "Parálisis cerebral infantil", slug: "paralisis-cerebral-infantil", description: "Clasificación GMFCS, tipos clínicos, manejo de espasticidad y metas funcionales en PCI. (Frontera cap 125)", priority: 5 },
   { category: "Grandes Síndromes en Rehabilitación", name: "Enfermedades de neurona motora", slug: "enfermedades-neurona-motora", description: "ELA y otras ENM: progresión, manejo rehabilitador y paliativo, comunicación aumentativa. (Frontera cap 133)", priority: 4 },
   { category: "Grandes Síndromes en Rehabilitación", name: "Miopatías", slug: "miopatias", description: "Distrofias musculares y miopatías inflamatorias: evaluación funcional, respiratoria y programa de ejercicio. (Frontera cap 136)", priority: 4 },
