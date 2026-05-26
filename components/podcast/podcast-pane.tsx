@@ -68,7 +68,7 @@ export function PodcastPane({ slug, topicName }: { slug: string; topicName: stri
                   line.speaker === "A" ? "text-teal-700" : "text-rust-600",
                 )}
               >
-                {line.speaker === "A" ? "Dra. Marín" : "Dr. Vargas"}
+                {line.speaker === "A" ? "Dr. Marín" : "Dra. Vargas"}
               </span>
               <p className="text-ink-700 text-sm leading-relaxed">{line.text}</p>
             </div>

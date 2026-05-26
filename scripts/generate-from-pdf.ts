@@ -438,14 +438,17 @@ async function generatePodcast(topic: any, chapterText: string) {
   const taskPrompt = `Escribe un guion de podcast educativo en español (Costa Rica) entre dos médicos fisiatras conversando sobre "${topic.name}", basándote en el texto del capítulo anterior.
 
 Personajes:
-- A: Dra. Vargas, fisiatra con experiencia clínica. Pregunta, problematiza, da ejemplos de casos.
-- B: Dr. Marín, fisiatra académico. Estructura, da datos, criterios y números.
+- A: Dr. Marín, fisiatra académico. Explica, estructura los temas, da datos concretos, porcentajes y criterios cuando aportan.
+- B: Dra. Vargas, fisiatra clínica. Pregunta, problematiza, da ejemplos de pacientes reales, conecta con la práctica.
 
-Estilo:
-- Conversación natural costarricense, NO formal. Pueden usar "uno", "vea", "fíjese".
-- Sin saludos extensos. Empiezan ya en el tema.
-- 12-20 intervenciones, alternando A/B. Cada intervención: 2-5 oraciones.
-- Cubre: concepto clave, evaluación, manejo, un error frecuente. Cierra con un take-home claro.
+Estilo y formato:
+- Conversación natural costarricense, fluida. Pueden usar "uno", "vea", "fíjese", "exactamente".
+- Sin saludos largos — entran directo al tema.
+- 30-40 intervenciones, alternando A/B. Cada intervención: 3-6 oraciones. Apunten a ~15 minutos de audio.
+- Cubren el capítulo COMPLETO en orden lógico: definición/clasificación, epidemiología, evaluación del muñón, prescripción de prótesis, rehabilitación funcional, complicaciones, manejo del dolor.
+- Los números y porcentajes van cuando ayudan a entender ("el gasto energético sube un 25 a 40 por ciento adicional en pacientes vasculares"), no como lista de datos.
+- El tono es para escuchar en el carro: claro, con transiciones naturales entre temas, sin tecnicismos abruptos sin contexto.
+- Cierran con 2-3 puntos clave que un residente debe recordar el día del examen.
 - NUNCA mencionen ser una IA.
 
 JSON exacto:
@@ -461,7 +464,7 @@ JSON exacto:
     model: SONNET,
     chapterText,
     taskPrompt,
-    maxTokens: 6000,
+    maxTokens: 14000,
     jsonMode: true,
   });
 
