@@ -22,6 +22,7 @@ export default async function CarModePage() {
         name: topic?.name as string,
         category: topic?.category as string,
         url: pod.audioUrl as string,
+        script: (pod.script ?? []) as { speaker: string; text: string; startS?: number; endS?: number }[],
       };
     }),
   );
