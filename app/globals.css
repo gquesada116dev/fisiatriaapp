@@ -39,6 +39,9 @@
   .prose-fp {
     @apply text-ink-800 leading-relaxed;
   }
+  .prose-fp h1 {
+    @apply font-display text-3xl text-ink-900 mb-1;
+  }
   .prose-fp h2 {
     @apply font-display text-2xl text-teal-700 mt-8 mb-3 border-b border-bone-200 pb-2;
   }

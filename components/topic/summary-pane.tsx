@@ -32,7 +32,13 @@ function renderMd(md: string): React.ReactNode[] {
 
   while (i < lines.length) {
     const line = lines[i];
-    if (/^##\s+/.test(line)) {
+    if (/^---+$/.test(line.trim())) {
+      out.push(<hr key={key++} className="border-bone-200 my-4" />);
+      i++;
+    } else if (/^#\s+/.test(line) && !/^##/.test(line)) {
+      out.push(<h1 key={key++}>{line.replace(/^#\s+/, "")}</h1>);
+      i++;
+    } else if (/^##\s+/.test(line)) {
       out.push(<h2 key={key++}>{line.replace(/^##\s+/, "")}</h2>);
       i++;
     } else if (/^####\s+/.test(line)) {
