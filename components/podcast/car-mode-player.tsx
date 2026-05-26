@@ -20,10 +20,12 @@ export function CarModePlayer({ tracks }: { tracks: Track[] }) {
 
   const current = tracks[idx];
   const hasTiming = current?.script?.some((l) => l.startS != null) ?? false;
-  const activeLine = hasTiming && activeLineIdx >= 0 ? current.script[activeLineIdx] : null;
-  const prevLine = hasTiming && activeLineIdx > 0 ? current.script[activeLineIdx - 1] : null;
-  const nextLine = hasTiming && activeLineIdx >= 0 && activeLineIdx < current.script.length - 1
-    ? current.script[activeLineIdx + 1]
+  // Before playback starts (activeLineIdx = -1), default to showing line 0
+  const displayIdx = hasTiming && activeLineIdx < 0 ? 0 : activeLineIdx;
+  const activeLine = hasTiming && displayIdx >= 0 ? current.script[displayIdx] : null;
+  const prevLine = hasTiming && displayIdx > 0 ? current.script[displayIdx - 1] : null;
+  const nextLine = hasTiming && displayIdx >= 0 && displayIdx < current.script.length - 1
+    ? current.script[displayIdx + 1]
     : null;
 
   useEffect(() => {
