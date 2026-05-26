@@ -10,7 +10,7 @@ export async function synthesizePodcast(
 ): Promise<Buffer> {
   const apiKey = process.env.ELEVENLABS_API_KEY;
   if (!apiKey) throw new Error("ELEVENLABS_API_KEY missing");
-  const modelId = process.env.ELEVENLABS_MODEL_ID ?? "eleven_multilingual_v2";
+  const modelId = process.env.ELEVENLABS_MODEL_ID ?? "eleven_turbo_v2_5";
 
   const chunks: Buffer[] = [];
   for (const line of lines) {
