@@ -45,6 +45,9 @@
   .prose-fp h3 {
     @apply font-display text-xl text-ink-900 mt-6 mb-2;
   }
+  .prose-fp h4 {
+    @apply font-display text-base text-ink-700 font-semibold mt-4 mb-1;
+  }
   .prose-fp p { @apply mb-4; }
   .prose-fp ul { @apply list-disc pl-6 mb-4 space-y-1; }
   .prose-fp ol { @apply list-decimal pl-6 mb-4 space-y-1; }

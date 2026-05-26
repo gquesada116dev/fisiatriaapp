@@ -35,6 +35,9 @@ function renderMd(md: string): React.ReactNode[] {
     if (/^##\s+/.test(line)) {
       out.push(<h2 key={key++}>{line.replace(/^##\s+/, "")}</h2>);
       i++;
+    } else if (/^####\s+/.test(line)) {
+      out.push(<h4 key={key++}>{line.replace(/^####\s+/, "")}</h4>);
+      i++;
     } else if (/^###\s+/.test(line)) {
       out.push(<h3 key={key++}>{line.replace(/^###\s+/, "")}</h3>);
       i++;
