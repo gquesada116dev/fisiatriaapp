@@ -52,7 +52,7 @@ export function PodcastPane({ slug, topicName }: { slug: string; topicName: stri
           ref={audioRef}
           src={data.audioUrl}
           controls
-          preload="metadata"
+          preload="auto"
           className="w-full"
         />
       </div>
