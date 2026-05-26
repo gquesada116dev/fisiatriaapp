@@ -137,7 +137,62 @@ export function CarModePlayer({ tracks }: { tracks: Track[] }) {
         <span className="w-12" />
       </header>
 
-      <section className="flex-1 flex flex-col items-center justify-center px-6 text-center overflow-hidden">
+      <audio
+        ref={audioRef}
+        src={current.url}
+        onPlay={() => setPlaying(true)}
+        onPause={() => setPlaying(false)}
+        onEnded={() => setPlaying(false)}
+        onTimeUpdate={handleTimeUpdate}
+        preload="auto"
+      />
+
+      {/* Controls — pinned below header */}
+      <div className="shrink-0 flex flex-col items-center gap-4 pt-2 pb-6 px-6">
+        <div className="flex items-center justify-center gap-8 md:gap-12">
+          <button
+            onClick={() => { if (audioRef.current) audioRef.current.currentTime -= 15; }}
+            className="w-16 h-16 rounded-full border-2 border-bone-200/30 flex items-center justify-center active:scale-95 transition"
+            aria-label="-15s"
+          >
+            <RewindIcon />
+          </button>
+
+          <button
+            onClick={() => {
+              if (!audioRef.current) return;
+              if (audioRef.current.paused) audioRef.current.play();
+              else audioRef.current.pause();
+            }}
+            className="w-24 h-24 rounded-full bg-teal-500 text-bone-50 flex items-center justify-center active:scale-95 transition shadow-2xl shadow-teal-500/30"
+            aria-label={playing ? "Pausar" : "Reproducir"}
+          >
+            {playing ? <PauseIcon /> : <PlayIcon />}
+          </button>
+
+          <button
+            onClick={() => { if (audioRef.current) audioRef.current.currentTime += 30; }}
+            className="w-16 h-16 rounded-full border-2 border-bone-200/30 flex items-center justify-center active:scale-95 transition"
+            aria-label="+30s"
+          >
+            <ForwardIcon />
+          </button>
+        </div>
+
+        <button
+          onClick={() => {
+            const next = (speedIdx + 1) % SPEEDS.length;
+            setSpeedIdx(next);
+            if (audioRef.current) audioRef.current.playbackRate = SPEEDS[next];
+          }}
+          className="px-4 py-1.5 rounded-full border border-bone-200/30 text-bone-200/70 text-sm font-medium hover:border-bone-200/60 hover:text-bone-200 transition"
+        >
+          {SPEEDS[speedIdx]}×
+        </button>
+      </div>
+
+      {/* Lyrics — fills remaining space */}
+      <section className="flex-1 flex flex-col items-center justify-center px-6 text-center overflow-hidden pb-10">
         {hasTiming ? (
           <div className="w-full max-w-2xl space-y-6">
             <p className="text-bone-200/30 text-lg md:text-xl leading-relaxed transition-all duration-500 line-clamp-2">
@@ -163,57 +218,6 @@ export function CarModePlayer({ tracks }: { tracks: Track[] }) {
             </h1>
           </>
         )}
-
-        <audio
-          ref={audioRef}
-          src={current.url}
-          onPlay={() => setPlaying(true)}
-          onPause={() => setPlaying(false)}
-          onEnded={() => setPlaying(false)}
-          onTimeUpdate={handleTimeUpdate}
-          preload="auto"
-        />
-
-        <div className="mt-12 flex items-center justify-center gap-8 md:gap-12">
-          <button
-            onClick={() => { if (audioRef.current) audioRef.current.currentTime -= 15; }}
-            className="w-20 h-20 rounded-full border-2 border-bone-200/30 flex items-center justify-center active:scale-95 transition"
-            aria-label="-15s"
-          >
-            <RewindIcon />
-          </button>
-
-          <button
-            onClick={() => {
-              if (!audioRef.current) return;
-              if (audioRef.current.paused) audioRef.current.play();
-              else audioRef.current.pause();
-            }}
-            className="w-28 h-28 rounded-full bg-teal-500 text-bone-50 flex items-center justify-center active:scale-95 transition shadow-2xl shadow-teal-500/30"
-            aria-label={playing ? "Pausar" : "Reproducir"}
-          >
-            {playing ? <PauseIcon /> : <PlayIcon />}
-          </button>
-
-          <button
-            onClick={() => { if (audioRef.current) audioRef.current.currentTime += 30; }}
-            className="w-20 h-20 rounded-full border-2 border-bone-200/30 flex items-center justify-center active:scale-95 transition"
-            aria-label="+30s"
-          >
-            <ForwardIcon />
-          </button>
-        </div>
-
-        <button
-          onClick={() => {
-            const next = (speedIdx + 1) % SPEEDS.length;
-            setSpeedIdx(next);
-            if (audioRef.current) audioRef.current.playbackRate = SPEEDS[next];
-          }}
-          className="mt-8 px-4 py-1.5 rounded-full border border-bone-200/30 text-bone-200/70 text-sm font-medium hover:border-bone-200/60 hover:text-bone-200 transition"
-        >
-          {SPEEDS[speedIdx]}×
-        </button>
       </section>
     </main>
   );
