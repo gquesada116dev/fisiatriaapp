@@ -40,25 +40,36 @@ export async function POST(req: Request) {
   const q = qSnap.data()!;
   const isCorrect = body.chosen === q.correct;
 
-  await firestore.collection("questionAttempts").add({
+  // One result per question — overwrite previous answer and update mastery delta
+  const resultRef = firestore.collection("questionResults").doc(body.questionId);
+  const existing = await resultRef.get();
+
+  if (existing.exists) {
+    const wasCorrect = existing.data()!.correct as boolean;
+    if (wasCorrect !== isCorrect) {
+      await firestore
+        .collection("topicStats")
+        .doc(q.topicSlug)
+        .set({ mcqCorrect: FieldValue.increment(isCorrect ? 1 : -1) }, { merge: true });
+    }
+  } else {
+    await firestore
+      .collection("topicStats")
+      .doc(q.topicSlug)
+      .set(
+        { mcqAttempts: FieldValue.increment(1), mcqCorrect: FieldValue.increment(isCorrect ? 1 : 0) },
+        { merge: true },
+      );
+  }
+
+  await resultRef.set({
     questionId: body.questionId,
     topicSlug: q.topicSlug,
     chosen: body.chosen,
     correct: isCorrect,
     timeMs: body.timeMs ?? null,
-    createdAt: Timestamp.now(),
+    updatedAt: Timestamp.now(),
   });
-
-  await firestore
-    .collection("topicStats")
-    .doc(q.topicSlug)
-    .set(
-      {
-        mcqAttempts: FieldValue.increment(1),
-        mcqCorrect: FieldValue.increment(isCorrect ? 1 : 0),
-      },
-      { merge: true },
-    );
 
   await refreshMastery(q.topicSlug);
 

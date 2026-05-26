@@ -24,6 +24,8 @@ const QUALITIES = [
   { q: 5, label: "Fácil", hint: "perfecto", cls: "bg-sage-500/10 text-sage-500 border-sage-500/30" },
 ] as const;
 
+const STORAGE_KEY = (slug: string) => `fisiaprep_fc_idx_${slug}`;
+
 export function FlashcardPane({ slug }: { slug: string }) {
   const [cards, setCards] = useState<Card[]>([]);
   const [loading, setLoading] = useState(true);
@@ -40,7 +42,14 @@ export function FlashcardPane({ slug }: { slug: string }) {
     })();
   }, [slug]);
 
-  // Order due-first, then new (no review yet).
+  // Restore saved idx after cards load
+  useEffect(() => {
+    if (!loading && cards.length > 0) {
+      const saved = Number(localStorage.getItem(STORAGE_KEY(slug)) ?? 0);
+      setIdx(saved < cards.length ? saved : 0);
+    }
+  }, [loading, cards.length, slug]);
+
   const queue = useMemo(() => {
     const now = Date.now();
     return [...cards].sort((a, b) => {
@@ -48,7 +57,6 @@ export function FlashcardPane({ slug }: { slug: string }) {
       const br = normalizeReview(b.review);
       const aDue = ar ? new Date(ar.due_at).getTime() - now : Number.POSITIVE_INFINITY;
       const bDue = br ? new Date(br.due_at).getTime() - now : Number.POSITIVE_INFINITY;
-      // due (negative) first, then new (no review), then future.
       const aRank = !ar ? 1 : aDue <= 0 ? 0 : 2;
       const bRank = !br ? 1 : bDue <= 0 ? 0 : 2;
       if (aRank !== bRank) return aRank - bRank;
@@ -59,7 +67,27 @@ export function FlashcardPane({ slug }: { slug: string }) {
   if (loading) return <p className="text-ink-500 italic">Cargando tarjetas…</p>;
   if (!queue.length) return <p className="text-ink-500">No hay tarjetas para este tema.</p>;
 
-  const card = queue[idx % queue.length];
+  // Deck completed
+  if (idx >= queue.length) {
+    return (
+      <div className="rounded-xl border border-bone-200 bg-bone-50 p-8 text-center space-y-3">
+        <p className="text-ink-700 font-medium">Mazo completado</p>
+        <p className="text-ink-500 text-sm">Repasaste todas las tarjetas de este tema.</p>
+        <button
+          onClick={() => {
+            localStorage.setItem(STORAGE_KEY(slug), "0");
+            setIdx(0);
+            setFlipped(false);
+          }}
+          className="mt-2 rounded-md bg-teal-600 text-bone-50 px-4 py-2 text-sm hover:bg-teal-700"
+        >
+          Reiniciar mazo
+        </button>
+      </div>
+    );
+  }
+
+  const card = queue[idx];
 
   async function grade(q: number) {
     await fetch("/api/review", {
@@ -67,8 +95,10 @@ export function FlashcardPane({ slug }: { slug: string }) {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ flashcardId: card.id, quality: q }),
     });
+    const nextIdx = idx + 1;
+    localStorage.setItem(STORAGE_KEY(slug), String(nextIdx));
+    setIdx(nextIdx);
     setFlipped(false);
-    setIdx((i) => (i + 1) % queue.length);
   }
 
   const review = normalizeReview(card.review);

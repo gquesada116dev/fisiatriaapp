@@ -12,6 +12,8 @@ type Question = {
   imageUrl?: string | null;
 };
 
+const STORAGE_KEY = (slug: string) => `fisiaprep_q_idx_${slug}`;
+
 export function QuestionPane({ slug }: { slug: string }) {
   const [questions, setQuestions] = useState<Question[]>([]);
   const [idx, setIdx] = useState(0);
@@ -21,18 +23,27 @@ export function QuestionPane({ slug }: { slug: string }) {
   const [startTime, setStartTime] = useState<number>(Date.now());
   const [sessionCorrect, setSessionCorrect] = useState(0);
   const [sessionTotal, setSessionTotal] = useState(0);
+  const [done, setDone] = useState(false);
 
   useEffect(() => {
     (async () => {
       setLoading(true);
       try {
-        const res = await fetch(`/api/questions?slug=${slug}&n=5`);
+        const res = await fetch(`/api/questions?slug=${slug}&n=50`);
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const data = await res.json();
-        setQuestions(data.questions ?? []);
+        const qs: Question[] = data.questions ?? [];
+        setQuestions(qs);
+        // Restore saved position
+        const saved = Number(localStorage.getItem(STORAGE_KEY(slug)) ?? 0);
+        const restored = saved < qs.length ? saved : 0;
+        setIdx(restored);
       } catch {
         setQuestions([]);
       }
+      setDone(false);
+      setChosen(null);
+      setRevealed(false);
       setStartTime(Date.now());
       setLoading(false);
     })();
@@ -41,8 +52,37 @@ export function QuestionPane({ slug }: { slug: string }) {
   if (loading) return <div className="text-ink-500 italic">Cargando preguntas…</div>;
   if (!questions.length) return <p className="text-ink-500">No hay preguntas disponibles para este tema.</p>;
 
+  if (done) {
+    return (
+      <div className="rounded-xl border border-bone-200 bg-bone-50 p-8 text-center space-y-3">
+        <p className="text-ink-700 font-medium">No hay más preguntas</p>
+        {sessionTotal > 0 && (
+          <p className="text-ink-500 text-sm">
+            Resultado: {sessionCorrect}/{sessionTotal} correctas ({Math.round(sessionCorrect / sessionTotal * 100)}%)
+          </p>
+        )}
+        <button
+          onClick={() => {
+            localStorage.setItem(STORAGE_KEY(slug), "0");
+            setIdx(0);
+            setDone(false);
+            setChosen(null);
+            setRevealed(false);
+            setSessionCorrect(0);
+            setSessionTotal(0);
+            setStartTime(Date.now());
+          }}
+          className="mt-2 rounded-md bg-teal-600 text-bone-50 px-4 py-2 text-sm hover:bg-teal-700"
+        >
+          Reiniciar preguntas
+        </button>
+      </div>
+    );
+  }
+
   const q = questions[idx];
   const isLast = idx === questions.length - 1;
+  const accuracy = sessionTotal > 0 ? Math.round((sessionCorrect / sessionTotal) * 100) : null;
 
   async function check(letter: string) {
     setChosen(letter);
@@ -59,26 +99,20 @@ export function QuestionPane({ slug }: { slug: string }) {
 
   function next() {
     if (isLast) {
-      setIdx(0);
-      setLoading(true);
-      fetch(`/api/questions?slug=${slug}&n=5`).then(async (r) => {
-        const data = r.ok ? await r.json() : { questions: [] };
-        setQuestions(data.questions ?? []);
-        setLoading(false);
-      });
+      localStorage.setItem(STORAGE_KEY(slug), "0");
+      setDone(true);
     } else {
-      setIdx((i) => i + 1);
+      const nextIdx = idx + 1;
+      localStorage.setItem(STORAGE_KEY(slug), String(nextIdx));
+      setIdx(nextIdx);
     }
     setChosen(null);
     setRevealed(false);
     setStartTime(Date.now());
   }
 
-  const accuracy = sessionTotal > 0 ? Math.round((sessionCorrect / sessionTotal) * 100) : null;
-
   return (
     <div>
-      {/* Header: progress + score */}
       <div className="flex justify-between items-center text-xs text-ink-400 mb-3">
         <span>Pregunta {idx + 1} de {questions.length}</span>
         <div className="flex items-center gap-3">
@@ -148,7 +182,7 @@ export function QuestionPane({ slug }: { slug: string }) {
             onClick={next}
             className="rounded-md bg-teal-600 text-bone-50 px-4 py-2 text-sm hover:bg-teal-700"
           >
-            {isLast ? "Siguiente lote" : "Siguiente →"}
+            {isLast ? "Finalizar" : "Siguiente →"}
           </button>
         </div>
       )}
