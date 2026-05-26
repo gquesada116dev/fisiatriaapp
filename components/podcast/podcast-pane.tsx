@@ -50,7 +50,7 @@ export function PodcastPane({ slug, topicName }: { slug: string; topicName: stri
       <div className="rounded-xl border border-bone-200 bg-white/70 p-5">
         <audio
           ref={audioRef}
-          src={data.audioUrl}
+          src={`/api/audio?src=${encodeURIComponent(data.audioUrl!)}`}
           controls
           preload="metadata"
           className="w-full"
