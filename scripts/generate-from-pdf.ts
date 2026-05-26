@@ -305,8 +305,16 @@ JSON exacto:
 }
 
 async function generateFlashcards(topic: any, chapterText: string, imagePaths: string[], publicUrls: string[]) {
-  const existing = await db.collection("flashcards").where("topicSlug", "==", SLUG).limit(1).get();
+  const existing = await db.collection("flashcards").where("topicSlug", "==", SLUG).get();
   if (!existing.empty && !FORCE) { console.log("  – [flashcards] ya existen (--force para regenerar)"); return; }
+  if (!existing.empty) {
+    const del = db.batch();
+    existing.docs.forEach((d) => {
+      del.delete(d.ref);
+      del.delete(db.collection("flashcardReviews").doc(d.id));
+    });
+    await del.commit();
+  }
 
   const imageUrl = publicUrls.length > 0 ? publicUrls[0] : null;
 
