@@ -7,7 +7,6 @@ type PodcastData = { exists: boolean; audioUrl?: string; script?: Line[]; durati
 
 export function PodcastPane({ slug, topicName }: { slug: string; topicName: string }) {
   const [data, setData] = useState<PodcastData | null>(null);
-  const [generating, setGenerating] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
@@ -35,39 +34,13 @@ export function PodcastPane({ slug, topicName }: { slug: string; topicName: stri
     }
   }, [data, topicName]);
 
-  async function generate() {
-    setGenerating(true);
-    const res = await fetch("/api/podcast", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ slug }),
-    });
-    setGenerating(false);
-    if (res.ok) {
-      const fresh = await res.json();
-      setData({ exists: true, audioUrl: fresh.audioUrl, script: fresh.script });
-    }
-  }
-
   if (!data) return <p className="text-ink-500 italic">Cargando…</p>;
 
   if (!data.exists) {
     return (
-      <div className="rounded-xl border border-bone-200 bg-white/60 p-8 text-center">
-        <p className="text-ink-700 mb-2 font-display text-xl">Podcast no generado</p>
-        <p className="text-ink-500 text-sm mb-5 max-w-md mx-auto">
-          Generaremos una conversación entre dos médicos sobre este tema. Tarda 1-2 minutos. Solo se hace una vez.
-        </p>
-        <button
-          onClick={generate}
-          disabled={generating}
-          className={cn(
-            "rounded-md bg-teal-600 text-bone-50 px-5 py-2.5 text-sm hover:bg-teal-700 transition",
-            generating && "opacity-60",
-          )}
-        >
-          {generating ? "Generando audio…" : "Generar podcast"}
-        </button>
+      <div className="rounded-xl border border-bone-200 bg-bone-50 p-8 text-center">
+        <p className="text-ink-500 font-medium">Podcast no generado aún</p>
+        <p className="text-ink-400 text-sm mt-1">Corre <code className="bg-bone-200 px-1 rounded">npm run generate:from-pdf -- --slug={slug}</code></p>
       </div>
     );
   }

@@ -19,12 +19,14 @@ export async function GET(req: Request) {
   const reviewMap = new Map(reviewSnap.docs.map((d) => [d.id, d.data()]));
 
   const cards = deckSnap.docs.map((d) => {
+    const data = d.data();
     const rev = reviewMap.get(d.id);
     return {
       id: d.id,
-      front: d.data().front,
-      back: d.data().back,
-      tags: d.data().tags,
+      front: data.front,
+      back: data.back,
+      tags: data.tags,
+      imageUrl: data.imageUrl ?? null,
       review: rev
         ? {
             repetitions: rev.repetitions,

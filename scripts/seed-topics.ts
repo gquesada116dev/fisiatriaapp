@@ -1,6 +1,7 @@
 /**
  * Run with: npm run seed
- * Requires FIREBASE_SERVICE_ACCOUNT_JSON and FIREBASE_STORAGE_BUCKET in .env.local
+ * Run with: npm run seed -- --reset   (deletes all existing topics first)
+ * Requires FIREBASE_SERVICE_ACCOUNT_JSON in .env.local
  */
 import * as dotenv from "dotenv";
 dotenv.config({ path: ".env.local" });
@@ -9,12 +10,32 @@ import { initializeApp, cert } from "firebase-admin/app";
 import { getFirestore } from "firebase-admin/firestore";
 import { SEED_TOPICS } from "../lib/db/seed-topics";
 
-async function main() {
-  const json = process.env.FIREBASE_SERVICE_ACCOUNT_JSON;
-  if (!json) throw new Error("FIREBASE_SERVICE_ACCOUNT_JSON env var is required");
+const RESET = process.argv.includes("--reset");
 
-  initializeApp({ credential: cert(JSON.parse(json)) });
+async function deleteCollection(firestore: FirebaseFirestore.Firestore, colName: string) {
+  const snap = await firestore.collection(colName).get();
+  if (snap.empty) return;
+  const batch = firestore.batch();
+  snap.docs.forEach((d) => batch.delete(d.ref));
+  await batch.commit();
+  console.log(`  Deleted ${snap.size} docs from "${colName}"`);
+}
+
+async function main() {
+  const pk = process.env.FIREBASE_PRIVATE_KEY?.replace(/\\n/g, "\n") ?? "";
+  initializeApp({
+    credential: cert({
+      projectId: process.env.FIREBASE_PROJECT_ID!,
+      clientEmail: process.env.FIREBASE_CLIENT_EMAIL!,
+      privateKey: pk,
+    }),
+  });
   const firestore = getFirestore();
+
+  if (RESET) {
+    console.log("⚠️  --reset: eliminando colección topics...");
+    await deleteCollection(firestore, "topics");
+  }
 
   let count = 0;
   for (let i = 0; i < SEED_TOPICS.length; i++) {
@@ -24,9 +45,10 @@ async function main() {
       .doc(t.slug)
       .set({ ...t, sortOrder: i }, { merge: true });
     count++;
+    console.log(`  [${i + 1}/${SEED_TOPICS.length}] ${t.name}`);
   }
 
-  console.log(`Seeded ${count} topics.`);
+  console.log(`\n✅ Seeded ${count} topics.`);
 }
 
 main().catch((e) => {

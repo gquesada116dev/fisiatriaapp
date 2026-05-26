@@ -9,6 +9,7 @@ type Question = {
   correct: string;
   explanations?: Record<string, string>;
   difficulty: number;
+  imageUrl?: string | null;
 };
 
 export function QuestionPane({ slug }: { slug: string }) {
@@ -93,6 +94,12 @@ export function QuestionPane({ slug }: { slug: string }) {
         </div>
       </div>
 
+      {q.imageUrl && (
+        <div className="mb-4 rounded-lg overflow-hidden border border-bone-200">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={q.imageUrl} alt="Imagen de la pregunta" className="w-full max-h-72 object-contain bg-white" />
+        </div>
+      )}
       <p className="text-ink-900 leading-relaxed mb-5">{q.stem}</p>
 
       <div className="space-y-2">

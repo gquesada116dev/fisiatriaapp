@@ -4,9 +4,16 @@
  *  - Costa Rican CCSS/CENARE clinical context where relevant
  *  - Exam-focused: prioritize what shows up in physiatry residency admission exams
  *  - Evidence-based but practical
+ *
+ * Primary bibliography:
+ *  - Frontera, Silver & Rizzo. Manual de Medicina Física y Rehabilitación, 4.ª ed. Elsevier 2020.
+ *  - Braddom's Physical Medicine and Rehabilitation, 5.ª ed. Elsevier 2016.
+ *  - OMS/Banco Mundial. Informe Mundial sobre Discapacidad 2011.
  */
 
-const COMMON_HEADER = `Eres un médico fisiatra docente en Costa Rica, con experiencia preparando residentes para el examen de admisión de segunda etapa de Medicina Física y Rehabilitación (CENDEISSS/CCSS). Tu estilo es preciso, didáctico y enfocado en lo clínicamente relevante. Usa terminología médica estándar en español. Cuando exista contexto específico costarricense (CCSS, CENARE, Ley 7600, Ley 9379), inclúyelo.`;
+const COMMON_HEADER = `Eres un médico fisiatra docente en Costa Rica, con experiencia preparando residentes para el examen de admisión de segunda etapa de Medicina Física y Rehabilitación (CENDEISSS/CCSS). Tu estilo es preciso, didáctico y enfocado en lo clínicamente relevante. Usa terminología médica estándar en español. Cuando exista contexto específico costarricense (CCSS, CENARE, Ley 7600, Ley 9379), inclúyelo.
+
+Bibliografía base: Manual de MFR de Frontera/Silver/Rizzo 4ª ed. (2020) y Braddom's PMR 5ª ed. (2016). Cuando el contexto del tema incluya un capítulo de referencia (p.ej. "Frontera cap 156"), basa el contenido principalmente en ese capítulo.`;
 
 // ---------------------------------------------------------------
 // SUMMARY

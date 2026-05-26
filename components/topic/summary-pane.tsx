@@ -38,6 +38,13 @@ function renderMd(md: string): React.ReactNode[] {
     } else if (/^###\s+/.test(line)) {
       out.push(<h3 key={key++}>{line.replace(/^###\s+/, "")}</h3>);
       i++;
+    } else if (/^!\[/.test(line)) {
+      const m = line.match(/^!\[([^\]]*)\]\(([^)]+)\)/);
+      if (m) {
+        // eslint-disable-next-line @next/next/no-img-element
+        out.push(<img key={key++} src={m[2]} alt={m[1]} className="w-full max-h-80 object-contain rounded-xl border border-bone-200 my-4" />);
+      }
+      i++;
     } else if (/^[-*]\s+/.test(line)) {
       const items: string[] = [];
       while (i < lines.length && /^[-*]\s+/.test(lines[i])) {
@@ -87,6 +94,11 @@ export function SummaryPane({ slug }: { slug: string }) {
         return;
       }
       const data = await res.json();
+      if (!data.exists) {
+        setError("not_generated");
+        setLoading(false);
+        return;
+      }
       setContent(data.content_md);
       setImageUrl(data.imageUrl ?? null);
       setLoading(false);
@@ -103,7 +115,14 @@ export function SummaryPane({ slug }: { slug: string }) {
         <div className="h-4 w-full rounded bg-bone-200 animate-pulse-soft" />
         <div className="h-4 w-5/6 rounded bg-bone-200 animate-pulse-soft" />
         <div className="h-4 w-4/6 rounded bg-bone-200 animate-pulse-soft" />
-        <p className="text-xs text-ink-400 mt-4 italic">Generando resumen…</p>
+      </div>
+    );
+  }
+  if (error === "not_generated") {
+    return (
+      <div className="rounded-xl border border-bone-200 bg-bone-50 p-8 text-center">
+        <p className="text-ink-500 font-medium">Resumen no generado aún</p>
+        <p className="text-ink-400 text-sm mt-1">Corre <code className="bg-bone-200 px-1 rounded">npm run generate:from-pdf -- --slug={slug}</code></p>
       </div>
     );
   }

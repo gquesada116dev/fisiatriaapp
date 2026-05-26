@@ -58,11 +58,18 @@ const EXAM_QUESTIONS_PER_TOPIC = 5;
 
 // ── Helpers ──────────────────────────────────────────────────────────────────
 
+// Cache the system prompt across all calls in this batch run.
+// Minimum 1024 tokens required — system + JSON instruction clears that easily.
 async function generateJson<T>(args: { model: string; system: string; prompt: string; maxTokens: number }): Promise<T> {
-  const resp = await ai.messages.create({
+  const systemBlock: Anthropic.Beta.PromptCaching.PromptCachingBetaTextBlockParam = {
+    type: "text",
+    text: args.system + "\n\nIMPORTANT: Respond ONLY with valid JSON. No markdown fences, no preamble.",
+    cache_control: { type: "ephemeral" },
+  };
+  const resp = await ai.beta.promptCaching.messages.create({
     model: args.model,
     max_tokens: args.maxTokens,
-    system: args.system + "\n\nIMPORTANT: Respond ONLY with valid JSON. No markdown fences, no preamble.",
+    system: [systemBlock],
     messages: [{ role: "user", content: args.prompt }],
   });
   let text = resp.content
@@ -92,8 +99,10 @@ async function generateSummary(topic: any) {
     log(topic.name, "summary", "skip"); return;
   }
   const { system, user } = summaryPrompt(topic);
-  const resp = await ai.messages.create({
-    model: AI_MODELS.summary, max_tokens: MAX_TOKENS.summary, system,
+  const resp = await ai.beta.promptCaching.messages.create({
+    model: AI_MODELS.summary,
+    max_tokens: MAX_TOKENS.summary,
+    system: [{ type: "text", text: system, cache_control: { type: "ephemeral" } }],
     messages: [{ role: "user", content: user }],
   });
   const content_md = resp.content.filter((b): b is Anthropic.TextBlock => b.type === "text").map((b) => b.text).join("");

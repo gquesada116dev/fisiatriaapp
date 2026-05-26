@@ -10,6 +10,7 @@ type ReviewCard = {
   tags: string[];
   topicName: string;
   topicSlug: string;
+  imageUrl?: string | null;
 };
 
 const QUALITIES = [
@@ -67,10 +68,14 @@ export function GlobalReview({ cards }: { cards: ReviewCard[] }) {
         onClick={() => setFlipped((f) => !f)}
         className="min-h-[220px] rounded-2xl border border-bone-200 bg-white/70 p-8 cursor-pointer flex items-center justify-center text-center hover:border-teal-400 transition"
       >
-        <div>
+        <div className="w-full">
           <p className="text-xs uppercase tracking-widest text-ink-400 mb-3">
             {flipped ? "Reverso" : "Frente"}
           </p>
+          {card.imageUrl && !flipped && (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img src={card.imageUrl} alt="Imagen de la tarjeta" className="mx-auto max-h-48 object-contain rounded-lg mb-4 border border-bone-200" />
+          )}
           <p className="font-display text-2xl text-ink-900">{flipped ? card.back : card.front}</p>
           {!flipped && <p className="text-xs text-ink-400 mt-4 italic">Click para revelar</p>}
         </div>

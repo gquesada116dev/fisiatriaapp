@@ -9,7 +9,7 @@ type Review = {
   due_at: string;
   last_reviewed: string | null;
 };
-type Card = { id: string; front: string; back: string; tags: string[]; review: Review | Review[] | null };
+type Card = { id: string; front: string; back: string; tags: string[]; review: Review | Review[] | null; imageUrl?: string | null };
 
 function normalizeReview(r: Card["review"]): Review | null {
   if (!r) return null;
@@ -91,14 +91,15 @@ export function FlashcardPane({ slug }: { slug: string }) {
           "flex items-center justify-center text-center transition hover:border-teal-400",
         )}
       >
-        <div>
+        <div className="w-full">
           <p className="text-xs uppercase tracking-widest text-ink-400 mb-3">
             {flipped ? "Reverso" : "Frente"}
           </p>
-          <p className={cn(
-            "text-ink-900 leading-relaxed",
-            flipped ? "font-display text-2xl" : "font-display text-2xl",
-          )}>
+          {card.imageUrl && !flipped && (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img src={card.imageUrl} alt="Imagen de la tarjeta" className="mx-auto max-h-48 object-contain rounded-lg mb-4 border border-bone-200" />
+          )}
+          <p className="font-display text-2xl text-ink-900 leading-relaxed">
             {flipped ? card.back : card.front}
           </p>
           {!flipped && (
