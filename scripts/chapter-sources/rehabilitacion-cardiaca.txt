@@ -1,5 +1,615 @@
+=== FUENTE PRIMARIA: Frontera/Silver/Rizzo — Manual de MFR 4ª ed. (2020), Capítulo 123: Rehabilitación Cardíaca ===
 
---- PAGE 602 ---
+--- FRONTERA PAGE 2097 ---
+CAPÍTULO
+123
+Rehabilitación cardiaca
+Alan M. Davis, MD, PhD
+Sinónimos
+Ninguno
+Códigos CIE-10
+I21.3 Infarto agudo de miocardio con elevación de ST (IAMCEST) sin
+especiﬁcar localización
+I25.2 Infarto de miocardio antiguo
+I25.9 Cardiopatía isquémica crónica, sin especiﬁcar
+I20.9 Angina de pecho, sin especiﬁcar
+I50.9 Insuﬁciencia cardiaca, sin especiﬁcar
+I25.10 Cardiopatía ateroesclerótica de arteria coronaria nativa sin
+angina de pecho
+Z95.2 Presencia de prótesis valvular cardiaca
+Z95.812 Presencia de corazón artiﬁcial totalmente implantable
+Z95.811 Presencia de dispositivo de asistencia cardiaca
+Z95.1 Presencia de injerto de derivación aortocoronaria
+Definición
+La rehabilitación cardiaca es el tratamiento integral de las personas que han
+sufrido un episodio o intervención cardiacos y tiene como objetivo conseguir
+la máxima función física, favorecer la adaptación emocional, modiﬁcar los
+factores de riesgo cardiaco y retomar las responsabilidades y roles sociales
+previos. La American Heart Association estimó que en 2015 la prevalencia de
+
+--- FRONTERA PAGE 2098 ---
+las enfermedades cardiovasculares (ECV) en Estados unidos era de 85,6
+millones de personas, y que quince millones y medio de personas padecían
+alguna coronariopatía. De estas, 7,6 millones sufrieron un infarto de
+miocardio, 8,2 millones presentan angina de pecho, 5,7 millones padecen
+insuﬁciencia cardiaca y entre 650.000 y 1.300.000 tienen una anomalía
+cardiovascular congénita. Las ECV siguen siendo la primera causa de muerte
+en los hombres y en las mujeres desde hace más de un siglo, y en el año 2011
+provocaron el 31,3% de todas las muertes1. Según la Organización Mundial
+de la Salud, cada año mueren debido a una ECV en todo el mundo 17,5
+millones de personas, lo que la convierte en la principal causa de muerte; el
+75% de los fallecimientos se deben a infarto de miocardio e ictus. El 82% de
+las muertes por ECV se producen en países con ingresos bajos o
+intermedios2. La rehabilitación cardiaca es beneﬁciosa después de un
+síndrome coronario agudo, una intervención quirúrgica cardiaca (injerto de
+derivación aortocoronaria, sustitución valvular, trasplante, cirugía de
+reducción ventricular o corrección de cardiopatía congénita), en caso de
+insuﬁciencia cardiaca congestiva compensada y en pacientes con dispositivos
+de asistencia ventricular. La rehabilitación cardiaca aborda de manera
+exhaustiva la modiﬁcación de los factores de riesgo y la prevención
+secundaria mediante el entrenamiento al esfuerzo, el abandono del
+tabaquismo, la modiﬁcación de la dieta, la evaluación y el tratamiento de los
+factores de estrés, la información acerca del proceso patológico, la
+reincorporación laboral y la optimización del tratamiento farmacológico de
+las enfermedades concomitantes como la diabetes mellitus, la hipertensión
+arterial y la obesidad. En un metaanálisis de programas de rehabilitación
+cardiaca en pacientes con infarto de miocardio, intervenciones percutáneas,
+injerto de derivación aortocoronaria o cardiopatía diagnosticada, la
+mortalidad cardiovascular disminuyó desde el 10,4% hasta el 7,6%, los
+reingresos hospitalarios disminuyeron desde el 30,7% hasta el 26,1% y la
+calidad de vida relacionada con la salud aumentó en comparación con el
+tratamiento habitual3.
+Síntomas
+Las personas que han sufrido recientemente un episodio o intervención
+cardiacos suelen referir disminución de la resistencia al caminar o subir
+escaleras, aumento de la disnea durante la actividad física y fatiga. En
+presencia de arritmia pueden notar palpitaciones. El esfuerzo físico y el
+estrés emocional se acompañan en ocasiones de dolor torácico. También
+
+--- FRONTERA PAGE 2099 ---
+pueden doler las incisiones quirúrgicas de las extremidades o la pared
+torácica. Es posible que haya síntomas de insuﬁciencia cardiaca, como
+ortopnea y disnea paroxística nocturna. Cualquier tipo de ejercicio físico, la
+reanudación de las relaciones sexuales o la reincorporación laboral son
+motivo de ansiedad. En muchos casos aparecen síntomas indicativos de
+depresión, como labilidad emocional, languidez, sueño de mala calidad con
+despertar frecuente o temprano por la mañana y ausencia de interés por las
+actividades que antes eran placenteras.
+Exploración física
+Se debe observar al paciente en busca de signos de depresión y ansiedad.
+Durante la exploración del paciente cardiópata, el médico buscará signos de
+complicaciones del episodio o intervención cardiacos. Hay que buscar signos
+de insuﬁciencia cardiaca congestiva o sobrecarga hídrica, como disnea de
+reposo, crepitantes, disminución del murmullo vesicular en las bases, roce
+pleural o pericárdico, edema en zonas declives, ingurgitación yugular o
+galope protodiastólico. La palpación de un pulso débil o ausente en las
+extremidades es indicativa de vasculopatía periférica. Antes de prescribir un
+programa de ejercicio se deben examinar detenidamente las heridas
+quirúrgicas, como la de la esternotomía, las zonas de obtención de los
+injertos vasculares, el lugar de inserción de los tubos torácicos, el punto de
+inserción de los marcapasos, el cable de los sistemas de asistencia ventricular
+y los puntos de punción arterial, para conﬁrmar que la cicatrización es
+adecuada y detectar posibles signos de infección. Las pruebas musculares
+manuales de las extremidades indican el grado de debilidad de los músculos
+esqueléticos secundaria al desacondicionamiento y la disminución de la
+actividad física. Hay que observar al paciente en busca de signos de disnea
+excesiva durante la bipedestación y la deambulación. A menos que presenten
+una insuﬁciencia cardiaca congestiva grave o una enfermedad pulmonar, los
+pacientes que han estado hospitalizados recientemente deben al menos ser
+capaces de caminar con una cadencia lenta y cómoda.
+Limitaciones funcionales
+Después de un episodio cardiaco son limitaciones frecuentes la fatiga, la
+escasa resistencia durante la marcha y las actividades de cuidado personal, la
+ansiedad por volver a sufrir otro episodio, el mayor grado de disnea con el
+mismo nivel de esfuerzo, las restricciones debidas a la esternotomía, el
+
+--- FRONTERA PAGE 2100 ---
+manejo de los cables de los dispositivos de asistencia ventricular y la angina
+de pecho. Las limitaciones funcionales debidas exclusivamente a la
+cardiopatía están en relación con la carga de trabajo que el miocardio es
+capaz de soportar antes que aparezcan signos de disfunción cardiaca, así
+como con las limitaciones propias de intervenciones y dispositivos. Pueden
+manifestarse como una incapacidad para participar en el trabajo, el hogar y
+la comunidad de la manera acostumbrada por la persona. Las labores
+domésticas, los proyectos de mejora del hogar, las relaciones íntimas, las
+actividades deportivas y de ocio y las profesiones que requieren esfuerzo
+físico pueden ser demasiado exigentes para el corazón.
+Más adelante, tras la rehabilitación posterior a una angioplastia coronaria
+no complicada o una implantación de endoprótesis coronarias en ausencia de
+infarto de miocardio, el paciente podrá retomar actividades físicamente
+exigentes, como un trabajo pesado o el tenis de competición (ambas con una
+intensidad de 8 equivalentes metabólicos o MET). Sin embargo, tras un
+infarto de miocardio complicado con insuﬁciencia cardiaca congestiva y
+arritmia, la disnea puede limitar los 3 a 5 MET necesarios para caminar hasta
+la casa de un vecino o realizar tareas domésticas.
+En el momento del alta del hospital, la mayoría de los pacientes que tienen
+una cardiopatía no complicada pueden caminar y realizar las actividades de
+cuidado personal. Dar un paseo lento y ser capaz de realizar las actividades
+cotidianas básicas no es suﬁciente para la mayoría de las personas y no
+predicen una excelente calidad de vida si el paciente no es derivado a un
+servicio de rehabilitación.
+La tensión emocional y la consiguiente respuesta individual también
+pueden causar limitaciones funcionales cuando se plantea la vuelta a los
+roles y responsabilidades sociales. Las situaciones van desde ansiedad por el
+esfuerzo físico hasta una depresión mayor reactiva. Las demandas
+emocionales, como la ansiedad, pueden producir disfunciones tales como
+isquemia, arritmia o incluso muerte súbita4-6. Es probable que la causa sea
+un aumento del impulso simpático en el sistema nervioso autónomo que
+predispone a un aumento del daño endotelial y a arritmia cardiaca mediada
+por las catecolaminas.
+Pruebas diagnósticas
+Una prueba de esfuerzo funcional limitada por los síntomas con carro
+metabólico realizada entre 2 y 6 semanas después da un tiempo suﬁciente
+para la convalecencia y proporciona la mejor información para prescribir el
+
+--- FRONTERA PAGE 2101 ---
+ejercicio, pero no suele llevarse a cabo. El momento óptimo para la prueba de
+esfuerzo depende de la cantidad de tejido miocárdico dañado, el tiempo
+necesario para la cicatrización de las heridas quirúrgicas, la necesidad de
+volver a trabajar y la práctica habitual del médico que efectúa la prueba. A
+diferencia de los protocolos habituales para las pruebas de esfuerzo
+diagnósticas, como el de Bruce, que buscan desencadenar los síntomas
+cardiacos, las pruebas de esfuerzo funcionales documentan la capacidad de
+trabajo y la capacidad cardiorrespiratoria. En los protocolos de las pruebas
+de esfuerzo funcionales se empieza con un grado de intensidad del ejercicio
+más bajo que en los protocolos diagnósticos habituales y se aumentan menos
+MET en cada paso. Las pruebas en cinta sin ﬁn conforme a un protocolo en
+rampa, de Naughton modiﬁcado o de Naughton-Balke son especialmente
+idóneas para guiar el entrenamiento al esfuerzo en rehabilitación cardiaca,
+dado que los incrementos de intensidad en estos protocolos son más
+pequeños y reﬂejan mejor la capacidad funcional.
+Como alternativa, la bicicleta ergométrica también permite graduar la
+intensidad del ejercicio en pequeños incrementos. Los protocolos de
+ergometría en bicicleta están indicados en las personas con problemas de
+equilibrio, deﬁciencia neurológica leve o limitaciones musculoesqueléticas.
+En los pacientes con grandes limitaciones de las extremidades inferiores,
+debilidad intensa o electrocardiograma de difícil interpretación, están
+indicadas la ecocardiografía de esfuerzo, la prueba de esfuerzo farmacológica
+o la gammagrafía de esfuerzo. La mayoría de los pacientes se han sometido a
+numerosos electrocardiogramas durante el ingreso hospitalario o la
+evaluación. En el ámbito ambulatorio, el electrocardiograma debe solicitarse
+cuando se produce un cambio en la situación clínica, como la aparición de
+síntomas nuevos (p. ej., reaparición de una angina de pecho). En la mayoría
+de los casos también se realiza una monitorización mediante telemetría, al
+menos al principio de la rehabilitación cardiaca.
+El médico debe evaluar el lipidograma del paciente para orientar el
+tratamiento farmacológico y dietético de la hiperlipemia y la
+hipercolesterolemia. Un control estrecho de la diabetes puede reducir la
+formación de ateroma, y el éxito reciente del control de la glucemia se
+conﬁrma mediante la concentración de hemoglobina glucosilada (HbA1c)7. El
+cálculo del índice de masa corporal ayuda a establecer el peso corporal
+recomendable.
+En las personas con disnea de esfuerzo y neumopatía concomitante, las
+pruebas funcionales respiratoria aclararán en qué grado contribuye la
+enfermedad pulmonar obstructiva crónica a los síntomas. Los trastornos que
+
+--- FRONTERA PAGE 2102 ---
+tienen tratamiento, como la hiperreactividad de las vías respiratorias y la
+hipoxia durante el ejercicio, deben tratarse antes de empezar la
+rehabilitación cardiaca para conseguir el máximo beneﬁcio.
+El análisis de gases espirados mediante un carro metabólico, combinado
+con una monitorización electrocardiográﬁca, permite diferenciar el origen
+cardiaco o respiratorio de la disnea, el dolor torácico o la fatiga inducidos por
+el ejercicio. Esto es especialmente útil en los pacientes con insuﬁciencia
+cardiaca congestiva8.
+Se debe realizar un cribado de factores de estrés psicosociales, como la
+ansiedad y la depresión. Aparte de preguntar a los pacientes por los
+síntomas de ansiedad, ira, tristeza persistente, fatiga excesiva y estructura
+anormal del sueño, el Beck Depression Inventory y el State-Trait Anxiety
+Inventory son cuestionarios de uso frecuente y fáciles de administrar en el
+ámbito de la consulta. Solo se tarda unos minutos en rellenarlos y son útiles
+para vigilar la eﬁcacia del tratamiento.
+Tratamiento
+Inicial
+La rehabilitación cardiaca comienza con la reducción de los factores de
+riesgo. Los programas de rehabilitación cardiaca plenamente integrados
+incluyen el entrenamiento al esfuerzo, las intervenciones dietéticas y las
+intervenciones psicosociales. El médico remitente se convierte en
+colaborador del paciente para ayudarle a cambiar sus hábitos de vida y a
+tomar decisiones responsables sobre su salud. Todos los pacientes
+cardiópatas han de decidir acerca del tabaco, la alimentación, el ejercicio y el
+control del estrés. Las mayores tasas de éxito para abandonar el hábito
+tabáquico se consiguen combinando la participación en un grupo de apoyo
+para dejar de fumar con el tratamiento farmacológico de la ansiedad
+provocada por la adicción a la nicotina. La combinación de bupropión con
+parches, chicles o pastillas de nicotina resulta eﬁcaz. Se empieza con
+clorhidrato de bupropión (150 mg al día durante los primeros tres días,
+seguido de 150 mg dos veces al día) durante una o dos semanas antes de la
+fecha elegida para dejar de fumar y se añaden los suplementos de nicotina en
+el momento de dejar de fumar, que debe coincidir con la primera reunión del
+grupo de apoyo para abandonar el tabaquismo.
+Se ha demostrado que la modiﬁcación de la dieta mejora el lipidograma9.
+Se puede pedir al paciente que lleve un diario de comidas durante al menos
+
+--- FRONTERA PAGE 2103 ---
+tres días y lo traiga al programa de rehabilitación cardiaca o bien remitirlo a
+un dietista titulado para evaluación e información respecto a las opciones
+alimentarias cardiosaludables. Las recomendaciones dietéticas revisadas de
+la American Heart Association en 2006 son considerablemente más estrictas en
+cuanto a la ingesta de grasas saturadas (tabla 123.1)9. El nutricionista puede
+recomendar la dieta de la American Heart Association, pero las dietas
+mediterránea y ovolactovegetariana también son opciones válidas. No se ha
+demostrado que una de las tres sea superior a las demás, y la elección de una
+u otra se basará principalmente en la capacidad del paciente para seguirla.
+Tabla 123.1
+Recomendaciones dietéticas y de hábitos de vida de la American Heart
+Association de 2006 para reducir el riesgo cardiovascular
+Equilibre el aporte de calorías y la actividad física para conseguir o
+mantener un peso corporal saludable
+Consuma una dieta rica en verdura y fruta
+Elija alimentos integrales, ricos en ﬁbra
+Consuma pescado, en especial pescado azul, al menos dos veces por
+semana
+Limite la ingesta de grasas saturadas a menos del 7% de las calorías; las
+grasas trans, a menos del 1% y el colesterol, a menos de 300 mg/día
+mediante la elección de carnes magras y verduras; opte por la leche
+desnatada o semidesnatada y los productos lácteos bajos en grasas y
+reduzca al mínimo la ingesta de grasas parcialmente hidrogenadas
+Reduzca al mínimo el consumo de bebidas y alimentos con azúcares
+añadidos
+Elija y prepare los alimentos con poca sal o nada
+Si consume alcohol, hágalo con moderación
+Cuando coma alimentos preparados fuera de casa, siga las
+recomendaciones dietéticas y de hábitos de vida de la American Heart
+Association
+
+--- FRONTERA PAGE 2104 ---
+Hay que plantearse una conversación acerca de la experiencia de la
+rehabilitación cardiaca. El tratamiento médico inicial se centra en optimizar
+el tratamiento farmacológico para controlar o prevenir la hipertensión
+arterial, la isquemia, las arritmias, la hiperlipemia, la sobrecarga hídrica u
+otras complicaciones posteriores al episodio cardiaco. El control de la
+diabetes también es esencial para la prevención secundaria de las ECV. Al
+mismo tiempo que el tratamiento farmacológico, el médico que prescribe la
+rehabilitación cardiaca debe fomentar unos hábitos de vida saludables.
+Todos los pacientes cardiacos tienen alternativas en cuanto al tabaquismo, la
+alimentación, el ejercicio y el control del estrés.
+A menudo los pacientes cardiacos necesitan aprender estrategias para
+reducir el estrés emocional de la ansiedad y la depresión. Aquellos en los que
+el cribado inicial detecte alguno de estos dos trastornos deberán tratarse. Los
+inhibidores selectivos de la recaptación de serotonina (ISRS) tratan bastante
+bien ambos componentes con pocos efectos secundarios. La depresión
+conlleva aproximadamente el mismo riesgo de infarto de miocardio (35%)
+que el tabaquismo10. Esto se explica, al menos en parte, por el aumento de
+los marcadores inﬂamatorios11 y es un argumento potente a favor de hacer
+un cribado psicológico claro después de un episodio cardiaco. Los pacientes
+cuya depresión se diagnosticó y se trató con ISRS en el momento del primer
+infarto de miocardio tuvieron un 43% menos infartos de miocardio nuevos y
+muertes de origen cardiaco que los que se trataron con fármacos distintos de
+los ISRS12. El motivo es un efecto antiagregante plaquetario independiente
+del ácido acetilsalicílico o el bisulfato de clopidogrel. La derivación a un
+profesional de salud mental para terapia puede aportar a los pacientes un
+surtido de herramientas para aprender a relajarse y ofrece un foro donde
+comentar los síntomas emocionales que rodean a los episodios cardiacos en
+su vida. La mujeres presentan tasas más altas de ansiedad y molestias
+psicosomáticas que los hombres al comienzo de la rehabilitación cardiaca y
+pueden beneﬁciarse de una mayor atención a las intervenciones
+psicosomáticas13,14. En una consulta ajetreada, el médico puede enseñar
+alguna técnica sencilla de reducción del estrés. Se ha demostrado que
+durante el simple ejercicio de respiración pausada se produce una respuesta
+de relajación debida al aumento de la actividad parasimpática. Se pide al
+paciente que respire despacio durante 5 o 10 minutos cronometrados dos
+veces al día. La inspiración y la espiración han de tener la misma duración,
+entre 3 y 5 segundos, y no se debe producir disnea ni hiperventilación. Un
+vez que el paciente realice el ejercicio con facilidad, se puede aumentar la
+
+--- FRONTERA PAGE 2105 ---
+relajación disminuyendo aún más la frecuencia respiratoria o prolongando la
+fase de espiración15.
+A ﬁn de reducir la ansiedad por la actividad sexual después de un episodio
+cardiaco, se debe hablar con claridad sobre este tema con el paciente y su
+pareja6. Las relaciones sexuales entre parejas que tienen una relación de
+larga duración requiere entre 3 y 5 MET. Las demandas energéticas del sexo
+extramarital son mayores. Según la American Heart Association, reanudar la
+actividad sexual es seguro, si bien los pacientes que toman nitratos para la
+angina secundaria a una coronariopatía deben evitar los medicamentos para
+la disfunción eréctil17.
+La reincoporación laboral y a las actividades de ocio dependerá de la
+situación clínica del paciente y del trabajo previo. En un metaanálisis de
+estudios de cohortes europeos, el estrés emocional importante relacionado
+con el trabajo también aumenta el riesgo de padecer episodios cardiacos18. El
+rendimiento en la prueba de esfuerzo predice el grado de capacidad de
+trabajo laboral. Si la capacidad de trabajo del paciente es ≤3 o 4 MET, la
+reincorporación laboral puede no ser realista. En este nivel tan bajo es
+probable que hasta las actividades de cuidado personal produzcan síntomas.
+Con una capacidad de 5 a 7 MET, la persona debe ser capaz de realizar un
+trabajo sedentario y la mayoría de las funciones domésticas. A partir de los 7
+MET no habrá restricciones para la mayoría de los trabajos, excepto aquellos
+que implican un esfuerzo físico intenso. Para las actividades de ocio se
+recomienda evaluar el nivel de MET necesario antes de volver a jugar. Para
+guiar la vuelta a las actividades laborales y de ocio, puede ser útil el
+Compendium of Physical Activities, accesible en internet
+(h ps://sites.google.com/site/compendiumofphysicalactivities/) 19. Estas son
+algunas actividades de ocio y sus requisitos de MET: caminar a ritmo
+moderado, 3,5; tenis, 4,5 a 8; golf, 4 a 5; esquí alpino, 4 a 8; bolos, 3 a 5, y
+vóleibol, 3 a 4.
+Rehabilitación
+La rehabilitación cardiaca mejora la recuperación funcional del paciente y le
+permite volver al trabajo, las funciones sociales y las actividades de ocio. A
+pesar de que los efectos beneﬁciosos de la rehabilitación cardiaca están
+demostrados, la mayoría de los pacientes elegibles no participan en ella3. La
+rehabilitación cardiaca empieza en el hospital con la movilización precoz, las
+instrucciones dietéticas y la información acerca de la medicación y el proceso
+
+--- FRONTERA PAGE 2106 ---
+patológico. Muchos pacientes se han sometido a técnicas mínimamente
+invasivas en ausencia de pérdida de función del miocardio, como la
+implantación de una endoprótesis coronaria durante una angina aguda. Para
+las recomendaciones siguientes se asume que hay algún grado de debilidad
+cardiaca.
+Si la persona se encuentra estable pero es incapaz de realizar tareas
+básicas de movilidad y cuidado personal en el ámbito doméstico, está
+indicado un ingreso breve en una unidad de rehabilitación. En el caso de que
+el paciente no pueda empezar un programa de entrenamiento al esfuerzo
+supervisado se recomienda un programa de marcha dirigido por el propio
+paciente. Esto se reserva para las personas cuya evolución en el hospital no
+ha tenido complicaciones y que no presentan contraindicaciones para el
+ejercicio (tabla 123.2). Se debe caminar principalmente por terreno llano y a
+un ritmo lento, con un objetivo de 10 a 30 minutos de paseo entre tres y cinco
+veces por semana a una velocidad que permita hablar. Pida al paciente que
+lleve un diario de paseos y revíselo con él.
+
+--- FRONTERA PAGE 2107 ---
+Tabla 123.2
+Posibles contraindicaciones para la participación en un programa de
+ejercicio en régimen de ingreso o ambulatorio
+Angina inestable
+Presión arterial sistólica en reposo >200 mmHg
+Presión arterial diastólica en reposo >100 mmHg
+Disminución ortostática de la presión arterial o disminución de 20 mmHg
+durante el entrenamiento al esfuerzo
+Estenosis aórtica moderada o grave
+Enfermedad sistémica aguda o ﬁebre
+Arritmias auriculares o ventriculares no controladas
+Taquicardia sinusal no controlada (120 latidos/minuto)
+Insuﬁciencia cardiaca congestiva no controlada
+Bloqueo auriculoventricular de tercer grado
+Pericarditis o miocarditis activa
+Embolia reciente
+Tromboﬂebitis
+Desplazamiento del segmento ST en reposo (>3 mm)
+Diabetes no controlada
+Problemas musculoesqueléticos que contraindiquen el ejercicio
+Reproducido de American College of Sports Medicine. Guidelines for Exercise
+Testing and Prescription, 10th ed. Philadelphia: Lippinco  Williams & Wilkins;
+2017.
+Cuando no se ha producido un daño cardiaco importante, como en el caso
+de una angioplastia, se puede acortar el periodo de convalecencia a criterio
+del médico y teniendo en cuenta aspectos tales como la necesidad del
+paciente de volver a las actividades previas.
+
+--- FRONTERA PAGE 2108 ---
+El entrenamiento físico con remisión a rehabilitación cardiaca empieza al
+ﬁnal del periodo de convalecencia. Lo ideal es que se base en la prueba de
+esfuerzo funcional anteriormente descrita en el apartado de pruebas
+diagnósticas. La prueba de esfuerzo funcional, aunque hay quien deﬁende
+que realizarla en esta etapa no mejora los resultados ni la seguridad del
+programa de rehabilitación cardiaca supervisada, sigue siendo el «patrón de
+referencia»20. La prescripción de ejercicio abarca el tipo, el objetivo de
+intensidad, la frecuencia y la duración del ejercicio. Los ejercicios aeróbicos,
+como andar o pedalear, constituyen la base de la mayoría de los programas.
+La intensidad del ejercicio aeróbico se prescribe teniendo en cuenta la
+frecuencia cardiaca, la intensidad del ejercicio (MET) o el esfuerzo percibido
+(tabla 123.3). Este último se puntúa mediante la escala visual analógica de
+Borg (ﬁg. 123.1), la cual se ha demostrado que tiene una correlación lineal con
+la frecuencia cardiaca y el consumo de oxígeno21. El esfuerzo percibido es
+una buena guía en los pacientes en tratamiento con betabloqueantes porque
+la respuesta de la frecuencia cardiaca está mermada. La frecuencia de las
+sesiones de ejercicio suele ser de tres a cinco veces por semana.
+
+--- FRONTERA PAGE 2109 ---
+Tabla 123.3
+Prescripción del ejercicio en rehabilitación cardiaca
+Tipo Aeróbico Cinta sin ﬁn Bicicleta (rodee
+uno)
+Incluye ¿Entrenamiento de fuerza? Sí No (rodee uno)
+Intensidad: basada en la frecuencia cardiaca
+Objetivo de intervalo de frecuencia cardiaca
+        70–85% de la frecuente cardiaca máxima si el paciente no está tomando
+betabloqueantes
+        85% del máximo completado en cinta sin ﬁn si el paciente está
+tomando betabloqueantes
+Frecuencia cardiaca (FC) en reposo elevada, según los resultados de la
+prueba de esfuerzo (fórmula de Karvonen):
+    Objetivo de FC = FC en reposo + [(FCmáx – FCrep) × (60 + METmáx / 100)]
+Intensidad: basada en la carga de trabajo
+Objetivo: 66% del nivel de MET completado en la prueba en cinta sin ﬁn
+Objetivo: 25 W o 150 kpm menos que la fase completada en la prueba en
+bicicleta ergométrica
+Intensidad: basada en el esfuerzo percibido
+Objetivo en la escala de Borg: 11-15
+Fase de calentamiento
+Caminar en cinta sin ﬁn a una velocidad de _____ en el nivel _____durante
+_____ minutos
+Ergometría en bicicleta a _____ kpm/W durante _____ minutos
+Comprobar la presión arterial, la frecuencia de pulso y el esfuerzo
+percibido
+Pasar a la fase de estímulo
+
+--- FRONTERA PAGE 2110 ---
+Fase de estímulo
+Caminar en cinta sin ﬁn a una velocidad de _____ en el nivel _____durante
+_____ minutos con/sin reposo. Repetir _____ series
+Ergometría en bicicleta a _____ kpm/W durante _____ minutos con/sin
+reposo. Repetir _____ series
+Comprobar la presión arterial, la frecuencia de pulso y el esfuerzo
+percibido
+Pasar a la fase de enfriamiento
+Fase de enfriamiento
+Caminar en cinta sin ﬁn a una velocidad de _____ en el nivel _____durante
+_____ minutos
+Ergometría en bicicleta a _____ kpm/W durante _____ minutos
+Comprobar la presión arterial y la frecuencia de pulso
+Frecuencia 3 veces por semana
+Duración 1 hora por visita durante 12
+semanas
+MET, equivalentes metabólicos.
+
+--- FRONTERA PAGE 2111 ---
+FIG. 123.1  Escala de Borg del esfuerzo percibido. (Reproducido de Borg G.
+Perceived exertion as an indicator of somatic stress. Scand J Rehabil Med.
+1970;2:92-98.)
+Las sesiones de ejercicio aeróbico comienzan con una fase de
+calentamiento de 2 a 5 minutos con un ejercicio de menor intensidad para
+ﬂexibilizar las articulaciones, estimular la circulación colateral y reducir la
+
+--- FRONTERA PAGE 2112 ---
+y
+resistencia vascular periférica. El estímulo aeróbico o fase de
+acondicionamiento puede ser continuo o discontinuo, y el objetivo es
+alcanzar, en un plazo de 3 a 12 meses, un mínimo de 20 a 30 minutos de
+ejercicio aeróbico. En el ejercicio discontinuo, esta duración se descompone
+intercalando los periodos de ejercicio de acondicionamiento con pausas de
+descanso. La fase de enfriamiento con un ejercicio de menor intensidad
+evitará la hipotensión y, más adelante, el dolor articular. La duración de las
+sesiones de ejercicio aeróbico depende del grado de capacidad física de cada
+persona. En los pacientes que están muy debilitados bastará inicialmente con
+3 a 5 minutos de ejercicio en la intensidad objetivo. Las personas
+desacondicionadas deberán progresar hasta llegar a la fase de estímulo de 20
+a 30 minutos en un plazo de 4 a 12 semanas. En presencia de una fracción de
+eyección baja, una respuesta anormal de la presión arterial al ejercicio,
+descenso del segmento ST durante la prueba de esfuerzo de bajo nivel o una
+arritmia ventricular grave, es aconsejable realizar una monitorización
+electrocardiográﬁca durante el ejercicio aeróbico22.
+El entrenamiento de la fuerza o el entrenamiento en circuito con ejercicios
+contra resistencia en los pacientes que tienen buena función del ventrículo
+izquierdo aumentan la fuerza muscular y facilitan el desarrollo de la
+resistencia muscular local. Están especialmente indicados en los pacientes
+cardiacos que están reanudando una actividad laboral físicamente exigente.
+Para el entrenamiento con pesos libres, se debe empezar con el menor peso
+que después de 10 a 15 repeticiones produzca un esfuerzo percibido entre 11
+y 13 (v. ﬁg. 123.1). Entre una y tres series bastarán para desarrollar la fuerza.
+Debe hacerse una variedad de ejercicios suﬁciente para incluir todos los
+grandes grupos musculares de las extremidades superiores e inferiores.
+Por lo general, un programa de ejercicio supervisado en una clínica dura
+entre 1 y 3 meses y la prescripción del ejercicio se actualiza mensualmente.
+En la reevaluación mensual se plantea la posibilidad de incrementar la
+intensidad o la duración de la fase de estímulo del ejercicio aeróbico.
+Después de 2 o 3 meses de un programa de ejercicio de acondicionamiento,
+el paciente debe ser capaz de alcanzar 7 u 8 MET de ejercicio mantenido. Una
+vez logrado este objetivo, se repite la prueba de esfuerzo para comprobar el
+grado de mejoría y guiar la transición hacia un programa de mantenimiento
+dirigido por el propio paciente, que será quien decida si quiere guiarse por el
+objetivo de frecuencia cardiaca o por el grado de esfuerzo durante el
+ejercicio.
+El entrenamiento al esfuerzo ofrece los beneﬁcios siguientes: aumenta la
+captación de oxígeno, mejora la resistencia para las actividades cotidianas,
+
+--- FRONTERA PAGE 2113 ---
+aumenta la capacidad funcional, reduce la frecuencia cardiaca durante el
+ejercicio, disminuye el producto frecuencia-presión, reduce la fatiga, mejora
+la disnea y reduce los síntomas de insuﬁciencia cardiaca. El entrenamiento al
+esfuerzo reduce los factores de riesgo aterógenos y trombóticos porque
+disminuye o previene el exceso de peso corporal, aumenta la concentración
+de colesterol unido a lipoproteínas de alta densidad, disminuye la
+concentración de triglicéridos en plasma, disminuye la agregación
+plaquetaria y mejora la glucemia. Puede mejorar la perfusión miocárdica
+mediante un aumento del ﬂujo sanguíneo coronario. Es posible lentiﬁcar o
+incluso revertir el avance de la ateroesclerosis.
+Los programas de rehabilitación cardiaca domiciliaria están indicados para
+los pacientes menos complicados desde el punto de vista médico que no
+pueden asistir a un programa ambulatorio. En una revisión en la que se
+comparaba la rehabilitación domiciliaria con la rehabilitación realizada en un
+centro en pacientes cardiacos de bajo riesgo después de un infarto de
+miocardio no complicado o un injerto de derivación aortocoronaria, no se
+observaron diferencias en cuanto a la morbimortalidad, la calidad de vida
+relacionada con la salud o la reducción de los factores de riesgo
+modiﬁcables23.
+Las intervenciones psicosociales ofrecen herramientas especíﬁcas para
+manejar el estrés emocional, la depresión, la ansiedad y la vuelta al trabajo.
+Cuando la terapia y la modiﬁcación de los hábitos de vida no son suﬁcientes
+por sí solos, es necesario complementar el tratamiento con medidas
+farmacológicas.
+Técnicas
+Los pacientes cardiópatas con una situación médica estable necesitan pocas
+técnicas invasivas. Un derrame pleural abundante reduce la capacidad de
+ejercicio y puede requerir una toracocentesis. En caso de oclusión aguda de
+una endoprótesis coronaria, una angioplastia o un injerto, puede estar
+indicada una técnica de cardiología intervencionista. El agravamiento de los
+síntomas cardiacos que no responde al ajuste de la medicación puede llevar a
+la repetición de una coronariografía u otra prueba diagnóstica.
+Tecnología
+No existe una tecnología especíﬁca para el tratamiento o la rehabilitación de
+estas enfermedades.
+
+--- FRONTERA PAGE 2114 ---
+Cirugía
+El fracaso de un injerto de derivación aortocoronaria, la infección de una
+herida o la aparición de un seudoaneurisma en el punto de punción arterial
+pueden necesitar una intervención quirúrgica. En caso de arritmia que no se
+controla con tratamiento farmacológico, puede estar indicado un marcapasos
+permanente o un desﬁbrilador implantable.
+Posibles complicaciones de la enfermedad
+Las enfermedades cardiovasculares son la primera causa de muerte en
+Estados Unidos. Las deﬁciencias más frecuentes son la baja tolerancia al
+esfuerzo y la baja capacidad laboral. Entre las complicaciones médicas, están
+la insuﬁciencia cardiaca congestiva, las arritmias, los infartos de repetición y
+la estenosis de un injerto de derivación aortocoronaria, una endoprótesis
+coronaria o una angioplastia. La herida de la esternotomía puede no
+cicatrizar o infectarse y necesitar desbridamiento o revisión quirúrgica. Dado
+que las coronariopatías se asocian a vasculopatía ateroesclerótica
+generalizada, hay que estar atentos a la posibilidad de que ocurra un ictus,
+una insuﬁciencia vascular periférica u otras manifestaciones de compromiso
+vascular. Es posible que, a pesar de la remisión a rehabilitación cardiaca y de
+conseguir una mejoría física excelente y recibir unas intervenciones
+psicosociales adecuadas, los pacientes experimenten pérdida de los roles
+sociales, obstáculos laborales y diﬁcultades de adaptación emocional.
+Posibles complicaciones del tratamiento
+Existe un ligero riesgo de que durante la rehabilitación cardiaca se
+desencadene un episodio cardiaco. En un estudio, el riesgo de sufrir un
+episodio cardiaco importante durante el entrenamiento al esfuerzo, como un
+infarto nuevo o la muerte, era de 1/50.000 a 1/120.000 horas de ejercicio-
+persona24. Impedir el acceso de los pacientes en situación médica inestable a
+la rehabilitación cardiaca ayuda a bajar el riesgo. La prueba de esfuerzo tiene
+contraindicaciones absolutas y relativas que deben cumplirse y que se
+explican detalladamente en la bibliografía25. En general, no deben hacerse en
+los pacientes con angina inestable, arritmia cardiaca maligna, pericarditis,
+endocarditis, disfunción grave del ventrículo izquierdo, estenosis aórtica
+grave u otras enfermedades aguda extracardiacas26. Los efectos secundarios
+frecuentes del tratamiento son la hipotensión arterial postejercicio, las
+
+--- FRONTERA PAGE 2115 ---
+arritmias y el dolor muscular o articular. Todos ellos se reducen al mínimo
+cuando se utiliza la prueba de esfuerzo como guía para la prescripción del
+ejercicio.
+Bibliografía
+1. Mozaﬀarian D, Benjamin EJ, Go AS, et al. Heart disease and stroke
+statistics—2015 update: a report from the American Heart
+Association. Circulation. 2015;131(4):e29-e322.
+h p://dx.doi.org/10.1161/CIR.0000000000000152. Epub 2014 Dec 17.
+2. World Health Organization Cardiovascular diseases fact sheet
+updated May 2017.
+h p://www.who.int/mediacentre/factsheets/fs317/en/. [fecha de
+última consulta: 26 de septiembre de 2017].
+3. Anderson L, Oldridge N, Thompson DR, et al. Exercise-based cardiac
+rehabilitation for coronary heart disease: Cochrane systematic review
+and meta-analysis. J Am Coll Cardiol. 2016;67:1–12.
+4. Arena R, Williams M, Forman DE, et al. Increasing referral and
+participation rates to outpatient cardiac rehabilitation. Circulation.
+2012;125:1321–1329.
+5. Davis A, Natelson B. Brain-heart interactions. The neurocardiology of
+arrhythmia and sudden cardiac death. Tex Heart Inst J. 1993;20:158–
+169.
+6. Roest AM, Zuidersma M, de Jonge P. Myocardial infarction and
+generalised anxiety disorder: 10-year follow-up. Br J Psychiatry.
+2012;200:324–329.
+7. Watkins L, Blumenthal J, Davidson J, et al. Phobic anxiety,
+depression, and risk of ventricular arrhythmias in patients with
+coronary heart disease. Psychosom Med. 2006;68:651–656.
+8. Reusch JE, Wang CC. Cardiovascular disease in diabetes: where does
+glucose ﬁt in? J Clin Endocrinol Metab. 2011;96:2367–2376.
+9. Arena R, Myers J, Guazzi M. Cardiopulmonary exercise testing is a
+core assessment for patients with heart failure. Congest Heart Fail.
+2011;17:115–119.
+10. Lichtenstein AH, Appel LJ, Brands M, et al. Diet and lifestyle
+recommendations revision 2006: a scientiﬁc statement from the
+American Heart Association. Circulation. 2006;114:82–96.
+11. Yusuf S, Hawken S, Ounpuu S, et al. Eﬀect of potentially modiﬁable
+risk factors associated with myocardial infarction in 52 countries (the
+
+=== FUENTE SECUNDARIA: Braddom's PMR 6ª ed. (2021), Capítulo 27 (solo para datos clave no presentes en Frontera) ===
+
+--- BRADDOM PAGE 602 ---
 513CHAPTER 27 Acute Medical Conditions: Cardiopulmonary Disease, Medical Frailty, and Renal Failure
 program and should be done as a part of the physiatrist’s initial 
 history and physical examination.
@@ -118,7 +728,7 @@ obstructive diseases can be present with one predominant over another
 ate the lung parenchyma with imaging or physiologic testing (pulmo-
 nary function tests) to assess which condition may predominate.13 
 
---- PAGE 603 ---
+--- BRADDOM PAGE 603 ---
 514
 SECTION 3   Common Clinical Problems
 Pulmonary Physiology
@@ -237,7 +847,7 @@ rate to achieve a training effect. 
 Duration. How long a given bout of exercise is. Usual cardio -
 pulmonary conditioning requires 20- to 30-minute sessions and 
 
---- PAGE 604 ---
+--- BRADDOM PAGE 604 ---
 515CHAPTER 27 Acute Medical Conditions: Cardiopulmonary Disease, Medical Frailty, and Renal Failure
   Effects of Physiologic Conditions on Cardiopulmonary Exercise Capacity
 Abnormality Physiologic Abnormality Gas Exchange
@@ -328,7 +938,7 @@ Metabolic acidosis 	 •	 	Metabolic	acidosis,	low	HCO3− 	 •	 	Normal	diffus
 TABLE 
 27.2
 
---- PAGE 605 ---
+--- BRADDOM PAGE 605 ---
 516
 SECTION 3   Common Clinical Problems
 should have a 5- to 10-minute warm-up and cool-down period. 
@@ -452,7 +1062,7 @@ exercise for patients with heart failure, with the addition of close
 monitoring of oxygen saturation and the use of appropriate levels 
 of supplemental oxygen to prevent hypoxemia.
 
---- PAGE 606 ---
+--- BRADDOM PAGE 606 ---
 517CHAPTER 27 Acute Medical Conditions: Cardiopulmonary Disease, Medical Frailty, and Renal Failure
 For patients with either intrinsic restrictive or obstructive dis -
 ease, pulmonary rehabilitation is an important treatment to con -
@@ -582,7 +1192,7 @@ volume
 TABLE 
 27.3
 
---- PAGE 607 ---
+--- BRADDOM PAGE 607 ---
 518
 SECTION 3   Common Clinical Problems
   Summary of Goals and Methods of Pulmonary Rehabilitation
@@ -648,7 +1258,7 @@ Evaluate and treat any underlying depression
 TABLE 
 27.4
 
---- PAGE 608 ---
+--- BRADDOM PAGE 608 ---
 519CHAPTER 27 Acute Medical Conditions: Cardiopulmonary Disease, Medical Frailty, and Renal Failure
 have been modifications to the classical program with a reduction to 
 three phases, eliminating the classical stage 2 recovery phase. A mod-
@@ -742,7 +1352,7 @@ ADL, Activity of daily living.
    Summary of Goals and Methods of Pulmonary Rehabilitation—cont’dTABLE 
 27.4
 
---- PAGE 609 ---
+--- BRADDOM PAGE 609 ---
 520
 SECTION 3   Common Clinical Problems
 min as needed) to maintain saturation greater than 90% for safe 
@@ -857,7 +1467,7 @@ ADL, Activity of daily living; ROM, range of motion.
 TABLE 
 27.5
 
---- PAGE 610 ---
+--- BRADDOM PAGE 610 ---
 521CHAPTER 27 Acute Medical Conditions: Cardiopulmonary Disease, Medical Frailty, and Renal Failure
 delayed and blunted heart rate response to exercise. Posttransplant, 
 peak heart rates are usually 20% to 25% lower than in matched 
@@ -979,7 +1589,7 @@ High-Intensity Interval Training
 A new and exciting area of emerging research is the conditioning of 
 cardiac patients with high-intensity interval training (HIIT).124,156 
 
---- PAGE 611 ---
+--- BRADDOM PAGE 611 ---
 522
 SECTION 3   Common Clinical Problems
 Following appropriate screening and evaluation, patients are 
@@ -1104,7 +1714,7 @@ a review of their vasodilating medications and supplemental oxygen
 use. Intravenous and continuous subcutaneous vasodilator infusion 
 is appropriate for a pulmonary rehabilitation program, but, similar 
 
---- PAGE 612 ---
+--- BRADDOM PAGE 612 ---
 523CHAPTER 27 Acute Medical Conditions: Cardiopulmonary Disease, Medical Frailty, and Renal Failure
 to patients with heart failure, there may need to be long warm-up 
 and cool-down periods. For patients with severe pulmonary vascular 
@@ -1221,7 +1831,7 @@ Pierre Robin syndrome
 TABLE 
 27.6
 
---- PAGE 613 ---
+--- BRADDOM PAGE 613 ---
 524
 SECTION 3   Common Clinical Problems
 on the “westernization” of diet, although less attention is focused 
@@ -1344,7 +1954,7 @@ COPD, Chronic obstructive pulmonary disease; NIV, noninvasive ventilation.
 TABLE 
 27.7
 
---- PAGE 614 ---
+--- BRADDOM PAGE 614 ---
 525CHAPTER 27 Acute Medical Conditions: Cardiopulmonary Disease, Medical Frailty, and Renal Failure
 Prolonged inactivity (sitting) more than doubles the risk for devel-
 opment of metabolic syndrome.41 Development of the metabolic 
@@ -1459,7 +2069,7 @@ values recorded in kilograms with a standard dynamometer. Par -
 ticipants who scored in the lowest 20% after adjustment for gen -
 der and body mass index were assigned a positive value of 1.
 
---- PAGE 615 ---
+--- BRADDOM PAGE 615 ---
 526
 SECTION 3   Common Clinical Problems
 After scores are totaled, individuals who score 0 are considered 
@@ -1564,7 +2174,7 @@ Modified from Jones D, Song X, Mitnitski A, Rockwood K: Evaluation of a frailty 
 TABLE 
 27.8
 
---- PAGE 616 ---
+--- BRADDOM PAGE 616 ---
 527CHAPTER 27 Acute Medical Conditions: Cardiopulmonary Disease, Medical Frailty, and Renal Failure
 Zero Physical Activity: Hospital Immobility
 Traditional Hospital Practices (Bed Rest, Sedation, and 
@@ -1670,7 +2280,7 @@ ADL, Activity of daily living; CSHA, Canadian Study of Health and Aging.
 TABLE 
 27.9
 
---- PAGE 617 ---
+--- BRADDOM PAGE 617 ---
 528
 SECTION 3   Common Clinical Problems
 care, physical therapy, and occupational therapy is ideally suited to 
@@ -1811,7 +2421,7 @@ Med Rehabil 88:66–77, 2009.
 TABLE 
 27.10
 
---- PAGE 618 ---
+--- BRADDOM PAGE 618 ---
 529CHAPTER 27 Acute Medical Conditions: Cardiopulmonary Disease, Medical Frailty, and Renal Failure
 evaluation essential. As a result of vasodilation, patients who are 
 critically ill may be unable to tolerate bed elevation, let alone 
@@ -1933,7 +2543,7 @@ where appropriate is an economical way to increase patient activ -
 ity without skilled intervention. Providing assistive devices to 
 appropriate and carefully selected patients who are hospitalized 
 
---- PAGE 619 ---
+--- BRADDOM PAGE 619 ---
 530
 SECTION 3   Common Clinical Problems
 can increase mobility and reduce incidence of falls in the context 
@@ -2049,7 +2659,7 @@ Goal met Goal not met Goal not met
 TABLE 
 27.11
 
---- PAGE 620 ---
+--- BRADDOM PAGE 620 ---
 531CHAPTER 27 Acute Medical Conditions: Cardiopulmonary Disease, Medical Frailty, and Renal Failure
 cal organizations, unions, and neighborhood organizations 
 are often well aware of what resources are available for use. 
@@ -2166,7 +2776,7 @@ Hyperphosphatemia. Hyperphosphatemia is caused by
 impaired excretion. In the face of abnormal bone metabolism, soft 
 tissues became the phosphate reservoir, causing increased vascular 
 
---- PAGE 621 ---
+--- BRADDOM PAGE 621 ---
 532
 SECTION 3   Common Clinical Problems
 calcification. This leads to increasing pulse pressure in advanced 
@@ -2285,7 +2895,7 @@ Tumor
 TABLE 
 27.12
 
---- PAGE 622 ---
+--- BRADDOM PAGE 622 ---
 533CHAPTER 27 Acute Medical Conditions: Cardiopulmonary Disease, Medical Frailty, and Renal Failure
 evaluation for participation with physical medicine and rehabili -
 tation on postoperative day 1. Patients requiring ventilator sup -
@@ -2413,7 +3023,7 @@ Patient Saf 36:468–473, 2010.
 and frailty among elderly Canadians: a comparison of six surveys, 
 Int Psychogeriatr 13(Suppl 1):159–167, 2001.
 
---- PAGE 623 ---
+--- BRADDOM PAGE 623 ---
 534
 SECTION 3   Common Clinical Problems
  26.  Cappola A R, Xue QL, Ferrucci L, et al.: Insulin-like growth factor I 
@@ -2543,7 +3153,7 @@ on Exercise, Cardiac Rehabilitation, and Prevention, Circulation
 105:1735–1743, 2002.
   The full reference list for this chapter is available online.
 
---- PAGE 624 ---
+--- BRADDOM PAGE 624 ---
 534.e1
 References
  1.  Alberti K G, Eckel R H, Grundy S M, et  al.: Harmonizing the 
@@ -2679,7 +3289,7 @@ cose metabolism in adults, Diabetes Care 27:2603–2609, 2004.
  37.  Dykes P C, Carroll DL, Hurley A, et al.: Fall prevention in acute 
 care hospitals: a randomized trial, JAMA 304:1912–1918, 2010.
 
---- PAGE 625 ---
+--- BRADDOM PAGE 625 ---
 534.e2
   References
  38.  Expert Panel on Integrated Guidelines for Cardiovascular Health 
@@ -2819,7 +3429,7 @@ the likelihood of 30-day readmission, Am J Health Syst Pharm
  77a.  Klok FA, Kruip MJHA, van der Meer NJM, et al.: Confirmation 
 of the high cumulative incidence of thrombotic complications in 
 
---- PAGE 626 ---
+--- BRADDOM PAGE 626 ---
 534.e3
 References
 critically ill ICU patients with COVID-19: an updated analysis, 
@@ -2959,7 +3569,7 @@ Care Med 185:435–452, 2012.
  118.  Patel S B, Kress J P: Sedation and analgesia in the mechanically 
 ventilated patient, Am J Respir Crit Care Med 185:486–497, 2012.
 
---- PAGE 627 ---
+--- BRADDOM PAGE 627 ---
 534.e4
   References
  119.  Pennell J P, Bourgoignie JJ: Water reabsorption by papillary col-
@@ -3099,7 +3709,7 @@ outpatient cardiac rehabilitation programs, JAMA 256(9):1160–
 supervised exercise in a cardiac rehabilitation center, Am J Car-
 diol 77(15):1383–1385, 1996.
 
---- PAGE 628 ---
+--- BRADDOM PAGE 628 ---
 534.e5
 References
  154.  Waters E, de Silva-Sanigorski A , Hall B J, et  al.: Interventions 
@@ -3125,7 +3735,7 @@ ing maintenance haemodialysis on exercise capacity and health-
 related quality of life in patients with uraemia, J Int Med Res  
 42:718–727, 2014.
 
---- PAGE 629 ---
+--- BRADDOM PAGE 629 ---
 535
 28
 Chronic Medical Conditions: 
@@ -3200,7 +3810,7 @@ matching and can progress to significant hypoxemia, marked hyper-
 capnia, PH, and right heart failure (HF) —cor-pulmonale—the 
 classic blue bloater—dyspneic, cyanotic, and volume overloaded.
 
---- PAGE 630 ---
+--- BRADDOM PAGE 630 ---
 536
 SECTION 3  Common Clinical Problems
 Emphysema is a “pathologic” diagnosis based on evidence of 
