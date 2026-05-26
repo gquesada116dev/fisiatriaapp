@@ -123,6 +123,7 @@ export function CarModePlayer({ tracks }: { tracks: Track[] }) {
   }
 
   // ── Player ────────────────────────────────────────────────────────────────
+  if (!current) return null;
   return (
     <main className="min-h-screen bg-ink-900 text-bone-100 flex flex-col select-none">
       <header className="p-6 flex justify-between items-center shrink-0">
