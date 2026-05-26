@@ -40,7 +40,8 @@ const SLUG = process.argv.find((a) => a.startsWith("--slug="))?.split("=")[1];
 if (!SLUG) { console.error("Falta --slug=<topic-slug>"); process.exit(1); }
 
 const FORCE = process.argv.includes("--force");
-const CARDS_PER_TOPIC = 25;
+const ONLY = process.argv.find((a) => a.startsWith("--only="))?.split("=")[1] ?? null;
+const CARDS_PER_TOPIC = 50;
 const QUESTIONS_PER_TOPIC = 7;
 const EXAM_QUESTIONS_PER_TOPIC = 5;
 const SONNET = "claude-sonnet-4-6";
@@ -505,11 +506,14 @@ async function main() {
   const publicUrls  = publishImages(SLUG!, imagePaths);
   console.log(`   Texto: ${(chapterText.length / 1000).toFixed(1)}k chars | Imágenes: ${publicUrls.length}\n`);
 
-  try { await generateSummary(topic, chapterText, imagePaths, publicUrls);       } catch (e: any) { console.error("  ✗ [summary]", e.message); }
-  try { await generateQuestions(topic, chapterText, imagePaths, publicUrls);     } catch (e: any) { console.error("  ✗ [questions]", e.message); }
-  try { await generateExamQuestions(topic, chapterText, imagePaths, publicUrls); } catch (e: any) { console.error("  ✗ [exam-questions]", e.message); }
-  try { await generateFlashcards(topic, chapterText, imagePaths, publicUrls);    } catch (e: any) { console.error("  ✗ [flashcards]", e.message); }
-  try { await generatePodcast(topic, chapterText);                                } catch (e: any) { console.error("  ✗ [podcast]", e.message); }
+  const run = (name: string, fn: () => Promise<void>) =>
+    (!ONLY || ONLY === name) ? fn().catch((e: any) => console.error(`  ✗ [${name}]`, e.message)) : Promise.resolve();
+
+  await run("summary",        () => generateSummary(topic, chapterText, imagePaths, publicUrls));
+  await run("questions",      () => generateQuestions(topic, chapterText, imagePaths, publicUrls));
+  await run("exam-questions", () => generateExamQuestions(topic, chapterText, imagePaths, publicUrls));
+  await run("flashcards",     () => generateFlashcards(topic, chapterText, imagePaths, publicUrls));
+  await run("podcast",        () => generatePodcast(topic, chapterText));
 
   printCostReport();
   console.log("\n✅ Listo.");
