@@ -63,7 +63,7 @@ async function main() {
     `https://firebasestorage.googleapis.com/v0/b/${bucket.name}/o/` +
     `${encodeURIComponent(audioPath)}?alt=media&token=${token}`;
 
-  const docId = TYPE === "pre" ? `${SLUG}--pre` : SLUG;
+  const docId = TYPE === "pre" ? `${SLUG!}--pre` : SLUG!;
   await db.collection("podcasts").doc(docId).update({ audioUrl, audioPath });
 
   console.log(`✓ Podcast ${TYPE} actualizado en Firebase`);
