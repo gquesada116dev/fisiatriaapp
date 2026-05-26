@@ -35,9 +35,9 @@ function buildPrompt(type: "pre" | "post"): string {
     return `Escribe un guion de podcast PRE-LECTURA en español (Costa Rica) basándote en el capítulo adjunto.
 
 Personajes:
-- C: Presentadora. Habla directamente a Bele (la residente oyente principal). Tono cálido y motivador, como una mentora que la prepara para la lectura. Usa "Bele" por nombre.
-- A: Dr. Marín, fisiatra académico. Estructura conceptual, datos concretos del capítulo.
-- B: Dra. Vargas, fisiatra clínica. Conecta con la práctica, ejemplos de pacientes reales.
+- C: Presentadora. Habla directamente a Bele (la residente oyente principal). Tono cálido y motivador, como una mentora que la prepara para la lectura. SOLO la Presentadora puede usar el nombre "Bele".
+- A: Dr. Marín, fisiatra académico. Estructura conceptual, datos concretos del capítulo. NUNCA dice "Bele" — habla en tercera persona ("el residente", "uno como médico") o directamente sobre el tema.
+- B: Dra. Vargas, fisiatra clínica. Conecta con la práctica, ejemplos de pacientes reales. NUNCA dice "Bele" — habla en tercera persona o directamente sobre el tema.
 
 Estructura OBLIGATORIA:
 1. INTRO — C (1 intervención): La Presentadora le habla a Bele directamente. La sitúa en el tema, por qué importa en su práctica clínica, qué va a encontrar en el capítulo. Emotivo y práctico.
@@ -47,6 +47,9 @@ Estructura OBLIGATORIA:
 Reglas:
 - Tono para escuchar manejando: claro, con transiciones naturales.
 - NUNCA mencionen ser una IA.
+- Solo la Presentadora (C) usa el nombre "Bele". Dr. Marín y Dra. Vargas NUNCA lo usan.
+- NUNCA uses siglas en mayúsculas (AHA, ECG, MET, NYHA, etc.) — sustitúyelas por el nombre completo en español o una descripción equivalente. Solo usa una sigla si no existe otra forma de expresarlo.
+- NUNCA uses palabras en inglés. Todo en español: "rehabilitación" en vez de "rehab", "frecuencia cardíaca" en vez de "heart rate", etc.
 - Todo contenido debe provenir ÚNICAMENTE del capítulo adjunto.
 
 JSON exacto (sin markdown):
@@ -56,9 +59,9 @@ JSON exacto (sin markdown):
   return `Escribe un guion de podcast POST-LECTURA en español (Costa Rica) basándote en el capítulo adjunto.
 
 Personajes:
-- C: Presentadora. Habla directamente a Bele (la residente oyente principal). Tono de refuerzo y consolidación — ella ya leyó el capítulo. Usa "Bele" por nombre.
-- A: Dr. Marín, fisiatra académico. Profundiza en conceptos clave, aclara lo que suele confundir, da los datos exactos del capítulo que caen en exámenes.
-- B: Dra. Vargas, fisiatra clínica. Conecta los conceptos con casos clínicos reales, errores comunes en práctica, perlas clínicas.
+- C: Presentadora. Habla directamente a Bele (la residente oyente principal). Tono de refuerzo y consolidación — ella ya leyó el capítulo. SOLO la Presentadora puede usar el nombre "Bele".
+- A: Dr. Marín, fisiatra académico. Profundiza en conceptos clave, aclara lo que suele confundir, da los datos exactos del capítulo que caen en exámenes. NUNCA dice "Bele" — habla en tercera persona ("el residente", "uno como médico") o directamente sobre el tema.
+- B: Dra. Vargas, fisiatra clínica. Conecta los conceptos con casos clínicos reales, errores comunes en práctica, perlas clínicas. NUNCA dice "Bele" — habla en tercera persona o directamente sobre el tema.
 
 Estructura OBLIGATORIA:
 1. INTRO — C (1 intervención): La Presentadora felicita a Bele por haber leído el capítulo y le dice que ahora van a consolidar lo más importante. Usa su nombre. Tono motivador.
@@ -68,6 +71,9 @@ Estructura OBLIGATORIA:
 Reglas:
 - Tono de repaso activo, no de introducción — el oyente ya leyó.
 - NUNCA mencionen ser una IA.
+- Solo la Presentadora (C) usa el nombre "Bele". Dr. Marín y Dra. Vargas NUNCA lo usan.
+- NUNCA uses siglas en mayúsculas (AHA, ECG, MET, NYHA, etc.) — sustitúyelas por el nombre completo en español o una descripción equivalente. Solo usa una sigla si no existe otra forma de expresarlo.
+- NUNCA uses palabras en inglés. Todo en español: "rehabilitación" en vez de "rehab", "frecuencia cardíaca" en vez de "heart rate", etc.
 - Todo contenido debe provenir ÚNICAMENTE del capítulo adjunto.
 
 JSON exacto (sin markdown):
