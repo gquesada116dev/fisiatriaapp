@@ -45,6 +45,42 @@ function renderMd(md: string): React.ReactNode[] {
         out.push(<img key={key++} src={m[2]} alt={m[1]} className="w-full max-h-80 object-contain rounded-xl border border-bone-200 my-4" />);
       }
       i++;
+    } else if (/^\|/.test(line)) {
+      // Markdown table — collect all | lines
+      const rows: string[][] = [];
+      while (i < lines.length && /^\|/.test(lines[i])) {
+        const cells = lines[i].split("|").slice(1, -1).map((c) => c.trim());
+        rows.push(cells);
+        i++;
+      }
+      // Row 1 = header, row 2 = separator (skip), rest = body
+      const [head, , ...body] = rows;
+      out.push(
+        <div key={key++} className="overflow-x-auto my-4">
+          <table className="w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                {head?.map((cell, ci) => (
+                  <th key={ci} className="border border-bone-300 bg-bone-100 px-3 py-1.5 text-left font-semibold text-ink-800">
+                    {inline(cell)}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {body.map((row, ri) => (
+                <tr key={ri} className={ri % 2 === 0 ? "bg-white" : "bg-bone-50"}>
+                  {row.map((cell, ci) => (
+                    <td key={ci} className="border border-bone-200 px-3 py-1.5 text-ink-700">
+                      {inline(cell)}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      );
     } else if (/^[-*]\s+/.test(line)) {
       const items: string[] = [];
       while (i < lines.length && /^[-*]\s+/.test(lines[i])) {
