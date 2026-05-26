@@ -95,21 +95,21 @@ export function CarModePlayer({ tracks }: { tracks: Track[] }) {
       {/* Center content */}
       <section className="flex-1 flex flex-col items-center justify-center px-6 text-center overflow-hidden">
 
-        {hasTiming && activeLine ? (
-          /* Synchronized lyrics view */
+        {hasTiming ? (
+          /* Synchronized lyrics view — visible from the start */
           <div className="w-full max-w-2xl space-y-6">
             {/* Prev line */}
             <p className="text-bone-200/30 text-lg md:text-xl leading-relaxed transition-all duration-500 line-clamp-2">
               {prevLine?.text ?? ""}
             </p>
 
-            {/* Active line */}
-            <div className="space-y-2 transition-all duration-300">
+            {/* Active line (or title before playback starts) */}
+            <div className="space-y-2">
               <p className="text-bone-200/50 text-xs uppercase tracking-widest">
-                {SPEAKER_NAME[activeLine.speaker] ?? activeLine.speaker}
+                {activeLine ? (SPEAKER_NAME[activeLine.speaker] ?? activeLine.speaker) : current.category}
               </p>
-              <p className="text-bone-50 text-2xl md:text-3xl font-display leading-snug transition-all duration-300">
-                {activeLine.text}
+              <p className="text-bone-50 text-2xl md:text-3xl font-display leading-snug transition-all duration-500">
+                {activeLine ? activeLine.text : current.name}
               </p>
             </div>
 
@@ -119,7 +119,7 @@ export function CarModePlayer({ tracks }: { tracks: Track[] }) {
             </p>
           </div>
         ) : (
-          /* Default: just show topic name */
+          /* No timing data — just show topic name */
           <>
             <p className="text-bone-200/50 uppercase tracking-widest text-xs mb-3">{current.category}</p>
             <h1 className="font-display text-4xl md:text-6xl text-bone-50 max-w-3xl leading-tight">
