@@ -28,36 +28,18 @@ export function storageBucket() {
 
 export { Timestamp, FieldValue };
 
-export function computeMastery(
-  totalCards: number,
-  matureCards: number,
-  mcqAttempts: number,
-  mcqCorrect: number,
-): number {
-  const cardMastery = totalCards > 0 ? matureCards / totalCards : 0;
-  const mcqAccuracy = mcqAttempts >= 5 ? mcqCorrect / mcqAttempts : 0;
-  return Math.min(1, 0.6 * cardMastery + 0.4 * mcqAccuracy);
-}
-
-// Recomputes and stores mastery from the running totals already in topicStats.
+// Recomputes mastery from flashcardReviews: correct = lastQuality >= 3, incorrect = 0 or null.
 export async function refreshMastery(topicSlug: string) {
   const firestore = db();
-  const ref = firestore.collection("topicStats").doc(topicSlug);
-  await firestore.runTransaction(async (txn) => {
-    const snap = await txn.get(ref);
-    const s = snap.data() ?? {};
-    const mastery = computeMastery(
-      s.totalCards ?? 0,
-      s.matureCards ?? 0,
-      s.mcqAttempts ?? 0,
-      s.mcqCorrect ?? 0,
-    );
-    if (snap.exists) {
-      txn.update(ref, { mastery, updatedAt: Timestamp.now() });
-    } else {
-      txn.set(ref, { totalCards: 0, matureCards: 0, mcqAttempts: 0, mcqCorrect: 0, mastery, updatedAt: Timestamp.now() });
-    }
-  });
+  const reviewsSnap = await firestore.collection("flashcardReviews").where("topicSlug", "==", topicSlug).get();
+  const total = reviewsSnap.size;
+  const correct = reviewsSnap.docs.filter((d) => (d.data().lastQuality ?? -1) >= 3).length;
+  const mastery = total > 0 ? correct / total : 0;
+
+  await firestore.collection("topicStats").doc(topicSlug).set(
+    { correctCards: correct, totalCards: total, mastery, updatedAt: Timestamp.now() },
+    { merge: true },
+  );
 }
 
 // Builds the permanent Firebase Storage download URL.

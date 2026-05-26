@@ -30,8 +30,7 @@ export default async function TopicPage({ params }: { params: { slug: string } }
         {stats && (
           <div className="mt-4 flex flex-wrap gap-x-6 gap-y-1 text-sm text-ink-500">
             <span>Dominio: <strong className="text-teal-700">{Math.round((stats.mastery ?? 0) * 100)}%</strong></span>
-            <span>MCQ: {stats.mcqAttempts ?? 0} ({Math.round(mcqAccuracy * 100)}% acierto)</span>
-            <span>Tarjetas: {stats.matureCards ?? 0}/{stats.totalCards ?? 0} maduras</span>
+            <span>Tarjetas: {stats.correctCards ?? 0}/{stats.totalCards ?? 0} correctas</span>
           </div>
         )}
 

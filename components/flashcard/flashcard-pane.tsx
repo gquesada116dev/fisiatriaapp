@@ -31,6 +31,10 @@ export function FlashcardPane({ slug }: { slug: string }) {
   const [loading, setLoading] = useState(true);
   const [idx, setIdx] = useState(0);
   const [flipped, setFlipped] = useState(false);
+  // Track card IDs graded as 0 (failed) in the current pass
+  const [failedIds, setFailedIds] = useState<Set<string>>(new Set());
+  // When not null, show only the given subset of card IDs
+  const [filterIds, setFilterIds] = useState<Set<string> | null>(null);
 
   useEffect(() => {
     (async () => {
@@ -52,7 +56,8 @@ export function FlashcardPane({ slug }: { slug: string }) {
 
   const queue = useMemo(() => {
     const now = Date.now();
-    return [...cards].sort((a, b) => {
+    const base = filterIds ? cards.filter((c) => filterIds.has(c.id)) : cards;
+    return [...base].sort((a, b) => {
       const ar = normalizeReview(a.review);
       const br = normalizeReview(b.review);
       const aDue = ar ? new Date(ar.due_at).getTime() - now : Number.POSITIVE_INFINITY;
@@ -62,27 +67,65 @@ export function FlashcardPane({ slug }: { slug: string }) {
       if (aRank !== bRank) return aRank - bRank;
       return aDue - bDue;
     });
-  }, [cards]);
+  }, [cards, filterIds]);
 
   if (loading) return <p className="text-ink-500 italic">Cargando tarjetas…</p>;
+  if (!queue.length && filterIds) {
+    return (
+      <div className="rounded-xl border border-bone-200 bg-bone-50 p-8 text-center space-y-3">
+        <p className="text-ink-700 font-medium">No fallaste ninguna tarjeta</p>
+        <button
+          onClick={() => { setFilterIds(null); setIdx(0); setFlipped(false); setFailedIds(new Set()); localStorage.setItem(STORAGE_KEY(slug), "0"); }}
+          className="rounded-md bg-teal-600 text-bone-50 px-4 py-2 text-sm hover:bg-teal-700"
+        >
+          Ver todas de nuevo
+        </button>
+      </div>
+    );
+  }
   if (!queue.length) return <p className="text-ink-500">No hay tarjetas para este tema.</p>;
 
   // Deck completed
   if (idx >= queue.length) {
+    const failedCount = failedIds.size;
     return (
-      <div className="rounded-xl border border-bone-200 bg-bone-50 p-8 text-center space-y-3">
-        <p className="text-ink-700 font-medium">Mazo completado</p>
-        <p className="text-ink-500 text-sm">Repasaste todas las tarjetas de este tema.</p>
-        <button
-          onClick={() => {
-            localStorage.setItem(STORAGE_KEY(slug), "0");
-            setIdx(0);
-            setFlipped(false);
-          }}
-          className="mt-2 rounded-md bg-teal-600 text-bone-50 px-4 py-2 text-sm hover:bg-teal-700"
-        >
-          Reiniciar mazo
-        </button>
+      <div className="rounded-xl border border-bone-200 bg-bone-50 p-8 text-center space-y-4">
+        <p className="text-ink-700 font-medium">
+          {filterIds ? "Repaso de falladas completado" : "Mazo completado"}
+        </p>
+        <p className="text-ink-500 text-sm">
+          {failedCount > 0
+            ? `Fallaste ${failedCount} tarjeta${failedCount !== 1 ? "s" : ""} en este repaso.`
+            : "¡Contestaste todas correctamente!"}
+        </p>
+        <div className="flex flex-col sm:flex-row gap-2 justify-center">
+          {failedCount > 0 && (
+            <button
+              onClick={() => {
+                setFilterIds(new Set(failedIds));
+                setFailedIds(new Set());
+                setIdx(0);
+                setFlipped(false);
+                localStorage.setItem(STORAGE_KEY(slug), "0");
+              }}
+              className="rounded-md bg-rust-600 text-bone-50 px-4 py-2 text-sm hover:bg-rust-700"
+            >
+              Solo las que fallé ({failedCount})
+            </button>
+          )}
+          <button
+            onClick={() => {
+              setFilterIds(null);
+              setFailedIds(new Set());
+              setIdx(0);
+              setFlipped(false);
+              localStorage.setItem(STORAGE_KEY(slug), "0");
+            }}
+            className="rounded-md bg-teal-600 text-bone-50 px-4 py-2 text-sm hover:bg-teal-700"
+          >
+            Ver todas de nuevo
+          </button>
+        </div>
       </div>
     );
   }
@@ -90,6 +133,12 @@ export function FlashcardPane({ slug }: { slug: string }) {
   const card = queue[idx];
 
   async function grade(q: number) {
+    if (q === 0) {
+      setFailedIds((prev) => new Set([...prev, card.id]));
+    } else {
+      // If they now pass a card they previously failed this session, remove it
+      setFailedIds((prev) => { const s = new Set(prev); s.delete(card.id); return s; });
+    }
     await fetch("/api/review", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -106,11 +155,12 @@ export function FlashcardPane({ slug }: { slug: string }) {
   return (
     <div>
       <div className="flex justify-between text-xs text-ink-400 mb-3">
-        <span>Tarjeta {idx + 1} de {queue.length}</span>
-        {review && (
-          <span>
-            Intervalo: {review.interval_days}d · EF: {review.ease_factor.toFixed(2)}
-          </span>
+        <span>
+          Tarjeta {idx + 1} de {queue.length}
+          {filterIds && <span className="ml-1 text-rust-500">(solo falladas)</span>}
+        </span>
+        {review?.interval_days != null && review.interval_days > 0 && (
+          <span>Intervalo: {review.interval_days}d · EF: {review.ease_factor.toFixed(2)}</span>
         )}
       </div>
 
