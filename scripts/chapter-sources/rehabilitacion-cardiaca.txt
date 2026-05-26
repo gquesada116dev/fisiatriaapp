@@ -1,0 +1,3322 @@
+
+--- PAGE 602 ---
+513CHAPTER 27 Acute Medical Conditions: Cardiopulmonary Disease, Medical Frailty, and Renal Failure
+program and should be done as a part of the physiatrist’s initial 
+history and physical examination.
+A few key cardiopulmonary examination findings are highlighted 
+here.
+Cardiac auscultation can indicate an atrial septal defect, 
+a midsystolic click may indicate mitral valve prolapse, and a 
+murmur may indicate valvular heart disease. Pulmonary hyper -
+tension typically produces a heightened second heart sound, 
+a noncompliant ventricle can be detected via an atrial gallop 
+at the cardiac apex, and a left ventricular gallop may reveal 
+heart failure. The pulse contour, split heart sounds, and the 
+quality of the murmur can help to differentiate aortic sclero -
+sis from aortic stenosis. In younger patients, pulmonary ste -
+nosis or valvular heart disease needs to be differentiated from 
+idiopathic hypertrophic subaortic stenosis. Diastolic murmurs 
+may be mitral stenosis or pulmonary hypertension with pul -
+monary valve regurgitation, and continuous murmurs may be 
+from ventricular septal or atrial septal defects. New findings 
+or changes in findings are important as they may indicate the 
+need for further evaluation or alterations in the program of 
+cardiopulmonary rehabilitation.
+Lung physical examination may have decreased breath sounds 
+and/or barrel chest in obstructive disease, whereas interstitial lung 
+disease may have diffuse or basilar crackles. Inspiratory stridor 
+may indicate upper airway obstruction, whereas expiratory wheez-
+ing and rhonchi can be seen with obstruction or secretions. It is 
+also important to assess symmetry of breathing, accessory muscle 
+use, and possible compromise to diaphragmatic function. 
+Cardiac Anatomy and Physiology
+Cardiac Anatomy
+T o supervise cardiac rehabilitation, it is essential to be familiar 
+with the normal distribution of the major arteries of the heart, the 
+anatomy of the heart valves, and the distribution of ischemia or 
+infarction from the coronary arteries.
+The heart has paired atria and ventricles, with deoxygenated 
+venous blood entering the right atrium, traversing the right ventri-
+cle through the tricuspid valve, and entering the pulmonary artery 
+through the pulmonic valve. Oxygenated blood enters the left 
+atrium, goes to the left ventricle through the mitral valve, and is 
+ejected into the aorta through the aortic valve. The cardiac valves 
+ensure unidirectional unobstructed flow of blood, with atrial con-
+traction adding up to 15% to 20% to the total cardiac output 
+(CO). Atrial contribution to blood flow is greater with increased 
+heart rate and in conditions with decreased ventricular compli -
+ance.131 Atrial fibrillation can cause a loss of this atrial “kick” and 
+may contribute to cardiac dysfunction.
+The cardiac conduction system allows coordinated contraction 
+of the atria and ventricles at a controlled rate. The normal heart -
+beat is initiated at the sinoatrial node and then travels through 
+three atrial internodal pathways to the atrioventricular node, 
+where conduction is delayed to cause sequential atrial and ventric-
+ular contraction. Below the atrioventricular node, the signal passes 
+into the bundle of His and divides into left and right bundles. 
+All cardiac fibers then end in terminal branches, which excite the 
+myocytes and cause contraction. The conduction system can be 
+injured by myocardial infarction (MI), aging, and other condi -
+tions and can cause heart block or sick sinus syndrome. Acces -
+sory pathways that bypass the atrioventricular node can be seen in 
+Wolff-Parkinson-White syndrome.
+Variation of Arteries
+There are three main distributions of coronary circulation. Nor -
+mally the left main coronary artery divides into the left anterior 
+descending and the circumflex arteries, whereas the right coronary 
+artery continues on as a single vessel. Right dominant circulation 
+is seen in 60% of individuals, whereas left dominant circulation 
+with the posterior descending artery arising from the left circum -
+flex is seen in 10% to 15% of individuals. The remaining 30% of 
+individuals have balanced circulation with the posterior descend -
+ing artery coming from the left circumflex and right coronary 
+arteries.4 
+Cardiac Physiology
+Cardiac myocytes extract nearly 65% of oxygen from the blood 
+at all levels of activity (compared with 36% for brain and 26% 
+for the rest of the body). Cardiac myocytes prefer carbohydrates 
+as an energy source (40%), with fatty acids making up most of 
+the remaining 60%. With high oxygen extraction and coronary 
+blood flow only during diastole, the heart is at high risk of isch -
+emic injury, especially in the endocardium. Coronary vasodilation 
+with exercise is normally done via nitric oxide–mediated pathways 
+and increases blood flow with exertion. The goal of most medical 
+and surgical therapies for ischemia is to restore or preserve myo -
+cardial perfusion through vasodilation, bypass, or endovascular 
+procedures. Exercise can increase cardiac collateral circulation and 
+improve arteriolar vasodilation and has long been known to be a 
+primary therapy for cardiac ischemia.86,112,114,148
+Another important issue to manage with patients with cardiac 
+disease is fluid volume. Appropriate venous return can maintain 
+appropriate cardiac “preload,” whereas fluid overload can lead to too 
+much venous return and exacerbate heart failure. In cases of mechan-
+ical cardiac constriction, surgery can restore CO, and in dilated heart 
+failure, medical treatment aims to decrease the size of the ventricles 
+to increase CO. In refractory or end-stage disease, left ventricular 
+assist devices (LVADs) and cardiac transplantation are options. 
+Pulmonary Anatomy and Physiology
+Pulmonary Anatomy
+Important pulmonary anatomy includes the upper and lower airways 
+(the oropharynx, larynx, trachea, main stem bronchi, and smaller 
+bronchi), the lung parenchyma, the chest wall, and musculature 
+(diaphragm, accessory muscles of breathing, rib cage, and pleura). 
+Pulmonary limitations can come from abnormalities in any of these 
+structures. The lungs also have a dual circulation with pulmonary 
+arteries and veins, which deliver deoxygenated blood to the lungs and 
+deliver oxygenated blood to the left atrium and intrinsic pulmonary 
+artery circulation delivering oxygenated blood to the respiratory tree.
+Stridor can result from upper airway obstruction from vocal cord 
+paralysis or tumor, whereas asthma, bronchitis, or reactive airway dis-
+ease may cause dyspnea from lower airway obstruction. Emphysema 
+is a result of parenchymal lung disease with a loss of alveoli leading to 
+decreased intrinsic recoil of the lung and subsequent hyperinflation 
+and dyspnea. In interstitial lung disease and pulmonary fibrosis, there is 
+interstitial scarring with increased recoil and decreased ability to diffuse 
+oxygen through the lung tissues. In some patients, both restrictive and 
+obstructive diseases can be present with one predominant over another 
+(cystic fibrosis and sarcoidosis). In these cases, it is important to evalu-
+ate the lung parenchyma with imaging or physiologic testing (pulmo-
+nary function tests) to assess which condition may predominate.13 
+
+--- PAGE 603 ---
+514
+SECTION 3   Common Clinical Problems
+Pulmonary Physiology
+Normal breathing is regulated in the medulla oblongata by the 
+respiratory center. Respiratory signals are carried by the phrenic 
+and other somatic nerves to the diaphragm and secondary inspi -
+ratory muscles (intercostals, sternocleidomastoids, and pectorals) 
+and cause rhythmic breathing by generating negative pressure in 
+the chest wall. Normal exhalation is passive, resulting from the 
+elastic recoil of the chest wall and the lung parenchyma. COPD 
+and emphysema can create the need for active exhalation, mark -
+edly increasing the work of breathing. Interstitial lung disease 
+with scarring decreases compliance of lung tissue so severely that 
+lung volumes decrease and hypoventilation can result. Any disease 
+affecting the brain, spine, phrenic nerves, respiratory muscles, or 
+changing the mechanical properties of the chest wall or diaphragm 
+can affect normal respiration.99,100
+Pulmonary vascular disease can result in either primary or 
+secondary pulmonary hypertension. Primary pulmonary hyper -
+tension can be idiopathic or can result from vasculitis, throm -
+boembolic disease, or intrinsic parenchymal disease. Secondary 
+pulmonary hypertension is from vascular congestion, often a result 
+of left heart failure. Secondary pulmonary hypertension can lead to 
+intrinsic vascular compromise if the condition is chronic. Chronic 
+hypoxemia may also create pulmonary hypertension in individu -
+als with obesity, obstructive sleep apnea, or high-altitude exposure 
+through a mechanism of pulmonary vascular constriction. Chronic 
+hypoxemia can lead to vascular intimal hypertrophy with resultant 
+fixed pulmonary vascular resistance and pulmonary hypertension. 
+Basic Terminology for Exercise
+Aerobic Capacity
+Aerobic capacity (Vo2max) is the measure of the work capacity of 
+an individual and is expressed as the oxygen consumed by the 
+individual (liters of oxygen per minute or milliliters of oxygen per 
+kilogram per minute). Oxygen consumption (V o2) increases lin -
+early with workload, up to the Vo2max, where it reaches a plateau. 
+Maximal exercise capacity assessment can assist in rating disability 
+and planning exercise and recovery programs.13 
+Heart Rate
+Heart rate is a useful guide for exercise as a result of having a linear 
+relationship to Vo2. Maximum heart rate is best determined by 
+testing and decreases with age. It can be estimated either by the 
+Karvonen equation or by the equation heart rate = 220 − age. 70 
+Physical conditioning can alter the slope of the relationship of 
+heart rate and Vo2 with improved conditioning lowering the slope 
+(less heart rate increase for a given V o2). A limitation to using 
+heart rate can be the alteration of heart rate response in the setting 
+of medications that alter vagal and sympathetic tone.13 
+Stroke Volume
+Stroke volume (SV) is the volume of blood ejected with a left ven-
+tricular contraction. Maximal SV can be increased with exercise 
+and is sensitive to postural changes (least increases in supine), with 
+the greatest increase during early exercise. Normally SV increases 
+in a curvilinear manner, achieving maximum at approximately 
+40% of Vo2max. SV declines with advancing age, with decreased 
+cardiac compliance, after MI, and in heart failure.40 
+Cardiac Output
+CO is the product of the heart rate and SV . It has a linear rela -
+tionship with work and is the primary determinant of Vo2max. At 
+maximum exercise, left ventricular ejection fraction (LVEF), and 
+thus CO, is greater in the upright position compared with the 
+supine position.13,121 
+Myocardial Oxygen Consumption
+Myocardial oxygen consumption (M vo2) is the Vo2 of the heart 
+muscle increasing in proportion to workload. When the M vo2 
+exceeds the maximum coronary artery oxygen delivery, an indi -
+vidual will have myocardial ischemia and angina. The rate pressure 
+product (RPP) = [heart rate × systolic blood pressure (SBP)]/100 
+and has a direct relationship to the M vo2. Another consideration 
+is that arm exercise, isometric exercise, and exertion in the cold, 
+extreme heat, after eating, and after smoking all have a higher 
+Mvo2 for a given M vo2. Supine exercises have a higher M vo2 at 
+low intensity and a lower M vo2 at high intensity compared with 
+erect exercises.13
+Basic static lung volumes and dynamic responses to exercise 
+are helpful in the assessment of exercise capacity in individuals 
+with lung disease. Although complete pulmonary function evalu-
+ation is beyond the scope of this chapter, some important values 
+include:  
+T otal lung capacity (TLC): Volume of air in the lungs at full in -
+spiration
+Vital capacity (VC): Volume of air between full inspiration and 
+full expiration
+Forced expired vital capacity (FVC): Maximum volume expired 
+after a maximal forced expiration
+Forced expiratory volume in 1 second (FEV1): Maximum volume 
+exhaled in 1 second
+Maximal voluntary ventilation (MVV): Measurement of the max-
+imal ventilation over 15 seconds
+Residual volume (RV): Volume of the chest wall after a full expira-
+tion
+Tidal volume (TV): Volume of regular resting breath
+Diffusion of the lung for carbon monoxide (D lco ): Diffusion of 
+carbon monoxide (oxygen analog) across the alveolar mem -
+brane  
+The best evaluation of the capacity to exercise in cardiac and 
+pulmonary conditions is with a cardiopulmonary exercise test 
+(CPET). The CPET yields diagnostic, prognostic, and exercise 
+prescription guidance in patients with cardiopulmonary disease. 
+The interpretation of pulmonary exercise testing in a number of 
+conditions is shown in Table 27.2. 
+Interventions for Cardiopulmonary Disease
+Aerobic Training
+Physical exercise that increases the cardiopulmonary capacity 
+(Vo2max) allows for aerobic training. All aerobic training prescrip-
+tions must include four components: intensity, duration, fre -
+quency, and specificity.
+Intensity. How hard an exercise is. It can be prescribed by a 
+target heart rate, metabolic (MET) level, or intensity (wattage). 
+Usual intensity target for cardiac primary prevention is a heart rate 
+of 80% to 85% of the predicted maximum heart rate/peak heart 
+rate from the exercise tolerance test (ETT). For secondary pre -
+vention in patients with known cardiopulmonary disease, exercise 
+should be at a safe level at 60% or more of the maximum heart 
+rate to achieve a training effect. 
+Duration. How long a given bout of exercise is. Usual cardio -
+pulmonary conditioning requires 20- to 30-minute sessions and 
+
+--- PAGE 604 ---
+515CHAPTER 27 Acute Medical Conditions: Cardiopulmonary Disease, Medical Frailty, and Renal Failure
+  Effects of Physiologic Conditions on Cardiopulmonary Exercise Capacity
+Abnormality Physiologic Abnormality Gas Exchange
+Obesity 	 •	 	Increased	work	with	activity
+	 •	 	Inefficient	exercise
+	 •	 	Rapid	alveolar-arterial	p(a-a)o2 fall with exercise
+	 •	 	Low	aerobic	capacity	(Vo2max)
+	 •	 	Rapid	fatigue
+Peripheral vascular disease 	 •	 	Claudication	can	limit	exercise 	 •	 	Low	Vo2max
+	 •	 	Increased	lactic	acidosis
+	 •	 	Associated	deconditioning	often	present
+	 •	 	Low	anaerobic	threshold
+Pulmonary vascular disease 	 •	 	Impaired	pulmonary	blood	flow
+	 •	 	Right	ventricular	failure	or	overload
+	 •	 	Possible	right	to	left	shunt
+	 •	 	Low	Vo2max
+	 •	 	Low	anaerobic	threshold
+	 •	 	Rapid	pulse	at	low	exercise
+	 •	 	Hypoxemia
+	 •	 	Excessive	dyspnea
+Anemia 	 •	 	Low	oxygen-carrying	capacity 	 •	 	Low	Vo2max
+	 •	 	Early	anaerobic	threshold
+	 •	 	Rapid	pulse	at	low	exercise
+	 •	 	Fatigue	and	dyspnea
+Chronic obstructive pulmonary 
+disease
+	 •	 	Impairment	to	expiratory	phase	of	breathing
+	 •	 	Decreased	alveolar	ventilation
+	 •	 	Low	Vo2max
+	 •	 	Low	anaerobic	threshold
+	 •	 	Rapid	pulse	at	low	exercise
+	 •	 	Submaximum	heart	rate	achieved
+	 •	 	Retention	of	CO2 that increases with exercise
+Restrictive lung disease 
+(intrinsic)
+	 •	 	Poor	diffusion	capacity
+	 •	 	Poor	pulmonary	compliance
+	 •	 	Pulmonary	hypertension	in	later	disease
+	 •	 	Low	Vo2max
+	 •	 	Early	anaerobic	threshold
+	 •	 	Tachypnea	at	all	levels	of	exertion
+	 •	 	Low	pulmonary	reserve
+	 •	 	High	alveolar-arterial	p(a-a)o2 difference yielding marked hypoxemia
+	 •	 	Marked	dyspnea
+	 •	 	Presence	of	pulmonary	hypertension	can	cause	severe	hypoxemia	
+and loss of hemodynamic response to exercise
+	 •	 	Can	trigger	cough	with	exercise
+Restrictive lung disease 
+(extrinsic)
+	 •	 	Poor	chest	wall	compliance
+	 •	 	Chest	wall	muscle	weakness
+	 •	 	Loss	of	neural	control	of	breathing	 
+musculature
+	 •	 	Low	Vo2max
+	 •	 	Early	anaerobic	threshold
+	 •	 	Tachypnea	with	low	tidal	volumes
+	 •	 	Low	pulmonary	reserve
+	 •	 	Submaximum	heart	rate	achieved
+	 •	 	Oxygenation	and	CO2 usually preserved until severe end-stage 
+disease
+Asthma 	 •	 	Restricted	expiratory	phase	of	breathing	
+from airway obstruction
+	 •	 	Decreased	alveolar	ventilation
+	 •	 	In	exercise-induced	asthma,	peak	flows	
+drop 5–10 minutes into exercise
+	 •	 	Most	findings	are	normal	when	not	symptomatic	and	resemble	
+obstructive disease with acute attack
+Ventricular failure 	 •	 	Compromised	pulmonary	blood	flow
+	 •	 	In	left	ventricular	failure,	can	have	 
+pulmonary vascular congestion
+	 •	 	Low	Vo2max
+	 •	 	Early	anaerobic	threshold
+	 •	 	Tachypnea,	dyspnea
+	 •	 	Exaggerated	heart	rate	response	to	exercise
+	 •	 	May	have	hypoxemia	with	pulmonary	congestion	and	loss	of	normal	
+hemodynamic response to exercise
+Ischemic heart disease 	 •	 	Chest	pain/cardiac	ischemia
+	 •	 	Can	precipitate	ventricular	failure
+	 •	 	Often	normal	at	rest	or	until	ischemia
+	 •	 	With	onset	of	ischemia	and	ventricular	stiffening/systolic	 
+dysfunction, can appear like mild ventricular failure
+	 •	 	Can	have	loss	of	normal	hemodynamic	response	to	exercise	with	
+onset of ischemia
+Metabolic acidosis 	 •	 	Metabolic	acidosis,	low	HCO3− 	 •	 	Normal	diffusion
+	 •	 	Exaggerated	response	of	ventilation	to	exercise
+	 •	 	Low	Vo2max
+  
+TABLE 
+27.2
+
+--- PAGE 605 ---
+516
+SECTION 3   Common Clinical Problems
+should have a 5- to 10-minute warm-up and cool-down period. 
+The lower the intensity of an exercise, the longer the duration will 
+need to be to achieve a similar training effect. 
+Frequency. How often exercise is performed over a fixed time 
+period (usually a week). Moderate-intensity training programs 
+should be done at least three times per week, and low-intensity 
+programs should be done five times per week. 
+Specificity . The activity to be done in exercise. T raining 
+benefits are specifically related to the activities performed. Thus 
+elliptical exercise is not as beneficial for walking as treadmill 
+training. Specificity in prescription should be altered to adapt 
+to the needs of each patient. For a patient with spinal cord 
+injury, upper arm ergometry would be more functional, and 
+for a patient with severe leg arthritis, cycle ergometry would 
+be better than a treadmill. The law of specificity of condition -
+ing should be remembered when designing a cardiopulmonary 
+conditioning program. 2
+The benefits of aerobic training include the following:  
+Aerobic capacity: Maximum capacity increases with training. 
+Resting Vo2 is stable as is the V o2 at a given workload. The 
+changes are specific to the trained muscles.
+Cardiac output: Maximum CO increases, whereas resting CO is 
+stable. Resting SV increases with a corresponding decrease in 
+resting heart rate.
+Heart rate: Heart rate is lower at rest and at any given workload, 
+whereas maximum heart rate is unchanged. The lower heart 
+rate at rest and submaximal exercise causes a lower Mvo2 with 
+normal activity.
+Stroke volume: SV increases at rest and at all levels of exercise. CO 
+is thus maintained at a lower heart rate and causes a lower RPP 
+for a given level of exertion.
+Myocardial oxygen capacity: After training, maximum Mvo2 does 
+not usually change but is less at a given workload. This reduces 
+episodes of angina and increases safety for moderate activity. 
+Mvo2 can also increase after pharmacologic treatments or re -
+vascularization procedures.
+Peripheral resistance: Exercise training decreases peripheral vascu-
+lar resistance (PVR) by reducing “afterload” through lowering 
+arterial and arteriolar tone. The reduction in PVR results in a 
+lower RPP and a lower Mvo2 at a given workload and at rest.
+Minute ventilation: With improved conditioning, individuals will 
+require a lower Vo2 and thus a lower minute ventilation for a 
+given activity. For patients with pulmonary and cardiac disease, 
+this can lead to a large reduction in dyspnea.
+Tidal volume: Exercise can lead to a higher TV on exertion, with a 
+subsequent decrease in respiratory rate and decreased dyspnea.
+Respiratory rate: As TV is improved, respiratory rate will be lower 
+for a given minute ventilation, decreasing dyspnea.  
+The application of basic physiologic principles to the design 
+of cardiopulmonary rehabilitation programs can improve func -
+tion, decrease symptoms, and improve outcomes for patients 
+with cardiopulmonary disease. The prime effect of cardiac con -
+ditioning is in reduction of cardiac risk and improved cardiac 
+conditioning. Reduction of cardiac risk has been well established 
+since 1989, when pooled data from 22 randomized studies of 
+exercise in 4554 patients following acute MI demonstrated a 
+20% to 25% reduction in all-cause mortality, fatal MI, and car -
+diac mortality in a 3-year follow-up study. 7 These benefits of 
+cardiac rehabilitation apply across populations, including older 
+adults, women, and patients after bypass. 7 Similar benefits have 
+also been shown for pulmonary rehabilitation in COPD with 
+decreased hospitalizations, improved function, and improved 
+quality of life, 75,109,110,123 and new studies are showing that 
+interstitial disease and pulmonary vascular disease can also ben -
+efit from exercise. 33,43,59,63,132 
+Pulmonary Rehabilitation
+Abnormal Physiology: Lung
+Patients with pulmonary disease demonstrate three main impair -
+ments: (1) obstructive lung disease, (2) restrictive lung disease, 
+and (3) pulmonary vascular disease. Often more than one type 
+of limitation may be present in a given patient and will increase 
+the complexity of their condition. Understanding the underlying 
+physiology can assist in the design of a specific exercise program 
+for an individual patient.
+For primary pulmonary disease, it is essential to know if 
+the patient has primarily an obstructive or restrictive condi -
+tion. Obstructive lung disease is marked by an inability to 
+exhale resulting from either upper airway or large airway dis -
+ease (sleep apnea, tracheomalacia, vocal cord disease, asthma, 
+and bronchitis) or as a result of lower airway disease from either 
+secretions or lung parenchymal disease (emphysema and bron -
+chiectasis). Obstruction can also be exacerbated by a compo -
+nent of acute obstruction (asthma) combined with a chronic 
+condition (COPD). The hallmark of severe COPD is carbon 
+dioxide retention and active exhalation. Medical treatments are 
+limited for COPD, with steroids and bronchodilators offering 
+incomplete relief. Lung reduction surgery is appropriate only in 
+selected individuals, and transplant is only for end-stage disease. 
+For all levels of obstructive disease, pulmonary rehabilitation is 
+appropriate, and in the “GOLD” recommendations for treat -
+ment of COPD, pulmonary rehabilitation is recommended for 
+all patients with moderate to severe disease. 47,48
+In restrictive lung disease, the primary limitations are low 
+TVs from an inability to expand the chest wall (extrinsic restric -
+tion) or from very noncompliant lung tissue (intrinsic restric -
+tion). In extrinsic restrictive disease (neuromuscular disease, 
+paralysis, and kyphoscoliosis), the parenchyma of the lung is 
+normal and gas exchange is preserved, meaning that treatment 
+is usually respiratory muscle training and mechanical ventila -
+tory support as needed. With intrinsic restrictive lung diseases 
+(pulmonary fibrosis, sarcoidosis, etc.), there may be a profound 
+associated hypoxemia from severely decreased diffusion capac -
+ity of scarred lung tissue. Patients with parenchymal restrictive 
+disease classically have severe hypoxemia and may need high-
+flow supplemental oxygen. Patients with end-stage intrinsic 
+restrictive disease can have ventilatory failure with hypercarbia 
+and hypoxemia and may be refractory to ventilatory support, 
+and lung transplantation is then often the only remaining treat -
+ment option. Table 27.3 shows some of the lung pathologies and 
+effects on inspiratory reserve and RV (obstructive diseases) and 
+the effects of various conditions on lung compliance (restrictive 
+diseases).15
+Finally, patients with pulmonary vascular disease have a similar 
+presentation in many ways to patients with heart failure, and in 
+the end stages of the disease, right ventricular heart failure is a 
+major part of the condition and leads to excess mortality and mor-
+bidity.82 Rehabilitation is focused on a program that resembles 
+exercise for patients with heart failure, with the addition of close 
+monitoring of oxygen saturation and the use of appropriate levels 
+of supplemental oxygen to prevent hypoxemia.
+
+--- PAGE 606 ---
+517CHAPTER 27 Acute Medical Conditions: Cardiopulmonary Disease, Medical Frailty, and Renal Failure
+For patients with either intrinsic restrictive or obstructive dis -
+ease, pulmonary rehabilitation is an important treatment to con -
+sider and should be offered for patients whether or not they have 
+their pulmonary condition as a primary or a secondary disability. 
+A brief overview of pulmonary rehabilitation programs for pri -
+mary pulmonary disease is shown in Table 27.4. 
+Cardiac Rehabilitation
+Abnormal Physiology: Heart
+An understanding of abnormal cardiac physiology in disease is 
+necessary for appropriate cardiac rehabilitation. In general, cardiac 
+limitation is caused by either decreased CO, or ischemic disease, or 
+a combination of these. Ischemia causes the myocardium to have 
+lower contractility and lower compliance reducing SV . Valvular heart 
+disease lowers maximum CO through stenotic valves (e.g., aortic or 
+mitral stenosis) or valvular regurgitation (e.g., aortic or mitral insuf-
+ficiency). Finally, heart failure is a state of low CO, often as a result 
+of low SV , and is associated with a reduction of Vo2max, increased 
+resting heart rate, and often a greater Mvo2 for a given Vo2.
+Arrhythmias decrease CO by lowering SV and increasing heart 
+rates. For atrial arrhythmias, the mechanism can be by a loss of atrial 
+ventricular filling (atrial “kick”) during atrial fibrillation or supra-
+ventricular tachycardias, or from high heart rates without atrial 
+coordination as in ventricular tachycardias and ventricular bigeminy.
+Surgical treatments for heart disease either restore coronary 
+circulation (e.g., bypass and intravascular procedures) or restore 
+normal anatomy (e.g., valve replacement). Surgical treatment for 
+heart failure can include LVADs or transplantation.130,151 Medical 
+treatment for heart disease either aims to improve coronary circu-
+lation for ischemia or works to improve blood flow and restore CO 
+for heart failure by lowering afterload, reducing fluid overload, and 
+increasing inotropy. Although medical treatment of ventricular 
+arrhythmias has been limited, implantable defibrillators and pace-
+makers have been very successful. Severe end-stage heart disease of 
+all types may require cardiac transplantation or an LVAD. In all 
+of these conditions and treatments, cardiac rehabilitation has an 
+important role to play. Some basic concepts to remember include 
+that patients before transplantation are similar to patients with 
+heart failure, whereas patients after transplantation have several 
+physiologic changes that are unique, including high resting heart 
+rate, limited increase in SV , and peak heart rate with exercise. The 
+basic principles of cardiac rehabilitation are discussed as follows.13
+Cardiac rehabilitation is either primary prevention, which 
+includes risk factor modification and education before a cardiac 
+event, or secondary prevention, which is cardiac rehabilitation 
+after the onset of cardiac disease including both exercise and risk 
+factor modification.
+Primary prevention is usually performed in primary care set -
+tings rather than a rehabilitation setting. The focus is on the reduc-
+tion of cardiac risk factors with a combination of education and 
+exercise for patients in the community. Primary prevention can 
+have a profound effect on the rate of cardiac disease with a decrease 
+in obesity, blood pressure, and lipid profiles.53,54,147 Ideally, behav-
+ior modification should begin in childhood with the establishment 
+of healthy behavior and then maintained throughout life. Because 
+populations who are disabled are generally sedentary and may have 
+other risk factors, primary prevention should be an important 
+component of the care of the disabled and should include manage-
+ment of hypertension and lipids along with encouraging exercise 
+and consideration of antiplatelet agents. These are all cost-effective 
+approaches and can decrease mortality and morbidity on a popu -
+lation-based scale, in addition to the individual benefits.53,54,147
+After an episode of cardiac disease, it is essential to have sec -
+ondary risk factor modification, which includes all of the features 
+of primary prevention programs discussed earlier. In addition, dis-
+ease-specific education and formal exercise is a part of the second-
+ary prevention program. In both cardiac and pulmonary disease, 
+smoking cessation is crucial as part of both primary and secondary 
+prevention programs.6,87,158 
+Pulmonary Rehabilitation Programs
+Rehabilitation programs for patients with pulmonary disease are 
+similar to cardiac rehabilitation programs. After severe acute exac-
+erbations, some patients can benefit from a short acute inpatient 
+rehabilitation, but the majority of pulmonary rehabilitation is 
+done in an outpatient setting. For patients who are in an inten -
+sive care setting, early mobilization programs are now being used 
+to limit debility in these vulnerable patients. 5,18,107 Outpatient 
+pulmonary rehabilitation programs also have primary prevention 
+for pulmonary disease with smoking prevention and cessation, 
+occupational safety, and prevention of exposure to environmental 
+and infectious agents. Secondary pulmonary prevention involves 
+medication adherence and education, smoking cessation, supple -
+mental oxygen use and education, and environmental modifica -
+tion for known environmental triggers.75,110
+For patients with ventilatory failure that cannot be supported 
+with noninvasive ventilation, lung transplant may become neces -
+sary. Rehabilitation before transplantation is focused on both the 
+underlying condition and transplant-specific education, whereas 
+rehabilitation after transplantation includes education and resto -
+ration of muscle strength, which is impaired from the medical 
+regimen for patients after transplantation.17 
+Cardiac Rehabilitation of the Patient After 
+Myocardial Infarction
+The standard model for cardiac rehabilitation after MI was first 
+described by Wenger et al.155 in 1971. Because revascularization is 
+currently common and infarcts are smaller than in the past, there 
+  Causes of Altered Lung Physiology
+Restrictive Diseases Obstructive Diseases
+Loss of inspiratory reserve
+Intrinsic loss of inspiratory reserve
+	 •	 	Lung	fibrosis
+	 •	 	Pulmonary	hypertension
+	 •	 	Pulmonary	edema
+Extrinsic loss of inspiratory 
+reserve
+	 •	 	Chest	wall	rigidity
+	 •	 	Neurologic	(central)	 
+weakness
+	 •	 	Neurologic	(peripheral)	
+weakness
+	 •	 	Chest	wall	restriction	from	
+bracing
+Increase in residual volume
+Intrinsic increase in residual volume
+	 •	 	Bronchial	obstruction	(acute	
+asthma)
+	 •	 	Airways	collapse	(chronic	
+obstructive lung disease/
+emphysema)
+	 •	 	Bronchial	obstruction	 
+(bronchiectasis, cystic fibrosis)
+Extrinsic increase in the residual 
+volume
+	 •	 	Neck	obesity
+	 •	 	Tracheomalacia
+  
+TABLE 
+27.3
+
+--- PAGE 607 ---
+518
+SECTION 3   Common Clinical Problems
+  Summary of Goals and Methods of Pulmonary Rehabilitation
+Goals Methods
+Primary and Secondary Prevention
+Smoking	cessation Smoking	cessation	programs,	emotional	support,	monitor	and	encourage	abstinence
+Immunization Assure proper immunizations (flu and pneumonia), communicate with primary physician
+Prevent exacerbations Disease education
+Self-assessment	skills	taught
+Self-intervention	taught
+Instruct on accessing private physician
+Appropriate medication use Review medication
+Focus	on	inhaler	technique
+Review dosing schedules
+Review interactions and side effects
+Focus	on	appropriate	use	of	inhalers	and	nebulizers
+Pulmonary toilet Review bronchial hygiene
+Teach	cough	techniques/huffing
+Teach	appropriate	use	of	chest	physiotherapy	techniques	to	the	patient	and	family
+Appropriate use of oxygen therapy Encourage acceptance of the need for O2
+Appropriate use of oxygen at rest and with exertion
+Review self-monitoring with pulse oximetry
+Review oxygen equipment and appropriate systems for a given patient
+Emphasize the importance of supplemental oxygen use and the consequences of failure to use oxygen
+Nutritional	counseling Aim to achieve ideal body weight
+For	CO2-retaining individuals, avoid high-carbohydrate diet
+Maintenance of low-sodium diets
+Encourage balanced nutrition, avoidance of fad diets
+Family	training Disease-specific training
+Pulmonary toilet and chest physiotherapy
+Medication and oxygen use
+Family	support	group
+Counseling as needed
+Dyspnea Relief: Exercise Training
+Exercise Multifaceted program individualized to each patient’s needs
+	 •	 	Strengthening Emphasis on gradual increase in strength with a focus on proximal muscle groups
+Avoid injury to weakened musculotendinous structures that may have been weakened by disuse and medications
+Focus	on	high-repetition,	low-intensity	training
+	 •	 	Conditioning Aim to increase exercise tolerance with aerobic exercises
+Cross-training program to avoid injury
+Create an independent training program
+Increase ambulation endurance with gait training
+Appropriate oxygen titration during exercise
+	 •	 	Respiratory	muscle	training	for	
+selected conditions
+Isocapnic hyperpnea
+Inspiratory resistance training
+Inspiratory threshold training
+	 •	 	Upper	extremity	training Increase strength, focus on proximal muscles
+Increase endurance for sustained activity, aim to decrease fatigue with ADL
+	 •	 	ADL	training Energy conservation and adaptive techniques
+Teach	anxiety	and	stress	relief
+Teach	pacing	in	activities
+Dyspnea Relief: Lifestyle Modifications
+Breathing	retraining Technique	of	pursed	lip	breathing,	especially	in	obstructive	conditions
+Diaphragmatic breathing
+Anxiety reduction Stress	relaxation	techniques
+Paced breathing
+Autohypnosis
+Visualization
+Use	of	anxiolytics	as	needed
+Evaluate and treat any underlying depression
+TABLE 
+27.4
+
+--- PAGE 608 ---
+519CHAPTER 27 Acute Medical Conditions: Cardiopulmonary Disease, Medical Frailty, and Renal Failure
+have been modifications to the classical program with a reduction to 
+three phases, eliminating the classical stage 2 recovery phase. A mod-
+ern acute phase mobilization program is illustrated in Table 27.5.
+The exception to bypassing the recovery phase for cardiac 
+rehabilitation comes for surgical patients with sternotomy who 
+may require recovery from their surgery before starting the train -
+ing phase of rehabilitation. In summary, phase 1 rehabilitation is 
+the acute phase in hospital immediately following a cardiac event 
+and ends at discharge. Phase 2 is an outpatient training phase, 
+with secondary prevention, intense education, and aerobic con -
+ditioning. Phase 3 is the most difficult, the maintenance phase 
+in which patients seek to achieve continued aerobic exercise and 
+maintenance of lifestyle modifications. Risk factor modification 
+is performed at all phases. This model is similar for patients with 
+pulmonary disease. For patients with cardiopulmonary disease 
+who are not hospitalized, the goal is essentially phase 2 and phase 
+3 for all patients at the time of diagnosis. A more detailed descrip-
+tion of each of the phases follows.
+Acute Phase (Phase 1)
+The basics of the phase 1 program are illustrated in Table 27.5. 
+Education about cardiopulmonary risk factor modification is 
+introduced at the time of acute hospitalization. For patients with 
+cardiac disease, all acute mobilizations should be done with car -
+diac monitoring with appropriate supervision by trained thera -
+pists or nurses. A post-MI heart rate increase with activity should 
+be kept to within 20 beats/min of baseline and SBP kept within 
+20 mm Hg of baseline. A decrease of 10 mm Hg or more is indica-
+tive of further medical issues, and exercise should be halted. The 
+target intensity at the end of the phase I program exercise is to a 
+level of four METs, covering most of the daily activities patients 
+may perform at home after discharge.
+For patients with pulmonary disease, similar phase 1 goals exist 
+and there is new emphasis on early mobilization in the intensive 
+care unit (ICU) to prevent frailty and deconditioning. Patients are 
+aggressively mobilized, some while still on the ventilator. Innova-
+tions, including extracorporeal membrane oxygenation, are also 
+now allowing more aggressive mobilization of patients because 
+sedation is less, and patients may maintain better nutritional sta -
+tus. These patients with pulmonary disease should be enrolled in 
+outpatient pulmonary programs to maintain their early gains and 
+complete a full program of education and exercise. 
+Inpatient Rehabilitation Phase (Phase 1B)
+T o distinguish between patients who have a rapid recovery after 
+their cardiopulmonary event (pure phase 1) and those patients who 
+require either acute or subacute rehabilitation treatment before 
+discharge home, the designation of phase 1B rehabilitation has 
+been established. With advanced age or substantial comorbidities 
+or other disabilities that make mobilization more difficult, many 
+rehabilitation specialists will care for these patients in phase 1B. The 
+guidelines for exercise are the same as they are for patients in phase 
+1 but with a longer recovery period extending their hospitalized care 
+to an acute or subacute rehabilitation setting before discharge. 
+Training Phase (Phase 2)
+Classically, phase 2 cardiopulmonary rehabilitation starts after a 
+symptom limited full-level ETT for patients with cardiac disease 
+or a CPET for patients with complex pulmonary disease. This 
+allows for setting target heart rates and target exercise intensity 
+from the exercise. A target heart rate of 85% of the maximum 
+heart rate on an ETT or a CPET is generally regarded as safe for 
+patients at low risk. Exercise intensity targets are lower for patients 
+at higher risk or those with underlying conditions. In patients 
+with life-threatening arrhythmias or chest pain, target heart rates 
+are chosen that are below notable end points. Because hypoxemia 
+can add risk and limits participation with exercise, it is important 
+to provide supplemental oxygen as needed (up to a rate of 15 L/
+Goals Methods
+Improve confidence Build	compensatory	techniques
+Build	confidence	in	ability	to	exercise
+Provide ability to self-assess and learn disease management techniques
+Disease Management
+Disease acceptance Family	and	patient	education	regarding	disease	process
+Coping skills Patient and family support group
+Psychology and social work intervention as needed
+Treatment	of	depression	as	needed
+Quality of life improvement Simplify	ADL	management,	improved	coping	skills
+Improve disease management strategies
+Advance directives review Counseling regarding end-of-life planning
+Establishment of healthcare proxy
+Clarification of intention for resuscitation
+Assistance in preparing paperwork
+Encouragement Patient support group
+Use	of	social	work	and	psychological	support
+Continuing exercise and disease manage-
+ment compliance
+Multidisciplinary team encouragement
+Physician (specialty and primary care) consensus
+Family	education	and	involvement
+ADL, Activity of daily living.
+  
+   Summary of Goals and Methods of Pulmonary Rehabilitation—cont’dTABLE 
+27.4
+
+--- PAGE 609 ---
+520
+SECTION 3   Common Clinical Problems
+min as needed) to maintain saturation greater than 90% for safe 
+exercise. A target heart rate of 65% to 75% of maximum is safe 
+and effective in a regular exercise program for patients at higher 
+risk54 and, with target rates as low as 60%, still provides a training 
+benefit. Monitoring also needs to be customized to accommodate 
+the underlying risk profile.
+Classically, a cardiopulmonary training program is three ses -
+sions per week for 8 to 12 weeks. Cardiac rehabilitation is covered 
+by most insurance plans, but the major limitation is a lack of refer-
+ral and/or a lack of facilities in many areas. Creative and innova -
+tive care delivery programs have been developed to increase access 
+and include home programs (patients at low risk), telemedicine 
+programs, and community-based programs in nonmedical facili -
+ties. Because training continues after the 8- to 12-week period, 
+it is important for patient self-efficacy that they learn to perform 
+self-monitoring following the guidelines presented in standard 
+references.55,83 Patients need to learn to begin exercise with a 
+stretching session, then a warm-up session, a period of training 
+exercise at designated intensity, followed by a cool-down period. 
+The principles of specificity of training need to be remembered 
+because training benefits generally are seen in the specific muscles 
+exercised. 
+Maintenance Phase (Phase 3)
+Although the maintenance phase of cardiopulmonary rehabilita -
+tion is the most important part of the program, it often receives 
+the least attention. The benefits of a phase 2 program can be lost in 
+as little time as a few weeks if a patient ceases to exercise. Because 
+of this, patient education of the importance of making exercise 
+a part of their new health habits has to be emphasized and the 
+patient needs to integrate exercise as a part of a healthy lifestyle. 
+T o maintain capacity, patients should perform moderate exercise 
+at the target intensity learned in their rehabilitation program for 
+at least 30 minutes three times a week. With low-level exercise, the 
+frequency has to be increased to five times a week for maintenance 
+of gains. Although telemetry monitoring is usually not used with 
+patients with cardiac disease, patients with pulmonary disease can 
+benefit from the use of home pulse oximetry and should be taught 
+to adjust their supplemental oxygen as needed with exercise to 
+maintain adequate oxygenation.16 
+Cardiac Rehabilitation Programs in Specific 
+Conditions
+Angina Pectoris
+Cardiac rehabilitation for angina aims to lower heart rate at rest 
+and with given levels of activity to decrease angina by improv -
+ing fitness. Exercise benefits for patients with angina include 
+improved peripheral efficiency and improved coronary artery 
+collateralization. 
+Cardiac Rehabilitation After Revascularization 
+Procedures
+Postcoronary Artery Bypass Grafting
+Cardiac rehabilitation after coronary artery bypass grafting (CABG) 
+emphasizes secondary prevention aims to improve conditioning 
+and fitness. For patients with low ejection fractions and heart fail-
+ure, closer telemetry monitoring should be done. If a patient had a 
+sternotomy, arm exercises will have to be limited until sternal heal-
+ing occurs, usually at approximately 6 weeks after surgery. Patients 
+who have had percutaneous interventions usually pursue the pro-
+gram immediately and it is similar to the program after CABG. 
+Cardiac Rehabilitation for Patients After Cardiac 
+Transplantation
+Because most patients after cardiac transplantation have severe 
+heart failure and debility before transplantation, involvement in a 
+heart failure pretransplant program can help to limit decondition-
+ing and help to treat depression and anxiety. Heart transplanta -
+tion usually improves cardiac function; therefore a posttransplant 
+program can focus on conditioning, education, and secondary 
+prevention. An added feature is that many patients after trans -
+plantation may have vascular and neurologic complications, 
+which may mean a phase 1B program is needed before starting the 
+phase 2 outpatient program. This is often done in either acute or 
+subacute rehabilitation settings.
+Remembering the alterations of cardiac physiology in the 
+patients after transplantation is important. T ransplanted hearts are 
+denervated and have no direct sympathetic or vagal central regula-
+tion. In many patients, the loss of vagal inhibition creates a resting 
+tachycardia of 100 to 110 beats/min. By contrast, because there 
+is a loss sympathetic innervation, the chronotropic response to 
+exercise is in response to circulating catecholamines, leading to a 
+  Acute Phase I In-Hospital Cardiac Mobilization 
+Program
+Day Activity
+Day 1 Passive ROM, ankle pumps, introduction to the program, 
+self-feeding
+Progress to dangle at side of bed, initiate patient education
+Progress to active assisted ROM, sitting upright in a chair, light 
+recreation and use of bedside commode
+Increased sitting time by the end of the day, light activities 
+with minimum resistance, continue patient education
+Progress to light activities with moderate resistance,  
+unlimited sitting, seated ADLs by end of first day
+Day 2 Increased resistance, walking to bathroom, standing ADLs, up 
+to 1-hour-long group meetings
+Progress walking up to 100 feet, standing warm-up exercises
+Begin	walking	down	stairs	(not	up),	continued	education
+Progress exercise program with a review of energy  
+conservation and pacing techniques
+Day 3 Advance exercise to include light weights and progressive 
+ambulation
+Increase the duration of activities
+Progress stair activity to climbing two flights of stairs, continue 
+to increase resistance in exercises
+Consolidate home exercise program teaching
+Aim to safely walk up and down two flights of stairs (ensures 
+safety for normal activities), complete instruction in home 
+exercise program and in energy conservation and pacing 
+techniques
+Discharge planning and education
+ADL, Activity of daily living; ROM, range of motion.
+  
+TABLE 
+27.5
+
+--- PAGE 610 ---
+521CHAPTER 27 Acute Medical Conditions: Cardiopulmonary Disease, Medical Frailty, and Renal Failure
+delayed and blunted heart rate response to exercise. Posttransplant, 
+peak heart rates are usually 20% to 25% lower than in matched 
+controls. Other cardiovascular effects that are seen include rest -
+ing hypertension from the renal effects of calcineurin inhibitors 
+(e.g., cyclosporine and tacrolimus) and prednisone, along with 
+diastolic dysfunction in some patients.18 Combined, these effects 
+usually reduce maximum work output and maximum oxygen by 
+approximately one-third compared with age-matched individuals. 
+Of interest, despite no denervation of the heart, similar decreases 
+in exercise capacity are also seen in patients after lung transplanta-
+tion.17 With exercise, patients after transplantation have a lower 
+work capacity, reduced CO, lower peak heart rate, and lower oxy-
+gen uptake and a higher resting heart rate and SBP than normal 
+individuals. In addition, resting and exertional diastolic blood 
+pressures are usually higher for patients after heart transplanta -
+tion.25,142 The net effect of these alterations in exercise response 
+is higher than normal perceived exertion, minute ventilation, and 
+ventilatory equivalent for oxygen at submaximal exercise levels.
+The focus of a cardiopulmonary rehabilitation program after 
+transplantation is on conditioning and education. Target intensity 
+for aerobic exercise is usually approximately 60% to 70% of peak 
+effort for 30 to 60 minutes three to five times weekly. Intensity can 
+be regulated with rating of perceived exertion target at 13 to 14 on 
+the Borg Scale, approximately 5 to 6 on the modified Borg Scale, 
+with the goal being to consistently increase the level of activity. 
+Education focuses on learning the complicated medical regimen 
+and vocational and psychological needs. For patients after cardiac 
+transplantation, a program of rehabilitation can help to assist 
+them to improve work output and exercise tolerance, with some 
+patients able to participate in competitive athletics.71,73,74
+Cardiomyopathy
+Fortunately, cardiac rehabilitation for heart failure is currently covered 
+by insurance plans, since Medicare regulations started to cover reha-
+bilitation for heart failure in March of 2014 (42 C.F .R. § 410.49(b)
+(1)(vii)). An important consideration for heart failure rehabilitation 
+is the increased risk of complications such as sudden death, depres-
+sion, and chronic cardiac disability. Closer monitoring of telemetry 
+and vital signs is also needed because some patients with heart failure 
+have inconsistent responses to exercise with increased fatigue, pos-
+sible exertional hypotension, and syncope. Most patients also exhibit 
+low endurance and chronic fatigue as a result of their low-exercise 
+capacity. However, a positive effect can be realized in their fatigue and 
+function with even a small improvement in Vo2. These changes in 
+capacity can lead to a marked improvement in quality of life and may 
+help patients with heart failure to continue to live independently.7
+Because of the increased risk for complications in patients 
+with heart failure, a graded ETT is helpful before starting a car -
+diac rehabilitation program. Long warm-up and cool-down periods 
+with gentle exercise at a limited workload helps to compensate for 
+an impaired ability to generate a dynamic exercise response, and 
+dynamic exercise is preferred to isometric exercise because isomet-
+ric exercise can lead to an increase in diastolic pressure and cardiac 
+afterload.34 Heart rate targets are usually set 10 beats/min less than 
+any notable end point found with cardiopulmonary exercise test -
+ing. Cardiac rehabilitation begins with cardiac monitoring especially 
+when severe left ventricular dysfunction is present. Once the patient 
+has demonstrated stability with an exercise program and has learned 
+how to self-monitor, the patient should be taught a self-monitored 
+program. Education of patients with heart failure also includes doing 
+a daily body weight (to observe for fluid accumulation) and moni-
+toring their blood pressure and heart rate responses to exercise.7
+Patients who are on pharmacologic inotropic support or left 
+ventricular mechanical support for end-stage heart failure can also 
+exercise in a cardiac rehabilitation program with similar precautions 
+to other patients with congestive heart failure.7 Rehabilitation after 
+an LVAD usually follows a classical postsurgical course and may 
+include phase 1 and phase 1B rehabilitation followed by phase 2 and 
+phase 3 programs. Patients with an LVAD seen in acute and sub-
+acute units require staff training, close cooperation with the LVAD 
+team, and familiarity with the devices that are used locally. Because 
+an LVAD often restores a reasonable CO, exercise tolerance is often 
+only limited by the peak flow of the device. In addition to normal 
+secondary prevention education, LVAD-specific family and patient 
+education are also essential parts of post-LVAD rehabilitation.12 
+Valvular Heart Disease
+Cardiac rehabilitation for valvular heart disease resembles the pro-
+gram for cardiac heart failure. Postsurgical considerations are the 
+same as for CABG, with the added consideration of anticoagula -
+tion for patients with mechanical valves. Because anticoagulation 
+increases the risk of hemarthrosis and bruising, patients need to 
+avoid impact exercises and need education regarding injury avoid-
+ance.7 The overall training program is similar to that discussed for 
+the patient post-CABG.7 
+Cardiac Arrhythmias
+An essential consideration for patients with cardiac arrhythmias is 
+the need for telemetry monitoring with increases in intensity of 
+exercise and new exercises. Patients at high risk can benefit from 
+an automatic implantable cardiac defibrillator (AICD), which may 
+offer protection form ventricular arrhythmias. Cardiac rehabilitation 
+for patients with AICD needs to be done at intensities that avoid 
+the heart rates at which the device is set to respond to ventricular 
+tachyarrhythmias. An exercise stress test can help to set appropriate 
+target heart rates for an exercise program. In addition to secondary 
+prevention and education, AICD-specific education and emotional 
+support are important to include in the rehabilitation program.12 
+Cardiac Rehabilitation for Stroke
+An emerging area of scientific exploration is using the cardiac 
+rehabilitation model for stroke recovery and prevention.93,94 This 
+is a logical extension of the effectiveness of the cardiac rehabilita -
+tion model in reducing known coronary artery disease risk factors 
+in regular participants. Because the risk factors for coronary artery 
+disease are the same as the risk factors for stroke, it is logical to 
+apply the same group exercise-based behavior modification model 
+to a similar at-risk population. Participants must be screened care-
+fully for balance impairments and muscle strength asymmetry 
+that could increase the risk of falling in a group exercise setting. 
+Asymmetric muscle fatigue must be scrupulously monitored and 
+can contribute to degradation of gait or exercise form as exercise 
+progresses. Subtle cognitive deficits may require close observa -
+tion until it is determined that the stroke patient care set machine 
+intensity levels accurately and independently. Meticulous blood 
+pressure control must be maintained and may require more fre -
+quent measurements than regularly collected in cardiac patients. 
+Any questions regarding safe blood pressure range should be 
+directed to the referring neurologist. This is analogous to target 
+heart-rate range directed by referring cardiologist when indicated. 
+High-Intensity Interval Training
+A new and exciting area of emerging research is the conditioning of 
+cardiac patients with high-intensity interval training (HIIT).124,156 
+
+--- PAGE 611 ---
+522
+SECTION 3   Common Clinical Problems
+Following appropriate screening and evaluation, patients are 
+enrolled in a traditional cardiac rehabilitation program. Once they 
+are familiar with the execution of exercise intervals, an accurate setup 
+of exercise machines trials of HIIT can be introduced. Patients are 
+instructed to exercise at high intensity (>85% of Vo2max) for short 
+or ultra-short intervals followed by low-intensity or rest intervals.126 
+It is recommended to start HIIT training on seated machines to 
+reduce likelihood of falls on standing machines due to loss of bal-
+ance, distraction during interval initiation or termination, and diz-
+ziness from blood pressure fluctuations. Meticulous blood pressure 
+and telemetry monitoring should take place until the practitioner is 
+confident they have established an individualized baseline response 
+for each patient. Additional considerations are the potential for 
+exercise-induced hypoglycemia—an expected and physiologically 
+beneficial outcome. Symptomatic hypoglycemia can be quickly 
+treated with any source of oral glucose. It is important to reassure 
+cardiac patients that hypoglycemic symptoms are not the onset of 
+cardiac ischemia to reduce negative associations with exercise. HIIT 
+has been shown to provide significant conditioning benefits in the 
+cardiac rehabilitation population with medically supervised selec-
+tion of candidates.88 
+Home-Based Rehabilitation
+Demand for cardiac rehabilitation services is unable to keep up 
+with the current and projected future supply throughout the world 
+leading to innovative approaches to delivery included home-based 
+and “hybrid” programs. 89,125,134 Numerous innovative models 
+are emerging in both cardiac and pulmonary rehabilitation. 28 All 
+models are initiated with an in-person evaluation and followed by 
+various technology driven follow-up contacts. The telerehabilita -
+tion approach allows one-on-one live supervised sessions or weekly 
+coaching via video link. A less technology-driven approach includes 
+weekly phone calls and reviews of self-kept activity logs that may 
+also include additional communication via text message.84 Hybrid 
+programs begin as a traditional facility-based, telemetry-monitored 
+exercise program followed by rapid transition to home-based con-
+tinuation.44 Most hybrid programs do not extend telemetry moni-
+toring into the home setting, although with technologic advances 
+this has been demonstrated in at least two foreign studies. 22,80 In 
+addition, current technology allows physiologic data to be collected 
+and relayed to the provider via wearable technology and app- or 
+web-based interfaces. 85,96,141 Regular follow-up appointments, 
+whether in person or via video link or phone call, are recommended 
+to ensure continuity of care. It has been demonstrated that home-
+based programs are not inferior to facility-based programs, but 
+the medical literature is still developing regarding conclusions of 
+superiority.64 Home-based cardiac rehabilitation is an emerging and 
+exciting trend. There is a wide variety of solutions being explored 
+throughout the international cardiac rehabilitation community. 
+Exercise has been repeatedly demonstrated to be safe for patients 
+in the cardiac rehabilitation population—extrapolation from this 
+well-accepted practice is leading to new delivery methods to an ever-
+expanding population.72,146,152,153 
+Pulmonary Rehabilitation Programs in Specific 
+Conditions
+Emphysema
+Rehabilitation for patients with COPD is the standard for pul -
+monary rehabilitation. Goals of a pulmonary rehabilitation 
+program include improving disease management and exercise 
+capacity. Because pulmonary rehabilitation does not improve lung 
+function, the goal of the rehabilitation program is to improve 
+peripheral efficiency and decrease dyspnea. Energy conservation 
+education (how to do a given activity at a lower level of exertion), 
+anxiety reduction, and improved endurance all contribute to 
+improved function and decreased dyspnea. Longer-duration exer-
+cise of moderate intensity is often used rather than high-intensity 
+exercise. Investigations have started to evaluate a possible role for 
+HIIT for patients with COPD, but this has not yet been proven 
+to be more effective than the standard training program. Because 
+isometric exercises increase intrathoracic pressures, they should 
+be avoided in patients with COPD. 16 Appropriate supplemen -
+tal oxygen should be given to maintain saturation greater than 
+90%, with education to lower supplemental oxygen after exercise 
+back to baseline levels to prevent resting hypercarbia. Patients 
+with COPD generally have relatively modest oxygen needs and 
+can often maintain their oxygen saturation levels with 1 to 6 L 
+of oxygen via a nasal cannula. Bilevel ventilation may have a role 
+for patients with sleep apnea or ventilatory failure, and education 
+for these patients should include the proper use of this modality. 
+For patients being considered for lung volume reduction surgery, 
+pulmonary rehabilitation is considered essential both to qualify 
+for the surgery and after surgery to ensure adequate outcomes.16
+Airway clearance and chest physical therapy has a role in the 
+pulmonary rehabilitation of patients with substantial secretions. A 
+combination of external percussion devices, vibration devices, and 
+inhaled saline in combination with cough training and huffing 
+may help to mobilize secretions. It is also important to include 
+family training and education about inhaled medications, supple-
+mental oxygen use, and management of equipment.117 
+Interstitial Lung Disease
+The basics of a program of pulmonary rehabilitation for intersti -
+tial lung disease are the same as for COPD. An essential issue for 
+patients with interstitial lung disease is often profound hypoxemia 
+that requires high-flow oxygen with exercise to maintain adequate 
+saturation for activity. It is essential in this group of patients to avoid 
+chronic hypoxemia to prevent secondary pulmonary hypertension 
+because the coexistence of interstitial lung disease and pulmonary 
+hypertension can lead to a markedly decreased life expectancy. Exer-
+cise intensity is often limited in patients with interstitial lung dis-
+ease by oxygenation rather than dyspnea, and airway secretions are 
+usually not an important issue. For some individuals with severe 
+end-stage disease, there may be ventilatory failure with hypercarbia, 
+but in those patients, rehabilitation may no longer be possible.144
+Because interstitial lung disease is often progressive, transplant 
+evaluation and education or end-of-life planning may be needed 
+to permit as many patient goals as possible to be achieved. 
+Pulmonary Hypertension
+Patients with pulmonary hypertension have similar limitations 
+as patients with heart failure and share many similar precautions. 
+Effective medical treatment for pulmonary hypertension has made 
+a once-fatal condition into a chronic disease for many patients. 
+Patients with pulmonary hypertension currently have a much longer 
+life expectancy, and improved functional status is essential for main-
+taining an active life. Major concerns for pulmonary rehabilitation 
+are preventing debility and improving dyspnea. Because hypoxemia 
+can worsen pulmonary hypertension, it is important to maintain 
+oxygen saturation with exercise, and cardiac monitoring may be 
+needed for patients with a history of arrhythmias and right ven -
+tricular failure. Education for this group of patients should include 
+a review of their vasodilating medications and supplemental oxygen 
+use. Intravenous and continuous subcutaneous vasodilator infusion 
+is appropriate for a pulmonary rehabilitation program, but, similar 
+
+--- PAGE 612 ---
+523CHAPTER 27 Acute Medical Conditions: Cardiopulmonary Disease, Medical Frailty, and Renal Failure
+to patients with heart failure, there may need to be long warm-up 
+and cool-down periods. For patients with severe pulmonary vascular 
+disease, the program should start with moderate- to low-level exer-
+cise. Definitive research of the efficacy and safety of pulmonary reha-
+bilitation for patients with pulmonary hypertension is still ongoing. 
+Ventilatory Failure
+For alert patients on either invasive or noninvasive ventilation for 
+ventilatory failure, a program of pulmonary rehabilitation can 
+help to increase mobility and prevent complications. Exercise pro-
+grams for patients on nocturnal or intermittent ventilatory sup -
+port aim to improve efficiency and decrease fatigue while off the 
+ventilator. The details of ventilatory support for patients requir -
+ing noninvasive ventilation is beyond the scope of this chapter. 
+Table 27.6 provides an overview of the types of patients who may 
+present with ventilatory failure. A summary of the indications for 
+ventilatory support is listed in Table 27.7.29 
+Cardiopulmonary Rehabilitation in the 
+Physically Disabled
+As the population ages and more patients survive a disabling condi-
+tion, there is an increase in patients with both physical disability 
+and cardiopulmonary disease. An issue for cardiac rehabilitation for 
+patients with dual disability is the impaired mobility that can impair 
+both evaluation and participation in a rehabilitation program. Indi-
+viduals who are disabled tend to have lower activity levels, which 
+puts them at increased risk of cardiac and pulmonary disease and 
+may present obstacles for a standard rehabilitation program for a 
+person who is newly disabled and who has preexisting cardiopul -
+monary limitations. For new-onset cardiac or pulmonary disease, 
+cardiopulmonary rehabilitation is just as important and needs to be 
+considered. Cardiopulmonary primary and secondary prevention 
+also overlaps with the education needed for stroke and peripheral 
+vascular disease and is especially important for patients with physi-
+cal disabilities because they are often more sedentary with a higher 
+prevalence of obesity and deconditioning. Finally, because mobility 
+in individuals who are disabled requires greater energy expenditure, 
+compromised work capacity from cardiopulmonary disease may 
+impose an even greater degree of disability on an individual who is 
+disabled than an individual who is able bodied.
+Cardiopulmonary exercise prescription for individuals who are dis-
+abled has to be adapted for the individual disabilities that the patient 
+has. Individuals who have a lower extremity impairment resulting 
+from neurologic or orthopedic conditions can perform upper extrem-
+ity ergometry or use modified lower extremity exercise equipment, 
+whereas an adapted bicycle ergometer or Airdyne may be helpful for 
+a patient with hemiplegia. The higher Mvo2 requirements for upper 
+extremity exercise compared with lower limb exercise should be con-
+sidered to adapt the cardiac rehabilitation program for patients who are 
+disabled. Patients who are disabled also need to focus on task-specific 
+activities while increasing their aerobic conditioning and endurance, 
+with a goal of lowering the Mvo2 for any given task. Because of the 
+expertise in dealing with physical disabilities and understanding the 
+mechanics of motion, physiatrists are particularly well positioned to 
+lead cardiopulmonary rehabilitation programs for the disabled. It is 
+especially important when many traditional cardiac rehabilitation pro-
+gram teams are hesitant to work with patients who are physically dis-
+abled because of their lack of experience with physical disability.120,147 
+Conclusion
+Cardiopulmonary rehabilitation is an area where physiatry is 
+uniquely positioned to help manage the patient who is multidis -
+abled, and the multidisciplinary approach is well suited to address 
+the education and team management needed for successful cardio-
+pulmonary rehabilitation. A goal for cardiopulmonary rehabilita -
+tion is to increase the access to cardiopulmonary rehabilitation to a 
+greater number of patients, including populations who are under-
+served in rural and urban areas, women and minority groups, and 
+patients with dual disabilities as they become a larger proportion 
+of the patients seen with cardiopulmonary disease. 
+Frailty
+Movement and Function
+Movement is an essential part of human life and is important for 
+the preservation of function throughout the entire life cycle. Since 
+the beginning of human history, a high degree of physical activity 
+has been required to maintain a livable environment and to secure 
+adequate nutrition to ensure survival. It is only following indus -
+trialization, a relatively recent event from an evolutionary point 
+of view, that the diseases and conditions associated with inactivity 
+and immobility began to manifest themselves throughout human 
+societies. Obesity and the resultant conditions of diabetes, hyper-
+lipidemia, and decreased cardiopulmonary reserve have increased 
+steadily throughout the past century. Much attention is focused 
+  Causes of Ventilatory Failure
+Central Hypoventilation Respiratory Muscle Failure Chronic Respiratory Disorders Other
+Intracranial hemorrhage
+Arnold-Chiari malformation
+Central nervous system trauma
+Congenital and central failure of control of breathing
+Myelomeningocele
+High spinal cord injury
+Stroke
+Central alveolar hypoventilation
+Amyotrophic lateral sclerosis
+Congenital myopathies
+Botulism
+Muscular dystrophies
+Myasthenia gravis
+Phrenic nerve paralysis
+Polio/postpolio
+Spinal	muscular	atrophy
+Myotonic dystrophy
+Chronic obstructive lung disease
+Bronchopulmonary	dysplasia
+Cystic fibrosis
+Interstitial lung disease
+Kyphoscoliosis
+Thoracic	wall	deformities
+Thoracoplasty
+Congestive heart failure
+Congenital heart disease
+Tracheomalacia
+Vocal cord paralysis
+Pierre Robin syndrome
+  
+TABLE 
+27.6
+
+--- PAGE 613 ---
+524
+SECTION 3   Common Clinical Problems
+on the “westernization” of diet, although less attention is focused 
+on the “westernization of physical activity levels.”
+As physicians concerned with function, physiatrists intuitively 
+understand the dangers of activity reduction in all settings from all 
+causes, both medical and environmental. In fact, often physiatrists 
+are the only physicians who have familiarity with the maintenance 
+of function via physical activity using therapists, nurses, and family 
+members. The knowledge of how to modify physical and social envi-
+ronments to maximize functional movement and overall function for 
+their patients allows physiatrists to improve and maintain function in 
+their patients. The physiatric focus on activities of daily living (ADLs) 
+is an effort to return functional movements to an individual who is 
+disabled, allowing them to maintain their baseline degree of physical 
+activity required for autonomy and independent movement. 
+Physiology and Consequences of Inactivity
+The link between physical activity and cardiovascular disease has 
+been well described since the 1950s, 102,103 when the relationship 
+between workplace activity levels were directly related to higher 
+rates of cardiovascular events. It is no surprise that less physically 
+active daytime behavior (e.g., mail sorters vs. mail deliverers) 
+affected the development of cardiovascular disease. A more inter -
+esting finding is the strength of this association; primarily seated 
+workers developed almost twice the rate of cardiovascular disease. 
+More research investigating and elucidating the cellular biology of 
+inactivity needs to be done until this area of physiology is as well 
+understood as exercise physiology.
+Currently, the global workforce is becoming more sedentary in 
+numerous sectors as desk-based work responsibilities dominate the 
+work day and after-hours couch-based recreational activities, includ-
+ing home theaters, media centers, and ubiquitous social media, cre-
+ate prolonged voluntary immobilization after work. In the United 
+States the amount of daytime sedentary hours is high, as revealed 
+by data from the National Health and Nutrition Examination Survey 
+(NHANES) database, which showed that 54.9% of waking hours 
+in the population studied was spent during sedentary activities, 95 
+with late adolescents and older individuals being the most sedentary.
+Rising “sedentarism” is not only an American phenomenon. 
+In Australia a large population-based study found that sedentary 
+behavior (television viewing time) was positively associated with 
+abnormal glucose metabolism and metabolic syndrome.35,36 More 
+concerning is that these associations were preserved even when 
+controlling for what would be considered active individuals who 
+participated in sustained and moderate-intensity recreational 
+activities. Prolonged physical inactivity appears to be a unique 
+risk factor for maladaptive energy metabolism. In the future it 
+is possible that number of hours spent sitting will be recognized 
+as a risk factor for the development of cardiovascular disease. In 
+the context of this discussion, these observational data support 
+the hypothesis that the physiology of inactivity is a risk factor for 
+poor health outcomes in numerous settings. This supports the 
+idea that there should be a paradigm shift in how all physicians 
+view physical inactivity in their patients, especially in the hospital 
+setting where the physiatrist is in a key position to increase patient 
+mobility.
+In addition to increased cardiovascular risk, there are numer -
+ous associations between inactivity and poor health outcomes, 
+including the metabolic syndrome, deep vein thrombosis, obesity, 
+and serum insulin levels.
+Metabolic Syndrome
+Although there have not been studies to elucidate the molecular 
+biology linking prolonged sitting to metabolic syndrome, epi -
+demiologic data are compelling. The metabolic syndrome is the 
+presence of three out of five of the following findings: central 
+obesity, elevated blood pressure, low serum high-density lipopro-
+tein cholesterol, high triglycerides, and elevated fasting glucose. 
+Patients with this constellation of findings are at increased risk for 
+the development of cardiovascular disease and diabetes.1 In recent 
+years, the recognition of the metabolic syndrome and its pre -
+vention has produced a rich literature specific to this syndrome. 
+  Indications for Ventilatory Support
+NIV Decision Tree Mild Moderate Severe
+Clinical syndrome Substantial	daytime	CO2 retention 
+(>50 mm Hg with normalized pH)
+Mild daytime or nocturnal CO2 retention (45–50 
+mm Hg) with symptoms of hypoventilation
+Substantial	nocturnal	hypoventilation	
+or hypoxemia
+Clinical diagnoses COPD
+Neuromuscular	disease
+Moderate neuromuscular disease
+Paralysis
+Chest wall deformity
+Central hypoventilation
+Marked obesity
+Severe	neuromuscular	disease
+End-stage lung disease
+Maximum medical 
+management options
+Optimal medication
+Pulmonary toilet
+Airway management
+Avoidance of pulmonary  
+exacerbations
+Add management of secretions
+Airway protection
+Consider	nocturnal	NIV	rest	with	daytime	off	NIV
+Treat	reversible	pulmonary	conditions
+Maximize posture and other supports
+Considerations for augmentative 
+communication and ensuring 
+adequate nutrition
+Indications for  
+tracheostomy over 
+NIV
+Uncontrollable	secretions Uncontrollable	secretions
+Chronic aspiration and chronic pneumonias
+Obstructive sleep apnea with failure to improve 
+with continuous positive airway pressure
+COPD with severe hypoventilation
+Uncontrollable	secretions
+Chronic aspiration and chronic 
+pneumonias
+Failure	of	NIV
+Inability	to	manage	NIV
+Patient/caregiver preference
+COPD, Chronic obstructive pulmonary disease; NIV, noninvasive ventilation.
+  
+TABLE 
+27.7
+
+--- PAGE 614 ---
+525CHAPTER 27 Acute Medical Conditions: Cardiopulmonary Disease, Medical Frailty, and Renal Failure
+Prolonged inactivity (sitting) more than doubles the risk for devel-
+opment of metabolic syndrome.41 Development of the metabolic 
+syndrome has been shown to increase with each additional hour 
+of sedentary television viewing, as opposed to having television in 
+the background during other household activities.35 
+Deep Vein Thrombosis
+The correlation with prolonged sitting and development of deep 
+vein thrombosis has been well described. 61 This can occur even 
+in active individuals who are immobile for prolonged periods 
+of time. Case reports from varied settings have reported seated 
+individuals who developed deep vein thrombosis since the 1950s. 
+These have included observations from air raid shelters, sitting in 
+theater, sitting on extended airplane flights, and even prolonged 
+sitting during video game playing.104,108 Presumed causes include 
+rheologic changes and hemoconcentration.58,66 
+Obesity
+The relationship between physical activity and body mass index is 
+supported by the medical and epidemiologic literature. In varied 
+populations, pediatric, adult, or older adult individuals who have a 
+lower level of baseline physical activity generally have a higher rate 
+of obesity. Sedentary behavior is a reversible cause of obesity in 
+all populations,9,38,135 and improvement of physical activity levels 
+should begin with school-aged children.50,154 This is especially true 
+because there is evidence that an obese child has a significantly 
+greater likelihood of continuing life as an obese adult. 57,157 Even 
+high levels of physical activity in athletic adults may not be able 
+to compensate for the deleterious effects of sedentary behavior.68 
+Insulin
+Insulin resistance is a component of the metabolic syndrome, 
+and thus it is reasonable to assume that an association would 
+exist between amount of insulin present and sedentary behavior. 
+Reduced leisure time physical activity levels are associated with 
+higher levels of insulin at baseline.42
+Numerous studies have demonstrated the relationship between 
+prolonged sitting, obesity, and the development of type 2 diabe -
+tes, an insulin resistance state. More interestingly, however, is the 
+suggestion that insulin levels are elevated in individuals who have 
+prolonged sitting, even in the presence of regular exercise.56 
+Frailty Syndrome
+The frailty syndrome is a recognized syndrome of decreased ability 
+to adapt to stressors accompanied by reduced physiologic reserves 
+and reduced energy metabolism. The frailty syndrome has been 
+reported to vary widely depending on the population studied, 
+ranging from 4% to 60%. 45 The frailty syndrome is clearly asso -
+ciated with advanced age and becomes more prevalent in older 
+groups studied; however, it is considered to be a separate syn -
+drome and not a variant of normal aging. If it were considered 
+the end result of normal aging, it would be reasonable to expect 
+all individuals to acquire the frailty syndrome if they lived long 
+enough, which they do not. The potential for confusion exists 
+when the descriptor “frail” is confused with the frailty syndrome. 
+A universally accepted definition or set of variables to diagnose 
+the frailty syndrome has not yet been agreed upon; however, the 
+conversation in the medical literature is ongoing and evolving. 
+Substantial opportunities exist for physiatric contribution to this 
+discussion because the frailty syndrome is defined in most tools as 
+having a strong functional component.
+A true consensus on the definition of the frailty syndrome 
+has yet to be agreed upon internationally; however, the following 
+findings are discussed in the medical literature as possible vari -
+ables in evaluating individuals thought to be at risk for the frailty 
+syndrome:
+	 •	 	Increased	inflammatory	response
+	 •	 	Decreased	cardiopulmonary	and	renal	reserve
+	 •	 	Sarcopenia
+	 •	 	Weight	loss
+	 •	 	Exhaustion
+	 •	 	Weak	grip	strength
+	 •	 	Slow	walking	speed
+	 •	 	Low	level	of	physical	activity
+There are numerous frailty screening tools being used in a 
+variety of settings. T wo of the most commonly cited tools in the 
+medical literature include the Fried Frailty Phenotype and the 
+“Rockwood Indices” from the Canadian Study of Health. These 
+measurement tools can be of use to physiatrists depending on the 
+practice setting in which they are used. 
+Fried Frailty Phenotype
+Fried and colleagues 45 at Johns Hopkins University developed a 
+screening tool that identifies frailty based on a positive score in 
+three out of five possible domains: weight loss, exhaustion, low 
+physical activity, slow walking speed, and reduced grip strength. A 
+positive response was assigned a score of 1 or 0 for each category.
+Weight Loss
+A positive value of 1 was assigned when participants responded 
+“yes” to the following question, “In the last year, have you lost 
+more than 10 pounds unintentionally?” Because there is consider-
+able room for self-reported bias, follow-up measurements to con-
+firm weight loss are recommended to confirm the initial findings. 
+Exhaustion
+T wo questions extracted from the Center for Epidemiologic Studies 
+Short Depression Scale (CES-D 10) were used as indicators of exhaus-
+tion: “I felt that everything I did was an effort” and “I could not get 
+going.” Scoring was based on the strength of participants’ agreement 
+with these statements. A positive score was assigned a value of 1. 
+Low Physical Activity
+Kilocalories per week expended were calculated with a self-reported 
+description of voluntary activities adapted from the Minnesota 
+Leisure Time Activity Questionnaire. This included questions 
+about walking, chores, outdoor gardening, and numerous types of 
+exercise. Interpretation of the answers should be clarified to ensure 
+that negative answers are not based on different settings (urban 
+vs. suburban) or culture. A positive value of 1 was assigned for 
+participants with the lowest 20% of activity. 
+Slow Walking Speed
+Measurement was the time in seconds required to walk 15 feet. Stratifi-
+cation by gender and height took place. The slowest 20% of the popu-
+lation studied was defined as receiving a positive score and a value of 1. 
+Reduced Grip Strength
+Results were stratified based on gender and body mass index with 
+values recorded in kilograms with a standard dynamometer. Par -
+ticipants who scored in the lowest 20% after adjustment for gen -
+der and body mass index were assigned a positive value of 1.
+
+--- PAGE 615 ---
+526
+SECTION 3   Common Clinical Problems
+After scores are totaled, individuals who score 0 are considered 
+“robust.” The presence of one to two of the criteria listed earlier are 
+considered to be “prefrail,” and three or more positive criteria are con-
+sidered “frail.” This phenotypic description has been correlated with 
+notable clinical outcomes that are recognized as important in the 
+geriatric population including falls, hospitalizations, and mortality. 
+This clinical applicability and relevance to important measurable out-
+comes has made the Fried Frailty measure a popular tool in clinical 
+research. There are no laboratory tests or psychosocial components 
+taken into account when determining a score with this scale. Using 
+these criteria, Fried identified individuals who met the criteria for 
+the frailty syndrome in 7% of the 4317 participants included in the 
+Cardiovascular Health Study, 30% of the participants older than 80 
+years of age, and 28% of the Women’s Health and Aging Studies.45 
+Canadian Study of Health and Aging 
+Measurement Tools
+The “Rockwood Index,” also known as the Canadian Study of 
+Health and Aging (CSHA) Frailty Index, and The Clinical Frailty 
+Scale were both derived from the CSHA dataset, a prospective 
+cohort of more than 10,000 participants. Both of these scales have 
+been widely used in medical studies. The 70-item CSHA Frailty 
+Index is driven by clinical judgment. This is a detailed tool in 
+which clinical deficits are scored based on a 70-item index. The 
+items include self-reported functional activities, mood, and motor 
+symptoms, as well as signs and symptoms derived from medical 
+history and physical examination. Each deficit is assigned a value 
+between 0 and 1.0 to give a total score, which is then divided by 
+70. Some examples of variables collected are listed in Table 27.8, 
+with division into categories provided as a conceptual framework.
+This index determines clinical deficits and allows scoring based 
+on evaluating participants for accumulation of impairments. The 
+Clinical Frailty Index was developed as an attempt to integrate 
+clinician judgment into a formal and universally applicable model 
+to evaluate frailty. The authors recognized that simply evaluating 
+frailty based on a limited number of phenotypic variables may 
+correlate with mortality but does not give considerably more 
+information across all populations. Although it is of benefit to 
+identify participants at risk for increased overall mortality, it 
+does not guide the physician to develop interventions that can 
+address specific and more importantly correctable impairments. 
+The Frailty Index gives structure to an intensive review of deficit 
+accumulation that can serve as a starting point for interventions.
+These same authors recognized the utility for a shorter more 
+clinically oriented scale that could be used by clinicians across 
+numerous specialties. In 2005, they developed and validated the 
+CSHA Clinical Frailty Scale. 67 This is a descriptive scale with 
+seven categories from “very fit” to “severely frail.” It has been dem-
+onstrated to be an effective measure of frailty and offers predic -
+tive information about probability of survival and likelihood of 
+institutionalization. This is a judgment-based scale that would be 
+more applicable in the physiatric setting, whereas the more time-
+intensive Frailty Index would give more specific information to 
+a primary care provider or geriatrician. Both tools are validated 
+instruments of benefit in the research setting (Table 27.9). 
+Frailty: A Complex Syndrome
+In addition to the functional, psychological, and musculoskel -
+etal changes, there are also altered organ system and homeostatic 
+responses in the frailty syndrome. These include a reduced capac-
+ity to maintain homeostasis and an increased vulnerability to 
+stressors caused by lower energy metabolism, sarcopenia, altered 
+hormonal activity, and decreased immune function.
+Changes in the endocrine axis, specifically the growth hor -
+mone/insulin-like growth factor 1 (GH/IGF-1) axis, affect numer-
+ous metabolic systems. Hepatic IGF-1 production is controlled by 
+pituitary growth hormone secretion and is essential for normal 
+metabolic processes in adults. Because growth hormone secretion 
+declines with normal aging, IGF-1 levels also decline; this is often 
+referred to as the “somatopause,”69 which accounts for the normal 
+age-related decline in endocrine function. Decreasing circulating 
+levels of endocrine hormones contribute in part to osteoporosis, 
+alteration in muscle/fat ratio, and cognitive decline in addition to 
+sarcopenia. There is an association between the frailty syndrome 
+and abnormally low IGF-1 levels.91 Routine testing of IGF-1 lev-
+els is not recommended because it is neither diagnostic nor cost 
+effective.76 However, appreciating the metabolic setting in which 
+the frailty syndrome is more likely to occur provides a framework 
+for understanding this complex syndrome. In the Women’s Health 
+and Aging Study, participants who had disabilities in mobility and 
+disabilities in ADLs were more likely to have an increase in the 
+proinflammatory cytokine interleukin-6 (IL-6). 26 The combina-
+tion of decreased IGF-1 and increased IL-6 could contribute to 
+a theoretical shift from the normal slowly decreasing anabolic 
+state of aging to a rapidly increasing catabolic state seen in the 
+frailty syndrome. As the population ages, the incidence of the 
+frailty syndrome will also increase. This complex syndrome will 
+continue to be elucidated as advances in the molecular biology of 
+normal aging progress. For the physiatrist, early recognition of the 
+frailty syndrome may allow multidisciplinary intervention with 
+the intended goal of preserving function as long as possible for 
+these patients.
+  Example Variables from the Canadian Study of Health and Aging Frailty Index
+Medical Functional Psychological Neurologic Musculoskeletal
+Lung problems Problems cooking Depression Tremor	at	rest Impaired mobility
+Congestive heart failure Urinary	incontinence Delirium History of Parkinson disease Poor muscle tone in limbs
+History of stroke Toileting	problems Restlessness Seizures Poor standing posture
+Skin	problems Falls Mood problems Cognitive symptoms Poor coordination of trunk
+Modified from Jones D, Song X, Mitnitski A, Rockwood K: Evaluation of a frailty index based on a comprehensive geriatric assessment in a population based study of elderly Canadians, Aging Clin Exp Res 
+17:465–471, 2005.
+  
+TABLE 
+27.8
+
+--- PAGE 616 ---
+527CHAPTER 27 Acute Medical Conditions: Cardiopulmonary Disease, Medical Frailty, and Renal Failure
+Zero Physical Activity: Hospital Immobility
+Traditional Hospital Practices (Bed Rest, Sedation, and 
+Immobilization). There has been a long-standing culture of bed 
+rest in hospital culture. The concept of “convalescence” is that an 
+ill person’s strength returns gradually and is enhanced through 
+greater than normal rest. This word is believed to have entered 
+regular use in the late 15th century31 at a time when patients who 
+were ill had few medical options other than rest. The deeply held 
+belief that hospitals are places to “rest” influences sedation prac -
+tices and encourages the overuse of bed rest despite there being a 
+clear understanding of the dangers of immobility.
+This is especially true in the traditional critical care setting. 118 
+Long-standing provider beliefs include the idea that underseda -
+tion during mechanical ventilation is painful, traumatic, and 
+panic-inducing despite ample data to the contrary. 81,128 In a 
+recently published study that explored nurse sedation practices 
+in the ICU, 80% of nurses surveyed believed that sedation is 
+necessary for patient comfort and 87% of the nurses surveyed 
+would want sedation if they were ventilated themselves. 52 
+Although some degree of sedation is usually required, 56% of 
+the nurses surveyed believed that patients who are “spontane -
+ously moving hands and feet” are undersedated. Although over -
+use of sedation is associated with an increase in posttraumatic 
+stress disorder (PTSD) 128 and prolonged mechanical ventila -
+tion81 with the accompanying complications of total immobil -
+ity, it is still a widely held belief in many institutions that “rest is 
+best.” These practices lead to accelerated and iatrogenic decon -
+ditioning resulting from immobilization.  
+Iatrogenic Immobilization and Deconditioning. The dangers 
+of immobilization have been understood for a long time ( Table 
+27.10). The often-cited 4% to 5% loss of muscle strength for each 
+week of bed rest was derived from studies that involved young 
+healthy test individuals without underlying disease or musculo -
+skeletal conditions.19 It is likely that the rate of deconditioning 
+is even faster in older adult patients with multiple comorbidities, 
+because ambulatory function and ability to perform basic ADLs 
+have been shown to decline in one-third of hospitalized patients 
+older than the age of 70 years. 133 Some of the complications 
+of immobility include orthostatic intolerance, skeletal muscle 
+changes, joint contractures, pulmonary atelectasis, urinary stasis, 
+glucose intolerance, and pressure ulcers. 78 T raditionally, physiat-
+rists have served as advocates for increased patient activity in the 
+hospital setting because they evaluate and identify patients who 
+can benefit from physical and occupational therapy. 
+Early Mobilization
+Rationale. The importance of early mobilization is well 
+accepted as a “best clinical practice” in every hospital setting, not 
+just the ICU. As the complications of immobilization became 
+more widely understood, the importance of early mobilization 
+throughout hospital organizations becomes a logical institutional 
+goal, ideally approached through the quality improvement meth -
+odology.18 Less universally agreed is how to design and implement 
+a multidisciplinary early mobilization program and how to effect 
+the accompanying culture change that is required for success. The 
+physiatrist, working closely with colleagues in nursing, critical 
+  Comparison of Tools Used to Measure Frailty
+Measurement Tool Variables Scoring Utility
+Fried	Frailty	Phenotype45 Domains of physical function Each of five domains is scored between 0 and 1. 
+Higher scores represent greater disability.
+0: “Robust”
+1–2: “Prefrail”
+3+:	“Frail”
+Correlated with falls, hospitalizations, 
+and mortality
+Popular tool in clinical research
+CSHA	rules-based	 
+definition of frailty129
+Rules-based ranking from 
+fitness to frailty
+0: Independent and continent
+1:	Bladder	incontinent	only
+2:	Needs	assistance	with	one	or	more	ADLs,	bowel	
+or bladder incontinence, cognitive impairment 
+with dementia
+3:	Totally	dependent	for	transfers	or	at	least	one	
+ADL, completely incontinent, dementia
+Predictive of death or admission to an 
+institution
+CSHA	Frailty	Index67 Deficits-based ranking 70 deficits scored in varying increments from 
+0–1.0.	Total	divided	by	70	to	give	an	index	score
+Predictive of frailty and death
+CSHA	Clinical	Frailty	
+Scale67
+Disabilities, comorbidities, 
+and cognitive deficit–
+based scoring
+1: Very fit
+2:	Well
+3:	Well,	with	treated	comorbid	disease
+4: Apparently vulnerable
+5: Mildly frail
+6: Moderately frail
+7:	Severely	frail
+Predictive of death or admission to an 
+institution
+CSHA	Function	Scale24 ADL-based scoring 12 ADLs scored as follows:
+0: Independent
+1:	Needs	assistance
+2: Incapable
+ADL, Activity of daily living; CSHA, Canadian Study of Health and Aging.
+  
+TABLE 
+27.9
+
+--- PAGE 617 ---
+528
+SECTION 3   Common Clinical Problems
+care, physical therapy, and occupational therapy is ideally suited to 
+take a major role in the effort to bring mobilization to all patients 
+who are hospitalized. The ICU is an ideal setting in which to ini-
+tiate such a program because of the increased staffing to patient 
+ratios, extended length of stay, and awareness within the critical 
+care community as to the important role of physical medicine and 
+rehabilitation in these programs. 
+Culture of Immobility. T o successfully mobilize patients who 
+are hospitalized, one must understand the many reasons that 
+patients are ordered to bed rest and immobilization. Only then 
+can the root causes of reduced patient activity be addressed. The 
+concept of therapeutic bed rest can be a difficult idea to challenge. 
+Therapeutic bed rest has been recommended for almost every 
+medical problem at some point in medical history, including a 
+variety of cardiac and pulmonary conditions in both the pediatric 
+and adult populations. 21,46,60 In the intensive care setting, long-
+held beliefs that the experience of mechanical ventilation was 
+traumatic and frightening for patients gave rise to a culture of 
+complete sedation and resultant immobility. The idea that patients 
+who were unconscious would recover faster, “fight the vent” less, 
+and be spared psychological suffering was essentially unchal -
+lenged. Similar to the experience of patients with cardiac disease 
+before unit-based cardiac rehabilitation efforts began in the 1970s, 
+survivors of critical illness were profoundly weak with substantial 
+disabilities resulting from their prolonged immobilization. This 
+was often interpreted as proof of how tenuous their conditions 
+were at the time of presentation, rather than the side effects of 
+immobilization and oversedation. 
+Culture of Mobility . The first step to increase patient activity 
+is gaining the trust and “buy-in” of colleagues in medicine and 
+nursing. The importance of having evidence-based discussions 
+with colleagues cannot be overstated. The common ground of all 
+healthcare providers is commitment to patient care and improved 
+functional outcomes. There is currently a developing medical liter-
+ature on the benefits of early mobilization.97,107,116 Journal clubs, 
+consultative rounds, and a strong inpatient presence contribute to 
+an understanding of the physiatric approach and will provide an 
+appropriate venue for discussions about early mobilization. 
+Physiatric Involvement. As a physician who understands the 
+important role of physical, occupational, and speech therapy, the 
+physiatrist is ideally suited to emphasize the vital role that these 
+services play in the hospital setting. Because of hospital-bundled 
+payments, physical therapy expenditures have traditionally been 
+seen as cost centers and not profit centers by hospital adminis -
+trators. T o address this perception, the physiatrist should be well 
+aware of the importance and robust discussion taking place in the 
+medical literature about the cost-effectiveness as well as clinical 
+use of early mobilization programs in a variety of medical set -
+tings.8,62,90,145 Familiarity with the current literature demonstrat-
+ing the multiple savings to an institution is key in acquiring the 
+resources needed to implement an early mobilization program. 
+Having a physiatrist as part of the implementation team is optimal 
+to represent the interests and contributions of the entire spectrum 
+of physical medicine and rehabilitation providers. 
+Ambulatory Devices. Hospitalized patients who use assistive 
+devices normally are generally unsafe to ambulate without their usual 
+devices while in the hospital. Because of staffing ratios and constant 
+surveillance, ambulation in the ICU would not take place unassisted; 
+however, in a noncritical unit a mobilization program would need 
+accommodation for patients who can ambulate independently as 
+well as with assistance. A recently developed Fall Prevention T ool Kit 
+includes bedside signs identifying risks and required assistive devices 
+if they are determined to be necessary for safe ambulation.37 In one 
+study, 45% of falls were related to attempts by patients to reach 
+the bathroom.150 It is logical that removing assistive devices from 
+ambulatory patients entering the hospital will result in increased 
+falls when patients attempt to ambulate independently. 
+Training. Coordinated interdisciplinary training before 
+implementation is essential for any mobilization program. 
+Although early mobilization is often focused on physiatric over -
+sight and physical therapy services, without appropriate coordi -
+nation by all disciplines involved, successful early mobilization 
+cannot take place. Multidisciplinary simulation training with 
+case-based scenarios should take place in the unit where mobi -
+lization is planned. All members of the healthcare team should 
+have clearly defined roles before simulation training to experi -
+ence the difference between standard multidisciplinary care and 
+interdisciplinary coordination of care, which is at the heart of 
+early mobilization. Unit-based simulation training, ideally with 
+an actor as the patient, is optimal when possible. Cases provided 
+should address medical emergencies and the challenges of physi -
+cal coordination of care. Allocating time following simulation 
+training for team members to discuss their experiences further 
+facilitates the team-building experience.  
+Treatment Considerations in the Critical Care 
+Setting
+Hemodynamic Instability/Orthostatic Hypotension
+Patients hospitalized in critical care units almost universally have 
+hemodynamic instability. The systemic inflammatory response 
+syndrome causes peripheral vasodilation, cardiac dysfunction, 
+capillary leak, and circulatory shunting leading to hypovolemia. 
+A constantly changing cardiovascular environment makes daily 
+  Effects of Immobility
+System Impact of Immobility
+Potential Functional 
+Impact
+Musculoskeletal Atrophy of skeletal 
+muscles
+Decreased core strength
+Joint contractures
+Reduced muscle power
+Reduced standing 
+balance
+Shift	in	center	of	
+gravity
+Cardiovascular Deep vein thrombosis
+Reduced peripheral 
+vascular resistance
+Orthostatic hypotension
+Reduced venous return
+Potential lower  
+extremity edema
+Pooling of blood in 
+lower extremities
+Syncope/presyncope
+Venous stasis
+Pulmonary Atelectasis
+Pneumonia
+Decreased vital  
+capacity
+Decreased endurance
+Psychological Delirium
+Depression
+Posttraumatic stress 
+disorder
+Extended length of stay
+Decreased activities of 
+daily living
+Chronic depression/
+anxiety
+Dermatologic Pressure ulcers Prolonged hospital 
+admission
+Modified from Kortebein P: Rehabilitation for hospital-associated deconditioning, Am J Phys 
+Med Rehabil 88:66–77, 2009.
+  
+TABLE 
+27.10
+
+--- PAGE 618 ---
+529CHAPTER 27 Acute Medical Conditions: Cardiopulmonary Disease, Medical Frailty, and Renal Failure
+evaluation essential. As a result of vasodilation, patients who are 
+critically ill may be unable to tolerate bed elevation, let alone 
+seated positioning. Observing hemodynamic response to simple 
+turning is a bedside test of hemodynamic tone that is easily car -
+ried out by a single provider. Patients who cannot tolerate trunk 
+elevation can be treated in a supine position with range of motion 
+and progressive resistance. It is important for treating therapists to 
+continually observe blood pressure response to intervention. It is 
+strongly recommended that treating therapists consult with nurs-
+ing providers to discuss any changes since last treatment resulting 
+from rapid changes in physiologic state. With constant surveil -
+lance and gradual progression, mobilization of the patient who is 
+critically ill is unlikely to produce any unexpected events.18 
+Ventilatory Dependence
+Hypoxemic failure causes numerous pathophysiologic effects cul-
+minating in requirement for ventilator support. These include 
+hypoxemic failure caused by ventilation/perfusion (V/Q) mis -
+match, shunting, and altered oxygen exchange properties. Hyper-
+capnic failure causes decreased minute ventilation relative to 
+physiologic demand, especially in the setting of critical illness 
+complicated by increased dead space ventilation. Coordination of 
+therapy in conjunction with ventilator management should take 
+place between physical medicine and rehabilitation and respiratory 
+therapy. In some cases, therapists may be given parameters by the 
+primary team as to titration of oxygen during treatment sessions. 
+Oxygen titration should always take place in coordination with 
+respiratory therapy or nursing. Similar to hemodynamic monitor-
+ing, ventilator status and oxygen saturation can vary quickly in 
+response to activity and should be monitored at all times. During 
+active ambulation, a respiratory therapist is essential to monitor 
+oxygenation and the position of an endotracheal tube. 
+Postparalytic/Intensive Care Unit–Acquired Weakness
+ICU-acquired weakness is common following hospitalization in 
+the intensive care setting. Approximately 50% of patients with 
+prolonged mechanical ventilation, sepsis, or organ failure have 
+some degree of neuromuscular dysfunction. 143 The presence of 
+ICU-acquired weakness can cause abnormalities at any point 
+in the gait cycle. Endurance is reduced in all patients following 
+prolonged bed rest with or without paralytics. Ambulation trials 
+should begin with standing at bedside and progress only out of the 
+patient room once the entire team is assembled. This will ensure 
+patient safety and continuous monitoring in the face of global 
+weakness. Early and aggressive physical therapy intervention has 
+been shown to improve recovery of muscle strength in patients in 
+the ICU.18,140 
+Psychology of the Patient in the Intensive Care Unit
+Posttraumatic Stress Disorder
+Survivors of critical illness often have symptoms of PTSD. In a 
+recently published study, 35% of ICU survivors following admis-
+sion for acute lung injury reported PTSD symptoms during the 
+2-year period following critical care admission. 20 Symptoms of 
+PTSD can be persistent, given that 62% of patients who reported 
+symptoms confirmed their persistence at 24 months. Of these, 
+50% had taken psychiatric medications and 40% had seen a psy -
+chiatrist since hospital discharge.20 Clearly, the complications fol-
+lowing an episode of critical illness are multifactorial. Although it 
+is too early to definitively state that early mobilization programs 
+reduce symptoms of PTSD, it is likely that the benefits of such a 
+program include reduced psychiatric complications. 
+Delirium
+Delirium in the intensive care setting frequently complicates 
+patients’ hospital courses with resulting negative health outcomes. 
+It is important that all providers in the intensive care setting rec -
+ognize delirium and understand how it can impact on early mobi-
+lization programs. By definition, delirium is a change in cognitive 
+function hallmarked by a fluctuating course over a short period of 
+time (hours to days). 3 In the critical care setting, delirium is not 
+just a descriptive term; it is a measurable medical syndrome asso -
+ciated with poor outcomes. The Confusion Assessment Method 
+(CAM) and CAM-S (short form) are measurement tools that have 
+been validated for use in this setting.65
+It is important for therapists to understand that the interven -
+tions the provider has been shown reduce delirium and improve 
+functional outcomes. 138 Recent critical care practice guidelines 
+state, “We recommend performing early mobilization of adult 
+ICU patients whenever feasible to reduce the incidence and dura-
+tion of delirium.”11 For the rehabilitation provider, even though 
+the fluctuating nature of delirium has the potential to interfere 
+with physical and occupational therapy, it is essential that therapy 
+intervention be provided whenever possible. This often necessi -
+tates frequent reevaluations throughout the day until an appropri-
+ate window of intervention can be found. 
+Transition of Care
+The importance of care transitions is receiving greater attention 
+in both the medical literature and the administrative realm of 
+hospital management. An appreciation for the impact of poorly 
+structured systems to transition care from one medical setting to 
+another has become an area of intense focus across the health -
+care spectrum. T ransitional care programs have been studied using 
+different combinations of licensed providers including social 
+workers, pharmacists, nurses, and physicians with most of these 
+programs showing some degree of benefit.27,77,111 The use and fea-
+sibility of transitional care programs has been studied in varied 
+environments where the transition begins including ICU, hos -
+pital, nursing home, emergency department, and rural care cen -
+ters.10,23,27,49,111 The effect of early mobilization programs on care 
+transition has not been studied, but the current interest in ensur -
+ing continuity of communication emphasizes the importance in 
+developing and studying systems to ensure transition of physical 
+and occupational therapy. Without attention to appropriate tran-
+sition of care of rehabilitation services, the benefits gained during 
+early mobilization are rapidly lost following transfer. This is an 
+area of emerging interest that justifies research efforts on the part 
+of all disciplines involved in early mobilization programs. 
+Application to Patients Not in the Intensive Care Unit
+Although the importance of early mobilization in the critical care 
+setting has received substantial attention, the principles of early 
+mobilization are applicable throughout the healthcare continuum. 
+Evaluating patients at risk for immobility or reduced mobility fol-
+lowed by appropriate referral to trained providers can increase 
+patient activity levels throughout a medical system. The type of 
+provider selected is determined by the degree of assistance required 
+for a patient to safely increase their activity level. In the hospital 
+setting, “bed rest” orders should be replaced by systemized evalu-
+ations regarding safe patient activity levels. Allowing patients who 
+are hospitalized to use bedside commodes and assistive devices 
+where appropriate is an economical way to increase patient activ -
+ity without skilled intervention. Providing assistive devices to 
+appropriate and carefully selected patients who are hospitalized 
+
+--- PAGE 619 ---
+530
+SECTION 3   Common Clinical Problems
+can increase mobility and reduce incidence of falls in the context 
+of a structured fall-prevention program.37
+Community Mobilization
+Healthy People 2020 . The US Department of Health and 
+Human Services has initiated five “Healthy People” initiatives since 
+1979. These are comprehensive public health programs designed to 
+provide structure and guidance to achieve more than 1200 objectives 
+to improve the health of all Americans. Each health objective has a 
+reliable data source, baseline measurement, and target for specific 
+improvements to be achieved by the year 2020 (Table 27.11).113
+The Healthy People 2020 website is a rich resource that includes 
+leading health indicators, tips and tools for implementation of pro-
+grams, and a consortium of organizations and agencies committed 
+to achieving the Healthy People 2020 goals.113 Community mobi-
+lization programs can play a role in achieving targets for some of the 
+most important leading health indicators listed as follows. 
+Wellness Centers. Chronic diseases and their cost are respon -
+sible for approximately 75% of US healthcare costs. 122 The Pre-
+vention and Public Health Fund was established by the Patient 
+Protection and Affordable Care Act of 2010 to administer the 
+Community T ransformation Grant program. More than 60 grant-
+ees have been funded to support Americans in adopting healthier 
+lifestyles including healthy eating, active living, and tobacco-free 
+living. Funding opportunities exist within this new structure to 
+explore evidence-based community wellness initiatives.
+Although the causes of preventable chronic diseases in the 
+United States are clear (cigarette use, lack of physical activity, 
+calorie-dense/nutrient-poor dietary patterns), the solutions are 
+as varied as the communities throughout the country. There are 
+many unique and innovative programs that intervene at different 
+stages of the disease process. Preventative programs are some of the 
+most appealing as long as the cost-benefit ratio strongly supports 
+ongoing investment. Some programs may involve disease-specific 
+secondary prevention, such as a traditional cardiac rehabilitation 
+program. Others may be more broadly based and focus on increas-
+ing fitness in the context of a community. 51 Although wellness 
+programs with general physical activity goals may be common 
+in senior centers, some of the most innovative approaches to the 
+overarching problem of obesity in the United States are taking 
+place in community centers with a focus on modifying heath 
+behavior in the context of community-based family education and 
+counseling. The Growing Right Onto Wellness (GROW) pro -
+gram in Nashville, T ennessee, represents an innovative program 
+with a population of 600 parent-child pairs who received educa -
+tional interventions from 2013 to 2016 with a goal of preventing 
+childhood obesity from developing in children.
+Wellness centers can be freestanding but with community 
+resources (community centers, houses of worship, schools, and 
+employers) because locations for population-specific wellness pro-
+grams are an efficient way to improve health outcomes.
+Regardless of the population being targeted, all wellness pro -
+grams can be developed based on a standard approach, listed as 
+follows:  
+Step 1: Organize Advocates and Advisors
+Wellness programs are multidisciplinary in nature. Identifying 
+a group of committed and interested leaders and creating a 
+working group is a logical first step. Having the input and 
+involvement of advocate community members at an early 
+stage can improve awareness and uptake in later stages.
+Step 2: Determine the Target Population
+The most common wellness programs are either community 
+or workplace based in scope. A work-based program will by 
+definition be multidisciplinary. A physiatrist would be ideally 
+suited to spearhead this type of intervention within a medical 
+center based on their understanding of function, occupation-
+al health concerns, and expertise in multidisciplinary work.
+Step 3: Needs Assessment via Health Risk Appraisal
+Surveying the target population by questionnaire will yield the 
+most accurate and direct information regarding what types 
+of conditions a population is at risk for. This in turn will 
+guide the development of appropriate interventions. In the 
+community setting, an open forum or informal sampling of 
+health concerns and interests can serve the same purpose. A 
+needs assessment survey is also an opportunity to determine 
+the preferences and interests of the target community. For 
+example, there are numerous ways to increase physical ac -
+tivity levels. Early identification of prevailing interests will 
+guide the working group to direct its efforts where they will 
+yield the greatest participation.
+Step 4: Identify Health Goals for Intervention
+Information from Health Risk Appraisals will direct the priori-
+ties for each organization or community. Some examples in-
+clude: Exercise/Physical Fitness, T obacco Reduction, Stress 
+Management, Back Care, Nutrition, Weight Control, and 
+Mental Health. There is no way to predict what topics will 
+be of importance to a population without sampling opin -
+ion. In a 1994 study that queried medical students regard -
+ing priorities for a health promotion program, 49% were 
+interested in financial planning initiatives and only 12% 
+were interested in alcohol and drug abuse programming.139 
+Targeted polling will inform where resources should be di -
+rected for maximum impact.
+Step 5: Community Outreach and Resource Identification
+All communities have resources: human, physical, and fi -
+nancial. Identifying available space, facilities, and activity 
+leaders will clarify what types of programs are possible to 
+develop. Publicizing the need for a service, provider, or pro-
+graming space may identify participants who are willing to 
+create programs of interest at little to no cost. Community 
+leaders including those of faith-based organizations, politi -
+  Healthy People 2020 Leading Health Indicator Target Goals
+Physical Activity Adult Obesity Obesity in Children/Adolescents
+20% of adults 18+ meet the current 
+federal physical activity guidelines
+Reduce incidence of obese adults by 14% from 
+36% to 30% by 2020
+Reduce incidence of obese children between ages 2 and 19 
+years from 17% to 15%
+Goal met Goal not met Goal not met
+  
+TABLE 
+27.11
+
+--- PAGE 620 ---
+531CHAPTER 27 Acute Medical Conditions: Cardiopulmonary Disease, Medical Frailty, and Renal Failure
+cal organizations, unions, and neighborhood organizations 
+are often well aware of what resources are available for use. 
+If community leaders have been involved from inception, 
+they are more likely to be a committed stakeholder.
+Step 6: Program Development
+After analyzing community data, preferences, and resources, 
+the project leadership should be able to draft an initial plan 
+with staged interventions and a time line for deployment. 
+Having a written document of program components, ex -
+pected outcomes, and desired metrics before beginning will 
+not ensure success, but it will create a structure where lead-
+ership can learn from experience what is working and what 
+needs to be adjusted. There are ample resources available at 
+the Wellness Council of America website: www.Welcoa.org.
+Step 7: Evaluation Plan
+Every intervention must have an evaluation plan before deploy-
+ment. Specific data sampling methods should be agreed upon 
+before implementation as should meetings to review and inter-
+pret collected data. There should be object measures collected 
+on a regular basis that are reviewed by leadership to determine 
+if goals are being met and, if not, what action is necessary.
+Step 8: Incentive Plan
+Human behavior is driven by reinforcement. Creating sustain-
+able incentives (e.g., t-shirts vs. weekend getaways) will con-
+tribute to success over time. Newsletters, parties, recogni -
+tion meals, snacks, and gift cards are all popular workplace 
+incentives that have the added value of increasing visibility 
+of a new program for nonparticipants. Workplace competi-
+tion can be a healthy way to promote a program, especially 
+if a substantial incentive is being offered as reward to the 
+winning team. Geographic competitions, departmental 
+teams, and intradisciplinary teams can all contribute to em-
+ployee “buy-in” and team building.
+Step 9: Implementation
+Before implementation, additional community members, divi-
+sion heads, or other leaders should be included as part of the 
+implementation team. It is just as challenging to develop 
+programs with too many members as it is to implement a 
+program launch with too few members on the launch team. 
+Leaving some choices to be decided by the entire imple -
+mentation team will improve participation and sense of 
+involvement for all team members, leading to better enthu-
+siasm and community participation following deployment.  
+Spearheading or participating in implementation of an 
+employee wellness program can be a gratifying and worthwhile 
+way to improve function on a population level rather than at the 
+individual level. Highlighting the importance of the unique phys-
+iatric approach in the healthcare setting, as well as educating com-
+munities as to the important role physiatrists can play in keeping 
+their community members healthy and active, are additional ben-
+efits to involvement in these types of programs. 
+Renal Failure
+Physiology of Renal Failure
+Scientific advances have expanded our understanding of what 
+constitutes renal failure. Once thought to be solely attributable 
+to volume overload, urea buildup, and hypocalcemia, it is cur -
+rently known that uremia is a complex syndrome caused by the 
+accumulation of organic waste products, some of which have yet 
+to be identified. Hemodialysis cannot fully duplicate the complex 
+actions of the nephron, which filters blood, reabsorbs water and 
+solutes, secretes toxic substances, and excretes essential hormones.
+Chronic kidney damage leading to kidney failure has numerous 
+causes; however, the most common causes are uncontrolled hyper-
+tension, poorly controlled diabetes, and glomerulonephritis. 137 
+Uncontrolled hypertension leads to nephrosclerosis, or localized 
+damage to the glomeruli. There are two proposed mechanisms of 
+hypertensive nephrosclerosis, the first glomerular ischemia and the 
+second hypertension-induced damage and resultant hyperfiltration. 
+Diabetic glomerulopathy has excessive extracellular matrix as the 
+most important pathologic feature. Glomerulonephritis can be pri-
+mary or secondary, each of which has many causes, a full discussion 
+of which is beyond the scope of this chapter. Infections, immune 
+diseases, and vasculitides can all cause primary glomerulonephritis 
+with resulting scarring of the nephrons. Secondary causes include 
+diabetes, hypertension, and lupus, among others.
+Alternatively, chronic kidney disease can be classified based on 
+the anatomic part of the nephron that is affected. Glomerular, 
+interstitial, tubulointerstitial, vascular, and obstructive are all ana-
+tomic classification examples that are listed in Table 27.12. Fluid 
+overload with hypertension can occur when the glomerular filtra-
+tion rate falls below 60 mL/min.
+Hyperkalemia
+The ability to maintain normal potassium levels is preserved until 
+the glomerular filtration rate reaches approximately 10% of normal. 
+Although patients with chronic kidney failure can secrete potas -
+sium until an advanced stage of renal failure, the rate of excretion is 
+reduced, causing prolonged elevations in potassium following inges-
+tion. Caution must be used when a patient is noted to be receiving 
+spironolactone. Spironolactone is an aldosterone agonist that can 
+result in dangerous hyperkalemia if not monitored closely. 
+Hyponatremia
+Sodium metabolism is maintained until renal failure becomes 
+advanced. As renal failure progresses, the ability to conserve 
+sodium is compromised, resulting in hyponatremia. 
+Uremia
+Uremia literally means “urine in the blood.” It is a general term 
+that began to be used before the understanding that end-stage kid-
+ney disease was more complex than just the inability to filter urea 
+from the blood. As nephrons die, the remaining units increase 
+their capacity in a process known as compensatory hyperfiltra -
+tion.136 Increased glomerular permeability is another adaptation 
+to the reduced number of functioning nephrons. 
+Metabolic Issues
+Metabolic acidosis is caused by the reduced ability of the failing 
+kidney to excrete acid.119 This is exacerbated by decreased ability 
+to resorb bicarbonate. Bicarbonate serves as the main pH buffer in 
+the body and is derived from bone stores. 
+Bone Issues
+Hypocalcemia. Hypocalcemia is loss of calcitriol and leads to 
+decreased calcium absorption and stimulation of parathyroid hor-
+mone release. 
+Hyperphosphatemia. Hyperphosphatemia is caused by 
+impaired excretion. In the face of abnormal bone metabolism, soft 
+tissues became the phosphate reservoir, causing increased vascular 
+
+--- PAGE 621 ---
+532
+SECTION 3   Common Clinical Problems
+calcification. This leads to increasing pulse pressure in advanced 
+disease. 
+Weakness
+Anemia of chronic disease resulting from decreased erythropoietin 
+and iron deficiency contributes to fatigue and weakness. Supple -
+mentation with erythropoietin is recommended and overseen by 
+the primary nephrologist. 
+Debility
+Studies have shown that a glomerular filtration rate of less than 60 
+mL/min is associated with reduced well-being and overall func -
+tion.106,127 Patients who are dependent on dialysis have multiple 
+possible sources of debility depending on the type of dialysis they 
+receive. Peritoneal dialysis using the peritoneum as a membranous 
+filter typically takes place in the patient’s home, causing less func-
+tional impact than hemodialysis, a facility-based intervention. 
+Both methods of dialysis have potential for infection resulting 
+from indwelling catheters, but peritoneal dialysis is more likely 
+to be complicated by subacute bacterial peritonitis as opposed to 
+bacteremia in hemodialysis. SBP is more likely to result in hos -
+pitalization, whereas hemodynamically stable bacteremia will be 
+treated on an outpatient basis with antibiotics and with less likeli-
+hood of iatrogenic complications during hospitalization. Patients 
+who are hemodialysis dependent often report substantial fatigue 
+following dialysis sessions; this impacts on their ability to partici -
+pate not only with ADLs but also with rehabilitation efforts. 
+Issues of Dialysis: “Residual Syndrome”
+The term “residual syndrome” has been applied to the syndrome 
+of partially treated uremia, because dialysis cannot fully replace all 
+renal functions. Electrolyte imbalances and the resultant acid-base 
+abnormalities are responsible in part for the uremic symptoms 
+that are seen in patients who are dialysis dependent. 
+Sarcopenia/Uremia
+Uremic sarcopenia has been described in chronic kidney dis -
+ease.79,92 The presence of uremia causes changes in skeletal muscle 
+fibers including mitochondrial depletion and atrophy of both 
+slow- and fast-twitch muscle fibers.39,101,149 This in turn contrib-
+utes to the overall sense of fatigue and weakness reported by these 
+patients. The role of exercise in maintaining health-related qual -
+ity of life and exercise capacity has been described, and patients 
+should be enrolled in an exercise program whenever possible to 
+preserve skeletal muscle function as soon as possible following the 
+diagnosis of renal insufficiency.30,159 
+Rehabilitation for Patients Before 
+Transplantation
+Patients with chronic renal insufficiency are often candidates for 
+rehabilitation in both the hospital as well as outpatient settings. 
+Chronic deconditioning resulting from uremic sarcopenia, a pre -
+disposition to chronic pain and gait abnormalities, represents areas 
+for substantial rehabilitative intervention.32,98,115 Patients on dial-
+ysis should be instructed in a regular stretching program because 
+of the potential for hip and knee contractures from prolonged sit-
+ting. Patients on hemodialysis are at risk for a substantial degree 
+of sedentary behavior as a result of extended immobility during 
+hemodialysis sessions and postdialysis fatigue following dialysis 
+sessions. Three hours of dialysis followed by 2 hours of resting 
+while watching television constitutes up to 15 hours of additional 
+sedentary time a week. Early referral to a rehabilitation profes -
+sional for institution of a home exercise program before dialysis 
+is warranted for all patients with uremia. It has been shown to be 
+beneficial for patients on hemodialysis to exercise during dialysis 
+sessions, although this is rarely standard practice. 
+Early Mobilization After Renal Transplantation
+Similar to cardiac transplantation, patients following renal trans -
+plantation are substantially disabled as a result of a long-standing 
+chronic medical condition: uremia instead of congestive heart 
+failure. Although a patient on hemodialysis is typically more func-
+tional than a patient with end-stage heart failure, the principles 
+of preprocedure rehabilitation or “prehab,” posttransplant evalua-
+tion, and coordination of rehabilitative care are the same.
+Following transplantation, reduced mobility, prescribed cor -
+ticosteroids, and a sedentary lifestyle during recovery can greatly 
+accelerate debility even in the face of a normally functioning kid-
+ney. Unlike cardiac transplantation, there is no expected increase 
+in CO to boost energy metabolism. It is essential that all patients 
+be evaluated following renal transplantation for potential rehabili-
+tation intervention whether it be for aggressive mobilization and 
+extended monitoring or for discharge to acute or subacute facilities.
+Patients following renal transplantation have complex rehabili-
+tative needs similar to patients who are critically ill in the medical 
+intensive care setting. Both populations have multisystem organ 
+damage, distributive shock, hemodynamic instability, and severe 
+deconditioning and are at risk for functional decline. Unlike the 
+medical ICU where a comprehensive early mobilization program 
+may be implemented previously, the patient following renal trans-
+plantation may be more reliant on physiatric consultation and 
+coordination of care to receive required services. Applying the 
+early mobilization model to this population would necessitate 
+  Anatomic Classification of Renal Disease
+Type Example
+Glomerular Postinfectious
+Viral
+Rapidly progressive
+Immune mediated
+Membranous
+Interstitial Autoimmune (systemic lupus erythematosus, 
+Sjögren	syndrome,	Wegener	granulomatosis,	
+Kawasaki syndrome)
+Medication induced
+Tubulointerstitial Numerous	conditions,	including	but	not	exclusively:
+Autoimmune
+Infection
+Drugs
+Vascular
+Obstruction
+Heavy metals
+Granulomatous diseases
+Vascular Renal artery thrombosis
+Thromboembolism
+Aneurysm
+Obstructive Neurogenic	bladder
+Blood	clot
+Tumor
+  
+TABLE 
+27.12
+
+--- PAGE 622 ---
+533CHAPTER 27 Acute Medical Conditions: Cardiopulmonary Disease, Medical Frailty, and Renal Failure
+evaluation for participation with physical medicine and rehabili -
+tation on postoperative day 1. Patients requiring ventilator sup -
+port can receive physical and occupational therapy if sedation is 
+interrupted long enough to participate with the treating therapist. 
+Physical therapy is often automatically ordered for all appropriate 
+patients postoperatively and coordination with the primary team 
+should take place in the morning with an agreed upon time for 
+treatment should an interruption in sedation be needed. Daily 
+physiatric consultation and review of treatment session notes can 
+guide expectations for the following treatment session. It is cru -
+cial to ensure uninterrupted therapy at least three times a week 
+because posttransplant physical reserve is reduced and potential 
+for accelerated deconditioning in the presence of an immunosup-
+pressive regimen that includes corticosteroids is substantial.
+Outpatient rehabilitation programs following renal transplanta-
+tion should focus on controlled conditioning and education regard-
+ing the importance of exercise in maintaining exercise capacity 
+and lifelong function. The same target heart ranges can be used for 
+patients following both cardiac and renal transplantation: 60% to 
+70% of peak effort for 30 to 60 minutes three to five times weekly. 
+Rate of perceived exertion as described in the Borg Scale is a validated 
+method to regulate intensity. It is important to provide consistent 
+encouragement because patients following transplantation can be 
+extremely debilitated and depressed. Advising transplant survivors 
+that functional improvement may not be seen for 2 weeks or more 
+following initiation of conditioning will help to maintain participa-
+tion. A comprehensive rehabilitative program will offer numerous 
+benefits following renal transplant. Physical therapy can be focused 
+on achieving a baseline improvement to facilitate participation in 
+activities that the patient following transplantation may have forgone 
+in the face of declining function. Perhaps more than any other solid 
+organ transplant, successful candidates for renal transplantation can 
+hope to achieve maximum function with optimal rehabilitation.
+Pulmonary Rehabilitation in Coronavirus 
+Disease 2019
+The coronavirus disease 2019 (COVID-19) pandemic caused by 
+the severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) 
+has been the most significant public health crisis in 100 years, and 
+it has affected all aspects of healthcare, including every area of reha-
+bilitation medicine. At the time of publication, COVID-19 is still 
+increasing worldwide, and with the high number of survivors who 
+have suffered a severe acute respiratory distress syndrome (ARDS) 
+with prolonged intubations or severe pneumonia, the need for 
+rehabilitation interventions has never been higher.26a Even though 
+recent evidence has suggested that most patients hospitalized with 
+COVID pneumonia can be successfully treated without mechani-
+cal ventilation, there are severe pulmonary implications for many 
+patients. All hospitalized patients should be discharged with clear 
+recommended guidelines for safe and progressive conditioning at 
+home as standard of care is now to provide medical oversight and 
+guidance for patients at home whenever possible.1a,126a This has led 
+to a rapid expansion of telehealth services across the medical con-
+tinuum that includes all disciplines within physical medicine and 
+rehabilitation even as the medical complexity of patients admitted 
+to acute rehabilitation has increased.46a
+The common admitting diagnoses to acute rehabilitation units 
+during the pandemic has been deconditioning following acute 
+hypoxic respiratory failure secondary to COVID pneumonia. A key 
+principle guiding care of COVID-19 patients is the maintenance 
+of adequate oxygenation at all times. For hospitalized patients the 
+principles of early mobilization should be utilized whenever pos -
+sible to prevent rapid deconditioning and further need for already 
+limited rehabilitation services. 122a Oxygen saturation should be 
+maintained above 90% with liberal use of supplemental oxygen. 
+Continuous oximetry monitoring may be indicated for patients 
+whose oxygenation level declines with trial mobilization on room 
+air. COVID-19 patients have also been found to be at higher risk 
+for venous thromboembolic events (VTEs), and baseline labo -
+ratory studies for all patients admitted to a rehabilitation unit 
+should include a panel screening for prothrombotic states that 
+may indicate need for prophylaxis. Patients are at elevated risk for 
+VTEs for an extended period following intensive care hospital -
+ization for COVID-19 pneumonia, so a high index of suspicion 
+should be maintained throughout the course of rehabilitation. 77a 
+As the incidence of COVID-19 decreases and acute rehabilita -
+tion units reopen, there will be ongoing opportunities to generate 
+more objective data and high-quality literature on characteristics, 
+complications, and outcomes of the COVID-19 population in the 
+rehabilitation setting.
+Key References
+ 1.  Alberti K G, Eckel RH, Grundy SM, et al.: Harmonizing the meta -
+bolic syndrome: a joint interim statement of the International 
+Diabetes Federation Task Force on Epidemiology and Prevention; 
+National Heart, Lung, and Blood Institute; American Heart Asso -
+ciation; World Heart Federation; International Atherosclerosis 
+Society; and International Association for the Study of Obesity, 
+Circulation 120:1640–1645, 2009.
+ 2.  American Association of Cardiovascular and Pulmonary Rehabili -
+tation: Guidelines for cardiac rehabilitation and secondary prevention 
+programs, ed 4, Champaign, 2004, Human Kinetics, Inc.
+ 6.  Balady G J, Ades P A, Comoss P , et al.: Core components of car -
+diac rehabilitation/secondary prevention programs: a statement for 
+healthcare professionals from the American Heart Association and 
+the American Association of Cardiovascular and Pulmonary Reha-
+bilitation Writing Group, Circulation 102:1069–1073, 2000.
+ 7.  Balady GJ, Williams MA, Ades PA, et al.: Core components of cardiac 
+rehabilitation/secondary prevention programs: 2007 update: a scien-
+tific statement from the American Heart Association Exercise, Cardiac 
+Rehabilitation, and Prevention Committee, the Council on Clinical 
+Cardiology; the Councils on Cardiovascular Nursing, Epidemiology 
+and Prevention, and Nutrition, Physical Activity, and Metabolism; 
+and the American Association of Cardiovascular and Pulmonary 
+Rehabilitation, J Cardiopulm Rehabil Prev 27:121–129, 2007.
+ 11.  Barr J , Fraser GL, Puntillo K, et al.: Clinical practice guidelines for 
+the management of pain, agitation, and delirium in adult patients 
+in the intensive care unit, Crit Care Med 41:263–306, 2013.
+ 12.  Bartels M N: Cardiac rehabilitation. In Stam H J, Buyruk H M, 
+Melvin JL, Stucki G, editors: Acute medical rehabilitation. Bodrum, 
+VitalMed Medical Book Publishing, 2012, pp 251–268.
+ 14.  Bartels M N: Cardiopulmonary rehabilitation. In Cristian A , Bat-
+mangelich S , editors: Physical medicine and rehabilitation patient 
+centered care, New York, 2014, Demos Publishing, pp 112–129.
+ 15.  Bartels M N: Pulmonary rehabilitation. In Cooper G, editor: Essen-
+tial physical medicine and rehabilitation , T otwa, 2006, Humana 
+Press, pp 119–146.
+ 17.  Bartels M N, Armstrong H F, Gerardo R E, et  al.: Evaluation of 
+pulmonary function and exercise performance by cardiopulmo -
+nary exercise testing before and after lung transplantation, Chest 
+140:1604–1611, 2011.
+ 18.  Berenholtz S M, Needham D M, Lubomski L H, et  al.: Improv -
+ing the quality of quality improvement projects, Jt Comm J Qual 
+Patient Saf 36:468–473, 2010.
+ 24.  Canadian Study of Health and Aging Working Group: Disability 
+and frailty among elderly Canadians: a comparison of six surveys, 
+Int Psychogeriatr 13(Suppl 1):159–167, 2001.
+
+--- PAGE 623 ---
+534
+SECTION 3   Common Clinical Problems
+ 26.  Cappola A R, Xue QL, Ferrucci L, et al.: Insulin-like growth factor I 
+and interleukin-6 contribute synergistically to disability and mortal-
+ity in older women, J Clin Endocrinol Metab 88:2019–2025, 2003.
+ 53.  Hamm L F, Sanderson BK, Ades PA, et al.: Core competencies for 
+cardiac rehabilitation/secondary prevention professionals: 2010 
+update: position statement of the American Association of Cardio-
+vascular and Pulmonary Rehabilitation, J Cardiopulm Rehabil Prev 
+31:2–10, 2011.
+ 54.  Haskell W L, Lee I M, Pate R R, et al.: Physical activity and pub -
+lic health: updated recommendation for adults from the American 
+College of Sports Medicine and the American Heart Association, 
+Circulation 116:1081–1093, 2007.
+ 56.  Helmerhorst H J, Wijndaele K , Brage S , et  al.: Objectively mea -
+sured sedentary time may predict insulin resistance independent 
+of moderate- and vigorous-intensity physical activity, Diabetes 
+58:1776–1779, 2009.
+ 65.  Inouye S K, Kosar C M, T ommet D, et al.: The CAM-S: develop -
+ment and validation of a new scoring system for delirium severity 
+in 2 cohorts, Ann Intern Med 160:526–533, 2014.
+ 67.  Jones D , Song X , Mitnitski A, et al.: Evaluation of a frailty index 
+based on a comprehensive geriatric assessment in a population based 
+study of elderly Canadians, Aging Clin Exp Res 17:465–471, 2005.
+ 70.  Karvonen MJ, Kentala E, Mustala O: The effects of training on heart 
+rate; a longitudinal study, Ann Med Exp Biol Fenn 35:307–315, 1957.
+ 75.  King M , Bittner V, Josephson R, et al.: Medical director responsi -
+bilities for outpatient cardiac rehabilitation/secondary prevention 
+programs: 2012 update: a statement for health care professionals 
+from the American Association for Cardiovascular and Pulmonary 
+Rehabilitation and the American Heart Association, J Cardiopulm 
+Rehabil Prev 32:410–419, 2012.
+ 78.  Kortebein P : Rehabilitation for hospital-associated deconditioning, 
+Am J Phys Med Rehabil 88:66–77, 2009.
+ 81.  Kress J P, Gehlbach B, Lacy M, et al.: The long-term psychological 
+effects of daily sedative interruption on critically ill patients, Am J 
+Respir Crit Care Med 168:1457–1461, 2003.
+ 83.  Lauer M , Froelicher E S, Williams M , et  al.: Exercise testing in 
+asymptomatic adults: a statement for professionals from the 
+American Heart Association Council on Clinical Cardiology, Sub-
+committee on Exercise, Cardiac Rehabilitation, and Prevention, 
+Circulation 112:771–776, 2005.
+ 87.  Leon A S, Franklin BA, Costa F, et al.: Cardiac rehabilitation and 
+secondary prevention of coronary heart disease: an American Heart 
+Association scientific statement from the Council on Clinical Car-
+diology (Subcommittee on Exercise, Cardiac Rehabilitation, and 
+Prevention) and the Council on Nutrition, Physical Activity, and 
+Metabolism (Subcommittee on Physical Activity), in collaboration 
+with the American Association of Cardiovascular and Pulmonary 
+Rehabilitation, Circulation 111:369–376, 2005.
+ 91.  Maggio M , De Vita F, Lauretani F, et al.: IGF-1, the cross road of 
+the nutritional, inflammatory and hormonal pathways to frailty, 
+Nutrients 5:4184–4205, 2013.
+ 101.  Moore GE, Parsons DB, Stray-Gundersen J, et al.: Uremic myopa -
+thy limits aerobic capacity in hemodialysis patients, Am J Kidney 
+Dis 22:277–287, 1993.
+ 102.  Morris JN, Heady JA, Raffle PA, et al.: Coronary heart-disease and 
+physical activity of work, Lancet 265:1053–1057, 1953.
+ 103.  Morris JN, Heady JA, Raffle PA, et al.: Coronary heart-disease and 
+physical activity of work, Lancet 265:1111–1120, 1953.
+ 107.  Needham DM, Davidson J, Cohen H, et al.: Improving long-term 
+outcomes after discharge from intensive care unit: report from a 
+stakeholders’ conference, Crit Care Med 40:502–509, 2012.
+ 109.  Nici L, Donner C, Wouters E, et al.: American Thoracic Society/
+European Respiratory Society statement on pulmonary rehabilita -
+tion, Am J Respir Crit Care Med 173:1390–1413, 2006.
+ 110.  Nici L, Limberg T, Hilling L, et al.: Clinical competency guidelines 
+for pulmonary rehabilitation professionals: American Association 
+of Cardiovascular and Pulmonary Rehabilitation Position State -
+ment, J Cardiopulm Rehabil Prev 27:355–358, 2007.
+ 114.  Oldridge N B, Guyatt GH, Fischer ME, et al.: Cardiac rehabilita -
+tion after myocardial infarction. Combined experience of random-
+ized clinical trials, JAMA 260:945–950, 1988.
+ 117.  Parshall MB, Schwartzstein RM, Adams L, et al.: An official Ameri-
+can Thoracic Society statement: update on the mechanisms, assess-
+ment, and management of dyspnea, Am J Respir Crit Care Med  
+185:435–452, 2012.
+ 120.  Peno-Green L, Verrill D, Vitcenda M, et al.: Patient and program 
+outcome assessment in pulmonary rehabilitation: an AACVPR 
+statement, J Cardiopulm Rehabil Prev 29:402–410, 2009.
+ 123.  Qaseem A , Wilt T J, Weinberger S E, et  al.: Diagnosis and man -
+agement of stable chronic obstructive pulmonary disease: a clinical 
+practice guideline update from the American College of Physicians, 
+American College of Chest Physicians, American Thoracic Society, 
+and European Respiratory Society, Ann Intern Med 155:179–191, 
+2011.
+ 127.  Rocco M V, Gassman J J, Wang S R, et  al.: Cross-sectional study 
+of quality of life and symptoms in chronic renal disease patients: 
+the Modification of Diet in Renal Disease Study, Am J Kidney Dis 
+29:888–896, 1997.
+ 128.  Rock L F: Sedation and its association with posttraumatic stress 
+disorder after intensive care, Crit Care Nurse  34:30–37, 2014, 
+quiz 39.
+ 129.  Rockwood K , Stadnyk K , MacKnight C , et  al.: A brief clinical 
+instrument to classify frailty in elderly people, Lancet 353:205–
+206, 1999.
+ 130.  Rogers J G, Butler J , Lansman S L, et al.: Chronic mechanical cir -
+culatory support for inotrope-dependent heart failure patients who 
+are not transplant candidates: results of the INTREPID T rial, J Am 
+Coll Cardiol 50:741–747, 2007.
+ 133.  Sager M A, Franke T , Inouye S K, et  al.: Functional outcomes of 
+acute medical illness and hospitalization in older persons, Arch 
+Intern Med 156:645–652, 1996.
+ 144.  Swigris J J, Brown K K, Make B J, et al.: Pulmonary rehabilitation 
+in idiopathic pulmonary fibrosis: a call for continued investigation, 
+Respir Med 102:1675–1680, 2008.
+ 147.  Thomas RJ, King M , Lui K , et al.: AACVPR/ACCF/AHA 2010 
+update: performance measures on cardiac rehabilitation for 
+referral to cardiac rehabilitation/secondary prevention services 
+endorsed by the American College of Chest Physicians, the Amer -
+ican College of Sports Medicine, the American Physical Therapy 
+Association, the Canadian Association of Cardiac Rehabilitation, 
+the Clinical Exercise Physiology Association, the European Asso -
+ciation for Cardiovascular Prevention and Rehabilitation, the 
+Inter-American Heart Foundation, the National Association of 
+Clinical Nurse Specialists, the Preventive Cardiovascular Nurses 
+Association, and the Society of Thoracic Surgeons, J Am Coll Car-
+diol 56:1159–1167, 2010.
+ 155.  Wenger N, Gilbert C, Skoropa M: Cardiac conditioning after myo-
+cardial infarction. An early intervention program, J Cardiac Rehabil 
+2:17–22, 1971.
+ 158.  Williams M A, Fleg J L, Ades P A, et al.: Secondary prevention of 
+coronary heart disease in the elderly (with emphasis on patients 
+> or = 75 years of age): an American Heart Association scientific 
+statement from the Council on Clinical Cardiology Subcommittee 
+on Exercise, Cardiac Rehabilitation, and Prevention, Circulation 
+105:1735–1743, 2002.
+  The full reference list for this chapter is available online.
+
+--- PAGE 624 ---
+534.e1
+References
+ 1.  Alberti K G, Eckel R H, Grundy S M, et  al.: Harmonizing the 
+metabolic syndrome: a joint interim statement of the Interna -
+tional Diabetes Federation Task Force on Epidemiology and Pre-
+vention; National Heart, Lung, and Blood Institute; American 
+Heart Association; World Heart Federation; International Ath -
+erosclerosis Society; and International Association for the Study 
+of Obesity, Circulation 120:1640–1645, 2009.
+ 1a.  Ambrose A: COVID-19 patient guide to at-home exercises, J Int 
+Soc Phys Rehabil Med, 2020. [Epub ahead of print].
+ 2.  American Association of Cardiovascular and Pulmonary Reha -
+bilitation: Guidelines for cardiac rehabilitation and secondary pre-
+vention programs, ed 4, Champaign, 2004, Human Kinetics, Inc.
+ 3.  American Psychiatric Association: Diagnostic and statistical man-
+ual of mental disorders , ed 5, Washington, 2013, American Psy -
+chiatric Publishing.
+ 4.  April E W: The national medical series for independent study: anat-
+omy, Pennsylvania, 1984, Wiley and Sons.
+ 5.  Bailey P P, Miller III RR, Clemmer TP: Culture of early mobil-
+ity in mechanically ventilated patients, Crit Care Med 37(Suppl  
+10):S429–S435, 2009.
+ 6.  Balady G J, Ades PA, Comoss P, et al.: Core components of car -
+diac rehabilitation/secondary prevention programs: a statement 
+for healthcare professionals from the American Heart Association 
+and the American Association of Cardiovascular and Pulmonary 
+Rehabilitation Writing Group, Circulation 102:1069–1073, 2000.
+ 7.  Balady G J, Williams M A, Ades P A, et  al.: Core components 
+of cardiac rehabilitation/secondary prevention programs: 2007 
+update: a scientific statement from the American Heart Asso -
+ciation Exercise, Cardiac Rehabilitation, and Prevention Com -
+mittee, the Council on Clinical Cardiology; the Councils on 
+Cardiovascular Nursing, Epidemiology and Prevention, and 
+Nutrition, Physical Activity, and Metabolism; and the American 
+Association of Cardiovascular and Pulmonary Rehabilitation, J 
+Cardiopulm Rehabil Prev 27:121–129, 2007.
+ 8.  Balas M C, Vasilevskis EE, Olsen K M, et al.: Effectiveness and 
+safety of the awakening and breathing coordination, delirium 
+monitoring/management, and early exercise/mobility bundle, 
+Crit Care Med 42:1024–1036, 2014.
+ 9.  Balboa-Castillo T , Guallar-Castillón P, León-Muñoz LM, et al.: 
+Physical activity and mortality related to obesity and functional 
+status in older adults in Spain, Am J Prev Med 40:39–46, 2011.
+ 10.  Baldwin K M, Black D, Hammond S: Developing a rural transi-
+tional care community case management program using clinical 
+nurse specialists, Clin Nurse Spec 28:147–155, 2014.
+ 11.  Barr J , Fraser GL, Puntillo K, et al.: Clinical practice guidelines for 
+the management of pain, agitation, and delirium in adult patients 
+in the intensive care unit, Crit Care Med 41:263–306, 2013.
+ 12.  Bartels M N: Cardiac rehabilitation. In Stam H J, Buyruk H M, 
+Melvin JL, et  al.: Acute medical rehabilitation. Bodrum, Vital-
+Med Medical Book Publishing, 2012, pp 251–268.
+ 13.  Bartels M N: Cardiopulmonary assessment. In Grabois M , edi-
+tor: Physical medicine and rehabilitation: the complete approach , 
+Chicago, 2000, Blackwell Science, pp 351–372.
+ 14.  Bartels M N: Cardiopulmonary rehabilitation. In Cristian A , 
+Batmangelich S , editors: Physical medicine and rehabilitation 
+patient centered care , New York, 2014, Demos Publishing, pp 
+112–129.
+ 15.  Bartels M N: Pulmonary rehabilitation. In Cooper G , edi -
+tor: Essential physical medicine and rehabilitation , T otwa, 2006, 
+Humana Press, pp 119–146.
+ 16.  Bartels M N: Rehabilitation management of lung volume reduc-
+tion surgery. In Ginsburg M, editor: Lung volume reduction sur-
+gery, St Louis, 2001, Mosby-Year Book, pp 97–124.
+ 17.  Bartels M N, Armstrong H F, Gerardo R E, et  al.: Evalua -
+tion of pulmonary function and exercise performance by 
+cardiopulmonary exercise testing before and after lung trans -
+plantation, Chest 140:1604–1611, 2011.
+ 18.  Berenholtz S M, Needham DM, Lubomski LH, et al.: Improving 
+the quality of quality improvement projects, Jt Comm J Qual 
+Patient Saf 36:468–473, 2010.
+ 19.  Berg H E, Larsson L, T esch PA: Lower limb skeletal muscle func-
+tion after 6 wk of bed rest, J Appl Physiol 82:182–188, 1997.
+ 20.  Bienvenu O J, Gellar J, Althouse BM, et al.: Post-traumatic stress 
+disorder symptoms after acute lung injury: a 2-year prospective 
+longitudinal study, Psychol Med 43:2657–2671, 2013.
+ 21.  Black J R: Bed rest in heart trouble, New Orleans Med Surg J  
+99:346–358, 1947.
+ 22.  Bravo-Escobar R , Gonzalez-Represas A , Gomez-Gonzalez A M, 
+et al.: Effectiveness and safety of a home-based cardiac rehabilita-
+tion programme of mixed surveillance in patients with ischemic 
+heart disease at moderate cardiovascular risk: a randomised, con-
+trolled clinical trial, BMC Cardiovasc Disord 17(1):66, 2017.
+ 23.  Cadogan M P, Phillips LR, Ziminski CE: A perfect storm: care 
+transitions for vulnerable older adults discharged home from the 
+emergency department without a hospital admission, Gerontolo-
+gist 56(2):326–334, 2016.
+ 24.  Canadian Study of Health and Aging Working Group: Disabil-
+ity and frailty among elderly Canadians: a comparison of six sur-
+veys, Int Psychogeriatr 13(Suppl 1):159–167, 2001.
+ 25.  Cannom D S, Rider A K, Stinson E B, et al.: Electrophysiologic 
+studies in the denervated transplanted human heart. II. Response 
+to norepinephrine, isoproterenol and propranolol, Am J Cardiol 
+36:859–866, 1975.
+ 26.  Cappola A R, Xue QL, Ferrucci L, et al.: Insulin-like growth fac -
+tor I and interleukin-6 contribute synergistically to disability and 
+mortality in older women, J Clin Endocrinol Metab  88:2019–
+2025, 2003.
+ 26a.  Centers for Disease Control and Prevention: COVIDView: a 
+weekly surveillance summary of U.S. COVID-19 activity. Updated 
+May 29, 2020. https://www.cdc.gov/coronavirus/2019-ncov/
+covid-data/covidview/index.html.
+ 27.  Chapin R K, Chandran D, Sergeant JF, et al.: Hospital to com -
+munity transitions for adults: discharge planners and com -
+munity service providers’ perspectives, Soc Work Health Care  
+53:311–329, 2014.
+ 28.  Clark R A, Conway A , Poulsen V, et al.: Alternative models of 
+cardiac rehabilitation: a systematic review, Eur J Prev Cardiol  
+22(1):35–74, 2015.
+ 29.  Clinical indications for noninvasive positive pressure ventila -
+tion in chronic respiratory failure due to restrictive lung disease, 
+COPD, and nocturnal hypoventilation—a consensus conference 
+report, Chest 116:521–534, 1999.
+ 30.  Clyne N , Ekholm J, Jogestrand T, et al.: Effects of exercise train-
+ing in predialytic uremic patients, Nephron 59:84–89, 1991.
+ 31.  Collins English dictionary: complete and unabridged , ed 10, 
+Glasgow, 2010, Harper Collins.
+ 32.  Davison S N, Jhangri GS: The impact of chronic pain on depres-
+sion, sleep, and the desire to withdraw from dialysis in hemodi -
+alysis patients, J Pain Symptom Manage 30:465–473, 2005.
+ 33.  Dowman L , Hill C J, Holland A E: Pulmonary rehabilita -
+tion for interstitial lung disease, Cochrane Database Syst Rev  
+10:CD006322, 2014.
+ 34.  Dubach P , Froelicher VF: Cardiac rehabilitation for heart failure 
+patients, Cardiology 76:368–373, 1989.
+ 35.  Dunstan D W, Salmon J , Owen N , et  al.: Associations of TV 
+viewing and physical activity with the metabolic syndrome in 
+Australian adults, Diabetologia 48:2254–2261, 2005.
+ 36.  Dunstan D W, Salmon J , Owen N , et  al.: Physical activity and 
+television viewing in relation to risk of undiagnosed abnormal glu-
+cose metabolism in adults, Diabetes Care 27:2603–2609, 2004.
+ 37.  Dykes P C, Carroll DL, Hurley A, et al.: Fall prevention in acute 
+care hospitals: a randomized trial, JAMA 304:1912–1918, 2010.
+
+--- PAGE 625 ---
+534.e2
+  References
+ 38.  Expert Panel on Integrated Guidelines for Cardiovascular Health 
+and Risk Reduction in Children and Adolescents; National 
+Heart, Lung, and Blood Institute: Expert panel on integrated 
+guidelines for cardiovascular health and risk reduction in chil -
+dren and adolescents: summary report, Pediatrics 128(Suppl 
+5):S213–S256, 2011.
+ 39.  Fahal I H, Bell GM, Bone JM, et al.: Physiological abnormalities 
+of skeletal muscle in dialysis patients, Nephrol Dial Transplant 
+12:119–127, 1997.
+ 40.  Flamm S D, Taki J, Moore R , et al.: Redistribution of regional 
+and organ blood volume and effect on cardiac function in rela -
+tion to upright exercise intensity in healthy human subjects, Cir-
+culation 81:1550–1559, 1990.
+ 41.  Ford E S, Kohl III H W, Mokdad A H, et al.: Sedentary behav -
+ior, physical activity, and the metabolic syndrome among U.S. 
+adults, Obes Res 13:608–614, 2005.
+ 42.  Ford E S, Li C, Zhao G, et al.: Sedentary behavior, physical activ-
+ity, and concentrations of insulin among US adults, Metabolism 
+59:1268–1275, 2010.
+ 43.  Fox B D, Kassirer M , Weiss I, et al.: Ambulatory rehabilitation 
+improves exercise capacity in patients with pulmonary hyperten-
+sion, J Card Fail 17:196–200, 2011.
+ 44.  Frederix I , Solmi F, Piepoli MF, et al.: Cardiac telerehabilitation: 
+A novel cost-efficient care delivery strategy that can induce long-
+term health benefits, Eur J Prev Cardiol 24(16):1708–1717, 2017.
+ 45.  Fried L P, Tangen C M, Walston J , et  al.: Frailty in older 
+adults: evidence for a phenotype, J Gerontol A Biol Sci Med Sci  
+56:M146–M156, 2001.
+ 46.  Gascard E : [Importance of bed rest in pulmonary tuberculosis], 
+Mars Med 89:405–407, 1952.
+ 46a.  Gitkind AI, Levin S, Dohle C, et al.: Redefining pathways into 
+acute rehabilitation during the COVID-19 crisis, PM R, 2020. 
+[Online ahead of print].
+ 47.  Global Initiative for Chronic Obstructive Lung Disease (GOLD): 
+Global strategy for the diagnosis, management, and prevention of 
+chronic obstructive lung disease. 2011 update www.goldcopd.org/
+uploads/users/files/GOLD_Report_2011_Feb21.pdf.
+ 48.  Global Initiative for Chronic Obstructive Lung Disease (GOLD): 
+Global strategy for the diagnosis, management, and prevention of 
+chronic obstructive lung disease. 2014 update www.goldcopd.org/
+uploads/users/files/GOLD_Report2014_Feb07.pdf.
+ 49.  Gonzalo J D, Yang JJ, Stuckey HL, et al.: Patient care transitions 
+from the emergency department to the medicine ward: evalua -
+tion of a standardized electronic signout tool, Int J Qual Health 
+Care 26:337–347, 2014.
+ 50.  Graf C , Koch B , Falkowski G, et al.: Effects of a school-based 
+intervention on BMI and motor abilities in childhood, J Sports 
+Sci Med 4:291–299, 2005.
+ 51.  Gutierrez J , Devia C , Weiss L, et al.: Health, community, and 
+spirituality: evaluation of a multicultural faith-based diabetes 
+prevention program, Diabetes Educ 40:214–222, 2014.
+ 52.  Guttormson J L, Chlan L , Weinert C , et  al.: Factors influ -
+encing nurse sedation practices with mechanically ventilated 
+patients: a U.S. national survey, Intensive Crit Care Nurs  
+26:44–50, 2010.
+ 53.  Hamm L F, Sanderson BK, Ades PA, et al.: Core competencies 
+for cardiac rehabilitation/secondary prevention professionals: 
+2010 update: position statement of the American Association 
+of Cardiovascular and Pulmonary Rehabilitation, J Cardiopulm 
+Rehabil Prev 31:2–10, 2011.
+ 54.  Haskell W L, Lee IM, Pate RR, et al.: Physical activity and public 
+health: updated recommendation for adults from the American 
+College of Sports Medicine and the American Heart Association, 
+Circulation 116:1081–1093, 2007.
+ 55.  Haskell W L, Lee IM, Pate RR, et al.: Physical activity and public 
+health: updated recommendation for adults from the American 
+College of Sports Medicine and the American Heart Association, 
+Med Sci Sports Exerc 39:1423–1434, 2007.
+ 56.  Helmerhorst H J, Wijndaele K, Brage S, et al.: Objectively mea -
+sured sedentary time may predict insulin resistance independent 
+of moderate- and vigorous-intensity physical activity, Diabetes 
+58:1776–1779, 2009.
+ 57.  Hills A P, King NA, Armstrong TP: The contribution of physical 
+activity and sedentary behaviours to the growth and develop -
+ment of children and adolescents: implications for overweight 
+and obesity, Sports Med 37:533–545, 2007.
+ 58.  Hitosugi M , Niwa M, Takatsu A: Rheologic changes in venous 
+blood during prolonged sitting, Thromb Res 100:409–412, 2000.
+ 59.  Holland A E, Wadell K, Spruit MA: How to adapt the pulmonary 
+rehabilitation programme to patients with chronic respiratory 
+disease other than COPD, Eur Respir Rev 22:577–586, 2013.
+ 60.  Holt L E: The importance of prolonged rest in bed after acute 
+cardiac inflammation in children, Arch Pediatr 64:82–93, 1947.
+ 61.  Homans J : Thrombosis of the deep leg veins due to prolonged 
+sitting, N Engl J Med 250:148–149, 1954.
+ 62.  Hunter A , Johnson L, Coustasse A: Reduction of intensive care 
+unit length of stay: the case of early mobilization, Health Care 
+Manag 33:128–135, 2014.
+ 63.  Huppmann P , Sczepanski B, Boensch M, et al.: Effects of inpa -
+tient pulmonary rehabilitation in patients with interstitial lung 
+disease, Eur Respir J 42:444–453, 2013.
+ 64.  Hwang R , Bruning J, Morris NR, et al.: Home-based telereha -
+bilitation is not inferior to a centre-based program in patients 
+with chronic heart failure: a randomised trial, J Physiother  
+63(2):101–107, 2017.
+ 65.  Inouye S K, Kosar CM, T ommet D, et al.: The CAM-S: develop-
+ment and validation of a new scoring system for delirium severity 
+in 2 cohorts, Ann Intern Med 160:526–533, 2014.
+ 66.  Iwama H , Furuta S, Ohmizo H: Graduated compression stock-
+ing manages to prevent economy class syndrome, Am J Emerg 
+Med 20:378–380, 2002.
+ 67.  Jones D , Song X , Mitnitski A , et  al.: Evaluation of a frailty 
+index based on a comprehensive geriatric assessment in a popu -
+lation based study of elderly Canadians, Aging Clin Exp Res  
+17:465–471, 2005.
+ 68.  Judice P B, Silva AM, Magalhaes JP, et al.: Sedentary behaviour 
+and adiposity in elite athletes, J Sports Sci 32:1760–1767, 2014.
+ 69.  Junnila R K, List EO, Berryman DE, et al.: The GH/IGF-1 axis 
+in ageing and longevity, Nat Rev Endocrinol 9:366–376, 2013.
+ 70.  Karvonen MJ, Kentala E, Mustala O: The effects of training on heart 
+rate; a longitudinal study, Ann Med Exp Biol Fenn 35:307–315, 1957.
+ 71.  Kavanagh T : Exercise training in patients after heart transplanta-
+tion, Herz 16:243–250, 1991.
+ 72.  Kavanagh T , Shephard RH, Pandit V: Marathon running after 
+myocardial infarction, JAMA 229(12):1602–1605, 1974.
+ 73.  Kavanagh T , Yacoub MH, Mertens DJ, et al.: Cardiorespiratory 
+responses to exercise training after orthotopic cardiac transplan-
+tation, Circulation 77:162–171, 1988.
+ 74.  Kavanaugh T , Yacoub MH, Campbell R, et al.: Marathon run -
+ning after cardiac transplantation: a case history, J Cardiac Rehab 
+6:16–20, 1986.
+ 75.  King M , Bittner V, Josephson R, et al.: Medical director respon -
+sibilities for outpatient cardiac rehabilitation/secondary pre -
+vention programs: 2012 update: a statement for health care 
+professionals from the American Association for Cardiovascular 
+and Pulmonary Rehabilitation and the American Heart Associa-
+tion, J Cardiopulm Rehabil Prev 32:410–419, 2012.
+ 76.  King Jr  J T, Justice A C, Aron D C: Management of incidental 
+pituitary microadenomas: a cost-effectiveness analysis, J Clin 
+Endocrinol Metab 82:3625–3632, 1997.
+ 77.  Kirkham H S, Clark B L, Paynter J , et  al.: The effect of a col -
+laborative pharmacist-hospital care transition program on 
+the likelihood of 30-day readmission, Am J Health Syst Pharm  
+71:739–745, 2014.
+ 77a.  Klok FA, Kruip MJHA, van der Meer NJM, et al.: Confirmation 
+of the high cumulative incidence of thrombotic complications in 
+
+--- PAGE 626 ---
+534.e3
+References
+critically ill ICU patients with COVID-19: an updated analysis, 
+Thromb Res 191:148–150, 2020.
+ 78.  Kortebein P : Rehabilitation for hospital-associated decondition-
+ing, Am J Phys Med Rehabil 88:66–77, 2009.
+ 79.  Kovesdy C P, Kopple J D, Kalantar-Zadeh K : Management of 
+protein-energy wasting in non-dialysis-dependent chronic kid -
+ney disease: reconciling low protein intake with nutritional ther-
+apy, Am J Clin Nutr 97:1163–1177, 2013.
+ 80.  Kraal J J, Peek N, Van den Akker-Van Marle ME, et al.: Effects of 
+home-based training with telemonitoring guidance in low to moder-
+ate risk patients entering cardiac rehabilitation: short-term results of 
+the FIT@Home study, Eur J Prev Cardiol 21(Suppl 2):26–31, 2014.
+ 81.  Kress J P, Gehlbach B, Lacy M, et al.: The long-term psychologi-
+cal effects of daily sedative interruption on critically ill patients, 
+Am J Respir Crit Care Med 168:1457–1461, 2003.
+ 82.  Lai Y C, Potoka KC, Champion H C, et  al.: Pulmonary arterial 
+hypertension: the clinical syndrome, Circ Res 115:115–130, 2014.
+ 83.  Lauer M , Froelicher E S, Williams M , et  al.: Exercise testing 
+in asymptomatic adults: a statement for professionals from the 
+American Heart Association Council on Clinical Cardiology, 
+Subcommittee on Exercise, Cardiac Rehabilitation, and Preven-
+tion, Circulation 112:771–776, 2005.
+ 84.  Lear S A: The delivery of cardiac rehabilitation using communi -
+cations technologies: the virtual cardiac rehabilitation program, 
+Can J Cardiol 34(10, Suppl 2):S278–S283, 2018.
+ 85.  Lee H , Chung H , Ko H , et  al.: Dedicated cardiac rehabilita -
+tion wearable sensor and its clinical potential, PLoS One  
+12(10):e0187108, 2017.
+ 86.  Leon A S, Certo C , Comoss P , et al.: Scientific evidence of the 
+value of cardiac rehabilitation services with an emphasis on 
+patients following myocardial infarction, J Cardiopulm Rehabil  
+10:79–87, 1990.
+ 87.  Leon A S, Franklin B A, Costa F , et  al.: Cardiac rehabilitation 
+and secondary prevention of coronary heart disease: an Ameri -
+can Heart Association scientific statement from the Council 
+on Clinical Cardiology (Subcommittee on Exercise, Cardiac 
+Rehabilitation, and Prevention) and the Council on Nutrition, 
+Physical Activity, and Metabolism (Subcommittee on Physi -
+cal Activity), in collaboration with the American Association 
+of Cardiovascular and Pulmonary Rehabilitation, Circulation 
+111:369–376, 2005.
+ 88.  Liou K , Ho S , Fildes J, Ooi S -Y: High intensity interval versus 
+moderate intensity continuous training in patients with coronary 
+artery disease: a meta-analysis of physiological and clinical param-
+eters, Heart Lung Circ 25(2):166–174, 2016.
+ 89.  Long L , Mordi IR, Bridges C, et al.: Exercise-based cardiac reha-
+bilitation for adults with heart failure, Cochrane Database Syst 
+Rev 1:Cd003331, 2019.
+ 90.  Lord R K, Mayhew CR, Korupolu R, et al.: ICU early physical 
+rehabilitation programs: financial modeling of cost savings, Crit 
+Care Med 41:717–724, 2013.
+ 91.  Maggio M , De Vita F, Lauretani F, et al.: IGF-1, the cross road 
+of the nutritional, inflammatory and hormonal pathways to 
+frailty, Nutrients 5:4184–4205, 2013.
+ 92.  Mak R H, Rotwein P: Myostatin and insulin-like growth factors 
+in uremic sarcopenia: the yin and yang in muscle mass regula -
+tion, Kidney Int 70:410–412, 2006.
+ 93.  Marzolini S : Integrating individuals with stroke into cardiac reha-
+bilitation following traditional stroke rehabilitation: promoting 
+a continuum of care, Can J Cardiol 34(10, Suppl 2):S240–S246, 
+2018.
+ 94.  Marzolini S , Balitsky A, Jagroop D, et al.: Factors affecting atten-
+dance at an adapted cardiac rehabilitation exercise program for 
+individuals with mobility deficits poststroke, J Stroke Cerebrovasc 
+Dis 25(1):87–94, 2016.
+ 95.  Matthews C E, Chen K Y, Freedson PS, et al.: Amount of time 
+spent in sedentary behaviors in the United States, 2003-2004, 
+Am J Epidemiol 167:875–881, 2008.
+ 96.  Medina Quero J, Fernandez Olmo MR, Pelaez Aguilera MD, et al.: 
+Real-time monitoring in home-based cardiac rehabilitation using 
+wrist-worn heart rate devices, Sensors (Basel) 17(12), 2017.
+ 97.  Mendez-T ellez PA, Nusr R , Feldman D , et  al.: Early physical 
+rehabilitation in the ICU: a review for the neurohospitalist, Neu-
+rohospitalist 2:96–105, 2012.
+ 98.  Mercadante S , Ferrantelli A , T ortorici C, et  al.: Incidence of 
+chronic pain in patients with end-stage renal disease on dialysis, 
+J Pain Symptom Manage 30:302–304, 2005.
+ 99.  Miller M R, Crapo R, Hankinson J, et al.: General considerations 
+for lung function testing, Eur Respir J 26:153–161, 2005.
+ 100.  Miller MR, Hankinson J, Brusasco V, et al.: Standardisation of 
+spirometry, Eur Respir J 26:319–338, 2005.
+ 101.  Moore G E, Parsons D B, Stray-Gundersen J , et  al.: Uremic 
+myopathy limits aerobic capacity in hemodialysis patients, Am J 
+Kidney Dis 22:277–287, 1993.
+ 102.  Morris JN, Heady JA, Raffle PA, et al.: Coronary heart-disease 
+and physical activity of work, Lancet 265:1053–1057, 1953.
+ 103.  Morris JN, Heady JA, Raffle PA, et al.: Coronary heart-disease 
+and physical activity of work, Lancet 265:1111–1120, 1953.
+ 104.  Naide M : Prolonged television viewing as cause of venous 
+and arterial thrombosis in legs, J Am Med Assoc  165:681–682, 
+1957.
+ 105.  National Heart, Lung, and Blood Institute (NHLBI): NHLBI 
+fact book fiscal year 2012 , Bethesda, 2012, U.S. Department of 
+Health and Human Services.
+ 106.  National Kidney Foundation: K/DOQI clinical practice guide -
+lines for chronic kidney disease: evaluation, classification, and 
+stratification, Am J Kidney Dis 39(Suppl 1):S1–S266, 2002.
+ 107.  Needham DM, Davidson J, Cohen H, et al.: Improving long-term 
+outcomes after discharge from intensive care unit: report from a 
+stakeholders’ conference, Crit Care Med 40:502–509, 2012.
+ 108.  Ng S M, Khurana R M, Yeang HW, et al.: Is prolonged use of 
+computer games a risk factor for deep venous thrombosis in chil-
+dren? Case study, Clin Med 3:593–594, 2003.
+ 109.  Nici L, Donner C, Wouters E, et al.: American Thoracic Society/
+European Respiratory Society statement on pulmonary rehabili-
+tation, Am J Respir Crit Care Med 173:1390–1413, 2006.
+ 110.  Nici L, Limberg T, Hilling L, et al.: Clinical competency guide -
+lines for pulmonary rehabilitation professionals: American Asso-
+ciation of Cardiovascular and Pulmonary Rehabilitation Position 
+Statement, J Cardiopulm Rehabil Prev 27:355–358, 2007.
+ 111.  Niven D J, Bastos J F, Stelfox H T: Critical care transition pro -
+grams and the risk of readmission or death after discharge from 
+an ICU: a systematic review and meta-analysis, Crit Care Med  
+42:179–187, 2014.
+ 112.  O’Connor GT, Buring JE, Yusuf S, et al.: An overview of ran -
+domized trials of rehabilitation with exercise after myocardial 
+infarction, Circulation 80:234–244, 1989.
+ 113.  Office of Disease Prevention and Health Promotion, U.S: Depart-
+ment of Health and Human Services: Healthy People 2020: objective 
+development and selection process. Available at: http://healthypeople.
+gov/2020/about/objectiveDevelopment.aspx.
+ 114.  Oldridge NB, Guyatt GH, Fischer ME, et al.: Cardiac rehabili -
+tation after myocardial infarction. Combined experience of ran-
+domized clinical trials, JAMA 260:945–950, 1988.
+ 115.  Painter P, Marcus R: Physical function and gait speed in patients 
+with chronic kidney disease, Nephrol Nurs J 40:529–538, 2013, 
+quiz 539.
+ 116.  Parker AM, Sricharoenchai T, Needham DM: Early rehabilita -
+tion in the intensive care unit: preventing impairment of physical 
+and mental health, Curr Phys Med Rehabil Rep 1:307–314, 2013.
+ 117.  Parshall M B, Schwartzstein R M, Adams L , et  al.: An official 
+American Thoracic Society statement: update on the mecha -
+nisms, assessment, and management of dyspnea, Am J Respir Crit 
+Care Med 185:435–452, 2012.
+ 118.  Patel S B, Kress J P: Sedation and analgesia in the mechanically 
+ventilated patient, Am J Respir Crit Care Med 185:486–497, 2012.
+
+--- PAGE 627 ---
+534.e4
+  References
+ 119.  Pennell J P, Bourgoignie JJ: Water reabsorption by papillary col-
+lecting ducts in the remnant kidney, Am J Physiol  242:F657–
+F663, 1982.
+ 120.  Peno-Green L , Verrill D, Vitcenda M, et al.: Patient and pro -
+gram outcome assessment in pulmonary rehabilitation: an 
+AACVPR statement, J Cardiopulm Rehabil Prev  29:402–410, 
+2009.
+ 121.  Poliner L R, Dehmer GJ, Lewis SE, et al.: Left ventricular per -
+formance in normal subjects: a comparison of the responses 
+to exercise in the upright and supine positions, Circulation 
+62(3):528–534, 1980.
+ 122.  Prevention Research Centers, Centers for Disease Control and 
+Prevention: Chronic disease prevention and health promotion: 
+at a glance . Available at: http://www.cdc.gov/chronicdisease/
+resources/publications/aag/chronic.htm.
+ 122a.  Prince D, Hsieh J : Early rehabilitation in the intensive care 
+unit, Curr Phys Med Rehabil Rep 3:214–221, 2015.
+ 123.  Qaseem A , Wilt TJ, Weinberger SE, et al.: Diagnosis and man -
+agement of stable chronic obstructive pulmonary disease: a 
+clinical practice guideline update from the American College 
+of Physicians, American College of Chest Physicians, American 
+Thoracic Society, and European Respiratory Society, Ann Intern 
+Med 155:179–191, 2011.
+ 124.  Quindry J C, Franklin B A, Chapman M , et  al.: Benefits and 
+risks of high-intensity interval training in patients with coro -
+nary artery disease, Am J Cardiol 123(8):1370–1377, 2019.
+ 125.  Ranaldi H , Deighan C , Taylor L: Exploring patient-reported 
+outcomes of home-based cardiac rehabilitation in relation to 
+Scottish, UK and European guidelines: an audit using qualita -
+tive methods, BMJ Open 8(12):e024499, 2018.
+ 126.  Ribeiro P AB, Boidin M, Juneau M, et al.: High-intensity inter -
+val training in patients with coronary heart disease: prescription 
+models and perspectives, Ann Phys Rehabil Med  60(1):50–57, 
+2017.
+ 126a.  Richardson S , Hirsch J S, Narasimhan M , et  al.: Presenting 
+characteristics, comorbidities, and outcomes among 5700 
+patients hospitalized with COVID-19 in the New York City 
+area, JAMA 323:2052–2059, 2020.
+ 127.  Rocco M V, Gassman JJ, Wang SR, et al.: Cross-sectional study 
+of quality of life and symptoms in chronic renal disease patients: 
+the Modification of Diet in Renal Disease Study, Am J Kidney 
+Dis 29:888–896, 1997.
+ 128.  Rock L F: Sedation and its association with posttraumatic stress 
+disorder after intensive care, Crit Care Nurse 34:30–37, 2014. 
+quiz 39.
+ 129.  Rockwood K , Stadnyk K, MacKnight C, et al.: A brief clinical 
+instrument to classify frailty in elderly people, Lancet 353:205–
+206, 1999.
+ 130.  Rogers J G, Butler J, Lansman SL, et al.: Chronic mechanical cir-
+culatory support for inotrope-dependent heart failure patients 
+who are not transplant candidates: results of the INTREPID 
+T rial, J Am Coll Cardiol 50:741–747, 2007.
+ 131.  Ruskin J , McHale PA, Harley A, et al.: Pressure-flow studies in 
+man: effect of atrial systole on left ventricular function, J Clin 
+Invest 49:472–478, 1970.
+ 132.  Ryerson C J, Cayou C, T opp F, et al.: Pulmonary rehabilitation 
+improves long-term outcomes in interstitial lung disease: a pro-
+spective cohort study, Respir Med 108:203–210, 2014.
+ 133.  Sager M A, Franke T, Inouye SK, et al.: Functional outcomes of 
+acute medical illness and hospitalization in older persons, Arch 
+Intern Med 156:645–652, 1996.
+ 134.  Sandesara P B, Dhindsa D, Khambhati J, et al.: Reconfiguring 
+cardiac rehabilitation to achieve panvascular prevention: new 
+care models for a new world, Can J Cardiol  34(10s2):S231–
+S239, 2018.
+ 135.  Sarma S , Zaric GS, Campbell MK, et al.: The effect of physical 
+activity on adult obesity: evidence from the Canadian NPHS 
+panel, Econ Hum Biol 14:1–21, 2014.
+ 136.  Schrier RW, editor: Diseases of the kidney and urinary tract, Phila-
+delphia, 2007, Williams & Wilkins.
+ 137.  Schrier R W, Wang W: Acute renal failure and sepsis, N Engl J 
+Med 351:159–169, 2004.
+ 138.  Schweickert W D, Pohlman M C, Pohlman A S, et  al.: Early 
+physical and occupational therapy in mechanically ventilated, 
+critically ill patients: a randomised controlled trial, Lancet 
+373:1874–1882, 2009.
+ 139.  Scurria P L, Webster M G, Wolf T M: Needs assessment for a 
+health-promotion program in a medical center, Psychol Rep  
+74:666, 1994.
+ 140.  Segura-Orti E, Johansen KL: Exercise in end-stage renal disease, 
+Semin Dial 23:422–430, 2010.
+ 141.  Skobel E , Knackstedt C , Martinez-Romero A , et  al.: Cleland. 
+Internet-based training of coronary artery patients: the Heart 
+Cycle T rial, Heart and Vessels 32(4):408–418, 2017.
+ 142.  Starling R C, Cody R J: Cardiac transplant hypertension, Am J 
+Cardiol 65:106–111, 1990.
+ 143.  Stevens R D, Dowdy D W, Michaels R K, et  al.: Neuromuscu -
+lar dysfunction acquired in critical illness: a systematic review, 
+Intensive Care Med 33:1876–1891, 2007.
+ 144.  Swigris JJ, Brown KK, Make BJ, et al.: Pulmonary rehabilitation 
+in idiopathic pulmonary fibrosis: a call for continued investiga -
+tion, Respir Med 102:1675–1680, 2008.
+ 145.  Tayrose G , Newman D , Slover J , et  al.: Rapid mobilization 
+decreases length-of-stay in joint replacement patients, Bull Hosp 
+Jt Dis 71:222–226, 2013.
+ 146.  Thomas RJ, King M , Lui K : AACVPR/ACC/AHA 2007 per -
+formance measures on cardiac rehabilitation for referral to and 
+delivery of cardiac rehabilitation/secondary prevention services 
+endorsed by the American College of Chest Physicians, Ameri -
+can College of Sports Medicine, American Physical Therapy 
+Association, Canadian Association of Cardiac Rehabilitation, 
+European Association for Cardiovascular Prevention and Reha -
+bilitation, Inter-American Heart Foundation, National Asso -
+ciation of Clinical Nurse Specialists, Preventive Cardiovascular 
+Nurses Association, and the Society of Thoracic Surgeons, J Am 
+Coll Cardiol 50(14):1400–1433, 2007.
+ 147.  Thomas R J, King M , Lui K , et  al.: AACVPR/ACCF/AHA 
+2010 update: performance measures on cardiac rehabilitation 
+for referral to cardiac rehabilitation/secondary prevention 
+services endorsed by the American College of Chest Physi -
+cians, the American College of Sports Medicine, the Ameri -
+can Physical Therapy Association, the Canadian Association 
+of Cardiac Rehabilitation, the Clinical Exercise Physiology 
+Association, the European Association for Cardiovascular 
+Prevention and Rehabilitation, the Inter-American Heart 
+Foundation, the National Association of Clinical Nurse Spe -
+cialists, the Preventive Cardiovascular Nurses Association, 
+and the Society of Thoracic Surgeons, J Am Coll Cardiol  
+56:1159–1167, 2010.
+ 148.  Thompson P D: The benefits and risks of exercise training in 
+patients with chronic coronary artery disease, JAMA 259:1537–
+1540, 1988.
+ 149.  Thompson CH, Kemp G J, Taylor DJ, et al.: Effect of chronic 
+uraemia on skeletal muscle metabolism in man, Nephrol Dial 
+Transplant 8:218–222, 1993.
+ 150.  Tzeng H M: Understanding the prevalence of inpatient falls 
+associated with toileting in adult acute care settings, J Nurs Care 
+Qual 25:22–30, 2010.
+ 151.  Ueno A, T omizawa Y: Cardiac rehabilitation and artificial heart 
+devices, J Artif Organs 12:90–97, 2009.
+ 152.  Van Camp S P, Peterson R A: Cardiovascular complications of 
+outpatient cardiac rehabilitation programs, JAMA 256(9):1160–
+1163, 1986.
+ 153.  Vongvanich P, Paul-Labrador MJ, Merz CN: Safety of medically 
+supervised exercise in a cardiac rehabilitation center, Am J Car-
+diol 77(15):1383–1385, 1996.
+
+--- PAGE 628 ---
+534.e5
+References
+ 154.  Waters E, de Silva-Sanigorski A , Hall B J, et  al.: Interventions 
+for preventing obesity in children, Cochrane Database Syst Rev  
+12:CD001871, 2011.
+ 155.  Wenger N, Gilbert C , Skoropa M : Cardiac conditioning after 
+myocardial infarction. An early intervention program, J Cardiac 
+Rehabil 2:17–22, 1971.
+ 156.  Wewege MA, Ahn D, Yu J, et al.: High-intensity interval train -
+ing for patients with cardiovascular disease-is it safe? A system -
+atic review, J Am Heart Assoc 7(21):e009305, 2018.
+ 157.  Whitaker RC, Wright JA, Pepe MS, et al.: Predicting obesity in 
+young adulthood from childhood and parental obesity, N Engl J 
+Med 337:869–873, 1997.
+ 158.  Williams MA, Fleg JL, Ades PA, et al.: Secondary prevention of 
+coronary heart disease in the elderly (with emphasis on patients 
+> or = 75 years of age): an American Heart Association scientific 
+statement from the Council on Clinical Cardiology Subcommit-
+tee on Exercise, Cardiac Rehabilitation, and Prevention, Circula-
+tion 105:1735–1743, 2002.
+ 159.  Wu Y, He Q, Yin X, et al.: Effect of individualized exercise dur -
+ing maintenance haemodialysis on exercise capacity and health-
+related quality of life in patients with uraemia, J Int Med Res  
+42:718–727, 2014.
+
+--- PAGE 629 ---
+535
+28
+Chronic Medical Conditions: 
+Pulmonary Disease, Organ 
+Transplantation, and 
+Diabetes
+JONATHAN H. WHITESON, JEFFREY M. COHEN, AND 
+SOFIYA PRILIK
+Approximately 50% of the US adult population is living with one 
+chronic health condition and 25% are living with two. Although 
+just over 12% of the total adult population live in the community 
+with a disability, the rate of disability significantly increases with age, 
+rising to 35% of people older than the age of 65. As the American 
+and global population ages, there is an increasing number of people 
+living with chronic medical conditions and disability, often with 
+multiple comorbidities. The physiatrist and rehabilitation medicine 
+team are playing an ever-increasing role in the continuum of care in 
+our evolving healthcare system in the management of such patients. 
+Individuals with chronic pulmonary, cardiovascular, renal, and 
+hepatic diseases; with diabetes mellitus (DM) and associated com-
+plications; and undergoing solid organ transplantation will require 
+rehabilitative services and the expertise of a physiatrist. It is essential 
+that the rehabilitation medicine specialist be knowledgeable in the 
+management of such conditions and potential complications.
+Pulmonary Rehabilitation
+Definition
+Pulmonary rehabilitation (PR) is defined as an evidence-based, 
+multidisciplinary, comprehensive intervention that can be inte -
+grated into the management of individuals with chronic lung dis-
+ease across the continuum of care.125
+PR is a multifaceted program, which involves optimization of 
+medical management, physical conditioning, education, nutri -
+tional counseling, coping skills, and psychosocial support with the 
+goal of reducing symptoms, increasing strength exercise tolerance, 
+improving functional status, psychological well-being, and quality 
+of life (QOL), and reducing healthcare resource use.168 
+Classification of Pulmonary Disease
+Pulmonary disease can be classified into four major categories, 
+which include obstructive lung disease, restrictive lung disease, 
+pulmonary vasculature disease, and hypoventilation syndromes. 
+Obstructive lung diseases, the most common diagnostic pre -
+sentation for PR, are characterized by expiratory airflow limita -
+tion on pulmonary function testing (PFT) and include chronic 
+obstructive pulmonary disease (COPD)—chronic bronchitis and 
+emphysema, bronchiectasis, cystic fibrosis, and asthma. Expira -
+tory airflow limitation results from a decrease of the diameter of 
+the bronchial lumen due to mucus blockage, inflammation and 
+edema of the bronchial walls, or dynamic expiratory collapse due 
+to loss of supportive structure. Restrictive lung diseases, character-
+ized by a reduction in all lung volumes on PFT , are classified as 
+intrinsic with lung parenchymal involvement as in interstitial lung 
+diseases, or extrinsic to the lung as in obesity and neuromuscular 
+disorders. These conditions cause a physical reduction in lung size/
+volume or increased lung stiffness, resulting in a decreased volume 
+of inspired air. Disorders of the pulmonary vasculature include 
+pulmonary embolism (PE), pulmonary hypertension (PH), and 
+pulmonary venoocclusive disease. Hypoventilation syndromes 
+include obstructive sleep apnea and obesity hypoventilation syn -
+drome. Many respiratory diseases fit into one of these categories, 
+but individuals may present with a combination or mixed pattern 
+of disease. The most common reason for referral to PR is COPD.
+Distinguishing Chronic Bronchitis and 
+Emphysema
+Chronic bronchitis is a “clinical” diagnosis based on the volume of 
+daily mucus production over months and years cleared by cough 
+and typified by acute exacerbations, often infective, and relatively 
+quiescent remissions. Excess mucus, resulting from an increased 
+number and size of mucus secreting goblet cells stimulated by 
+elements in tobacco smoke and infection, blocks airways causing 
+obstruction. Mucus plugging leads to ventilation/perfusion mis -
+matching and can progress to significant hypoxemia, marked hyper-
+capnia, PH, and right heart failure (HF) —cor-pulmonale—the 
+classic blue bloater—dyspneic, cyanotic, and volume overloaded.
+
+--- PAGE 630 ---
+536
+SECTION 3  Common Clinical Problems
+Emphysema is a “pathologic” diagnosis based on evidence of 
+airway destruction distal to the terminal bronchiole on high-
+resolution lung computed tomography (CT) scan or lung biopsy 
+(currently rarely done). Elements in tobacco smoke activate pro -
+teases that cause destruction of elastins and supportive tissues 
+in the lung interstitium, leaving bronchial walls unsupported 
+and prone to expiratory collapse causing obstruction. There is 
+no ventilation/perfusion mismatching due to equal destruction 
+of respiratory epithelium and vasculature resulting in significant 
+hypoxemia, mild hypercapnia, air trapping—the classic pink 
+puffer—dyspneic, noncyanotic, barrel chested.  
+Epidemiology of Lung Disease
+COPD, the most common form of lung disease and the third 
+leading cause of chronic morbidity and mortality in the United 
+States and worldwide, is primarily attributable to smoking.40,101
+Approximately 25% of adults with COPD have never smoked, 
+and workplace exposures likely contribute to much of their 
+disease.174
+Worldwide, other significant contributors include fossil-fuel 
+burning furnaces (for home heating and cooking) and environ -
+mental pollution or smog. Encouragingly, current smoking in 
+the United States has declined from 20.9% in 2005 to 14.0% 
+in 2017 according to the Centers for Disease Control and 
+Prevention (CDC). However, each day in the United States, 
+approximately 2000 youth younger than 18 years of age smoke 
+their first cigarette and more than 300 youth younger than 18 
+years of age become daily cigarette smokers. Cigarette smoking 
+accounts for more than 480,000 deaths every year, or approxi -
+mately one in five deaths. Approximately 80% of COPD deaths 
+are caused by smoking. According to the CDC, in 2017 there 
+were 16 million Americans currently diagnosed with COPD 
+but an estimated 12 million more living with undiagnosed 
+COPD.36,40 COPD facts and statistics are shown in Box 
+28.1.6,166
+Restrictive pulmonary disease is most commonly caused by:
+	 •	 	interstitial	 lung	 diseases—conditions	 that	 cause	 pulmonary	
+fibrosis (autoimmune related—scleroderma, rheumatoid 
+arthritis; inorganic dust exposure—asbestosis, silicosis; idio -
+pathic—idiopathic pulmonary fibrosis, sarcoid)
+	 •	 	neuromuscular	 disorders	 (e.g.,	 amyotrophic	 lateral	 sclerosis,	
+spinal cord injury [SCI], muscular dystrophy)
+	 •	 	lung/thoracic	 volume	 reduction	 (e.g.,	 pleural	 disorders—
+mesothelioma and effusion; lung resection; and abnormalities 
+of the thoracic spine—scoliosis/kyphosis, or chest wall—pec -
+tus excavatum).
+In SCI, lesions above C3 paralyze the diaphragm (C3–5) as 
+well as the intercostal muscles of respiration and patients will 
+require mechanical ventilation. Injury below C5 leaves the dia -
+phragm intact, and respiratory impairment depends on the level 
+of injury and extent of intercostal weakness. Below T6, no sig -
+nificant inspiratory muscle impairment is expected because exter-
+nal (and internal) intercostals are innervated by T1 to T6 roots. 
+Expiration is typically gravity assisted, but forced expiration—as 
+in coughing—requires a forced expiration against a closed glottis 
+using the abdominal muscles. Lower thoracic lesions will impair 
+abdominal muscle wall control and effective coughing; rectus 
+abdominis and external/internal oblique are innervated by T5-L1 
+roots. According to the National Spinal Cord Injury Statistical 
+Center, as of 2018 there were an estimated 247,000 to 358,000 
+people with SCI or spinal cord dysfunction in the United States. 
+Of these patients, 59.7% were either incomplete (47.2%) or 
+complete (11.5%) tetraplegia with significant involvement of the 
+muscles of respiration. Duchenne muscular dystrophy is one of 
+the more common neuromuscular diseases that cause restrictive 
+pulmonary dysfunction, with an incidence of 1 per 3500 male 
+infants in the United States.105
+Acute PE ranks third among the most common types of car -
+diovascular diseases, with an annual incidence estimated to be 60 
+to 70 per 100,000. Untreated, the mortality rate is high (30%), 
+dropping to 8% if appropriately treated. Risk factors include age, 
+personal history of deep vein thrombosis (DVT)  or PE, active 
+malignancy, disabling conditions such as heart or respiratory fail-
+ure, coagulation disorders, hormone replacement therapy, and 
+oral contraception.16
+Primary, or idiopathic, PH has no clear etiology but is likely 
+related to genetic susceptibility. Approximately half the cases of 
+PH occur in association with other diseases such as connective tis-
+sue disease, heart disease including congenital heart disease, coro-
+nary artery disease, systemic hypertension, liver disease (cirrhosis), 
+and lung diseases including blood clots to the lungs and emphy -
+sema. The exact incidence of PH is not known, but approximately 
+200,000 related hospitalizations occur annually in the United 
+States. The incidence increases with age and is more common 
+among women and non-Hispanic blacks. PH is associated with 
+hypoxia and right HF . Appropriate oxygen supplementation in 
+patients with COPD can prevent or reverse PH and is part of the 
+management of cor pulmonale.134
+Between 5% and 10% of the US adult population have diag -
+nosed obstructive sleep apnea, 7% have breathing pauses during 
+sleep that put them at risk for more severe sleep events, and 23% 
+to 59% snore. Sleep-disordered breathing is more likely to be 
+reported by men than women. However, more than 80% with 
+signs and symptoms of moderate to severe sleep-disordered breath-
+ing remain undiagnosed. Sleep-disordered breathing is associated 
+with increased risk for coronary artery disease, HF , and stroke.161 
+Symptoms of Pulmonary Disease
+Typical presenting symptoms of pulmonary disease include a history 
+of worsening shortness of breath on progressively less intense exertion, 
+cough with or without sputum, progressive weakness, and fatigue. 
+Functional decline is evidenced by limitations with activities of daily 
+living (ADLs), balance disorder and falls, progressive difficulty with 
+	 •	 	The	majority	of	patients	with	COPD	have	asthma.
+	 •	 	Asthma	is	the	most	common	childhood	chronic	disease.
+	 •	 	Causes	of	COPD	are	asthma,	chronic	bronchitis,	and	emphysema,	singly	
+or	in	combination.
+	 •	 	Smoking	is	the	primary	risk	factor	for	COPD.	Approximately	80%	of	
+COPD	deaths	are	caused	by	smoking.
+	 •	 	Alpha-1	antitrypsin	deficiency	is	underrecognized	by	physicians.
+	 •	 	COPD	is	the	third	leading	cause	of	death	worldwide.
+	 •	 	Annual	worldwide	adult	deaths	from	COPD	are	3.1	million.
+	 •	 	In	2010,	>70,000	females	died	compared	with	>64,000	males.
+	 •	 	In	2010,	the	cost	to	the	nation	for	COPD	was	projected	to	be	
+approximately	$49.9	billion,	including	$29.5	billion	in	direct	healthcare	
+expenditures,	$8.0	billion	in	indirect	morbidity	costs,	and	$12.4	billion	in	
+indirect	mortality	costs.
+ • BOX 28.1      Facts Regarding Chronic Obstructive 
+Pulmonary Disease (COPD)

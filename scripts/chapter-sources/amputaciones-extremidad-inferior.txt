@@ -1,0 +1,648 @@
+CAPÍTULO
+120
+Amputaciones de la extremidadinferior
+Gerasimos Bastas, MD, PhD
+Sinónimos
+Amputación por debajo de la rodilla: amputación transtibial
+Amputación por encima de la rodilla: amputación transfemoral
+Muñón: extremidad residual o residuo
+Códigos CIE-10
+G54.7 Síndrome del miembro fantasma con dolor
+G54.6 Síndrome del miembro fantasma sin dolor
+R26.2 Diﬁcultad para caminar
+S98.131 Amputación traumática completa de un dedo menor del pie
+derecho
+S98.141 Amputación traumática parcial de un dedo menor del pie
+derecho
+S88.911 Amputación traumática completa de pierna derecha, nivel sin
+especiﬁcar
+S88.921 Amputación traumática parcial de pierna derecha, nivel sin
+especiﬁcar
+S88.111 Amputación traumática completa entre rodilla y tobillo,
+extremidad inferior derecha
+S88.121 Amputación traumática parcial entre rodilla y tobillo,
+extremidad inferior derecha
+S88.011 Amputación traumática completa a nivel de la rodilla,
+extremidad inferior derecha
+S88.021 Amputación traumática parcial a nivel de la rodilla, extremidad
+inferior derecha
+T87.40 Infección de muñón de amputación de extremidad sin
+especiﬁcar
+T87.33 Neuroma de muñón de amputación de extremidad inferior
+derecha
+T87.34 Neuroma de muñón de amputación de extremidad inferior
+izquierda
+Z44.9 Consulta para colocación y ajuste de prótesis externa sin
+especiﬁcar
+Z89.511 Ausencia adquirida de pierna derecha por debajo de rodilla
+Z89.611 Ausencia adquirida de pierna derecha por encima de rodilla
+Z89.612 (Para designar la afectación del lado izquierdo se cambia el 1
+ﬁnal de los códigos por un 2; p. ej., Ausencia adquirida de pierna
+izquierda por encima de rodilla)
+Niveles de amputación y epidemiología
+Los niveles de amputación se designan mediante epónimos y términos
+descriptivos de la manera siguiente: amputación parcial de un dedo (alguna
+parte de un dedo), desarticulación de un dedo (a nivel de la articulación
+metatarsofalángica), resección de un radio (dedo y su metatarsiano
+asociado), amputación transmetatarsiana (a nivel del tercio medio del
+metatarsiano), desarticulación tarsometatarsiana (de Lisfranc),
+desarticulación mediotarsiana (Chopart), artrodesis calcaneotibial
+(amputación de Boyd o de Pirigoﬀ, dependiendo de la vía de abordaje
+quirúrgico) y desarticulación del tobillo o del pie (resección de Syme del
+extremo distal del peroné y el maléolo tibial a la altura de la carilla articular
+inferior de la tibia, con reinserción distal de la almohadilla del talón). Para las
+expresiones por debajo y por encima de la rodilla, aunque se siguen
+utilizando, es más adecuado utilizar los términos transtibial y transfemoral
+respectivamente. Las desarticulaciones de la rodilla y de la cadera se efectúan
+a través de las articulaciones correspondientes. La hemipelvectomía implica
+la resección de la extremidad inferior con una resección variable de la
+hemipelvis. La hemicorporectomía es la resección por debajo de L4-L5.
+Se calcula que en el año 2005 había 975.000 amputados de la extremidad
+inferior en Estados Unidos1. La causa más frecuente de amputación son las
+vasculopatías (54%), dos tercios de las cuales tienen un diagnóstico
+secundario de diabetes2. Más de la mitad de las amputaciones de origen
+vascular son amputaciones mayores (transfemorales, 25,8%; transtibiales,
+27,6%)2,3, y el 42,8% corresponden a niveles más distales (amputación parcial
+del pie, de un radio o de dedos). La mayoría de los pacientes son mayores de
+60 años. En Estados Unidos se efectúan cada año alrededor de 82.000
+amputaciones no traumáticas de la extremidad inferior relacionadas con la
+diabetes3. La siguiente causa en frecuencia son los traumatismos (22%),
+seguidos de los tumores (5%). En los niños de 5 a 10 años, las neoplasias son
+la causa más frecuente. Los hombres superan en número a las mujeres, con
+una relación de 2,1 a 1 en el caso de las amputaciones secundarias a
+enfermedad y de 7,2 a 1 para las debidas a traumatismos4. Según los cálculos,
+la incidencia mundial de las amputaciones la extremidad inferior en la
+población total varía entre 5,8 y 31 por 100.000; la gran variabilidad se debe a
+diferencias regionales en cuanto a notiﬁcación5.
+Cirugía de amputación
+Conocer las técnicas quirúrgicas permite evaluar mejor las complicaciones
+postoperatorias y facilita el pronóstico sobre el resultado. Con las técnicas
+antiguas, los músculos seccionados simplemente se retraían y atroﬁaban, lo
+cual planteaba problemas para la deambulación con prótesis y la integridad
+de la piel. Las intervenciones modernas incluyen técnicas de mioplastia u
+osteomioplastia (miodesis). La mioplastia consiste en realizar una unión
+musculomuscular sobre el extremo del hueso seccionado por medio de una
+sutura de las fascias, lo cual evita la contractura sin oposición y la atroﬁa, y
+permite conservar parte de la acción muscular para controlar el encaje. Está
+indicada en las amputaciones de causa vascular para garantizar la viabilidad
+del tejido muscular distal. En la osteomioplastia se unen los músculos
+seccionados y el extremo distal del hueso largo seccionado, lo cual facilita el
+control de su movimiento y mejora la tolerancia y el control del encaje. En la
+amputación transtibial se debe biselar el extremo anterodistal de la tibia y
+resecar el peroné más proximalmente con respecto a la tibia (entre 2 y 2,5
+cm). El movimiento relativo entre la tibia y el peroné (similar al de los
+palillos chinos) dentro del encaje puede ser incómodo y perjudicial. La
+osteomioplastia de Ertl6 intenta controlar dicho movimiento mediante la
+creación de una unión sinostósica tibioperonea destinada a facilitar el apoyo
+sobre la extremidad residual. Se presta atención al cierre de la cavidad
+medular del hueso y al tratamiento de las estructuras vasculonerviosas para
+reducir las formaciones arteriovenosas y el atrapamiento de los nervios en el
+tejido cicatricial del muñón. Algunos aspectos de esta intervención se
+pueden aplicar, total o parcialmente, a otros niveles. En los pacientes con
+escaso potencial ambulatorio, merece tenerse en cuenta la desarticulación de
+la rodilla por delante de la amputación transtibial, ya que reduce el riesgo a
+largo plazo de que se produzcan contracturas en ﬂexión de la rodilla y
+deterioro cutáneo7. La desarticulación de la rodilla, ya sea como intervención
+inicial o como cirugía de revisión para una amputación de un nivel inferior,
+también merece ser tenida en cuenta por delante de la amputación
+transfemoral cuando el potencial ambulatorio es bueno8. La técnica de Mazet
+consiste en una resección de la porción distal de los cóndilos femorales con
+apropiación parcial de la rótula en el espacio intercondíleo y miodesis distal
+de la musculatura del muslo. Conserva el apoyo distal y proporciona un
+brazo de palanca largo, lo cual mejora la estabilidad y la propulsión. La
+planiﬁcación quirúrgica de la desarticulación de la cadera y la
+hemipelvectomía ha de garantizar la cobertura musculocutánea adecuada
+para que el encaje resulte cómodo.
+Síntomas
+Los síntomas posteriores a una amputación pueden ser dolor, sensaciones de
+miembro fantasma, dolor de miembro fantasma y reaparición tardía del
+dolor en la extremidad residual. Es posible que los pacientes reﬁeran
+incomodidad del encaje, deterioro de la piel del muñón, disminución
+progresiva de la capacidad de marcha y caídas. El dolor en la herida
+quirúrgica es frecuente y debe resolverse al cabo de unas semanas desde la
+intervención. La incidencia publicada del dolor crónico de la extremidad
+residual oscila entre el 10 y el 15%. Algunos de los diversos trastornos que
+pueden causarlo son: edema, isquemia, radiculopatía, dolor de origen
+simpático, neuroma, osteomielitis, proliferación óseas, excrecencias óseas,
+osiﬁcación heterotópica, inﬂamación de partes blandas (bursitis del muñón)
+y acumulación de líquido.
+La sensación de miembro fantasma es la percepción de parestesias o
+disestesias (ardor, escozor, hormigueo, pesadez, picor) en la parte de la
+extremidad que se ha extirpado. Disminuye en frecuencia e intensidad
+durante el primer año desde la intervención, ayudado por la
+desensibilización del muñón y el uso de un reductor del muñón y del encaje
+de la prótesis. Pasado ese tiempo, los pacientes suelen describir sensaciones
+de miembro fantasma intermitentes y no debilitantes. Algunos
+experimentan un fenómeno que se ha llamado heterotopia subjetiva o
+telescopaje, descrito como la sensación de que la extremidad (es decir, el pie)
+se acerca progresivamente al lugar de la amputación, a veces en un ángulo o
+posición antianatómica.
+El dolor de miembro fantasma es una percepción angustiosamente
+dolorosa en la parte ausente del cuerpo. Los pacientes lo describen como
+calambres, dolor punzante, ardor o frío glacial. La incidencia publicada varía
+entre el 0,5 y el 100% debido a las diferencias en cuanto a los métodos de
+estudio y la población. En estudios recientes se indica que hasta el 85% de los
+amputados experimentarán dolor de miembro fantasma en algún momento9.
+Las últimas investigaciones están empezando a implicar al ganglio de la raíz
+posterior como contribuyente al mantenimiento del dolor de miembro
+fantasma por medio de la acción ectópica de neuronas aferentes primarias
+axotomizadas presentes en esta localización10. Después de un tiempo
+caminando con una prótesis mal adaptada o mal alineada puede aparecer
+dolor lumbar o de la extremidad intacta debido a las desviaciones de la
+marcha.
+Exploración física
+Se debe determinar la capacidad cognitiva del paciente para usar y manejar
+una prótesis de manera segura (lo que abarca la higiene, la resolución de
+problemas y el mantenimiento del dispositivo). Hay que evaluar la destreza
+de las extremidades superiores para ponerse, quitarse y manejar la prótesis;
+las deﬁciencias que se detecten podrán inﬂuir en la selección del método de
+suspensión, los controles de la prótesis y otros dispositivos de ayuda. En
+ambas extremidades inferiores se explorarán la fuerza y la movilidad, se
+determinará si existen deformidades o inestabilidad articular dinámica, y se
+comprobará la integridad de la piel. Para caminar de forma segura se
+necesita una fuerza muscular de grado 4 o 5. Se deben evaluar las
+desviaciones pasivas y dinámicas en bipedestación y durante la marcha,
+como escoliosis o lordosis de la columna vertebral, inclinación lateral o
+anterior de la pelvis y la hiperpronación del tobillo o el pie plano en la
+extremidad intacta.
+En cualquiera de las dos extremidades inferiores, las contracturas debidas
+a un anquilosamiento de las estructuras periarticulares de tejido conjuntivo o
+a un acortamiento muscular comprometen la amplitud del movimiento
+articular. Las contracturas funcionales se deben al mantenimiento de
+posturas en las que las articulaciones no se mueven a lo largo de toda la
+amplitud de movimiento. Por ejemplo, la sedestación prolongada en la
+posición habitual puede causar contracturas en ﬂexión de la rodilla y la
+cadera. En caso de amputación transfemoral, el paciente puede presentar
+contracturas en ﬂexión y abducción de la cadera debido a que los músculos
+ﬂexores y abductores, insertados con ﬁrmeza, actúan sin la oposición de los
+aductores y los isquiotibiales seccionados y débiles. La alineación del encaje
+de la prótesis permite alojar contracturas en ﬂexión de hasta 20° en la rodilla
+(en el caso de un muñón transtibial) o en la cadera (en el caso de amputación
+transfemoral); por encima de este límite, las contracturas complican el ajuste
+de la prótesis y comprometen la seguridad de la marcha. La ausencia de
+contracturas se asocia a un mayor éxito de la deambulación con prótesis11.
+En el periodo postoperatorio, la ausencia de cicatrización de la incisión es a
+veces una manifestación de isquemia, de un hematoma subyacente o de un
+absceso. Para facilitar la evacuación de un absceso o hematoma se pueden
+retirar las suturas. La presencia de una secreción purulenta que puede
+exprimirse exige realizar una evaluación con una prueba de imagen adecuada
+para determinar el alcance del problema subyacente. Solo en el caso de que
+se consigan muestras en condiciones de estricta asepsia se realizarán una
+tinción de Gram y un cultivo. Se evitará introducir torundas de algodón
+largas en el trayecto para reducir el riesgo de transferencia de contaminantes
+desde la superﬁcie hasta los tejidos profundos, a menos que se realice antes
+una limpieza exhaustiva de la superﬁcie de la herida.
+En el muñón maduro, las adherencias cicatriciales pueden reducir la
+tolerancia al encaje. El deterioro de la piel de la extremidad residual en el
+usuario de una prótesis se debe a fuerzas de cizallamiento. El movimiento
+del muñón contra la pared o el borde del encaje provoca un cizallamiento
+que puede separar los estratos epidérmico y dérmico y hacer que se formen
+ampollas serosanguinolentas. La presencia de eritema que no palidece con la
+presión sobre una prominencia ósea es una úlcera de presión hasta que se
+demuestre lo contrario. El aumento focalizado y mantenido de la presión
+puede avanzar lentamente a través de la piel, endureciéndola y ﬁsurándola, o
+rápidamente hacia los tejidos profundos, dañándolos y poniendo en peligro
+la piel suprayacente. Es importante inspeccionar el encaje de la prótesis y
+otros elementos, como el revestimiento interno, en busca de zonas de
+desgaste que se correspondan con la lesión o modiﬁcaciones efectuadas por
+el técnico ortoprotésico o por el propio paciente que alivian o agravan el
+problema. No se debe utilizar la prótesis hasta que las lesiones hayan curado
+y se hayan efectuado las adaptaciones oportunas en el encaje.
+La aparición de hematomas en el muñón es indicativa de un mal ajuste de
+la prótesis que provoca un contacto excesivo con el fondo del encaje. A la
+inversa, puede producirse un fenómeno de estrangulación por el que una
+opresión proximal impide introducir por completo el muñón en el encaje, lo
+que imposibilita el contacto total distal. En ausencia de contacto distal se
+crea una presión negativa que altera el drenaje venoso y linfático y provoca
+linfedema crónico con posterior formación de placas de hiperplasia
+verrugosa. Esta última conlleva un riesgo de ulceración e infección
+secundarias. Las placas verrugosas no requieren desbridamiento químico,
+bioquímico o mecánico intenso y son reversibles mediante compresión suave
+(con un reductor o revestimiento interno apropiado) y contacto total al volver
+a colocar el encaje. Entre otras posibles alteraciones cutáneas, están la
+dermatitis de contacto (por productos de limpieza, productos para la piel o el
+material de la prótesis), la foliculitis o celulitis bacteriana, el vello enterrado,
+la dermatomicosis y las infecciones víricas (molusco contagioso).
+El dolor de la extremidad residual en ausencia de síntomas y signos de
+infección obliga a descartar un neuroma mediante palpación y percusión a lo
+largo del trayecto anatómico de los nervios periféricos. En presencia de
+deterioro cutáneo sin dolor congruente, se debe evaluar el grado y la calidad
+de la sensibilidad del muñón (tacto ﬁno, temperatura y presión profunda).
+Ante una deformidad ósea imprevista o una dureza en las partes blandas
+perióseas dolorosa o no a la palpación, se debe realizar una evaluación
+radiológica en busca de espolones u osiﬁcación heterotópica.
+Se debe evaluar la marcha con la prótesis y otras ayudas técnicas que sean
+necesarias por motivos de seguridad. En la observación de la marcha se
+prestará atención a las desviaciones durante las fases de apoyo, transferencia
+de peso y avance de la extremidad, tanto de la extremidad intacta como de la
+extremidad con prótesis. Hay que correlacionar las desviaciones evidentes de
+la marcha con los datos de la exploración física y comunicárselos al técnico
+ortoprotésico para guiar las modiﬁcaciones, y al ﬁsioterapeuta para
+individualizar la atención a las alteraciones de la marcha y la reeducación del
+equilibrio. En caso de antecedentes de caídas se deben evaluar otros
+sistemas, como la vista o el equilibrio, otras alteraciones neurológicas o
+musculoesqueléticas y posibles fallos de la prótesis.
+Limitaciones funcionales
+Las limitaciones funcionales dependen en gran medida de la situación
+premórbida del paciente. En una persona con una amputación traumática de
+la extremidad inferior que no tenga otras enfermedades, el gasto energético
+de la deambulación con la prótesis aumenta un 15% si la amputación es del
+tobillo, entre un 22 y un 33% si es transtibial (el 50% si es bilateral), un 75% si
+es transfemoral y entre un 110 y un 200% si se trata de una desarticulación de
+la cadera o una hemipelvectomía. En los amputados diabéticos o con
+vasculopatía, el coste metabólico de la deambulación se incrementa otro 25 a
+40% más en cada nivel2,11.
+A las personas de edad avanzada con diversas enfermedades
+cardiovasculares o pulmonares concomitantes y una reserva ﬁsiológica o un
+margen de seguridad cardiaca insuﬁcientes para caminar con una ayuda
+técnica, hay que animarlas a mejorar la movilidad en silla de ruedas y las
+transferencias para conseguir la independencia funcional12. Los pacientes
+que presentan un deterioro importante del gasto cardiaco no son candidatos
+a la protetización porque la elevada demanda de la deambulación con
+prótesis11 provoca un aumento obligado del gasto cardiaco que posiblemente
+no se tolere. En los amputados, la puntuación de calciﬁcación de las arterias
+coronarias fue muy alta en comparación con los grupos de control
+emparejados por la puntuación de riesgo de Framingham. Esto indica la
+presencia de una arteriopatía coronaria moderada o extensa en más de dos
+tercios de los amputados estudiados. Quizás sería prudente evaluar a estos
+pacientes para detectar una posible arteriopatía coronaria asintomática y
+plantear la revascularización proﬁláctica13. Los amputados que se someten a
+un injerto de derivación coronaria no pueden utilizar ayudas técnicas para la
+marcha después de la intervención (debido a las medidas de precaución por
+la esternotomía), por lo que hay que plantearse otras opciones de movilidad
+(p. ej., silla de ruedas eléctrica). En caso de amputación nueva secundaria a
+arteriopatía periférica, puede ser necesario efectuar una evaluación cardiaca
+para establecer los parámetros de la prescripción de ejercicio.
+Las alteraciones de la vista y de los sistemas vestibular y propioceptivo, el
+desacondicionamiento muscular y la pérdida de los reﬂejos que inﬂuyen en
+la estabilidad postural, la disfunción autónoma, los efectos secundarios del
+tratamiento farmacológico, la desalineación y los fallos de la prótesis y la
+calidad del ajuste de la prótesis pueden dar lugar a problemas de seguridad y
+caídas.
+Las limitaciones funcionales secundarias al dolor se asocian a una escasa
+participación en las actividades cotidianas. En general, las sensaciones de
+miembro fantasma casi nunca son debilitantes, mientras que el dolor de
+miembro fantasma puede ser muy limitante e impedir la participación en la
+rehabilitación preprotésica y el uso de la prótesis. El paciente deambulante
+p p y p p
+puede adquirir desviaciones de la marcha para adaptarse al mal ajuste de la
+prótesis o para reducir el dolor mientras sigue utilizando la prótesis por
+necesidad.
+La tasa de depresión clínica en los amputados varía entre el 18 y el 35%. Se
+debe distinguir la depresión de la respuesta de duelo y el periodo de
+adaptación postoperatoria14.
+Pruebas diagnósticas
+Ante la sospecha de osteoﬁtosis u osiﬁcación heterotópica, lo primero es
+obtener radiografías simples del muñón. La prueba de elección para la
+evaluación inicial de las alteraciones de partes blandas es la ecografía de alta
+resolución. La resonancia magnética se reserva para los casos en los que las
+pruebas de imagen iniciales y los datos clínicos son ambiguos15.
+Una medida diagnóstica y terapéutica útil en los pacientes con dolor de
+miembro fantasma es el bloqueo nervioso simpático. En ocasiones, los
+estudios electrodiagnósticos ayudan a diferenciar los síntomas de
+radiculopatía u ofrecen más información para localizar la causa del dolor de
+miembro fantasma.
+En los amputados jóvenes a veces es necesario obtener radiografías
+simples de la extremidad residual para evaluar las excrecencias óseas
+(habitualmente son evidentes mediante inspección y la radiografía conﬁrma
+su alcance).
+Tratamiento
+Inicial
+Los objetivos principales del tratamiento inicial son controlar el edema y dar
+forma al muñón, conseguir la cicatrización de la herida, prevenir las
+contracturas y controlar el dolor. En la tabla 120.1 se enumeran las opciones
+para el control del edema16,17. La elección de las medidas oportunas depende
+del entorno en el que se lleve a cabo la asistencia postoperatoria y de los
+conocimientos y la capacidad del paciente o de su cuidador para utilizarlas
+de manera segura y adecuada.
+Tabla 120.1
+Opciones de tratamiento para el control del edema
+Opciones de
+tratamiento Ventajas Inconvenientes
+Para amputación transtibial
+Yeso por
+encima de la
+rodilla
+Evita la contractura en
+ﬂexión de la rodilla
+Protege
+No requiere «habilidad»
+ni manejo por el
+paciente para
+retirarlo
+Muy barato
+Voluminoso,
+incómodo, pesado
+de mover
+Impide ver la herida
+No es extraíble
+Riesgo de deterioro
+cutáneo
+«Reductor» del
+muñón
+Fácil de poner y quitar
+Permite ver la herida
+Acostumbra al paciente
+a usar una media
+Moldea el muñón
+Caro; es necesario
+sustituirlo cuando se
+empieza a reducir el
+muñón
+Vendaje rígido
+extraíble
+(ﬁg. 120.1)
+Excelente para preparar
+el muñón para la
+futura prótesis
+Fomenta la
+independencia del
+paciente para
+evaluar la necesidad
+de medias para el
+muñón
+Buen control del edema
+Ofrece cierta protección
+de partes blandas
+Permite ver la herida
+Terapeuta, médico y
+técnico
+ortoprotésico
+deben estar
+cualiﬁcados para
+su confección
+Riesgo de deterioro
+cutáneo si se aplica
+de manera
+incorrecta
+Opciones de
+tratamiento Ventajas Inconvenientes
+Vendaje elástico
+(venda
+ACE™)
+Fácilmente disponible
+Permite ver la herida
+Se adapta a todas las
+formas y tamaños
+Buen control del edema
+Requiere gran
+destreza del
+paciente para
+ponerlo y quitarlo
+Riesgo de lesión por
+cizallamiento si se
+desarma el vendaje
+Debe aplicarse varias
+veces al día porque
+se aﬂoja
+Para
+amputación
+transfemoral
+Reductor del
+muñón,
+vendaje
+elástico
+Las mismas ventajas e
+inconvenientes que las
+descritas para la
+amputación transtibial
+FIG. 120.1  Aplicación de un vendaje rígido extraíble. (Tomado de Lennard TA. Pain
+Procedures in Clinical Practice, 2nd ed. Philadelphia: Hanley & Belfus; 2000.)
+Hay que enseñar a los pacientes las medidas para evitar las contracturas y
+las posiciones correctas. La información, la tranquilidad y la estimulación
+táctil continua (es decir, el masaje del extremo distal de la extremidad
+residual) favorecen la adaptación a las sensaciones de miembro fantasma.
+Para el tratamiento del dolor de miembro fantasma se han propuesto
+numerosos tratamientos, pero no hay ninguno que parezca más eﬁcaz. La
+intervención farmacológica precoz incluye analgésicos opiáceos y no
+opiáceos, antiinﬂamatorios no esteroideos, antiepilépticos y estabilizadores
+de membrana (en especial gabapentina, duloxetina y pregabalina) y
+antidepresivos tricíclicos14. La eﬁcacia generalizada de la terapia con espejo
+para aliviar las sensaciones y el dolor de miembro fantasma ha sido escasa18.
+Consiste en colocar un espejo entre las extremidades inferiores del paciente
+mientras este se concentra atentamente y mueve la extremidad intacta, que
+se reﬂeja. Con este método se pretende aprovechar la preferencia del cerebro
+por dar prioridad a la retroalimentación visual frente a la propioceptiva en lo
+que a la posición de la extremidad se reﬁere. Así, la retroalimentación visual
+artiﬁcial hace posible «mover» o «relajar» un miembro fantasma para salir de
+una posición percibida como dolorosa. La terapia con espejos podría tener
+alguna aplicación en los pacientes que reﬁeren que el miembro fantasma
+adopta una posición incómoda o se encuentra en una posición antianatómica
+mantenida.
+Rehabilitación
+El entrenamiento preprotésico tiene como objetivo conseguir la
+independencia funcional en cuanto a movilidad y autocuidado, ya sea con
+marcha monopodal o en silla de ruedas, evitar las contracturas en la cadera y
+la rodilla y facilitar la cicatrización y la desensibilización de la extremidad
+residual. Una vez cicatrizada la incisión, se puede enseñar al paciente a
+movilizar la cicatriz para reducir la presencia de adherencias cicatriciales. El
+masaje con golpeteo en todo el muñón ayuda a desensibilizarlo y a
+prepararlo para la colocación inicial del encaje. En los meses siguientes a la
+amputación continuarán el control del edema y la maduración de la forma y
+el tamaño de la extremidad residual mediante reductores o revestimientos
+internos protésicos.
+La descripción de las prótesis escapa del ámbito del presente capítulo; no
+obstante, se remite al lector a uno de varios textos sobre los componentes y la
+prescripción de las prótesis19,20. Medicare utiliza los niveles K para
+determinar el potencial funcional del paciente y justiﬁcar así los
+componentes de la prótesis (tabla 120.2). Una vez fabricada la prótesis, se
+concierta una cita ambulatoria con el médico que la prescribió a la que
+asistirán el paciente y el técnico ortoprotésico. Se efectúa una evaluación
+básica del ajuste de la prótesis y en ese momento se deriva al ﬁsioterapeuta
+para el entrenamiento protésico o se hacen las modiﬁcaciones necesarias a la
+prótesis. Hay que enseñar al paciente a ponerse y quitarse la prótesis y
+cuándo añadir medias para que se ajuste mejor (en el caso de que sean
+compatibles con el método de suspensión empleado). También se le
+enseñará a inspeccionar sistemáticamente la piel del muñón, para lo cual es
+muy útil utilizar un espejo de mango largo. La ﬁsioterapia para el usuario de
+una prótesis de la extremidad inferior incluye la información para evitar
+contracturas, el mantenimiento de la ﬂexibilidad y la fuerza lumbopélvica y
+de las extremidades inferiores y la reeducación de la marcha y el equilibrio
+con la prótesis. Se recomienda encarecidamente elaborar un programa de
+ejercicio domiciliario que aborde todos estos aspectos antes de que el
+paciente reciba el alta de ﬁsioterapia.
+Tabla 120.2
+Niveles K
+K0 (nivel
+0)
+Carece de la capacidad o del potencial de caminar o hacer las
+transferencias de forma segura, con o sin ayuda, y una
+prótesis no mejorará la calidad de vida ni la movilidad
+K1 (nivel
+1)
+Tiene la capacidad o el potencial de utilizar una prótesis para las
+transferencias o para caminar en superﬁcies llanas con una
+cadencia ﬁja; característico del que camina por interiores,
+con o sin limitaciones
+K2 (nivel
+2)
+Tiene la capacidad o el potencial de caminar y sortear
+obstáculos ambientales de bajo nivel, como bordillos,
+escaleras o superﬁcies irregulares; característico del que
+camina por exteriores con limitaciones
+K3 (nivel
+3)
+Tiene la capacidad o el potencial de caminar con una cadencia
+variable; característico del que camina por exteriores y es
+capaz de sortear la mayoría de los obstáculos ambientales y
+puede tener una actividad laboral, terapéutica o de ejercicio
+que exige utilizar la prótesis no solo para caminar
+K4 (nivel
+4)
+Tiene la capacidad o el potencial de utilizar la prótesis más allá
+de las habilidades básicas para la marcha y con un alto nivel
+de impacto, carga o energía; característico de las demandas
+protésicas de los niños, los adultos activos y los deportistas
+La terapia ocupacional consiste en identiﬁcar qué ayudas técnicas se
+necesitan (p. ej., elevador de inodoro, banco de transferencia para bañera) y
+conseguir la independencia para el autocuidado en silla de ruedas o en
+deambulación con la extremidad intacta. También se debe solicitar terapia
+ocupacional cuando el paciente recibe la prótesis para lograr la
+independencia en el autocuidado, especialmente en el vestido del
+hemicuerpo inferior, el aseo personal y las tareas domésticas con la prótesis
+puesta.
+La mayoría (80,5%) de los usuarios de prótesis de la extremidad inferior
+pueden volver a conducir un automóvil 3,8 meses después de la amputación.
+Los amputados de la extremidad inferior derecha pueden necesitar un
+vehículo adaptado (40%) o bien aprender a conducir con el pie izquierdo21.
+Técnicas
+El tratamiento del dolor de miembro fantasma incluye los bloqueos
+simpáticos, habitualmente realizados con guía radioscópica. Los neuromas
+sintomáticos se maniﬁestan entre 1 y 12 meses después de la amputación
+como una masa focal de partes blandas cuya palpación reproduce el dolor. La
+inyección de anestésicos locales puede aliviar el dolor. Una opción es la
+extirpación quirúrgica, pero a veces da lugar a un nuevo neuroma doloroso22.
+Tecnología
+Se están estudiando intensamente las prótesis osteointegradas
+transdérmicas como método de suspensión o ﬁjación directa de los
+componentes protésicos al hueso residual de la extremidad que evitaría la
+necesidad de un encaje23. En una o dos etapas quirúrgicas se introduce un
+implante roscado de titanio en la diáﬁsis del hueso residual (fémur o tibia)
+que sale distalmente al exterior a través de un estoma transdérmico. Los
+componentes protésicos habituales se anexan directamente a unos
+conectores externos especializados del implante osteointegrado. El
+aﬂojamiento óseo periprotésico y las infecciones profundas y superﬁciales
+siguen siendo complicaciones importantes, y la técnica se investiga
+actualmente y está indicada en determinadas subpoblaciones de pacientes.
+Hacen falta, y están en marcha, estudios clínicos, investigaciones básicas y un
+mayor desarrollo tecnológico.
+Revisión quirúrgica
+La cirugía está indicada en caso de isquemia o infección que pongan en
+peligro al muñón. La liberación de los isquiotibiales tiene poca o ninguna
+utilidad porque inhibiría la capacidad de caminar.
+No está indicada la revisión quirúrgica del muñón para tratar el dolor del
+miembro fantasma. Existen pocos datos para defender la ablación de la zona
+de entrada de la raíz posterior, la rizotomía posterior, la tractotomía de los
+cordones posteriores, la talamotomía o la cortectomía. Se ha llevado a cabo
+un pequeño ensayo de tratamiento quirúrgico local del dolor de miembro
+fantasma en el que se dividía el nervio ciático y se reconectaban las dos
+partes a modo de cabestrillo proximalmente al hueco poplíteo. Catorce de
+quince pacientes aﬁrmaron que la intervención había sido «muy útil»22.
+En el 10 al 30% de los casos de ausencia o deﬁciencia congénita de una
+extremidad, se forman excrecencias óseas durante los brotes de crecimiento
+propios del desarrollo que requieren tratamiento quirúrgico. La planiﬁcación
+a largo plazo abarca la extirpación o ablación preventiva de los cartílagos de
+crecimiento que causen complicaciones. En los adultos con una amputación
+adquirida, la aparición de espolones dolorosos justiﬁca la intervención
+quirúrgica cuando hayan fracasado los intentos de aliviar los síntomas
+mediante modiﬁcaciones de la prótesis para ajustar el encaje y la alineación.
+Posibles complicaciones de la enfermedad
+La complicación más frecuente es la dehiscencia de la herida quirúrgica,
+secundaria en la mayoría de los casos a infección, isquemia o traumatismo
+directo. Es razonable intentar un tratamiento conservador con antibióticos
+(después de haber obtenido una muestra para cultivo) y tratamiento local de
+la herida. La presencia de necrosis progresiva de la herida, secreción
+maloliente y ﬁebre o escalofríos justiﬁca una reevaluación por parte del
+cirujano.
+Otra posible complicación es la isquemia cardiaca cuando un paciente
+previamente inactivo empieza a utilizar un 100% más de energía para
+entrenar la marcha11. Una guía razonable para el entrenamiento de la marcha
+es evaluar la capacidad del paciente para caminar con extremidad intacta con
+bastones u otras ayudas técnicas. Una persona que no aguante recorrer
+distancias cortas a saltos con una ayuda técnica probablemente no sea
+candidato a caminar con una prótesis. La morbimortalidad de las
+amputaciones mayores sigue siendo elevada. La supervivencia a un año de
+los pacientes diabéticos o con vasculopatía es del 50,6% para las
+amputaciones transfemorales y del 74,5% para las transtibiales. La
+supervivencia a los cinco años es del 22,5 y el 37,8% respectivamente (en caso
+de insuﬁciencia renal terminal, la supervivencia a los cinco años de la
+amputación es tan solo del 14%)2,3.
+Posibles complicaciones del tratamiento
+La complicación más frecuente del uso de una prótesis es el deterioro
+cutáneo. Hay que enseñar a los pacientes a inspeccionar el muñón a diario, e
+indicarles que deben informar de inmediato en caso de eritema persistente
+que no palidece con la presión. Es aconsejable dejar de utilizar la prótesis
+hasta que se haya evaluado y modiﬁcado el encaje. Se debe revisar la
+medicación para comprobar que la posología sea correcta y detectar posibles
+efectos secundarios e interacciones farmacológicas. Caminar de forma
+defectuosa con la prótesis puede predisponer al amputado la extremidad
+inferior a desviaciones de la marcha, con fuerzas asimétricas y poco
+controladas a través de la cadena cinemática que favorecen la degeneración
+musculoesquelética secundaria.
+Bibliografía
+1. Esquenazi A, Yoo SK. Epidemiology and assessment lower limb
+amputations. Knowledgenow.com. Published November 7, 2012.
+[fecha de última consulta: 19 de febrero de 2014].
+2. Ziegler-Graham K, MacKenzie EJ, Ephraim PL, et al. Estimating the
+prevalence of limb loss in the United States: 2005-2050. Arch Phys Med
+Rehabil. 2008;89:422–429.
+3. Dillingham TR, Pezzin LE, MacKenzie EJ. Limb amputation and limb
+deﬁciency: epidemiology and recent trends in the United States.
+South Med J. 2002;95:875–883.
+4. Leonard EI, McAnelly RD, Lomba M, Faulker VW. Lower limb
+prosthesis in physical medicine and rehabilitation. In: Braddom RL,
+ed. Physical Medicine and Rehabilitation. 2nd ed. Philadelphia: WB
+Saunders; 2000:279–310.
+5. Moxey PW, Gogalniceanu P, Hinchliﬀe RJ, et al. Lower extremity
+amputations–a review of global variability in incidence. Diabet Med.
+2011;28(10):1144–1153.
+6. Talyor BC, Poka A. Osteomyoplastic transtibial amputation: the Ertl
+technique. J Am Acad Orthop Surg. 2016;24(4):259–265.
+7. Albino FP, Seidel R, A inger CE, et al. Through knee amputation:
+technique modiﬁcations and surgical outcomes. Arch Plast Surg.
+2014;41(5):562–570.
+8. Morse BC, Sull DL, Taylor SM, et al. Through-knee amputation in
+patients with peripheral arterial disease: a review of 50 cases. J Vasc
+Surg. 2008;48(3):638–643.
+9. Ehde DM, Czerniecki JM, Smith DG, et al. Chronic phantom
+sensations, phantom pain, residual limb pain, and other regional
+pain after lower limb amputation. Arch Phys Med Rehabil.
+2000;81:1039–1044.
+10. Vaso A, Adahan HM, Gjika A, et al. Peripheral nervous system origin
+of phantom limb pain. Pain. 2014;155(7):1384–1391.
+11. Friedan RA, Brar AK, Esquinazi A. Fi ing an older patient with
+medical comorbidities with a lower limb prosthesis. PM R. 2012;4:59–
+64.
+12. Morgenroth DC, Czerniecki JM. The complexities surrounding
+decisions related to prosthetic ﬁ ing in elderly dysvascular amputees
+[le er]. PM R. 2012;4:540–542.
+13. Nallegowda M, Lee E, Brandstater M, et al. Amputation and cardiac
+comorbidity: analysis of severity of cardiac risk. PM R. 2012;4:657–666.
+14. Roberts TL, Pasquina PF, Nelson VS, et al. Limb deﬁciency and
+prosthetic management. 4. Comorbidities associated with limb loss.
+Arch Phys Med Rehabil. 2006;87:S21–S27.
+15. Subedi N, Heire P, Ali SI, et al. Multimodality imaging review of the
+post-amputation stump pain. Br J Radiol. 2016;89: 20160572.
+16. Mueller MS. Comparison of rigid removable dressings and elastic
+bandages in preprosthetic management of patients with below-knee
+amputations. Phys Ther. 1982;62:1438–1441.
+17. Wu Y, Krick H. Rigid removable dressings for below knee amputees.
+Clin Prosthet Orthot. 1987;11:33–44.
+18. Barbin J, Seetha V, Perennou D, et al. The eﬀects of mirror therapy on
+pain and motor control of phantom limb in amputees: a systematic
+review. Ann Phys Rehabil Med. 2016;59S:e149.
+19. Nelson VS, Flood KM, Bryant PR, et al. Limb deﬁciency and prosthetic
+management. 1. Decision making in prosthetic prescription and
+management. Arch Phys Med Rehabil. 2006;87:S3–S9.
+20. Walsh NE, Bosker G, Santa Maria D. Upper and lower extremity
+prosthetics. In: Frontera WR, ed. DeLisa’s Physical Medicine and
+Rehabilitation: Principles and Practice. 5th ed. Philadelphia: Lippinco 
+Williams & Wilkins; 2010:2017–2049.
+21. Boulias C, Meikle B, Pauley T, Devlin M. Return to driving after lower
+extremity amputation. Arch Phys Med Rehabil. 2006;87:1183–1188.
+22. Prantl L, Schreml S, Heine N, et al. Surgical treatment of chronic
+phantom limb sensation and limb pain after lower limb amputation.
+Plast Reconstr Surg. 2006;118:1562–1572.
+23. Monument MJ, Lerman DM, Randall RL. Novel applications of
+osseointegration in orthopedic limb salvage surgery. Orthop Clin
+North Am. 2015;46(1):77–87.
