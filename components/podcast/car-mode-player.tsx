@@ -13,9 +13,11 @@ const SPEAKER_NAME: Record<string, string> = {
 };
 
 export function CarModePlayer({ tracks }: { tracks: Track[] }) {
+  const SPEEDS = [1, 1.25, 1.5, 1.75, 2];
   const [idx, setIdx] = useState(0);
   const [playing, setPlaying] = useState(false);
   const [activeLineIdx, setActiveLineIdx] = useState(-1);
+  const [speedIdx, setSpeedIdx] = useState(0);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   const current = tracks[idx];
@@ -173,12 +175,24 @@ export function CarModePlayer({ tracks }: { tracks: Track[] }) {
           </button>
         </div>
 
-        <button
-          onClick={() => { if (audioRef.current) audioRef.current.currentTime += 30; }}
-          className="mt-8 text-bone-200/50 text-sm hover:text-bone-200/80"
-        >
-          +30s
-        </button>
+        <div className="mt-8 flex items-center gap-4">
+          <button
+            onClick={() => { if (audioRef.current) audioRef.current.currentTime += 30; }}
+            className="text-bone-200/50 text-sm hover:text-bone-200/80"
+          >
+            +30s
+          </button>
+          <button
+            onClick={() => {
+              const next = (speedIdx + 1) % SPEEDS.length;
+              setSpeedIdx(next);
+              if (audioRef.current) audioRef.current.playbackRate = SPEEDS[next];
+            }}
+            className="px-3 py-1 rounded-full border border-bone-200/30 text-bone-200/70 text-sm font-medium hover:border-bone-200/60 hover:text-bone-200 transition"
+          >
+            {SPEEDS[speedIdx]}×
+          </button>
+        </div>
       </section>
     </main>
   );
