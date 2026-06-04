@@ -10,7 +10,7 @@ const COLORS = [
 ];
 
 type Highlight = { id: string; text: string; color: string };
-type PickerPos = { x: number; y: number; text: string };
+type PickerPos = { x: number; y: number; text: string; range: Range };
 type DeletePos = { x: number; y: number; id: string };
 
 export function HighlightLayer({
@@ -27,6 +27,7 @@ export function HighlightLayer({
   const [deleter, setDeleter] = useState<DeletePos | null>(null);
   const applied = useRef<Set<string>>(new Set());
 
+  // Load highlights for this slug
   useEffect(() => {
     setHighlights([]);
     applied.current.clear();
@@ -35,6 +36,7 @@ export function HighlightLayer({
       .then((d) => setHighlights(d.items ?? []));
   }, [slug]);
 
+  // Apply saved highlights to DOM after content renders
   const applyAll = useCallback(() => {
     const container = containerRef.current;
     if (!container || !highlights.length) return;
@@ -49,8 +51,26 @@ export function HighlightLayer({
     return () => clearTimeout(t);
   }, [applyAll]);
 
+  // Close picker/deleter on click outside
+  useEffect(() => {
+    function onDocMouseDown(e: MouseEvent) {
+      const target = e.target as HTMLElement;
+      if (!target.closest("[data-hpicker]")) {
+        setPicker(null);
+        setDeleter(null);
+      }
+    }
+    document.addEventListener("mousedown", onDocMouseDown);
+    return () => document.removeEventListener("mousedown", onDocMouseDown);
+  }, []);
+
   function handleMouseUp(e: React.MouseEvent) {
     const target = e.target as HTMLElement;
+
+    // If inside picker UI, don't interfere
+    if (target.closest("[data-hpicker]")) return;
+
+    // Clicking on an existing mark → show delete option
     const mark = target.closest("mark[data-hid]") as HTMLElement | null;
     if (mark) {
       const rect = mark.getBoundingClientRect();
@@ -58,6 +78,7 @@ export function HighlightLayer({
       setPicker(null);
       return;
     }
+
     setDeleter(null);
 
     const sel = window.getSelection();
@@ -65,19 +86,49 @@ export function HighlightLayer({
     const text = sel.toString().trim();
     if (text.length < 2) { setPicker(null); return; }
 
-    const range = sel.getRangeAt(0);
+    // Clone the range before it gets lost
+    const range = sel.getRangeAt(0).cloneRange();
     const rect = range.getBoundingClientRect();
-    setPicker({ x: rect.left + rect.width / 2, y: rect.top, text });
+    setPicker({ x: rect.left + rect.width / 2, y: rect.top, text, range });
   }
 
   async function saveHighlight(color: string) {
     if (!picker) return;
     const id = crypto.randomUUID();
     const item: Highlight = { id, text: picker.text, color };
+
+    // Apply immediately using the stored Range
+    const mark = document.createElement("mark");
+    mark.style.backgroundColor = color;
+    mark.style.borderRadius = "3px";
+    mark.style.padding = "0 2px";
+    mark.dataset.hid = id;
+    try {
+      picker.range.surroundContents(mark);
+      applied.current.add(id);
+    } catch {
+      // Range spans across element boundaries (overlapping marks).
+      // Try extracting, stripping inner marks, and rewrapping.
+      try {
+        const fragment = picker.range.extractContents();
+        fragment.querySelectorAll("mark[data-hid]").forEach((m) => {
+          applied.current.delete((m as HTMLElement).dataset.hid ?? "");
+          while (m.firstChild) m.parentNode?.insertBefore(m.firstChild, m);
+          m.parentNode?.removeChild(m);
+        });
+        mark.appendChild(fragment);
+        picker.range.insertNode(mark);
+        applied.current.add(id);
+      } catch {
+        // Give up on visual — highlight is still saved to Firestore
+      }
+    }
+
     const next = [...highlights, item];
     setHighlights(next);
     setPicker(null);
     window.getSelection()?.removeAllRanges();
+
     await fetch("/api/highlights", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -103,18 +154,6 @@ export function HighlightLayer({
     });
   }
 
-  useEffect(() => {
-    function onDocMouseDown(e: MouseEvent) {
-      const target = e.target as HTMLElement;
-      if (!target.closest("[data-hpicker]")) {
-        setPicker(null);
-        setDeleter(null);
-      }
-    }
-    document.addEventListener("mousedown", onDocMouseDown);
-    return () => document.removeEventListener("mousedown", onDocMouseDown);
-  }, []);
-
   return (
     <div onMouseUp={handleMouseUp}>
       {children}
@@ -129,6 +168,7 @@ export function HighlightLayer({
             <button
               key={c.value}
               title={c.label}
+              onMouseDown={(e) => e.preventDefault()}
               onClick={() => saveHighlight(c.value)}
               className="w-7 h-7 rounded-full border-2 border-white hover:scale-125 active:scale-110 transition shadow-sm"
               style={{ backgroundColor: c.value }}
@@ -144,6 +184,7 @@ export function HighlightLayer({
           style={{ left: deleter.x, top: deleter.y - 46, transform: "translateX(-50%)" }}
         >
           <button
+            onMouseDown={(e) => e.preventDefault()}
             onClick={() => deleteHighlight(deleter.id)}
             className="flex items-center gap-1.5 text-xs text-rust-600 font-medium hover:text-rust-800"
           >
