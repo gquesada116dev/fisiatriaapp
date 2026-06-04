@@ -22,7 +22,7 @@ export default async function TopicPage({ params }: { params: { slug: string } }
   return (
     <>
       <TopBar />
-      <main className="container py-8 max-w-4xl relative z-10">
+      <main className="container py-8 max-w-\[1400px\] relative z-10">
         <p className="text-xs uppercase tracking-widest text-ink-400 mb-2">{topic.category}</p>
         <h1 className="font-display text-4xl md:text-5xl text-ink-900 leading-tight">{topic.name}</h1>
         <p className="text-ink-600 mt-2 max-w-2xl">{topic.description}</p>
