@@ -103,16 +103,20 @@ export function HighlightLayer({
     });
   }
 
-  function dismissAll(e: React.MouseEvent) {
-    const target = e.target as HTMLElement;
-    if (!target.closest("[data-hpicker]")) {
-      setPicker(null);
-      setDeleter(null);
+  useEffect(() => {
+    function onDocMouseDown(e: MouseEvent) {
+      const target = e.target as HTMLElement;
+      if (!target.closest("[data-hpicker]")) {
+        setPicker(null);
+        setDeleter(null);
+      }
     }
-  }
+    document.addEventListener("mousedown", onDocMouseDown);
+    return () => document.removeEventListener("mousedown", onDocMouseDown);
+  }, []);
 
   return (
-    <div onMouseUp={handleMouseUp} onClick={dismissAll}>
+    <div onMouseUp={handleMouseUp}>
       {children}
 
       {picker && (
