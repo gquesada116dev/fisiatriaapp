@@ -21,7 +21,6 @@ export function HighlightLayer({
   containerRef: React.RefObject<HTMLElement | null>;
 }) {
   const [highlights, setHighlights] = useState<Highlight[]>([]);
-  // null = nothing selected, object = text is selected and bar should show
   const [selection, setSelection] = useState<{ text: string; range: Range } | null>(null);
   const [deleteId, setDeleteId] = useState<string | null>(null);
   const applied = useRef<Set<string>>(new Set());
@@ -31,7 +30,6 @@ export function HighlightLayer({
   useEffect(() => { highlightsRef.current = highlights; }, [highlights]);
   useEffect(() => { slugRef.current = slug; }, [slug]);
 
-  // Load highlights from Firestore
   useEffect(() => {
     applied.current.clear();
     setHighlights([]);
@@ -42,7 +40,6 @@ export function HighlightLayer({
       .then((d) => setHighlights(d.items ?? []));
   }, [slug]);
 
-  // Apply saved highlights to DOM after content renders
   const applyAll = useCallback(() => {
     const container = containerRef.current;
     if (!container) return;
@@ -57,56 +54,61 @@ export function HighlightLayer({
     return () => clearTimeout(t);
   }, [applyAll]);
 
-  // selectionchange works on desktop AND mobile (touch selection)
-  useEffect(() => {
-    let timer: ReturnType<typeof setTimeout>;
+  function readSelection() {
+    const sel = window.getSelection();
+    if (!sel || sel.type !== "Range" || !sel.rangeCount) { setSelection(null); return; }
+    const range = sel.getRangeAt(0);
+    const container = containerRef.current;
+    if (!container || !container.contains(range.commonAncestorContainer)) return;
+    const text = sel.toString().trim();
+    if (text.length < 2) { setSelection(null); return; }
+    setSelection({ text, range: range.cloneRange() });
+  }
 
-    function onSelectionChange() {
-      clearTimeout(timer);
-      timer = setTimeout(() => {
-        const sel = window.getSelection();
-        if (!sel || sel.isCollapsed || !sel.rangeCount) {
-          setSelection(null);
-          return;
-        }
-        const range = sel.getRangeAt(0);
-        const container = containerRef.current;
-        // Only show bar if selection is inside our article
-        if (!container || !container.contains(range.commonAncestorContainer)) return;
-        const text = sel.toString().trim();
-        if (text.length < 2) { setSelection(null); return; }
-        setSelection({ text, range: range.cloneRange() });
-      }, 250);
+  function handleMouseUp(e: React.MouseEvent) {
+    const target = e.target as HTMLElement;
+    // Click on existing mark → show delete
+    const mark = target.closest("mark[data-hid]") as HTMLElement | null;
+    if (mark) {
+      setSelection(null);
+      window.getSelection()?.removeAllRanges();
+      setDeleteId(mark.dataset.hid!);
+      return;
     }
+    setDeleteId(null);
+    readSelection();
+  }
 
-    document.addEventListener("selectionchange", onSelectionChange);
-    return () => { clearTimeout(timer); document.removeEventListener("selectionchange", onSelectionChange); };
-  }, [containerRef]);
-
-  // Detect click on existing mark to show delete option
-  useEffect(() => {
-    function onPointerUp(e: PointerEvent) {
-      const target = e.target as HTMLElement;
-      const mark = target.closest("mark[data-hid]") as HTMLElement | null;
+  function handleTouchEnd() {
+    // Selection isn't finalized at touchend — wait one tick
+    setTimeout(() => {
+      const target = document.activeElement as HTMLElement | null;
+      const mark = target?.closest("mark[data-hid]") as HTMLElement | null;
       if (mark) {
         setSelection(null);
         window.getSelection()?.removeAllRanges();
         setDeleteId(mark.dataset.hid!);
+        return;
       }
-    }
-    document.addEventListener("pointerup", onPointerUp);
-    return () => document.removeEventListener("pointerup", onPointerUp);
-  }, []);
+      setDeleteId(null);
+      readSelection();
+    }, 50);
+  }
+
+  function dismiss() {
+    window.getSelection()?.removeAllRanges();
+    setSelection(null);
+    setDeleteId(null);
+  }
 
   async function saveHighlight(color: string) {
     if (!selection) return;
     const { text, range } = selection;
     const id = crypto.randomUUID();
 
-    // Apply mark node-by-node — never restructures DOM
     const nodes = getTextNodesInRange(range);
     for (const { node, start, end } of nodes) {
-      try { wrapTextNode(node, start, end, color, id); } catch { /* skip node */ }
+      try { wrapTextNode(node, start, end, color, id); } catch { /* skip */ }
     }
     if (nodes.length) applied.current.add(id);
 
@@ -133,7 +135,6 @@ export function HighlightLayer({
     });
     applied.current.delete(id);
     setDeleteId(null);
-
     const next = highlightsRef.current.filter((h) => h.id !== id);
     highlightsRef.current = next;
     setHighlights(next);
@@ -147,63 +148,100 @@ export function HighlightLayer({
 
   const showBar = selection !== null || deleteId !== null;
 
+  // Inline styles avoid Tailwind purging + transform conflicts
+  const barStyle: React.CSSProperties = {
+    position: "fixed",
+    bottom: 24,
+    left: "50%",
+    transform: "translateX(-50%)",
+    zIndex: 50,
+    display: showBar ? "flex" : "none",
+    alignItems: "center",
+    gap: 8,
+    padding: "10px 16px",
+    borderRadius: 20,
+    background: "white",
+    boxShadow: "0 8px 32px rgba(0,0,0,0.14), 0 2px 8px rgba(0,0,0,0.08)",
+    border: "1px solid #e8e2d9",
+    whiteSpace: "nowrap",
+  };
+
   return (
     <>
-      {children}
+      <div onMouseUp={handleMouseUp} onTouchEnd={handleTouchEnd}>
+        {children}
+      </div>
 
-      {/* Sticky bottom bar — appears when text is selected or mark is tapped */}
-      <div
-        className={`fixed bottom-6 left-1/2 z-50 -translate-x-1/2 transition-all duration-200 ${
-          showBar ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 translate-y-4 pointer-events-none"
-        }`}
-      >
+      <div style={barStyle}>
         {selection && (
-          <div className="flex items-center gap-2 px-4 py-3 rounded-2xl bg-white shadow-2xl border border-bone-200">
-            <span className="text-xs text-ink-400 mr-1">Marcar:</span>
+          <>
+            <span style={{ fontSize: 12, color: "#9e9589", marginRight: 2 }}>Marcar:</span>
             {COLORS.map((c) => (
               <button
                 key={c.value}
                 title={c.label}
+                onMouseDown={(e) => e.preventDefault()}
                 onClick={() => saveHighlight(c.value)}
-                className="w-8 h-8 rounded-full border-2 border-white hover:scale-125 active:scale-110 transition shadow-sm"
-                style={{ backgroundColor: c.value }}
+                style={{
+                  width: 28, height: 28, borderRadius: "50%",
+                  backgroundColor: c.value,
+                  border: "2px solid white",
+                  boxShadow: "0 1px 4px rgba(0,0,0,0.15)",
+                  cursor: "pointer",
+                  flexShrink: 0,
+                }}
               />
             ))}
             <button
-              onClick={() => { window.getSelection()?.removeAllRanges(); setSelection(null); }}
-              className="ml-1 w-7 h-7 rounded-full bg-bone-100 text-ink-400 hover:bg-bone-200 flex items-center justify-center text-sm"
-            >
-              ✕
-            </button>
-          </div>
+              onMouseDown={(e) => e.preventDefault()}
+              onClick={dismiss}
+              style={{
+                width: 26, height: 26, borderRadius: "50%",
+                background: "#f2ede6", border: "none",
+                color: "#9e9589", cursor: "pointer",
+                fontSize: 14, marginLeft: 2,
+                display: "flex", alignItems: "center", justifyContent: "center",
+              }}
+            >✕</button>
+          </>
         )}
 
         {deleteId && (
-          <div className="flex items-center gap-3 px-4 py-3 rounded-2xl bg-white shadow-2xl border border-bone-200">
-            <span className="text-xs text-ink-500">Marcador seleccionado</span>
+          <>
+            <span style={{ fontSize: 12, color: "#9e9589" }}>Marcador:</span>
             <button
+              onMouseDown={(e) => e.preventDefault()}
               onClick={() => deleteHighlight(deleteId)}
-              className="flex items-center gap-1.5 text-xs text-rust-600 font-medium hover:text-rust-800 px-3 py-1.5 rounded-lg bg-rust-50"
+              style={{
+                display: "flex", alignItems: "center", gap: 6,
+                fontSize: 12, color: "#c0392b", fontWeight: 600,
+                padding: "6px 12px", borderRadius: 10,
+                background: "#fff5f5", border: "1px solid #fecaca",
+                cursor: "pointer",
+              }}
             >
-              <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
               </svg>
               Borrar
             </button>
             <button
+              onMouseDown={(e) => e.preventDefault()}
               onClick={() => setDeleteId(null)}
-              className="w-7 h-7 rounded-full bg-bone-100 text-ink-400 hover:bg-bone-200 flex items-center justify-center text-sm"
-            >
-              ✕
-            </button>
-          </div>
+              style={{
+                width: 26, height: 26, borderRadius: "50%",
+                background: "#f2ede6", border: "none",
+                color: "#9e9589", cursor: "pointer",
+                fontSize: 14,
+                display: "flex", alignItems: "center", justifyContent: "center",
+              }}
+            >✕</button>
+          </>
         )}
       </div>
     </>
   );
 }
-
-// ── DOM helpers ──────────────────────────────────────────────────────────────
 
 function getTextNodesInRange(range: Range): { node: Text; start: number; end: number }[] {
   const result: { node: Text; start: number; end: number }[] = [];
@@ -251,9 +289,7 @@ function applyHighlightByText(container: HTMLElement, h: Highlight): boolean {
     try {
       wrapTextNode(textNode, idx, idx + h.text.length, h.color, h.id);
       return true;
-    } catch {
-      return false;
-    }
+    } catch { return false; }
   }
   return false;
 }
