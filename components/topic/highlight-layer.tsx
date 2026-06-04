@@ -26,18 +26,26 @@ export function HighlightLayer({
   const [picker, setPicker] = useState<PickerPos | null>(null);
   const [deleter, setDeleter] = useState<DeletePos | null>(null);
   const applied = useRef<Set<string>>(new Set());
+  // Keep a ref to highlights so native event handlers always see current value
+  const highlightsRef = useRef<Highlight[]>([]);
+  const slugRef = useRef(slug);
 
+  useEffect(() => { highlightsRef.current = highlights; }, [highlights]);
+  useEffect(() => { slugRef.current = slug; }, [slug]);
+
+  // Load highlights
   useEffect(() => {
-    setHighlights([]);
     applied.current.clear();
+    setHighlights([]);
     fetch(`/api/highlights?slug=${slug}`)
       .then((r) => r.json())
       .then((d) => setHighlights(d.items ?? []));
   }, [slug]);
 
+  // Apply saved highlights to DOM
   const applyAll = useCallback(() => {
     const container = containerRef.current;
-    if (!container || !highlights.length) return;
+    if (!container) return;
     for (const h of highlights) {
       if (applied.current.has(h.id)) continue;
       if (applyHighlightByText(container, h)) applied.current.add(h.id);
@@ -45,65 +53,81 @@ export function HighlightLayer({
   }, [highlights, containerRef]);
 
   useEffect(() => {
-    const t = setTimeout(applyAll, 120);
+    const t = setTimeout(applyAll, 150);
     return () => clearTimeout(t);
   }, [applyAll]);
 
+  // Native mouseup — most reliable for capturing selection + coordinates
   useEffect(() => {
-    function onDocMouseDown(e: MouseEvent) {
+    function onMouseUp(e: MouseEvent) {
       const target = e.target as HTMLElement;
-      if (!target.closest("[data-hpicker]")) {
+
+      // Inside picker UI — ignore
+      if (target.closest("[data-hpicker]")) return;
+
+      // Clicking on an existing mark
+      const mark = target.closest("mark[data-hid]") as HTMLElement | null;
+      if (mark) {
+        setPicker(null);
+        setDeleter({ x: e.clientX, y: e.clientY, id: mark.dataset.hid! });
+        return;
+      }
+
+      // Only react to mouseup inside our container
+      const container = containerRef.current;
+      if (!container || !container.contains(target)) return;
+
+      setDeleter(null);
+      const sel = window.getSelection();
+      if (!sel || sel.isCollapsed || !sel.rangeCount) { setPicker(null); return; }
+
+      const text = sel.toString().trim();
+      if (text.length < 2) { setPicker(null); return; }
+
+      const range = sel.getRangeAt(0).cloneRange();
+      setPicker({ x: e.clientX, y: e.clientY, text, range });
+    }
+
+    document.addEventListener("mouseup", onMouseUp);
+    return () => document.removeEventListener("mouseup", onMouseUp);
+  }, [containerRef]);
+
+  // Dismiss on outside click
+  useEffect(() => {
+    function onMouseDown(e: MouseEvent) {
+      if (!(e.target as HTMLElement).closest("[data-hpicker]")) {
         setPicker(null);
         setDeleter(null);
       }
     }
-    document.addEventListener("mousedown", onDocMouseDown);
-    return () => document.removeEventListener("mousedown", onDocMouseDown);
+    document.addEventListener("mousedown", onMouseDown);
+    return () => document.removeEventListener("mousedown", onMouseDown);
   }, []);
-
-  function handleMouseUp(e: React.MouseEvent) {
-    const target = e.target as HTMLElement;
-    if (target.closest("[data-hpicker]")) return;
-
-    const mark = target.closest("mark[data-hid]") as HTMLElement | null;
-    if (mark) {
-      setDeleter({ x: e.clientX, y: e.clientY, id: mark.dataset.hid! });
-      setPicker(null);
-      return;
-    }
-
-    setDeleter(null);
-    const sel = window.getSelection();
-    if (!sel || sel.isCollapsed) { setPicker(null); return; }
-    const text = sel.toString().trim();
-    if (text.length < 2) { setPicker(null); return; }
-
-    const range = sel.getRangeAt(0).cloneRange();
-    // Use mouse position — range.getBoundingClientRect() returns {0,0} in complex elements
-    setPicker({ x: e.clientX, y: e.clientY, text, range });
-  }
 
   async function saveHighlight(color: string) {
     if (!picker) return;
+    const { text, range } = picker;
     const id = crypto.randomUUID();
 
-    // Apply mark node-by-node — never restructures the DOM
-    const nodes = getTextNodesInRange(picker.range);
+    // Apply mark node-by-node (never restructures DOM)
+    const nodes = getTextNodesInRange(range);
     for (const { node, start, end } of nodes) {
-      wrapTextNode(node, start, end, color, id);
+      try { wrapTextNode(node, start, end, color, id); } catch { /* skip bad node */ }
     }
     if (nodes.length) applied.current.add(id);
 
-    const item: Highlight = { id, text: picker.text, color };
-    const next = [...highlights, item];
-    setHighlights(next);
-    setPicker(null);
     window.getSelection()?.removeAllRanges();
+    setPicker(null);
+
+    const item: Highlight = { id, text, color };
+    const next = [...highlightsRef.current, item];
+    highlightsRef.current = next;
+    setHighlights(next);
 
     await fetch("/api/highlights", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ slug, items: next }),
+      body: JSON.stringify({ slug: slugRef.current, items: next }),
     });
   }
 
@@ -114,26 +138,37 @@ export function HighlightLayer({
       parent.removeChild(mark);
     });
     applied.current.delete(id);
-    const next = highlights.filter((h) => h.id !== id);
-    setHighlights(next);
     setDeleter(null);
+    const next = highlightsRef.current.filter((h) => h.id !== id);
+    highlightsRef.current = next;
+    setHighlights(next);
 
     await fetch("/api/highlights", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ slug, items: next }),
+      body: JSON.stringify({ slug: slugRef.current, items: next }),
     });
   }
 
+  // Picker appears just below the cursor, clamped to viewport
+  function pickerStyle(x: number, y: number) {
+    const vw = typeof window !== "undefined" ? window.innerWidth : 800;
+    return {
+      left: Math.min(Math.max(x, 90), vw - 90),
+      top: y + 14,
+      transform: "translateX(-50%)",
+    };
+  }
+
   return (
-    <div onMouseUp={handleMouseUp}>
+    <>
       {children}
 
       {picker && (
         <div
           data-hpicker
           className="fixed z-50 flex items-center gap-1.5 p-2 rounded-2xl bg-white shadow-2xl border border-bone-200"
-          style={{ left: picker.x, top: picker.y - 56, transform: "translateX(-50%)" }}
+          style={pickerStyle(picker.x, picker.y)}
         >
           {COLORS.map((c) => (
             <button
@@ -152,7 +187,7 @@ export function HighlightLayer({
         <div
           data-hpicker
           className="fixed z-50 px-3 py-1.5 rounded-xl bg-white shadow-2xl border border-bone-200"
-          style={{ left: deleter.x, top: deleter.y - 46, transform: "translateX(-50%)" }}
+          style={pickerStyle(deleter.x, deleter.y)}
         >
           <button
             onMouseDown={(e) => e.preventDefault()}
@@ -166,11 +201,11 @@ export function HighlightLayer({
           </button>
         </div>
       )}
-    </div>
+    </>
   );
 }
 
-// ── Helpers ────────────────────────────────────────────────────────────────
+// ── DOM helpers ────────────────────────────────────────────────────────────
 
 function getTextNodesInRange(range: Range): { node: Text; start: number; end: number }[] {
   const result: { node: Text; start: number; end: number }[] = [];
@@ -193,31 +228,25 @@ function getTextNodesInRange(range: Range): { node: Text; start: number; end: nu
 }
 
 function wrapTextNode(node: Text, start: number, end: number, color: string, id: string) {
-  // Split the text node into [before | marked | after] without touching the DOM structure
-  const before = node.splitText(start);
-  const after = before.splitText(end - start);
-  void after; // kept in place by splitText
+  const highlighted = node.splitText(start);
+  highlighted.splitText(end - start);
 
   const mark = document.createElement("mark");
   mark.style.backgroundColor = color;
   mark.style.borderRadius = "3px";
   mark.style.padding = "0 2px";
   mark.dataset.hid = id;
-  before.parentNode!.insertBefore(mark, before);
-  mark.appendChild(before);
+
+  highlighted.parentNode!.insertBefore(mark, highlighted);
+  mark.appendChild(highlighted);
 }
 
-// Restore highlights from Firestore by searching in plain text nodes
 function applyHighlightByText(container: HTMLElement, h: Highlight): boolean {
   const walker = document.createTreeWalker(container, NodeFilter.SHOW_TEXT);
-  const nodes: Text[] = [];
   let node: Node | null;
   while ((node = walker.nextNode())) {
-    if ((node.parentElement as HTMLElement)?.closest("mark[data-hid]")) continue;
-    nodes.push(node as Text);
-  }
-
-  for (const textNode of nodes) {
+    const textNode = node as Text;
+    if (textNode.parentElement?.closest("mark[data-hid]")) continue;
     const content = textNode.textContent ?? "";
     const idx = content.indexOf(h.text);
     if (idx === -1) continue;
