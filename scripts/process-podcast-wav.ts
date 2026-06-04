@@ -86,7 +86,7 @@ function writeWav(pcm: Buffer, filePath: string, sampleRate = 44100, channels = 
 async function main() {
   // 1. Collect WAV files sorted numerically
   const wavFiles = fs.readdirSync(FOLDER!)
-    .filter((f) => f.toLowerCase().endsWith(".wav"))
+    .filter((f) => f.toLowerCase().endsWith(".wav") && !f.startsWith("_"))
     .sort()
     .map((f) => path.join(FOLDER!, f));
 
