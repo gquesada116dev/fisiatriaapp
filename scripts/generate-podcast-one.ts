@@ -7,12 +7,11 @@ dotenv.config({ path: ".env.local" });
 
 import { initializeApp, cert, getApps } from "firebase-admin/app";
 import { getFirestore, Timestamp } from "firebase-admin/firestore";
-import { getStorage } from "firebase-admin/storage";
 import Anthropic from "@anthropic-ai/sdk";
 import { podcastPrompt, type PodcastLine } from "../lib/ai/prompts";
 import { AI_MODELS, MAX_TOKENS } from "../lib/ai/config";
 import { synthesizePodcast } from "../lib/audio/elevenlabs";
-import { storageDownloadUrl } from "../lib/db/firebase";
+import { uploadToR2 } from "./r2-upload";
 
 if (!getApps().length) {
   const pk = process.env.FIREBASE_PRIVATE_KEY?.replace(/\\n/g, "\n") ?? "";
@@ -22,7 +21,6 @@ if (!getApps().length) {
       clientEmail: process.env.FIREBASE_CLIENT_EMAIL!,
       privateKey: pk,
     }),
-    storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
   });
 }
 
@@ -61,17 +59,12 @@ async function main() {
   const mp3 = await synthesizePodcast(script, { a: voiceA, b: voiceB });
   console.log(`  Audio: ${(mp3.length / 1024).toFixed(0)} KB`);
 
-  console.log("Subiendo a Firebase Storage...");
-  const audioPath = `podcasts/${slug}/${Date.now()}.mp3`;
-  const downloadToken = crypto.randomUUID();
-  const bucket = getStorage().bucket();
-  await bucket.file(audioPath).save(mp3, {
-    metadata: { contentType: "audio/mpeg", metadata: { firebaseStorageDownloadTokens: downloadToken } },
-  });
-  const audioUrl = storageDownloadUrl(bucket.name, audioPath, downloadToken);
+  console.log("Subiendo a Cloudflare R2...");
+  const audioKey = `podcasts/${slug}/${Date.now()}.mp3`;
+  const audioUrl = await uploadToR2(audioKey, mp3, "audio/mpeg");
 
   await db.collection("podcasts").doc(slug).set({
-    topicSlug: slug, script, audioPath, audioUrl,
+    topicSlug: slug, script, audioKey, audioUrl,
     voiceA, voiceB, model: AI_MODELS.podcastScript,
     promptV: 1, createdAt: Timestamp.now(),
   });

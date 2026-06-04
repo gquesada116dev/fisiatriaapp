@@ -10,10 +10,9 @@ dotenv.config({ path: ".env.local" });
 
 import { initializeApp, cert, getApps } from "firebase-admin/app";
 import { getFirestore } from "firebase-admin/firestore";
-import { getStorage } from "firebase-admin/storage";
 import * as fs from "fs";
 import * as path from "path";
-import * as crypto from "crypto";
+import { uploadToR2 } from "./r2-upload";
 
 if (!getApps().length) {
   initializeApp({
@@ -22,7 +21,6 @@ if (!getApps().length) {
       clientEmail: process.env.FIREBASE_CLIENT_EMAIL!,
       privateKey: process.env.FIREBASE_PRIVATE_KEY?.replace(/\\n/g, "\n") ?? "",
     }),
-    storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
   });
 }
 
@@ -48,23 +46,11 @@ async function main() {
   const mp3 = fs.readFileSync(FILE!);
   console.log(`Subiendo ${path.basename(FILE!)} (${(mp3.length / 1024 / 1024).toFixed(1)} MB)…`);
 
-  const token = crypto.randomUUID();
-  const audioPath = `${SLUG}/${TYPE}-${Date.now()}.mp3`;
-  const bucket = getStorage().bucket();
-
-  await bucket.file(audioPath).save(mp3, {
-    metadata: {
-      contentType: "audio/mpeg",
-      metadata: { firebaseStorageDownloadTokens: token },
-    },
-  });
-
-  const audioUrl =
-    `https://firebasestorage.googleapis.com/v0/b/${bucket.name}/o/` +
-    `${encodeURIComponent(audioPath)}?alt=media&token=${token}`;
+  const audioKey = `${SLUG}/${TYPE}-${Date.now()}.mp3`;
+  const audioUrl = await uploadToR2(audioKey, mp3, "audio/mpeg");
 
   const docId = TYPE === "pre" ? `${SLUG!}--pre` : SLUG!;
-  await db.collection("podcasts").doc(docId).update({ audioUrl, audioPath });
+  await db.collection("podcasts").doc(docId).update({ audioUrl, audioKey });
 
   console.log(`✓ Podcast ${TYPE} actualizado en Firebase`);
   console.log(`  URL: ${audioUrl.slice(0, 80)}…`);

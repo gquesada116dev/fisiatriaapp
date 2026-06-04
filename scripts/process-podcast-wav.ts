@@ -14,11 +14,10 @@ dotenv.config({ path: ".env.local" });
 
 import { initializeApp, cert, getApps } from "firebase-admin/app";
 import { getFirestore, Timestamp } from "firebase-admin/firestore";
-import { getStorage } from "firebase-admin/storage";
 import * as fs from "fs";
 import * as path from "path";
-import * as crypto from "crypto";
 import { execFileSync } from "child_process";
+import { uploadToR2 } from "./r2-upload";
 
 if (!getApps().length) {
   initializeApp({
@@ -27,7 +26,6 @@ if (!getApps().length) {
       clientEmail: process.env.FIREBASE_CLIENT_EMAIL!,
       privateKey: process.env.FIREBASE_PRIVATE_KEY?.replace(/\\n/g, "\n") ?? "",
     }),
-    storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
   });
 }
 
@@ -149,18 +147,11 @@ async function main() {
   const mp3Size = fs.statSync(tmpMp3).size;
   console.log(`   MP3: ${(mp3Size / 1024 / 1024).toFixed(1)} MB`);
 
-  // 7. Upload MP3 to Firebase Storage
-  console.log("☁️  Subiendo a Firebase Storage...");
+  // 7. Upload MP3 to Cloudflare R2
+  console.log("☁️  Subiendo a Cloudflare R2...");
   const mp3 = fs.readFileSync(tmpMp3);
-  const token = crypto.randomUUID();
-  const audioPath = `${SLUG}/${TYPE}-${Date.now()}.mp3`;
-  const bucket = getStorage().bucket();
-  await bucket.file(audioPath).save(mp3, {
-    metadata: { contentType: "audio/mpeg", metadata: { firebaseStorageDownloadTokens: token } },
-  });
-  const audioUrl =
-    `https://firebasestorage.googleapis.com/v0/b/${bucket.name}/o/` +
-    `${encodeURIComponent(audioPath)}?alt=media&token=${token}`;
+  const audioKey = `${SLUG}/${TYPE}-${Date.now()}.mp3`;
+  const audioUrl = await uploadToR2(audioKey, mp3, "audio/mpeg");
   console.log(`   URL: ${audioUrl.slice(0, 80)}…`);
 
   // 8. Save to Firestore
@@ -169,7 +160,7 @@ async function main() {
     topicSlug: SLUG,
     script: timedScript,
     audioUrl,
-    audioPath,
+    audioKey,
     durationS: Math.round(totalS),
     model: "elevenlabs-manual",
     promptV: "pdf-v2",
