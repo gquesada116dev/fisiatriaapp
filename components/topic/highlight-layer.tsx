@@ -278,18 +278,50 @@ function wrapTextNode(node: Text, start: number, end: number, color: string, id:
 }
 
 function applyHighlightByText(container: HTMLElement, h: Highlight): boolean {
+  // Collect all unhighlighted text nodes upfront
   const walker = document.createTreeWalker(container, NodeFilter.SHOW_TEXT);
+  const allNodes: Text[] = [];
   let node: Node | null;
   while ((node = walker.nextNode())) {
-    const textNode = node as Text;
-    if (textNode.parentElement?.closest("mark[data-hid]")) continue;
-    const content = textNode.textContent ?? "";
-    const idx = content.indexOf(h.text);
-    if (idx === -1) continue;
-    try {
-      wrapTextNode(textNode, idx, idx + h.text.length, h.color, h.id);
-      return true;
-    } catch { return false; }
+    const t = node as Text;
+    if (!t.parentElement?.closest("mark[data-hid]")) allNodes.push(t);
   }
+
+  // 1. Single-node match (most common case)
+  for (const t of allNodes) {
+    const content = t.textContent ?? "";
+    const idx = content.indexOf(h.text);
+    if (idx !== -1) {
+      try { wrapTextNode(t, idx, idx + h.text.length, h.color, h.id); return true; }
+      catch { return false; }
+    }
+  }
+
+  // 2. Multi-node match — handles selections that cross element boundaries
+  //    (e.g. "bold text and normal" where "bold" is inside <strong>)
+  for (let i = 0; i < allNodes.length; i++) {
+    let combined = "";
+    const segment: Array<{ node: Text; nodeStart: number; len: number }> = [];
+    for (let j = i; j < allNodes.length; j++) {
+      const len = allNodes[j].textContent?.length ?? 0;
+      segment.push({ node: allNodes[j], nodeStart: combined.length, len });
+      combined += allNodes[j].textContent ?? "";
+      if (combined.length >= h.text.length + 200) break;
+    }
+    const matchIdx = combined.indexOf(h.text);
+    if (matchIdx === -1) continue;
+    const matchEnd = matchIdx + h.text.length;
+    let wrapped = 0;
+    for (const { node: t, nodeStart, len } of segment) {
+      const s = Math.max(0, matchIdx - nodeStart);
+      const e = Math.min(len, matchEnd - nodeStart);
+      if (s < e) {
+        try { wrapTextNode(t, s, e, h.color, h.id); wrapped++; }
+        catch { /* skip */ }
+      }
+    }
+    if (wrapped > 0) return true;
+  }
+
   return false;
 }

@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
+import { renderMd } from "@/lib/utils/render-md";
 
 type Message = { role: "user" | "assistant"; content: string };
 
@@ -91,7 +92,7 @@ export function MiniMentor({ slug, topicName }: { slug: string; topicName: strin
             <span className="text-teal-700 text-[10px]">M</span>
           </div>
           <div className="bg-bone-50 rounded-xl rounded-tl-none px-3 py-2 text-xs text-ink-700 leading-relaxed max-w-[90%]">
-            {renderText(welcome)}
+            <div className="prose-mini">{renderMd(welcome)}</div>
           </div>
         </div>
 
@@ -109,7 +110,7 @@ export function MiniMentor({ slug, topicName }: { slug: string; topicName: strin
                   : "bg-bone-50 text-ink-700 rounded-tl-none"
               }`}
             >
-              {m.role === "assistant" ? renderText(m.content) : m.content}
+              {m.role === "assistant" ? <div className="prose-mini">{renderMd(m.content)}</div> : m.content}
               {i === messages.length - 1 && m.role === "assistant" && streaming && (
                 <span className="inline-block w-1 h-3 bg-teal-500 ml-0.5 animate-pulse" />
               )}
@@ -142,15 +143,3 @@ export function MiniMentor({ slug, topicName }: { slug: string; topicName: strin
   );
 }
 
-function renderText(text: string): React.ReactNode {
-  // Minimal markdown: **bold**, *italic*, newlines
-  const parts = text.split(/(\*\*[^*]+\*\*|\*[^*]+\*|\n)/g);
-  return parts.map((part, i) => {
-    if (part.startsWith("**") && part.endsWith("**"))
-      return <strong key={i}>{part.slice(2, -2)}</strong>;
-    if (part.startsWith("*") && part.endsWith("*"))
-      return <em key={i}>{part.slice(1, -1)}</em>;
-    if (part === "\n") return <br key={i} />;
-    return part;
-  });
-}

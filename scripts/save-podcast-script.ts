@@ -23,9 +23,9 @@ async function main() {
   const script = JSON.parse(fs.readFileSync(jsonPath, "utf-8"));
   const docId = TYPE === "pre" ? `${SLUG}--pre` : SLUG;
   await db.collection("podcasts").doc(docId).set({
-    topicSlug: SLUG, script, audioUrl: null,
+    topicSlug: SLUG, script,
     model: "claude-sonnet-4-6", promptV: "pdf-v2", createdAt: Timestamp.now(),
-  });
+  }, { merge: true });
   console.log(`✓ ${docId} guardado en Firebase (sin audio, ${script.length} líneas)`);
   process.exit(0);
 }
