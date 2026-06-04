@@ -1,5 +1,6 @@
 "use client";
-import { useEffect, useState } from "react";
+import { memo, useEffect, useRef, useState } from "react";
+import { HighlightLayer } from "./highlight-layer";
 
 /**
  * Tiny markdown renderer — enough for Claude's structured output:
@@ -116,11 +117,36 @@ function renderMd(md: string): React.ReactNode[] {
   return out;
 }
 
+const ArticleContent = memo(function ArticleContent({
+  content,
+  imageUrl,
+  slug,
+  articleRef,
+}: {
+  content: string;
+  imageUrl: string | null;
+  slug: string;
+  articleRef: React.RefObject<HTMLElement | null>;
+}) {
+  return (
+    <article ref={articleRef as React.RefObject<HTMLElement>} className="prose-fp max-w-none">
+      {imageUrl && (
+        <div className="mb-6 rounded-xl overflow-hidden border border-bone-200 bg-bone-50">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={imageUrl} alt={`Ilustración médica — ${slug}`} className="w-full object-cover max-h-72" />
+        </div>
+      )}
+      {renderMd(content)}
+    </article>
+  );
+});
+
 export function SummaryPane({ slug }: { slug: string }) {
   const [content, setContent] = useState<string | null>(null);
   const [imageUrl, setImageUrl] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const articleRef = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
     let cancelled = false;
@@ -173,18 +199,8 @@ export function SummaryPane({ slug }: { slug: string }) {
   }
   if (error) return <p className="text-rust-600">{error}</p>;
   return (
-    <article className="prose-fp max-w-none">
-      {imageUrl && (
-        <div className="mb-6 rounded-xl overflow-hidden border border-bone-200 bg-bone-50">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={imageUrl}
-            alt={`Ilustración médica — ${slug}`}
-            className="w-full object-cover max-h-72"
-          />
-        </div>
-      )}
-      {content && renderMd(content)}
-    </article>
+    <HighlightLayer slug={slug} containerRef={articleRef}>
+      <ArticleContent content={content!} imageUrl={imageUrl} slug={slug} articleRef={articleRef} />
+    </HighlightLayer>
   );
 }
