@@ -27,7 +27,6 @@ export function HighlightLayer({
   const [deleter, setDeleter] = useState<DeletePos | null>(null);
   const applied = useRef<Set<string>>(new Set());
 
-  // Load highlights for this slug
   useEffect(() => {
     setHighlights([]);
     applied.current.clear();
@@ -36,13 +35,12 @@ export function HighlightLayer({
       .then((d) => setHighlights(d.items ?? []));
   }, [slug]);
 
-  // Apply saved highlights to DOM after content renders
   const applyAll = useCallback(() => {
     const container = containerRef.current;
     if (!container || !highlights.length) return;
     for (const h of highlights) {
       if (applied.current.has(h.id)) continue;
-      if (applyHighlightToDOM(container, h)) applied.current.add(h.id);
+      if (applyHighlightByText(container, h)) applied.current.add(h.id);
     }
   }, [highlights, containerRef]);
 
@@ -51,7 +49,6 @@ export function HighlightLayer({
     return () => clearTimeout(t);
   }, [applyAll]);
 
-  // Close picker/deleter on click outside
   useEffect(() => {
     function onDocMouseDown(e: MouseEvent) {
       const target = e.target as HTMLElement;
@@ -66,64 +63,38 @@ export function HighlightLayer({
 
   function handleMouseUp(e: React.MouseEvent) {
     const target = e.target as HTMLElement;
-
-    // If inside picker UI, don't interfere
     if (target.closest("[data-hpicker]")) return;
 
-    // Clicking on an existing mark → show delete option
     const mark = target.closest("mark[data-hid]") as HTMLElement | null;
     if (mark) {
-      const rect = mark.getBoundingClientRect();
-      setDeleter({ x: rect.left + rect.width / 2, y: rect.top, id: mark.dataset.hid! });
+      setDeleter({ x: e.clientX, y: e.clientY, id: mark.dataset.hid! });
       setPicker(null);
       return;
     }
 
     setDeleter(null);
-
     const sel = window.getSelection();
     if (!sel || sel.isCollapsed) { setPicker(null); return; }
     const text = sel.toString().trim();
     if (text.length < 2) { setPicker(null); return; }
 
-    // Clone the range before it gets lost
     const range = sel.getRangeAt(0).cloneRange();
-    const rect = range.getBoundingClientRect();
-    setPicker({ x: rect.left + rect.width / 2, y: rect.top, text, range });
+    // Use mouse position — range.getBoundingClientRect() returns {0,0} in complex elements
+    setPicker({ x: e.clientX, y: e.clientY, text, range });
   }
 
   async function saveHighlight(color: string) {
     if (!picker) return;
     const id = crypto.randomUUID();
-    const item: Highlight = { id, text: picker.text, color };
 
-    // Apply immediately using the stored Range
-    const mark = document.createElement("mark");
-    mark.style.backgroundColor = color;
-    mark.style.borderRadius = "3px";
-    mark.style.padding = "0 2px";
-    mark.dataset.hid = id;
-    try {
-      picker.range.surroundContents(mark);
-      applied.current.add(id);
-    } catch {
-      // Range spans across element boundaries (overlapping marks).
-      // Try extracting, stripping inner marks, and rewrapping.
-      try {
-        const fragment = picker.range.extractContents();
-        fragment.querySelectorAll("mark[data-hid]").forEach((m) => {
-          applied.current.delete((m as HTMLElement).dataset.hid ?? "");
-          while (m.firstChild) m.parentNode?.insertBefore(m.firstChild, m);
-          m.parentNode?.removeChild(m);
-        });
-        mark.appendChild(fragment);
-        picker.range.insertNode(mark);
-        applied.current.add(id);
-      } catch {
-        // Give up on visual — highlight is still saved to Firestore
-      }
+    // Apply mark node-by-node — never restructures the DOM
+    const nodes = getTextNodesInRange(picker.range);
+    for (const { node, start, end } of nodes) {
+      wrapTextNode(node, start, end, color, id);
     }
+    if (nodes.length) applied.current.add(id);
 
+    const item: Highlight = { id, text: picker.text, color };
     const next = [...highlights, item];
     setHighlights(next);
     setPicker(null);
@@ -137,16 +108,16 @@ export function HighlightLayer({
   }
 
   async function deleteHighlight(id: string) {
-    const mark = document.querySelector(`mark[data-hid="${id}"]`);
-    if (mark) {
+    document.querySelectorAll(`mark[data-hid="${id}"]`).forEach((mark) => {
       const parent = mark.parentNode!;
       while (mark.firstChild) parent.insertBefore(mark.firstChild, mark);
       parent.removeChild(mark);
-    }
+    });
     applied.current.delete(id);
     const next = highlights.filter((h) => h.id !== id);
     setHighlights(next);
     setDeleter(null);
+
     await fetch("/api/highlights", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -199,7 +170,45 @@ export function HighlightLayer({
   );
 }
 
-function applyHighlightToDOM(container: HTMLElement, h: Highlight): boolean {
+// ── Helpers ────────────────────────────────────────────────────────────────
+
+function getTextNodesInRange(range: Range): { node: Text; start: number; end: number }[] {
+  const result: { node: Text; start: number; end: number }[] = [];
+  const ancestor =
+    range.commonAncestorContainer.nodeType === Node.TEXT_NODE
+      ? range.commonAncestorContainer.parentElement!
+      : (range.commonAncestorContainer as Element);
+
+  const walker = document.createTreeWalker(ancestor, NodeFilter.SHOW_TEXT);
+  let node: Node | null;
+  while ((node = walker.nextNode())) {
+    const textNode = node as Text;
+    if (textNode.parentElement?.closest("mark[data-hid]")) continue;
+    if (!range.intersectsNode(textNode)) continue;
+    const start = textNode === range.startContainer ? range.startOffset : 0;
+    const end = textNode === range.endContainer ? range.endOffset : textNode.length;
+    if (start < end) result.push({ node: textNode, start, end });
+  }
+  return result;
+}
+
+function wrapTextNode(node: Text, start: number, end: number, color: string, id: string) {
+  // Split the text node into [before | marked | after] without touching the DOM structure
+  const before = node.splitText(start);
+  const after = before.splitText(end - start);
+  void after; // kept in place by splitText
+
+  const mark = document.createElement("mark");
+  mark.style.backgroundColor = color;
+  mark.style.borderRadius = "3px";
+  mark.style.padding = "0 2px";
+  mark.dataset.hid = id;
+  before.parentNode!.insertBefore(mark, before);
+  mark.appendChild(before);
+}
+
+// Restore highlights from Firestore by searching in plain text nodes
+function applyHighlightByText(container: HTMLElement, h: Highlight): boolean {
   const walker = document.createTreeWalker(container, NodeFilter.SHOW_TEXT);
   const nodes: Text[] = [];
   let node: Node | null;
@@ -213,15 +222,7 @@ function applyHighlightToDOM(container: HTMLElement, h: Highlight): boolean {
     const idx = content.indexOf(h.text);
     if (idx === -1) continue;
     try {
-      const range = document.createRange();
-      range.setStart(textNode, idx);
-      range.setEnd(textNode, idx + h.text.length);
-      const mark = document.createElement("mark");
-      mark.style.backgroundColor = h.color;
-      mark.style.borderRadius = "3px";
-      mark.style.padding = "0 2px";
-      mark.dataset.hid = h.id;
-      range.surroundContents(mark);
+      wrapTextNode(textNode, idx, idx + h.text.length, h.color, h.id);
       return true;
     } catch {
       return false;
