@@ -10,8 +10,6 @@ const COLORS = [
 ];
 
 type Highlight = { id: string; text: string; color: string };
-type PickerPos = { x: number; y: number; text: string; range: Range };
-type DeletePos = { x: number; y: number; id: string };
 
 export function HighlightLayer({
   slug,
@@ -23,26 +21,28 @@ export function HighlightLayer({
   containerRef: React.RefObject<HTMLElement | null>;
 }) {
   const [highlights, setHighlights] = useState<Highlight[]>([]);
-  const [picker, setPicker] = useState<PickerPos | null>(null);
-  const [deleter, setDeleter] = useState<DeletePos | null>(null);
+  // null = nothing selected, object = text is selected and bar should show
+  const [selection, setSelection] = useState<{ text: string; range: Range } | null>(null);
+  const [deleteId, setDeleteId] = useState<string | null>(null);
   const applied = useRef<Set<string>>(new Set());
-  // Keep a ref to highlights so native event handlers always see current value
   const highlightsRef = useRef<Highlight[]>([]);
   const slugRef = useRef(slug);
 
   useEffect(() => { highlightsRef.current = highlights; }, [highlights]);
   useEffect(() => { slugRef.current = slug; }, [slug]);
 
-  // Load highlights
+  // Load highlights from Firestore
   useEffect(() => {
     applied.current.clear();
     setHighlights([]);
+    setSelection(null);
+    setDeleteId(null);
     fetch(`/api/highlights?slug=${slug}`)
       .then((r) => r.json())
       .then((d) => setHighlights(d.items ?? []));
   }, [slug]);
 
-  // Apply saved highlights to DOM
+  // Apply saved highlights to DOM after content renders
   const applyAll = useCallback(() => {
     const container = containerRef.current;
     if (!container) return;
@@ -57,67 +57,61 @@ export function HighlightLayer({
     return () => clearTimeout(t);
   }, [applyAll]);
 
-  // Native mouseup — most reliable for capturing selection + coordinates
+  // selectionchange works on desktop AND mobile (touch selection)
   useEffect(() => {
-    function onMouseUp(e: MouseEvent) {
-      const target = e.target as HTMLElement;
+    let timer: ReturnType<typeof setTimeout>;
 
-      // Inside picker UI — ignore
-      if (target.closest("[data-hpicker]")) return;
-
-      // Clicking on an existing mark
-      const mark = target.closest("mark[data-hid]") as HTMLElement | null;
-      if (mark) {
-        setPicker(null);
-        setDeleter({ x: e.clientX, y: e.clientY, id: mark.dataset.hid! });
-        return;
-      }
-
-      // Only react to mouseup inside our container
-      const container = containerRef.current;
-      if (!container || !container.contains(target)) return;
-
-      setDeleter(null);
-      const sel = window.getSelection();
-      if (!sel || sel.isCollapsed || !sel.rangeCount) { setPicker(null); return; }
-
-      const text = sel.toString().trim();
-      if (text.length < 2) { setPicker(null); return; }
-
-      const range = sel.getRangeAt(0).cloneRange();
-      setPicker({ x: e.clientX, y: e.clientY, text, range });
+    function onSelectionChange() {
+      clearTimeout(timer);
+      timer = setTimeout(() => {
+        const sel = window.getSelection();
+        if (!sel || sel.isCollapsed || !sel.rangeCount) {
+          setSelection(null);
+          return;
+        }
+        const range = sel.getRangeAt(0);
+        const container = containerRef.current;
+        // Only show bar if selection is inside our article
+        if (!container || !container.contains(range.commonAncestorContainer)) return;
+        const text = sel.toString().trim();
+        if (text.length < 2) { setSelection(null); return; }
+        setSelection({ text, range: range.cloneRange() });
+      }, 250);
     }
 
-    document.addEventListener("mouseup", onMouseUp);
-    return () => document.removeEventListener("mouseup", onMouseUp);
+    document.addEventListener("selectionchange", onSelectionChange);
+    return () => { clearTimeout(timer); document.removeEventListener("selectionchange", onSelectionChange); };
   }, [containerRef]);
 
-  // Dismiss on outside click
+  // Detect click on existing mark to show delete option
   useEffect(() => {
-    function onMouseDown(e: MouseEvent) {
-      if (!(e.target as HTMLElement).closest("[data-hpicker]")) {
-        setPicker(null);
-        setDeleter(null);
+    function onPointerUp(e: PointerEvent) {
+      const target = e.target as HTMLElement;
+      const mark = target.closest("mark[data-hid]") as HTMLElement | null;
+      if (mark) {
+        setSelection(null);
+        window.getSelection()?.removeAllRanges();
+        setDeleteId(mark.dataset.hid!);
       }
     }
-    document.addEventListener("mousedown", onMouseDown);
-    return () => document.removeEventListener("mousedown", onMouseDown);
+    document.addEventListener("pointerup", onPointerUp);
+    return () => document.removeEventListener("pointerup", onPointerUp);
   }, []);
 
   async function saveHighlight(color: string) {
-    if (!picker) return;
-    const { text, range } = picker;
+    if (!selection) return;
+    const { text, range } = selection;
     const id = crypto.randomUUID();
 
-    // Apply mark node-by-node (never restructures DOM)
+    // Apply mark node-by-node — never restructures DOM
     const nodes = getTextNodesInRange(range);
     for (const { node, start, end } of nodes) {
-      try { wrapTextNode(node, start, end, color, id); } catch { /* skip bad node */ }
+      try { wrapTextNode(node, start, end, color, id); } catch { /* skip node */ }
     }
     if (nodes.length) applied.current.add(id);
 
     window.getSelection()?.removeAllRanges();
-    setPicker(null);
+    setSelection(null);
 
     const item: Highlight = { id, text, color };
     const next = [...highlightsRef.current, item];
@@ -138,7 +132,8 @@ export function HighlightLayer({
       parent.removeChild(mark);
     });
     applied.current.delete(id);
-    setDeleter(null);
+    setDeleteId(null);
+
     const next = highlightsRef.current.filter((h) => h.id !== id);
     highlightsRef.current = next;
     setHighlights(next);
@@ -150,62 +145,65 @@ export function HighlightLayer({
     });
   }
 
-  // Picker appears just below the cursor, clamped to viewport
-  function pickerStyle(x: number, y: number) {
-    const vw = typeof window !== "undefined" ? window.innerWidth : 800;
-    return {
-      left: Math.min(Math.max(x, 90), vw - 90),
-      top: y + 14,
-      transform: "translateX(-50%)",
-    };
-  }
+  const showBar = selection !== null || deleteId !== null;
 
   return (
     <>
       {children}
 
-      {picker && (
-        <div
-          data-hpicker
-          className="fixed z-50 flex items-center gap-1.5 p-2 rounded-2xl bg-white shadow-2xl border border-bone-200"
-          style={pickerStyle(picker.x, picker.y)}
-        >
-          {COLORS.map((c) => (
+      {/* Sticky bottom bar — appears when text is selected or mark is tapped */}
+      <div
+        className={`fixed bottom-6 left-1/2 z-50 -translate-x-1/2 transition-all duration-200 ${
+          showBar ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 translate-y-4 pointer-events-none"
+        }`}
+      >
+        {selection && (
+          <div className="flex items-center gap-2 px-4 py-3 rounded-2xl bg-white shadow-2xl border border-bone-200">
+            <span className="text-xs text-ink-400 mr-1">Marcar:</span>
+            {COLORS.map((c) => (
+              <button
+                key={c.value}
+                title={c.label}
+                onClick={() => saveHighlight(c.value)}
+                className="w-8 h-8 rounded-full border-2 border-white hover:scale-125 active:scale-110 transition shadow-sm"
+                style={{ backgroundColor: c.value }}
+              />
+            ))}
             <button
-              key={c.value}
-              title={c.label}
-              onMouseDown={(e) => e.preventDefault()}
-              onClick={() => saveHighlight(c.value)}
-              className="w-7 h-7 rounded-full border-2 border-white hover:scale-125 active:scale-110 transition shadow-sm"
-              style={{ backgroundColor: c.value }}
-            />
-          ))}
-        </div>
-      )}
+              onClick={() => { window.getSelection()?.removeAllRanges(); setSelection(null); }}
+              className="ml-1 w-7 h-7 rounded-full bg-bone-100 text-ink-400 hover:bg-bone-200 flex items-center justify-center text-sm"
+            >
+              ✕
+            </button>
+          </div>
+        )}
 
-      {deleter && (
-        <div
-          data-hpicker
-          className="fixed z-50 px-3 py-1.5 rounded-xl bg-white shadow-2xl border border-bone-200"
-          style={pickerStyle(deleter.x, deleter.y)}
-        >
-          <button
-            onMouseDown={(e) => e.preventDefault()}
-            onClick={() => deleteHighlight(deleter.id)}
-            className="flex items-center gap-1.5 text-xs text-rust-600 font-medium hover:text-rust-800"
-          >
-            <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-            Borrar marcador
-          </button>
-        </div>
-      )}
+        {deleteId && (
+          <div className="flex items-center gap-3 px-4 py-3 rounded-2xl bg-white shadow-2xl border border-bone-200">
+            <span className="text-xs text-ink-500">Marcador seleccionado</span>
+            <button
+              onClick={() => deleteHighlight(deleteId)}
+              className="flex items-center gap-1.5 text-xs text-rust-600 font-medium hover:text-rust-800 px-3 py-1.5 rounded-lg bg-rust-50"
+            >
+              <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+              Borrar
+            </button>
+            <button
+              onClick={() => setDeleteId(null)}
+              className="w-7 h-7 rounded-full bg-bone-100 text-ink-400 hover:bg-bone-200 flex items-center justify-center text-sm"
+            >
+              ✕
+            </button>
+          </div>
+        )}
+      </div>
     </>
   );
 }
 
-// ── DOM helpers ────────────────────────────────────────────────────────────
+// ── DOM helpers ──────────────────────────────────────────────────────────────
 
 function getTextNodesInRange(range: Range): { node: Text; start: number; end: number }[] {
   const result: { node: Text; start: number; end: number }[] = [];
