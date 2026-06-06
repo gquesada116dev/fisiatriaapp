@@ -250,6 +250,8 @@ EXCLUYE:
 - Atribución de fuente párrafo por párrafo (el capítulo ya es la fuente)
 
 FORMATO:
+- Encabezado del resumen: si el capítulo tiene sinónimo(s), inclúyelos en una línea justo debajo del título: **Sinónimo:** X
+- Si hay imágenes adjuntas, insértalas en la sección más apropiada con su pie de figura: ![Descripción breve](url)
 - Bullets cortos y telegráficos, no prosa
 - **Negrita** solo en el concepto clave de cada bullet (no en toda la oración)
 - Cuando haya subtipos o entidades similares, etiqueta explícitamente el diferenciador: "vs." o "diferenciador:"
