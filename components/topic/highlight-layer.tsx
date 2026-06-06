@@ -27,6 +27,8 @@ export function HighlightLayer({
   const [highlights, setHighlights] = useState<Highlight[]>([]);
   const [selection, setSelection] = useState<{ text: string; range: Range } | null>(null);
   const [deleteId, setDeleteId] = useState<string | null>(null);
+  // Bounding rect of the current selection or tapped mark — used to position the bar above it
+  const [anchorRect, setAnchorRect] = useState<DOMRect | null>(null);
   const applied = useRef<Set<string>>(new Set());
   const highlightsRef = useRef<Highlight[]>([]);
   const slugRef = useRef(slug);
@@ -41,6 +43,7 @@ export function HighlightLayer({
     setHighlights([]);
     setSelection(null);
     setDeleteId(null);
+    setAnchorRect(null);
     fetch(`/api/highlights?slug=${slug}`)
       .then((r) => r.json())
       .then((d) => setHighlights(d.items ?? []));
@@ -68,6 +71,7 @@ export function HighlightLayer({
     if (!container || !container.contains(range.commonAncestorContainer)) return;
     const text = sel.toString().trim();
     if (text.length < 2) { setSelection(null); return; }
+    setAnchorRect(range.getBoundingClientRect());
     setSelection({ text, range: range.cloneRange() });
   }
 
@@ -78,6 +82,7 @@ export function HighlightLayer({
     if (mark) {
       setSelection(null);
       window.getSelection()?.removeAllRanges();
+      setAnchorRect(mark.getBoundingClientRect());
       setDeleteId(mark.dataset.hid!);
       return;
     }
@@ -108,6 +113,7 @@ export function HighlightLayer({
       if (mark) {
         setSelection(null);
         window.getSelection()?.removeAllRanges();
+        setAnchorRect(mark.getBoundingClientRect());
         setDeleteId(mark.dataset.hid!);
         return;
       }
@@ -122,6 +128,7 @@ export function HighlightLayer({
     window.getSelection()?.removeAllRanges();
     setSelection(null);
     setDeleteId(null);
+    setAnchorRect(null);
   }
 
   async function saveHighlight(color: string) {
@@ -176,12 +183,27 @@ export function HighlightLayer({
   const btnSize = touch ? 44 : 28;
   const closeSize = touch ? 40 : 26;
 
+  // Position the bar above the selection/mark; flip below if too close to top of viewport
+  function computeBarPosition(rect: DOMRect): Pick<React.CSSProperties, "top" | "left"> {
+    const BAR_H = touch ? 68 : 52;
+    const BAR_W = touch ? 340 : 280;
+    const GAP = 10;
+    const vw = typeof window !== "undefined" ? window.innerWidth : 400;
+
+    const preferredTop = rect.top - BAR_H - GAP;
+    const top = preferredTop >= 8 ? preferredTop : rect.bottom + GAP;
+
+    const centerX = rect.left + rect.width / 2;
+    const left = Math.max(8, Math.min(centerX - BAR_W / 2, vw - BAR_W - 8));
+
+    return { top, left };
+  }
+
+  const barPosition = anchorRect ? computeBarPosition(anchorRect) : { top: -9999, left: -9999 };
+
   const barStyle: React.CSSProperties = {
     position: "fixed",
-    // Respect iOS/iPadOS home indicator via safe-area-inset-bottom
-    bottom: "max(24px, calc(env(safe-area-inset-bottom, 0px) + 16px))",
-    left: "50%",
-    transform: "translateX(-50%)",
+    ...barPosition,
     zIndex: 50,
     display: showBar ? "flex" : "none",
     alignItems: "center",
