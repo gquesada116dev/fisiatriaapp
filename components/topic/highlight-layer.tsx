@@ -1,6 +1,10 @@
 "use client";
 import { useCallback, useEffect, useRef, useState } from "react";
 
+// Minimum 44px touch targets on mobile/tablet
+const isTouchDevice = () =>
+  typeof window !== "undefined" && ("ontouchstart" in window || navigator.maxTouchPoints > 0);
+
 const COLORS = [
   { value: "#fef08a", label: "Amarillo" },
   { value: "#bbf7d0", label: "Verde" },
@@ -26,6 +30,8 @@ export function HighlightLayer({
   const applied = useRef<Set<string>>(new Set());
   const highlightsRef = useRef<Highlight[]>([]);
   const slugRef = useRef(slug);
+  // Track touch start position to distinguish taps from drags
+  const touchStartRef = useRef<{ x: number; y: number } | null>(null);
 
   useEffect(() => { highlightsRef.current = highlights; }, [highlights]);
   useEffect(() => { slugRef.current = slug; }, [slug]);
@@ -79,20 +85,37 @@ export function HighlightLayer({
     readSelection();
   }
 
-  function handleTouchEnd() {
-    // Selection isn't finalized at touchend — wait one tick
-    setTimeout(() => {
-      const target = document.activeElement as HTMLElement | null;
-      const mark = target?.closest("mark[data-hid]") as HTMLElement | null;
+  function handleTouchStart(e: React.TouchEvent) {
+    const touch = e.touches[0];
+    touchStartRef.current = { x: touch.clientX, y: touch.clientY };
+  }
+
+  function handleTouchEnd(e: React.TouchEvent) {
+    const start = touchStartRef.current;
+    const touch = e.changedTouches[0];
+    touchStartRef.current = null;
+
+    // Detect a tap (finger didn't move much)
+    const wasTap =
+      start &&
+      Math.abs(touch.clientX - start.x) < 10 &&
+      Math.abs(touch.clientY - start.y) < 10;
+
+    if (wasTap) {
+      // Use coordinates to reliably find if the user tapped an existing mark
+      const el = document.elementFromPoint(touch.clientX, touch.clientY) as HTMLElement | null;
+      const mark = el?.closest("mark[data-hid]") as HTMLElement | null;
       if (mark) {
         setSelection(null);
         window.getSelection()?.removeAllRanges();
         setDeleteId(mark.dataset.hid!);
         return;
       }
-      setDeleteId(null);
-      readSelection();
-    }, 50);
+    }
+
+    setDeleteId(null);
+    // Selection isn't finalized at touchend on tablets — wait for native handles to settle
+    setTimeout(readSelection, 300);
   }
 
   function dismiss() {
@@ -149,26 +172,31 @@ export function HighlightLayer({
   const showBar = selection !== null || deleteId !== null;
 
   // Inline styles avoid Tailwind purging + transform conflicts
+  const touch = isTouchDevice();
+  const btnSize = touch ? 44 : 28;
+  const closeSize = touch ? 40 : 26;
+
   const barStyle: React.CSSProperties = {
     position: "fixed",
-    bottom: 24,
+    // Respect iOS/iPadOS home indicator via safe-area-inset-bottom
+    bottom: "max(24px, calc(env(safe-area-inset-bottom, 0px) + 16px))",
     left: "50%",
     transform: "translateX(-50%)",
     zIndex: 50,
     display: showBar ? "flex" : "none",
     alignItems: "center",
-    gap: 8,
-    padding: "10px 16px",
-    borderRadius: 20,
+    gap: touch ? 12 : 8,
+    padding: touch ? "12px 20px" : "10px 16px",
+    borderRadius: 24,
     background: "white",
-    boxShadow: "0 8px 32px rgba(0,0,0,0.14), 0 2px 8px rgba(0,0,0,0.08)",
+    boxShadow: "0 8px 32px rgba(0,0,0,0.18), 0 2px 8px rgba(0,0,0,0.1)",
     border: "1px solid #e8e2d9",
     whiteSpace: "nowrap",
   };
 
   return (
     <>
-      <div onMouseUp={handleMouseUp} onTouchEnd={handleTouchEnd}>
+      <div onMouseUp={handleMouseUp} onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
         {children}
       </div>
 
@@ -183,7 +211,7 @@ export function HighlightLayer({
                 onMouseDown={(e) => e.preventDefault()}
                 onClick={() => saveHighlight(c.value)}
                 style={{
-                  width: 28, height: 28, borderRadius: "50%",
+                  width: btnSize, height: btnSize, borderRadius: "50%",
                   backgroundColor: c.value,
                   border: "2px solid white",
                   boxShadow: "0 1px 4px rgba(0,0,0,0.15)",
@@ -196,10 +224,10 @@ export function HighlightLayer({
               onMouseDown={(e) => e.preventDefault()}
               onClick={dismiss}
               style={{
-                width: 26, height: 26, borderRadius: "50%",
+                width: closeSize, height: closeSize, borderRadius: "50%",
                 background: "#f2ede6", border: "none",
                 color: "#9e9589", cursor: "pointer",
-                fontSize: 14, marginLeft: 2,
+                fontSize: touch ? 16 : 14, marginLeft: 2,
                 display: "flex", alignItems: "center", justifyContent: "center",
               }}
             >✕</button>
@@ -214,10 +242,11 @@ export function HighlightLayer({
               onClick={() => deleteHighlight(deleteId)}
               style={{
                 display: "flex", alignItems: "center", gap: 6,
-                fontSize: 12, color: "#c0392b", fontWeight: 600,
-                padding: "6px 12px", borderRadius: 10,
+                fontSize: touch ? 14 : 12, color: "#c0392b", fontWeight: 600,
+                padding: touch ? "10px 16px" : "6px 12px", borderRadius: 10,
                 background: "#fff5f5", border: "1px solid #fecaca",
                 cursor: "pointer",
+                minHeight: touch ? 44 : undefined,
               }}
             >
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5}>
@@ -229,10 +258,10 @@ export function HighlightLayer({
               onMouseDown={(e) => e.preventDefault()}
               onClick={() => setDeleteId(null)}
               style={{
-                width: 26, height: 26, borderRadius: "50%",
+                width: closeSize, height: closeSize, borderRadius: "50%",
                 background: "#f2ede6", border: "none",
                 color: "#9e9589", cursor: "pointer",
-                fontSize: 14,
+                fontSize: touch ? 16 : 14,
                 display: "flex", alignItems: "center", justifyContent: "center",
               }}
             >✕</button>
