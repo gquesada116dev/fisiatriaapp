@@ -254,16 +254,8 @@ FORMATO:
 - **Negrita** solo en el concepto clave de cada bullet (no en toda la oración)
 - Cuando haya subtipos o entidades similares, etiqueta explícitamente el diferenciador: "vs." o "diferenciador:"
 
-SECCIONES (omite las que no apliquen al tema):
-## Fisiopatología clave
-## Clasificación
-## Presentación clínica
-## Evaluación y diagnóstico
-## Escalas funcionales
-## Tratamiento y rehabilitación
-## Manejo farmacológico
-## Complicaciones
-## Contexto CCSS / CENARE
+SECCIONES: sigue exactamente la estructura de secciones del capítulo — una sección del resumen por cada sección/título del capítulo. No inventes secciones que no estén en el capítulo ni omitas ninguna que sí esté. Si el capítulo tiene Definición, Prevalencia, Etiología, Clasificación, Síntomas, Exploración física, Diagnóstico, Tratamiento, Complicaciones, etc., todas deben aparecer en el resumen.
+La única excepción: fusiona subsecciones muy cortas y relacionadas si el resultado queda más claro.
 
 Solo devuelve el markdown, sin preámbulo.`;
 
