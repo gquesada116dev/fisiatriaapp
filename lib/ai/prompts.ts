@@ -21,38 +21,43 @@ Bibliografía base: Manual de MFR de Frontera/Silver/Rizzo 4ª ed. (2020) y Brad
 export function summaryPrompt(topic: { name: string; category: string; description: string }) {
   return {
     system: COMMON_HEADER,
-    user: `Genera un resumen de estudio exhaustivo sobre el siguiente tema de fisiatría, al nivel de un capítulo de texto especializado para preparación de residencia:
+    user: `Genera un resumen de estudio sobre "${topic.name}" para el examen de admisión de fisiatría (CENDEISSS segunda etapa).
+Basate en Frontera/Silver/Rizzo 4ª ed. No uses ni cites Braddom en el resumen.
 
-TEMA: ${topic.name}
-CATEGORÍA: ${topic.category}
-CONTEXTO: ${topic.description}
+INCLUYE SOLO LO EVALUABLE:
+- Cifras, valores de corte, porcentajes y datos numéricos concretos
+- Clasificaciones con criterios y diferenciadores explícitos entre subtipos
+- Criterios diagnósticos exactos (con sensibilidad/especificidad si son de examen)
+- Tratamientos con sus indicaciones y contraindicaciones; dosis cuando apliquen (rango, vía, frecuencia)
+- Escalas: nombre, ítems, puntos de corte exactos y qué decisión clínica determina cada punto
+- Complicaciones con sus umbrales de alarma
+- Contexto CCSS/CENARE únicamente cuando el dato sea evaluable
 
-Estructura el resumen en formato Markdown con TODAS las secciones que apliquen (omite solo si genuinamente irrelevante para el tema):
+EXCLUYE:
+- Fechas de guías, nombres de workshops o sociedades (salvo que sea dato de examen en sí)
+- Códigos CIE-10
+- Definiciones textuales copiadas — si hay una definición, reescríbela en bullets con sus componentes clave
+- Frases de relleno, introductorias o de transición
+- Sección final de "puntos de alto rendimiento" — no repitas el cuerpo del resumen al final
 
-## Definición y conceptos clave
-## Epidemiología y relevancia clínica
-## Anatomía y fisiopatología
+FORMATO:
+- Bullets cortos y telegráficos, no prosa
+- **Negrita** solo en el concepto clave de cada bullet (no en toda la oración)
+- Cuando haya subtipos o entidades similares, etiqueta explícitamente el diferenciador: "vs." o "diferenciador:"
+- Cita "Frontera" por nombre solo si un dato es exclusivo de esa fuente o discutible; de lo contrario no cites
+
+SECCIONES (omite las que no apliquen al tema):
+## Fisiopatología clave
+## Clasificación
 ## Presentación clínica
 ## Evaluación y diagnóstico
-## Escalas y clasificaciones validadas
-## Objetivos de rehabilitación
-## Intervenciones en fisiatría
-## Manejo farmacológico adyuvante
-## Abordaje interdisciplinario
-## Complicaciones y banderas rojas
-## Contexto costarricense (CENARE / CCSS)
-## Puntos de alto rendimiento para el examen
+## Escalas funcionales
+## Tratamiento y rehabilitación
+## Manejo farmacológico
+## Complicaciones
+## Contexto CCSS / CENARE
 
-Requisitos de profundidad:
-- Nivel de residente de segundo año, no de estudiante de pregrado.
-- Cada sección debe tener al menos 3-6 párrafos o ítems con datos concretos.
-- Escalas: incluye nombre completo, ítems que evalúa, puntos de corte exactos, y qué decisión clínica determina cada punto de corte.
-- Dosis farmacológicas cuando apliquen (rango, frecuencia, vía, consideraciones especiales).
-- Criterios diagnósticos exactos con sus valores de sensibilidad/especificidad si son relevantes para examen.
-- Ortesis y equipos: indica nivel de lesión o indicación, materiales, precauciones.
-- Menciona protocolos CCSS o guías nacionales cuando existan.
-- Apunta a ~2500 palabras. Prefiere profundidad clínica sobre listas superficiales.
-- Devuelve solo el markdown, sin preámbulo.`,
+Solo devuelve el markdown, sin preámbulo.`,
   };
 }
 

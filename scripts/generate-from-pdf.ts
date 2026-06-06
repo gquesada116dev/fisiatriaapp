@@ -74,9 +74,23 @@ async function callCached(params: CachedCallParams): Promise<string> {
   ];
 
   // Chapter text is the cacheable prefix — identical across all calls for this chapter
+  // If the text contains a secondary source (Braddom), split and label clearly
+  const secondaryMarker = "=== FUENTE SECUNDARIA";
+  const secondaryIdx = params.chapterText.indexOf(secondaryMarker);
+  const primaryText = secondaryIdx !== -1
+    ? params.chapterText.slice(0, secondaryIdx).trim()
+    : params.chapterText;
+  const secondaryText = secondaryIdx !== -1
+    ? params.chapterText.slice(secondaryIdx).trim()
+    : null;
+
+  const chapterContent = secondaryText
+    ? `--- FUENTE PRIMARIA (Frontera) — úsala como base principal ---\n${primaryText}\n--- FIN FUENTE PRIMARIA ---\n\n--- FUENTE SECUNDARIA (Braddom) — úsala SOLO para agregar lo que NO esté cubierto en Frontera ---\n${secondaryText}\n--- FIN FUENTE SECUNDARIA ---`
+    : `--- TEXTO DEL CAPÍTULO ---\n${primaryText}\n--- FIN DEL CAPÍTULO ---`;
+
   const chapterBlock: Anthropic.Beta.PromptCaching.PromptCachingBetaTextBlockParam = {
     type: "text",
-    text: `--- TEXTO DEL CAPÍTULO (fuente primaria) ---\n${params.chapterText}\n--- FIN DEL CAPÍTULO ---`,
+    text: chapterContent,
     cache_control: { type: "ephemeral" },
   };
 
@@ -215,29 +229,50 @@ async function generateSummary(topic: any, chapterText: string, imagePaths: stri
     ? `\nEl capítulo incluye ${publicUrls.length} imagen(es) adjunta(s). Insértalas en la sección más apropiada como:\n![Descripción](${publicUrls[0]})\n`
     : "";
 
-  const taskPrompt = `Genera un resumen de estudio exhaustivo sobre "${topic.name}" basándote DIRECTAMENTE en el texto del capítulo anterior.${imageNote}
+  const taskPrompt = `Genera un resumen de estudio sobre "${topic.name}" para el examen de admisión de fisiatría (CENDEISSS segunda etapa). Basate ÚNICAMENTE en el texto del capítulo adjunto.${imageNote}
 
-Estructura en Markdown con TODAS las secciones que apliquen:
-## Definición y conceptos clave
-## Epidemiología y relevancia clínica
-## Anatomía y fisiopatología
-## Presentación clínica / Síntomas
+INCLUYE SOLO LO EVALUABLE:
+- Cifras, valores de corte, porcentajes y datos numéricos concretos del capítulo
+- Clasificaciones con criterios y diferenciadores explícitos entre subtipos
+- Criterios diagnósticos exactos (con sensibilidad/especificidad si aparecen en el capítulo)
+- Tratamientos con sus indicaciones y contraindicaciones; dosis cuando aparezcan (rango, vía, frecuencia)
+- Escalas: nombre, ítems, puntos de corte exactos y qué decisión clínica determina cada punto
+- Complicaciones con sus umbrales de alarma
+- Tablas y clasificaciones del capítulo → conviértelas a tabla Markdown o bullets estructurados
+
+EXCLUYE:
+- Fechas de guías, nombres de workshops o sociedades (salvo que sea dato de examen en sí)
+- Códigos CIE-10
+- Definiciones textuales copiadas — si hay una definición, reescríbela en bullets con sus componentes clave
+- Frases de relleno, introductorias o de transición
+- Repetición: cada dato aparece una sola vez en todo el resumen
+- Sección final de "puntos de alto rendimiento" — no repitas el cuerpo del resumen al final
+- Atribución de fuente párrafo por párrafo (el capítulo ya es la fuente)
+
+FORMATO:
+- Bullets cortos y telegráficos, no prosa
+- **Negrita** solo en el concepto clave de cada bullet (no en toda la oración)
+- Cuando haya subtipos o entidades similares, etiqueta explícitamente el diferenciador: "vs." o "diferenciador:"
+
+SECCIONES (omite las que no apliquen al tema):
+## Fisiopatología clave
+## Clasificación
+## Presentación clínica
 ## Evaluación y diagnóstico
-## Escalas y clasificaciones validadas
-## Objetivos de rehabilitación
-## Intervenciones en fisiatría
-## Manejo farmacológico adyuvante
-## Complicaciones y banderas rojas
-## Puntos de alto rendimiento para el examen
+## Escalas funcionales
+## Tratamiento y rehabilitación
+## Manejo farmacológico
+## Complicaciones
+## Contexto CCSS / CENARE
 
-Requisitos: nivel de residente de segundo año. Tablas del capítulo en Markdown. ~2500 palabras. Solo devuelve el markdown.`;
+Solo devuelve el markdown, sin preámbulo.`;
 
   const contentMd = await callCached({
     model: SONNET,
     chapterText,
     taskPrompt,
     imageBlocks: buildImageBlocks(imagePaths),
-    maxTokens: 8000,
+    maxTokens: 16000,
   });
 
   await db.collection("summaries").doc(SLUG!).set({
@@ -267,6 +302,7 @@ async function generateQuestions(topic: any, chapterText: string, imagePaths: st
 - Explicación de 2-3 oraciones por opción.
 - Dificultad 1-5 (apunta a 3-4).
 - Cubre los puntos de alto rendimiento del capítulo.
+- IMPORTANTE: distribuí la respuesta correcta de forma variada entre A, B, C, D y E. No pongas la respuesta siempre en la misma letra.
 
 JSON exacto:
 {
@@ -274,8 +310,8 @@ JSON exacto:
     {
       "stem": "...",
       "options": [{"letter":"A","text":"..."},{"letter":"B","text":"..."},{"letter":"C","text":"..."},{"letter":"D","text":"..."},{"letter":"E","text":"..."}],
-      "correct": "C",
-      "explanations": {"A":"Incorrecto. ...","B":"Incorrecto. ...","C":"Correcto. ...","D":"Incorrecto. ...","E":"Incorrecto. ..."},
+      "correct": "A",
+      "explanations": {"A":"Correcto. ...","B":"Incorrecto. ...","C":"Incorrecto. ...","D":"Incorrecto. ...","E":"Incorrecto. ..."},
       "difficulty": 3
     }
   ]
@@ -286,7 +322,7 @@ JSON exacto:
     chapterText,
     taskPrompt,
     imageBlocks: buildImageBlocks(imagePaths),
-    maxTokens: 6000,
+    maxTokens: 8000,
     jsonMode: true,
   });
 
@@ -389,6 +425,7 @@ async function generateExamQuestions(topic: any, chapterText: string, imagePaths
 
 - Viñeta clínica realista. EXACTAMENTE 6 opciones (A-F). Una sola correcta.
 - Distractores plausibles. Explicación por opción (2-4 oraciones). Dificultad 3-4.
+- IMPORTANTE: distribuí la respuesta correcta de forma variada entre A, B, C, D, E y F. No pongas la respuesta siempre en la misma letra.
 
 JSON exacto:
 {
@@ -396,7 +433,7 @@ JSON exacto:
     {
       "stem": "...",
       "options": [{"letter":"A","text":"..."},{"letter":"B","text":"..."},{"letter":"C","text":"..."},{"letter":"D","text":"..."},{"letter":"E","text":"..."},{"letter":"F","text":"..."}],
-      "correct": "C",
+      "correct": "B",
       "explanations": {"A":"...","B":"...","C":"...","D":"...","E":"...","F":"..."},
       "difficulty": 3,
       "imageUrl": null
@@ -409,7 +446,7 @@ JSON exacto:
     chapterText,
     taskPrompt,
     imageBlocks: buildImageBlocks(imagePaths),
-    maxTokens: 6000,
+    maxTokens: 10000,
     jsonMode: true,
   });
 
@@ -437,30 +474,31 @@ async function generatePodcast(topic: any, chapterText: string) {
   const snap = await db.collection("podcasts").doc(SLUG!).get();
   if (snap.exists && !FORCE) { console.log("  – [podcast] ya existe (--force para regenerar)"); return; }
 
-  const taskPrompt = `Escribe un guion de podcast educativo en español (Costa Rica) entre dos médicos fisiatras conversando sobre "${topic.name}", basándote en el texto del capítulo anterior.
+  const taskPrompt = `Escribe un guion de podcast educativo en español (Costa Rica) basándote en el texto del capítulo anterior.
 
-Personajes:
-- A: Dr. Marín, fisiatra académico. Explica, estructura los temas, da datos concretos, porcentajes y criterios cuando aportan.
-- B: Dra. Vargas, fisiatra clínica. Pregunta, problematiza, da ejemplos de pacientes reales, conecta con la práctica.
+PERSONAJES:
+- C: Presentadora. Habla directamente a Bele (la residente) usando "vos" (nunca "usted"). Tono cálido, motivador. SOLO ella puede decir "Bele". Aparece en intro, cierre, y cada vez que hay un concepto de alto rendimiento para el examen (lo señala con una frase corta intercalada, sin interrumpir el flujo).
+- A: Dr. Marín, fisiatra académico. Explica definiciones, clasificaciones, criterios, fisiopatología. NUNCA dice "Bele".
+- B: Dra. Vargas, fisiatra clínica. Conecta con la práctica: cómo se ve en el paciente, errores comunes, perlas clínicas. NUNCA dice "Bele".
 
-Estilo y formato:
-- Conversación natural costarricense, fluida. Pueden usar "uno", "vea", "fíjese", "exactamente".
-- INTRO (primeras 2 intervenciones, A/B): Dr. Marín presenta el tema del día y Dra. Vargas lo contextualiza brevemente.
-- DESARROLLO: 26-36 intervenciones alternando A/B cubriendo el capítulo COMPLETO en orden lógico.
-- OUTRO (últimas 2 intervenciones, A/B): Cierran con 2-3 puntos clave que un residente debe recordar el día del examen.
-- Cada intervención: 3-6 oraciones. Total apunta a ~15 minutos de audio.
-- Los números y porcentajes van cuando ayudan a entender, no como lista de datos.
-- Usa la terminología exacta del capítulo (ej. "extremidad residual", no términos desactualizados). Si el capítulo actualiza un término, menciónalo como punto de enseñanza.
-- El tono es para escuchar en el carro: claro, con transiciones naturales entre temas.
+ESTRUCTURA:
+1. INTRO — C (1 intervención): presenta el tema, por qué importa en el examen y en la práctica clínica. Directa y motivadora.
+2. DESARROLLO — A y B se alternan; C aparece brevemente cuando hay dato de alto rendimiento ("Bele, eso cae en examen" o similar): cubren el contenido completo del capítulo en orden lógico.
+3. CIERRE — C (1 intervención): las 3 cosas que Bele debe poder decir de memoria el día del examen. Cierre motivador y personal.
+
+REGLAS OBLIGATORIAS:
+- Este podcast debe funcionar igual de bien para alguien que lo escucha POR PRIMERA VEZ antes de estudiar, y para alguien que lo escucha DE REPASO una semana antes del examen.
+- Tono para escuchar manejando: conversacional, natural, costarricense ("uno", "vea", "fíjese", "exactamente", "claro que sí").
+- NÚMEROS: NUNCA uses porcentajes con decimales ni cifras complejas. Usa lenguaje aproximado natural: "casi la mitad", "uno de cada tres", "la gran mayoría", "una pequeña proporción". Solo usá un número exacto si es EL dato memorable del capítulo y se puede decir de forma simple.
+- LONGITUD: Generá las intervenciones que el tema necesite para cubrir TODO el contenido. Un tema complejo puede necesitar 40 o más intervenciones.
+- Cada intervención: 3-5 oraciones fluidas, ritmo natural para audio.
 - NUNCA mencionen ser una IA.
+- SIGLAS: NUNCA uses siglas en mayúsculas (escríbelas en su forma completa). Solo usá una sigla si absolutamente no existe otra forma.
+- IDIOMA: NUNCA uses palabras en inglés. Todo en español.
+- FUENTE: Todo el contenido debe provenir ÚNICAMENTE del capítulo adjunto.
 
-JSON exacto (speaker solo "A" o "B" por ahora):
-{
-  "script": [
-    { "speaker": "A", "text": "..." },
-    { "speaker": "B", "text": "..." }
-  ]
-}`;
+JSON exacto, sin markdown, sin texto adicional:
+{ "script": [{ "speaker": "C", "text": "..." }, { "speaker": "A", "text": "..." }] }`;
 
   console.log("  … [podcast] generando guion...");
   const raw = await callCached({
