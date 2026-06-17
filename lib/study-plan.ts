@@ -27,6 +27,16 @@ export type PlanDay = {
 const topic = (slug: string, name: string, priority: 1 | 2 | 3 | 4 | 5, note?: string): PlanItem =>
   ({ key: slug, slug, name, priority, note });
 
+/** Temas que Bele ya estudió antes de arrancar este plan (se muestran completados, para motivar). */
+export const COMPLETED_TOPICS: PlanItem[] = [
+  topic("amputaciones-extremidad-inferior", "Amputaciones de la extremidad inferior", 5),
+  topic("rehabilitacion-cardiaca", "Rehabilitación cardiaca", 4),
+  topic("paralisis-cerebral-infantil", "Parálisis cerebral infantil", 5),
+  topic("enfermedades-neurona-motora", "Enfermedades de neurona motora", 4),
+  topic("miopatias", "Miopatías", 4),
+  topic("defectos-tubo-neural", "Defectos del tubo neural", 4),
+];
+
 export const STUDY_PLAN: PlanDay[] = [
   { date: "2026-06-17", dow: "Mié", kind: "study", items: [topic("escoliosis-y-cifosis", "Escoliosis y cifosis", 3, "Ya tiene contenido listo")] },
   { date: "2026-06-18", dow: "Jue", kind: "study", items: [topic("ulceras-por-presion", "Úlceras por presión", 5, "Tema pesado — día completo")] },
@@ -61,10 +71,10 @@ export const STUDY_PLAN: PlanDay[] = [
   { date: "2026-07-05", dow: "Dom", kind: "exam", items: [{ key: "day-2026-07-05", name: "🎯 EXAMEN" }] },
 ];
 
-/** Total de temas de estudio (para la barra de progreso). */
-export const TOTAL_STUDY_TOPICS = STUDY_PLAN
-  .filter((d) => d.kind === "study")
-  .reduce((acc, d) => acc + d.items.length, 0);
+/** Total de temas del examen = ya estudiados + los del calendario. */
+export const TOTAL_STUDY_TOPICS =
+  COMPLETED_TOPICS.length +
+  STUDY_PLAN.filter((d) => d.kind === "study").reduce((acc, d) => acc + d.items.length, 0);
 
 /** Fecha de hoy (YYYY-MM-DD) en zona horaria de Costa Rica. */
 export function todayCR(): string {

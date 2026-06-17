@@ -2,7 +2,7 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils/cn";
-import { STUDY_PLAN, TOTAL_STUDY_TOPICS, todayCR, type PlanItem } from "@/lib/study-plan";
+import { STUDY_PLAN, COMPLETED_TOPICS, TOTAL_STUDY_TOPICS, todayCR, type PlanItem } from "@/lib/study-plan";
 
 type Stats = Record<string, { mastery?: number }>;
 
@@ -19,10 +19,10 @@ export function PlanBoard({ stats, initialDone }: { stats: Stats; initialDone: R
   const [pending, setPending] = useState<Set<string>>(new Set());
   const today = todayCR();
 
-  const completedTopics = useMemo(
-    () => STUDY_PLAN.filter((d) => d.kind === "study").flatMap((d) => d.items).filter((i) => done[i.key]).length,
-    [done],
-  );
+  const completedTopics = useMemo(() => {
+    const planItems = STUDY_PLAN.filter((d) => d.kind === "study").flatMap((d) => d.items);
+    return [...COMPLETED_TOPICS, ...planItems].filter((i) => done[i.key]).length;
+  }, [done]);
 
   async function toggle(key: string) {
     const next = !done[key];
@@ -55,6 +55,26 @@ export function PlanBoard({ stats, initialDone }: { stats: Stats; initialDone: R
         <div className="h-2 rounded-full bg-bone-200 overflow-hidden">
           <div className="h-full bg-teal-500 transition-all" style={{ width: `${pct}%` }} />
         </div>
+      </div>
+
+      {/* Ya estudiado antes del plan */}
+      <div className="mb-3 rounded-xl border border-sage-500/30 bg-sage-500/5 p-4">
+        <div className="flex items-center gap-2 mb-2">
+          <span className="text-xs uppercase tracking-widest text-sage-600 font-medium">Ya estudiado</span>
+          <span className="text-xs text-ink-400">¡buen avance! 💪</span>
+        </div>
+        <ul className="space-y-1.5">
+          {COMPLETED_TOPICS.map((item) => (
+            <PlanRow
+              key={item.key}
+              item={item}
+              checked={!!done[item.key]}
+              busy={pending.has(item.key)}
+              mastery={item.slug ? stats[item.slug]?.mastery : undefined}
+              onToggle={() => toggle(item.key)}
+            />
+          ))}
+        </ul>
       </div>
 
       <div className="space-y-3">
