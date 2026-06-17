@@ -9,6 +9,7 @@ export function TopBar() {
         </Link>
         <nav className="flex items-center gap-6 text-sm">
           <Link href="/" className="text-ink-600 hover:text-teal-700">Temas</Link>
+          <Link href="/plan" className="text-ink-600 hover:text-teal-700">Plan</Link>
           <Link href="/review" className="text-ink-600 hover:text-teal-700">Repaso</Link>
           <Link href="/examen" className="text-ink-600 hover:text-teal-700">Examen</Link>
           <Link href="/car-mode" className="text-ink-600 hover:text-teal-700">Modo Carro</Link>
