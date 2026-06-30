@@ -45,6 +45,6 @@ export const SEED_TOPICS: SeedTopic[] = [
   { category: "Derechos de las Personas con Discapacidad", name: "Informe Mundial sobre Discapacidad 2011", slug: "informe-mundial-discapacidad-2011", description: "Principales hallazgos del Informe OMS/Banco Mundial 2011: barreras, epidemiología global y recomendaciones en salud, rehabilitación y entorno.", priority: 3 },
 
   // 4. Conceptos Básicos de Manejo Fisiátrico
-  { category: "Conceptos Básicos de Manejo Fisiátrico", name: "Historia clínica y examen físico fisiátrico", slug: "historia-clinica-examen-fisico-fisiátrico", description: "Estructura de la historia clínica fisiátrica, examen musculoesquelético, neurológico y funcional del adulto. (Frontera cap 1, pág 3-39)", priority: 4 },
-  { category: "Conceptos Básicos de Manejo Fisiátrico", name: "Historia y examen físico del paciente pediátrico", slug: "historia-examen-fisico-pediatrico", description: "Particularidades de la anamnesis y exploración fisiátrica en pediatría, hitos del desarrollo motor. (Frontera cap 2, pág 41-51)", priority: 3 },
+  { category: "Conceptos Básicos de Manejo Fisiátrico", name: "Historia clínica y examen físico fisiátrico", slug: "historia-clinica-examen-fisico-fisiatrico", description: "Estructura de la historia clínica fisiátrica, examen musculoesquelético, neurológico y funcional del adulto. (Braddom's 6ª ed., cap 1)", priority: 4 },
+  { category: "Conceptos Básicos de Manejo Fisiátrico", name: "Historia y examen físico del paciente pediátrico", slug: "historia-examen-fisico-pediatrico", description: "Particularidades de la anamnesis y exploración fisiátrica en pediatría, hitos del desarrollo motor. (Braddom's 6ª ed., cap 2)", priority: 3 },
 ];

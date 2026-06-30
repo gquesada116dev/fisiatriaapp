@@ -41,6 +41,9 @@ if (!SLUG) { console.error("Falta --slug=<topic-slug>"); process.exit(1); }
 
 const FORCE = process.argv.includes("--force");
 const ONLY = process.argv.find((a) => a.startsWith("--only="))?.split("=")[1] ?? null;
+// El podcast solo genera el guión (no el audio). Desactivado por defecto:
+// no se está produciendo audio en ElevenLabs. Usar --podcast para reactivarlo.
+const WITH_PODCAST = process.argv.includes("--podcast");
 const CARDS_PER_TOPIC = 50;
 const QUESTIONS_PER_TOPIC = 7;
 const EXAM_QUESTIONS_PER_TOPIC = 5;
@@ -62,7 +65,7 @@ type CachedCallParams = {
   model: string;
   chapterText: string;
   taskPrompt: string;
-  imageBlocks?: Anthropic.ImageBlockParam[];
+  imageBlocks?: (Anthropic.Beta.PromptCaching.PromptCachingBetaTextBlockParam | Anthropic.ImageBlockParam)[];
   maxTokens: number;
   jsonMode?: boolean;
 };
@@ -182,12 +185,20 @@ function publishImages(slug: string, rawPaths: string[]): string[] {
   });
 }
 
-function buildImageBlocks(imagePaths: string[]): Anthropic.ImageBlockParam[] {
-  return imagePaths.map((p) => {
+type ContentBlock = Anthropic.Beta.PromptCaching.PromptCachingBetaTextBlockParam | Anthropic.ImageBlockParam;
+
+// Precede cada imagen con su ruta pública exacta, para que el modelo sepa qué
+// archivo es cuál y use el ![](fig-N) correcto (sin esto repite fig-1 con muchas imágenes).
+function buildImageBlocks(imagePaths: string[], slug: string): ContentBlock[] {
+  const blocks: ContentBlock[] = [];
+  for (const p of imagePaths) {
     const data = fs.readFileSync(p).toString("base64");
     const mediaType = p.toLowerCase().endsWith(".png") ? "image/png" : "image/jpeg";
-    return { type: "image", source: { type: "base64", media_type: mediaType, data } };
-  });
+    const url = `/chapter-images/${slug}/${path.basename(p)}`;
+    blocks.push({ type: "text", text: `Figura ${url} (si la insertás, usá exactamente esta ruta):` });
+    blocks.push({ type: "image", source: { type: "base64", media_type: mediaType, data } });
+  }
+  return blocks;
 }
 
 function printCostReport() {
@@ -226,25 +237,37 @@ async function generateSummary(topic: any, chapterText: string, imagePaths: stri
   if (snap.exists && !FORCE) { console.log("  – [summary] ya existe (--force para regenerar)"); return; }
 
   const imageNote = publicUrls.length > 0
-    ? `\nEl capítulo incluye ${publicUrls.length} imagen(es) adjunta(s). Insértalas en la sección más apropiada como:\n![Descripción](${publicUrls[0]})\n`
+    ? `\nEl capítulo incluye ${publicUrls.length} imagen(es) adjunta(s). Cada imagen viene precedida por su ruta exacta (ej. "Figura /chapter-images/.../fig-7.png"). Inserta cada figura en la sección más apropiada usando EXACTAMENTE su ruta: ![Descripción breve](esa-ruta). NUNCA repitas la misma ruta para imágenes distintas — cada figura tiene su propio archivo fig-N. Si una figura no aporta a ninguna sección, omítela.\n`
     : "";
 
   const taskPrompt = `Genera un resumen de estudio sobre "${topic.name}" para el examen de admisión de fisiatría (CENDEISSS segunda etapa). Basate ÚNICAMENTE en el texto del capítulo adjunto.${imageNote}
 
-INCLUYE SOLO LO EVALUABLE:
-- Cifras, valores de corte, porcentajes y datos numéricos concretos del capítulo
+REGLA DE CONTEXTO (la más importante):
+El resumen es para APRENDER, no solo para repasar datos sueltos. Quien lo lee NO conoce el concepto de antemano. Por eso, CADA herramienta, escala, signo, maniobra, índice o concepto debe presentarse con una frase breve que explique QUÉ ES y PARA QUÉ SIRVE, ANTES de listar sus valores, puntos o pasos. Nunca pongas una etiqueta seguida de cifras crudas.
+- MAL: "**Plomada** — Desfase frontal: cresta sacra medial → distancia en C7"
+- BIEN: "**Plomada**: hilo con peso que cuelga vertical; sirve para valorar la alineación de la columna en los planos frontal y sagital. *Desfase frontal:* se coloca sobre la cresta sacra medial y se mide la distancia hasta C7. *Perfil sagital:* la distancia se mide en las apófisis espinosas de C7 y L3 respecto al punto más sobresaliente de la cifosis."
+- MAL: "**Escala TRACE** — Hombros 0–3, Escápulas 0–2..."
+- BIEN: "**Escala TRACE** (Trunk Aesthetic Clinical Evaluation): valoración clínica objetiva de la asimetría estética del tronco. Suma 4 subescalas (hombros 0–3, escápulas 0–2, hemitórax 0–2, cintura 0–4) en una escala ordinal de asimetría creciente."
+
+INCLUYE (con el contexto de la regla anterior):
+- Cifras, valores de corte, porcentajes y datos numéricos concretos del capítulo — siempre acompañados de qué miden
 - Clasificaciones con criterios y diferenciadores explícitos entre subtipos
 - Criterios diagnósticos exactos (con sensibilidad/especificidad si aparecen en el capítulo)
 - Tratamientos con sus indicaciones y contraindicaciones; dosis cuando aparezcan (rango, vía, frecuencia)
-- Escalas: nombre, ítems, puntos de corte exactos y qué decisión clínica determina cada punto
+- Escalas: qué evalúan, sus ítems, puntos de corte exactos y qué decisión clínica determina cada punto
 - Complicaciones con sus umbrales de alarma
 - Tablas y clasificaciones del capítulo → conviértelas a tabla Markdown o bullets estructurados
+
+FIDELIDAD AL CAPÍTULO:
+- Usá SOLO lo que está en el capítulo. No agregues datos externos.
+- No omitas componentes: si una escala tiene subescalas o una clasificación tiene tipos, explícalos TODOS.
+- No dejes nada "a medias": si mencionás un valor o un índice, debe quedar claro qué mide y cómo se obtiene.
 
 EXCLUYE:
 - Fechas de guías, nombres de workshops o sociedades (salvo que sea dato de examen en sí)
 - Códigos CIE-10
-- Definiciones textuales copiadas — si hay una definición, reescríbela en bullets con sus componentes clave
-- Frases de relleno, introductorias o de transición
+- Definiciones copiadas textualmente — reescribilas con tus palabras de forma clara y COMPLETA (qué es + componentes), nunca reducidas a una etiqueta
+- Frases de relleno vacías o motivacionales (pero SÍ incluí la frase que da contexto a cada concepto)
 - Repetición: cada dato aparece una sola vez en todo el resumen
 - Sección final de "puntos de alto rendimiento" — no repitas el cuerpo del resumen al final
 - Atribución de fuente párrafo por párrafo (el capítulo ya es la fuente)
@@ -252,7 +275,7 @@ EXCLUYE:
 FORMATO:
 - Encabezado del resumen: si el capítulo tiene sinónimo(s), inclúyelos en una línea justo debajo del título: **Sinónimo:** X
 - Si hay imágenes adjuntas, insértalas en la sección más apropiada con su pie de figura: ![Descripción breve](url)
-- Bullets cortos y telegráficos, no prosa
+- Bullets claros, no prosa larga: un bullet puede tener una frase de contexto + los datos. Preferí un bullet de dos oraciones que se entienda solo, antes que uno telegráfico que no.
 - **Negrita** solo en el concepto clave de cada bullet (no en toda la oración)
 - Cuando haya subtipos o entidades similares, etiqueta explícitamente el diferenciador: "vs." o "diferenciador:"
 
@@ -265,13 +288,13 @@ Solo devuelve el markdown, sin preámbulo.`;
     model: SONNET,
     chapterText,
     taskPrompt,
-    imageBlocks: buildImageBlocks(imagePaths),
+    imageBlocks: buildImageBlocks(imagePaths, SLUG!),
     maxTokens: 16000,
   });
 
   await db.collection("summaries").doc(SLUG!).set({
     topicSlug: SLUG, contentMd, model: SONNET,
-    promptV: "pdf-v1", createdAt: new Date().toISOString(),
+    promptV: "pdf-v2", createdAt: new Date().toISOString(),
   });
   console.log("  ✓ [summary]");
 }
@@ -315,7 +338,7 @@ JSON exacto:
     model: SONNET,
     chapterText,
     taskPrompt,
-    imageBlocks: buildImageBlocks(imagePaths),
+    imageBlocks: buildImageBlocks(imagePaths, SLUG!),
     maxTokens: 8000,
     jsonMode: true,
   });
@@ -439,7 +462,7 @@ JSON exacto:
     model: SONNET,
     chapterText,
     taskPrompt,
-    imageBlocks: buildImageBlocks(imagePaths),
+    imageBlocks: buildImageBlocks(imagePaths, SLUG!),
     maxTokens: 10000,
     jsonMode: true,
   });
@@ -454,7 +477,9 @@ JSON exacto:
       topicSlug: SLUG, topicName: topic.name, topicCategory: topic.category,
       stem: q.stem, options: q.options, correct: q.correct,
       explanations: q.explanations, difficulty: q.difficulty,
-      imageUrl: q.imageUrl ?? (hasImageRef ? imageUrl : null),
+      // Ignorar q.imageUrl: el modelo alucina rutas ("image1", "uploaded_image").
+      // Usar solo la ruta real publicada, igual que generateQuestions.
+      imageUrl: hasImageRef ? imageUrl : null,
       model: SONNET, promptV: "pdf-v1", createdAt: Timestamp.now(),
     });
   }
@@ -483,8 +508,8 @@ ESTRUCTURA:
 REGLAS OBLIGATORIAS:
 - Este podcast debe funcionar igual de bien para alguien que lo escucha POR PRIMERA VEZ antes de estudiar, y para alguien que lo escucha DE REPASO una semana antes del examen.
 - Tono para escuchar manejando: conversacional, natural, costarricense ("uno", "vea", "fíjese", "exactamente", "claro que sí").
-- NÚMEROS: NUNCA uses porcentajes con decimales ni cifras complejas. Usa lenguaje aproximado natural: "casi la mitad", "uno de cada tres", "la gran mayoría", "una pequeña proporción". Solo usá un número exacto si es EL dato memorable del capítulo y se puede decir de forma simple.
-- LONGITUD: Generá las intervenciones que el tema necesite para cubrir TODO el contenido. Un tema complejo puede necesitar 40 o más intervenciones.
+- NÚMEROS: NUNCA digas un porcentaje ni una cifra exacta en el audio. Siempre traduce a lenguaje auditivo natural: "cerca de uno de cada mil", "la gran mayoría", "casi la mitad", "alrededor de tres de cada cuatro", "una pequeña proporción". El oyente va manejando — un número exacto no se le va a quedar. Solo usá un número si es un hito completamente redondo e icónico (ej: "cinco niveles", "tres tipos").
+- LONGITUD: 20-28 intervenciones máximo. NO intentes cubrir cada dato del capítulo — seleccioná los conceptos de mayor rendimiento para el examen: clasificaciones principales, diferenciadores entre subtipos, perlas clínicas que se confunden en examen. Los datos numéricos exactos se quedan en el resumen escrito; el podcast es para entender y recordar la lógica.
 - Cada intervención: 3-5 oraciones fluidas, ritmo natural para audio.
 - NUNCA mencionen ser una IA.
 - SIGLAS: NUNCA uses siglas en mayúsculas (escríbelas en su forma completa). Solo usá una sigla si absolutamente no existe otra forma.
@@ -535,7 +560,8 @@ async function main() {
   await run("questions",      () => generateQuestions(topic, chapterText, imagePaths, publicUrls));
   await run("exam-questions", () => generateExamQuestions(topic, chapterText, imagePaths, publicUrls));
   await run("flashcards",     () => generateFlashcards(topic, chapterText, imagePaths, publicUrls));
-  await run("podcast",        () => generatePodcast(topic, chapterText));
+  if (WITH_PODCAST) await run("podcast", () => generatePodcast(topic, chapterText));
+  else console.log("  – [podcast] omitido (sin ElevenLabs; usá --podcast para generar el guión)");
 
   printCostReport();
   console.log("\n✅ Listo.");

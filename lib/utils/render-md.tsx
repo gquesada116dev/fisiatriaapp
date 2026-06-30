@@ -32,8 +32,11 @@ export function renderMd(md: string): React.ReactNode[] {
     } else if (/^#\s+/.test(line) && !/^##/.test(line)) {
       out.push(<h1 key={key++}>{line.replace(/^#\s+/, "")}</h1>);
       i++;
+    } else if (/^#####\s+/.test(line)) {
+      out.push(<h5 key={key++} className="text-sm font-semibold text-ink-700 mt-3 mb-1">{inline(line.replace(/^#####\s+/, ""))}</h5>);
+      i++;
     } else if (/^####\s+/.test(line)) {
-      out.push(<h4 key={key++}>{line.replace(/^####\s+/, "")}</h4>);
+      out.push(<h4 key={key++} className="text-base font-semibold text-ink-800 mt-4 mb-1">{inline(line.replace(/^####\s+/, ""))}</h4>);
       i++;
     } else if (/^###\s+/.test(line)) {
       out.push(<h3 key={key++}>{line.replace(/^###\s+/, "")}</h3>);
@@ -45,7 +48,7 @@ export function renderMd(md: string): React.ReactNode[] {
       const m = line.match(/^!\[([^\]]*)\]\(([^)]+)\)/);
       if (m) {
         // eslint-disable-next-line @next/next/no-img-element
-        out.push(<img key={key++} src={m[2]} alt={m[1]} className="w-full max-h-80 object-contain rounded-xl border border-bone-200 my-4" />);
+        out.push(<img key={key++} src={m[2]} alt={m[1]} loading="lazy" decoding="async" className="w-full max-h-80 object-contain rounded-xl border border-bone-200 my-4" />);
       }
       i++;
     } else if (/^\|/.test(line)) {
@@ -109,7 +112,7 @@ export function renderMd(md: string): React.ReactNode[] {
     } else {
       const paras: string[] = [line];
       i++;
-      while (i < lines.length && lines[i].trim() !== "" && !/^(#{1,4}\s|[-*]\s|\d+\.\s|\|)/.test(lines[i])) {
+      while (i < lines.length && lines[i].trim() !== "" && !/^(#{1,5}\s|[-*]\s|\d+\.\s|\|)/.test(lines[i])) {
         paras.push(lines[i]);
         i++;
       }

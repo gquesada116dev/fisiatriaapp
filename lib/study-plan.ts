@@ -63,7 +63,7 @@ export const STUDY_PLAN: PlanDay[] = [
     topic("fibromialgia", "Fibromialgia", 3),
   ] },
   { date: "2026-06-29", dow: "Lun", kind: "study", items: [topic("rehabilitacion-politrauma", "Rehabilitación del politrauma", 4)] },
-  { date: "2026-06-30", dow: "Mar", kind: "study", items: [topic("historia-clinica-examen-fisico-fisiátrico", "Historia clínica y examen físico fisiátrico", 4)] },
+  { date: "2026-06-30", dow: "Mar", kind: "study", items: [topic("historia-clinica-examen-fisico-fisiatrico", "Historia clínica y examen físico fisiátrico", 4)] },
   { date: "2026-07-01", dow: "Mié", kind: "study", items: [topic("historia-examen-fisico-pediatrico", "Historia y examen físico pediátrico", 3)] },
   { date: "2026-07-02", dow: "Jue", kind: "study", items: [topic("neuralgia-posherpetica", "Neuralgia postherpética", 3, "Solo lo de alto rendimiento")] },
   { date: "2026-07-03", dow: "Vie", kind: "study", items: [topic("informe-mundial-discapacidad-2011", "Informe Mundial sobre Discapacidad 2011", 3, "Lectura liviana de política")] },
